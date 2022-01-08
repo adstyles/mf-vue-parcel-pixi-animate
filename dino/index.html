@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TREX</title>
+        <meta name="generator" content="PixiAnimate Extension">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+        <style type="text/css">
+            canvas {
+                width: 100%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <canvas id="stage" width="1920" height="1080"></canvas>
+        <script src="libs/pixi.js"></script>
+        <script src="libs/pixi-animate.js"></script>
+        <script src="TREX.js"></script>
+        <script>
+            var scene = new PIXI.animate.Scene(1920, 1080, {
+                view: document.getElementById("stage"),
+                backgroundColor: 0xffffff,
+                // backgroundColor: 0x000000,
+                antialias: true
+            });
+            // var stage = new PIXI.Stage(0x333333, true);
+            scene.load(lib.TREX);
+
+
+            // var size = [1920, 1080];
+            // var ratio = size[0] / size[1];
+            // var renderer = PIXI.autoDetectRenderer(size[0], size[1], null);
+            // document.body.appendChild(renderer.view);
+            // var texture = new PIXI.RenderTexture();
+            // r1 = new PIXI.Graphics();
+            // r1.beginFill(0x00ffff);
+            // r1.drawRect(0, 0, 100, 100);
+            // r1.endFill();
+            // texture.render(r1);
+            // var block = new PIXI.Sprite(texture);
+            // block.position.x = 100;
+            // block.position.y = 100;
+            // block.anchor.x = .5;
+            // block.anchor.y = .5;
+            // stage.addChild(block);
+            // requestAnimFrame(animate);
+            // resize();
+            // function animate() {
+            //     requestAnimFrame(animate);
+            //     block.rotation += .01;
+            //     renderer.render(stage);
+            // }
+            // function resize() {
+            //     if (window.innerWidth / window.innerHeight >= ratio) {
+            //         var w = window.innerHeight * ratio;
+            //         var h = window.innerHeight;
+            //     } else {
+            //         var w = window.innerWidth;
+            //         var h = window.innerWidth / ratio;
+            //     }
+            //     renderer.view.style.width = w + 'px';
+            //     renderer.view.style.height = h + 'px';
+            // }
+            // window.onresize = function(event) {
+            //     resize();
+            // };
+
+        </script>
+    </body>
+</html>

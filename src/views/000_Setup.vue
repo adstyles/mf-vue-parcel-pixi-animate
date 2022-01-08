@@ -2,7 +2,11 @@
   <div class="connections">
     <h1>test</h1>
     <!-- <canvas id="stage"></canvas> -->
-    <canvas id="stage" width="550" height="400"></canvas>
+    <canvas id="stage" width="1024" height="576"></canvas>
+    <div class="dev-tools">
+      <button v-on:click="pauseScene">pause</button>
+      <button v-on:click="playScene">play</button>
+    </div>
   </div>
 </template>
 <script>
@@ -53,20 +57,34 @@ export default {
 
     //   app.stage.addChild(graphics)
     // },
+
+    pauseScene() {
+      this.$refs.stageCanvas.stop();
+    },
+
+    playScene() {
+      this.$refs.stageCanvas.start();
+    },
+
     loadScene() {
 
-      const s01 = require('../../anims/s01/s01');
+      // const ref = this.$refs;
+      // var ref.stageCanvas = app;
+
+      const s01 = require('../../anims/s01-resized/s01-resized');
       // circle = require('./circle'),
-      const resizeTo = document.querySelector("#stage");
+      // const resizeTo = document.querySelector("#stage");
       const app = new Application({
-        // width: 1920,
-        // height: 1080
+        width: 1024,
+        height: 576,
         // width: 1920,
         // height: 1080,
-        resizeTo,
+        // resizeTo,
         view: document.getElementById("stage")
       });
       // resizeTo.appendChild(app.view);
+
+      this.$refs.stageCanvas = app;
 
       // document.body.appendChild(app.view);
       load(s01.stage, app.stage);
@@ -135,6 +153,10 @@ export default {
     }
   },
 
+  data: () => ({
+    stageCanvas: null
+  }),
+
   mounted() {
     this.loadScene();
   },
@@ -143,5 +165,9 @@ export default {
 <style lang="scss" scoped>
 #stage {
   outline: 3px solid teal;
+}
+
+.dev-tools {
+  display: flex;
 }
 </style>
