@@ -20,9 +20,12 @@
 // import { Application } from '../../pixianimate-libs/pixi.js';
 // import { load } from '../../pixianimate-libs/pixi-animate.js';
 
-import * as PIXI from '../../pixianimate-libs/pixi.js';
-const animate = require('../../pixianimate-libs/pixi-animate.js');
-const s01 = require('../../anims/s01/s01');
+import { Application } from '../../pixianimate-libs/pixi.js';
+import { load } from '../../pixianimate-libs/pixi-animate.js';
+
+// import * as PIXI from '../../pixianimate-libs/pixi.js';
+// const animate = require('../../pixianimate-libs/pixi-animate.js');
+// const s01 = require('../../anims/s01/s01');
 
 
 export default {
@@ -51,6 +54,33 @@ export default {
     //   app.stage.addChild(graphics)
     // },
     loadScene() {
+
+      const s01 = require('../../anims/s01/s01');
+      // circle = require('./circle'),
+      const app = new Application();
+
+      document.body.appendChild(app.view);
+
+      load(s01.stage, app.stage);
+      // load(circle.stage, app.stage);
+
+      // var scene = new PIXI.animate.Scene(960, 540, {
+      //   view: document.getElementById("stage"),
+      //   backgroundColor: 0x333333,
+      //   antialias: true
+      // });
+
+      // // console.log(lib.s01);
+
+      // scene.load(s01);
+
+      // scene.load({
+      //   stage: {
+      //     assets: {
+      //       "s01": "../../anims/s01/images/s01.shapes.json"
+      //     }
+      //   }
+      // }, s01);
 
       // const square = require('./square'),
       // circle = require('./circle'),
@@ -83,14 +113,9 @@ export default {
 
       // app.stage.addChild(graphics)
 
-      var scene = new PIXI.animate.Scene(960, 540, {
-        view: document.getElementById("stage"),
-        // backgroundColor: 0xbada55,
-        backgroundColor: 0x333333,
-        antialias: true
-      });
 
-      scene.load(s01);
+      // scene.load(lib.s01);
+
 
     }
   },
