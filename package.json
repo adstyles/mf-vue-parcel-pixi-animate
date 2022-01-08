@@ -55,8 +55,8 @@
   },
   "staticFiles": {
     "staticPath": [{
-      "staticPath": "json",
-      "staticOutDir": "json/"
+      "staticPath": "images",
+      "staticOutDir": "images/"
     }]
   }
 }

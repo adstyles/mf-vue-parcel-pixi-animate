@@ -71,7 +71,7 @@ export default {
       // const ref = this.$refs;
       // var ref.stageCanvas = app;
 
-      const s01 = require('../../anims/s01-resized/s01-resized');
+      const s01 = require('../../anims/s01-pngs/s01-resized');
       // circle = require('./circle'),
       // const resizeTo = document.querySelector("#stage");
       const app = new Application({

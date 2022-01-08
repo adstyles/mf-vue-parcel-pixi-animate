@@ -2,6 +2,8 @@
 
     var MovieClip = PIXI.animate.MovieClip;
     var Container = PIXI.Container;
+    var Sprite = PIXI.Sprite;
+    var fromFrame = PIXI.Texture.fromFrame;
     var Graphics = PIXI.Graphics;
     var shapes = PIXI.animate.ShapesCache;
 
@@ -18942,8 +18944,8 @@
 
     var Graphic325 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 163, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s01_resized[451]);
+        var instance1 = new Sprite(fromFrame("replace-me-1"))
+            .setTransform(-207, -145);
         this.addTimedChild(instance1);
     });
 
@@ -18997,591 +18999,591 @@
     var Graphic327 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 41, loop: false });
         var instance9 = new Graphics()
-            .drawCommands(shapes.s01_resized[702]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s01_resized[683]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s01_resized[664]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s01_resized[645]);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s01_resized[626]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s01_resized[607]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s01_resized[588]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s01_resized[569]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s01_resized[548]);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s01_resized[684]);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s01_resized[665]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s01_resized[646]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s01_resized[627]);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s01_resized[608]);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s01_resized[589]);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s01_resized[570]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s01_resized[549]);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s01_resized[685]);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s01_resized[666]);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s01_resized[647]);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s01_resized[628]);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s01_resized[609]);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s01_resized[590]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s01_resized[571]);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s01_resized[550]);
-        var instance33 = new Graphics()
-            .drawCommands(shapes.s01_resized[686]);
-        var instance32 = new Graphics()
-            .drawCommands(shapes.s01_resized[667]);
-        var instance31 = new Graphics()
-            .drawCommands(shapes.s01_resized[648]);
-        var instance30 = new Graphics()
-            .drawCommands(shapes.s01_resized[629]);
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s01_resized[610]);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s01_resized[591]);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s01_resized[572]);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s01_resized[551]);
-        var instance41 = new Graphics()
-            .drawCommands(shapes.s01_resized[687]);
-        var instance40 = new Graphics()
-            .drawCommands(shapes.s01_resized[668]);
-        var instance39 = new Graphics()
-            .drawCommands(shapes.s01_resized[649]);
-        var instance38 = new Graphics()
-            .drawCommands(shapes.s01_resized[630]);
-        var instance37 = new Graphics()
-            .drawCommands(shapes.s01_resized[611]);
-        var instance36 = new Graphics()
-            .drawCommands(shapes.s01_resized[592]);
-        var instance35 = new Graphics()
-            .drawCommands(shapes.s01_resized[573]);
-        var instance34 = new Graphics()
-            .drawCommands(shapes.s01_resized[552]);
-        var instance49 = new Graphics()
-            .drawCommands(shapes.s01_resized[688]);
-        var instance48 = new Graphics()
-            .drawCommands(shapes.s01_resized[669]);
-        var instance47 = new Graphics()
-            .drawCommands(shapes.s01_resized[650]);
-        var instance46 = new Graphics()
-            .drawCommands(shapes.s01_resized[631]);
-        var instance45 = new Graphics()
-            .drawCommands(shapes.s01_resized[612]);
-        var instance44 = new Graphics()
-            .drawCommands(shapes.s01_resized[593]);
-        var instance43 = new Graphics()
-            .drawCommands(shapes.s01_resized[574]);
-        var instance42 = new Graphics()
-            .drawCommands(shapes.s01_resized[553]);
-        var instance61 = new Graphics()
-            .drawCommands(shapes.s01_resized[721]);
-        var instance60 = new Graphics()
-            .drawCommands(shapes.s01_resized[703]);
-        var instance59 = new Graphics()
-            .drawCommands(shapes.s01_resized[689]);
-        var instance58 = new Graphics()
-            .drawCommands(shapes.s01_resized[670]);
-        var instance57 = new Graphics()
-            .drawCommands(shapes.s01_resized[651]);
-        var instance56 = new Graphics()
-            .drawCommands(shapes.s01_resized[632]);
-        var instance55 = new Graphics()
-            .drawCommands(shapes.s01_resized[613]);
-        var instance54 = new Graphics()
-            .drawCommands(shapes.s01_resized[594]);
-        var instance53 = new Graphics()
-            .drawCommands(shapes.s01_resized[575]);
-        var instance52 = new Graphics()
-            .drawCommands(shapes.s01_resized[554]);
-        var instance51 = new Graphics()
-            .drawCommands(shapes.s01_resized[533]);
-        var instance50 = new Graphics()
-            .drawCommands(shapes.s01_resized[518]);
-        var instance74 = new Graphics()
-            .drawCommands(shapes.s01_resized[704]);
-        var instance73 = new Graphics()
-            .drawCommands(shapes.s01_resized[690]);
-        var instance72 = new Graphics()
-            .drawCommands(shapes.s01_resized[671]);
-        var instance71 = new Graphics()
-            .drawCommands(shapes.s01_resized[652]);
-        var instance70 = new Graphics()
-            .drawCommands(shapes.s01_resized[633]);
-        var instance69 = new Graphics()
-            .drawCommands(shapes.s01_resized[614]);
-        var instance68 = new Graphics()
-            .drawCommands(shapes.s01_resized[595]);
-        var instance67 = new Graphics()
-            .drawCommands(shapes.s01_resized[576]);
-        var instance66 = new Graphics()
-            .drawCommands(shapes.s01_resized[555]);
-        var instance65 = new Graphics()
-            .drawCommands(shapes.s01_resized[534]);
-        var instance64 = new Graphics()
-            .drawCommands(shapes.s01_resized[519]);
-        var instance63 = new Graphics()
-            .drawCommands(shapes.s01_resized[504]);
-        var instance62 = new Graphics()
-            .drawCommands(shapes.s01_resized[490]);
-        var instance89 = new Graphics()
-            .drawCommands(shapes.s01_resized[705]);
-        var instance88 = new Graphics()
-            .drawCommands(shapes.s01_resized[691]);
-        var instance87 = new Graphics()
-            .drawCommands(shapes.s01_resized[672]);
-        var instance86 = new Graphics()
-            .drawCommands(shapes.s01_resized[653]);
-        var instance85 = new Graphics()
-            .drawCommands(shapes.s01_resized[634]);
-        var instance84 = new Graphics()
-            .drawCommands(shapes.s01_resized[615]);
-        var instance83 = new Graphics()
-            .drawCommands(shapes.s01_resized[596]);
-        var instance82 = new Graphics()
-            .drawCommands(shapes.s01_resized[577]);
-        var instance81 = new Graphics()
-            .drawCommands(shapes.s01_resized[556]);
-        var instance80 = new Graphics()
-            .drawCommands(shapes.s01_resized[535]);
-        var instance79 = new Graphics()
-            .drawCommands(shapes.s01_resized[520]);
-        var instance78 = new Graphics()
-            .drawCommands(shapes.s01_resized[505]);
-        var instance77 = new Graphics()
-            .drawCommands(shapes.s01_resized[491]);
-        var instance76 = new Graphics()
-            .drawCommands(shapes.s01_resized[477]);
-        var instance75 = new Graphics()
-            .drawCommands(shapes.s01_resized[464]);
-        var instance106 = new Graphics()
-            .drawCommands(shapes.s01_resized[709]);
-        var instance105 = new Graphics()
-            .drawCommands(shapes.s01_resized[706]);
-        var instance104 = new Graphics()
-            .drawCommands(shapes.s01_resized[692]);
-        var instance103 = new Graphics()
-            .drawCommands(shapes.s01_resized[673]);
-        var instance102 = new Graphics()
-            .drawCommands(shapes.s01_resized[654]);
-        var instance101 = new Graphics()
-            .drawCommands(shapes.s01_resized[635]);
-        var instance100 = new Graphics()
-            .drawCommands(shapes.s01_resized[616]);
-        var instance99 = new Graphics()
-            .drawCommands(shapes.s01_resized[597]);
-        var instance98 = new Graphics()
-            .drawCommands(shapes.s01_resized[578]);
-        var instance97 = new Graphics()
-            .drawCommands(shapes.s01_resized[557]);
-        var instance96 = new Graphics()
-            .drawCommands(shapes.s01_resized[536]);
-        var instance95 = new Graphics()
-            .drawCommands(shapes.s01_resized[521]);
-        var instance94 = new Graphics()
-            .drawCommands(shapes.s01_resized[506]);
-        var instance93 = new Graphics()
-            .drawCommands(shapes.s01_resized[492]);
-        var instance92 = new Graphics()
-            .drawCommands(shapes.s01_resized[478]);
-        var instance91 = new Graphics()
-            .drawCommands(shapes.s01_resized[465]);
-        var instance90 = new Graphics()
-            .drawCommands(shapes.s01_resized[452]);
-        var instance123 = new Graphics()
-            .drawCommands(shapes.s01_resized[710]);
-        var instance122 = new Graphics()
-            .drawCommands(shapes.s01_resized[707]);
-        var instance121 = new Graphics()
-            .drawCommands(shapes.s01_resized[693]);
-        var instance120 = new Graphics()
-            .drawCommands(shapes.s01_resized[674]);
-        var instance119 = new Graphics()
-            .drawCommands(shapes.s01_resized[655]);
-        var instance118 = new Graphics()
-            .drawCommands(shapes.s01_resized[636]);
-        var instance117 = new Graphics()
-            .drawCommands(shapes.s01_resized[617]);
-        var instance116 = new Graphics()
-            .drawCommands(shapes.s01_resized[598]);
-        var instance115 = new Graphics()
-            .drawCommands(shapes.s01_resized[579]);
-        var instance114 = new Graphics()
-            .drawCommands(shapes.s01_resized[558]);
-        var instance113 = new Graphics()
-            .drawCommands(shapes.s01_resized[537]);
-        var instance112 = new Graphics()
-            .drawCommands(shapes.s01_resized[522]);
-        var instance111 = new Graphics()
-            .drawCommands(shapes.s01_resized[507]);
-        var instance110 = new Graphics()
-            .drawCommands(shapes.s01_resized[493]);
-        var instance109 = new Graphics()
-            .drawCommands(shapes.s01_resized[479]);
-        var instance108 = new Graphics()
-            .drawCommands(shapes.s01_resized[466]);
-        var instance107 = new Graphics()
-            .drawCommands(shapes.s01_resized[453]);
-        var instance140 = new Graphics()
-            .drawCommands(shapes.s01_resized[711]);
-        var instance139 = new Graphics()
-            .drawCommands(shapes.s01_resized[703]);
-        var instance138 = new Graphics()
-            .drawCommands(shapes.s01_resized[694]);
-        var instance137 = new Graphics()
-            .drawCommands(shapes.s01_resized[675]);
-        var instance136 = new Graphics()
-            .drawCommands(shapes.s01_resized[656]);
-        var instance135 = new Graphics()
-            .drawCommands(shapes.s01_resized[637]);
-        var instance134 = new Graphics()
-            .drawCommands(shapes.s01_resized[618]);
-        var instance133 = new Graphics()
-            .drawCommands(shapes.s01_resized[599]);
-        var instance132 = new Graphics()
-            .drawCommands(shapes.s01_resized[580]);
-        var instance131 = new Graphics()
-            .drawCommands(shapes.s01_resized[559]);
-        var instance130 = new Graphics()
-            .drawCommands(shapes.s01_resized[538]);
-        var instance129 = new Graphics()
-            .drawCommands(shapes.s01_resized[523]);
-        var instance128 = new Graphics()
-            .drawCommands(shapes.s01_resized[508]);
-        var instance127 = new Graphics()
-            .drawCommands(shapes.s01_resized[494]);
-        var instance126 = new Graphics()
-            .drawCommands(shapes.s01_resized[480]);
-        var instance125 = new Graphics()
-            .drawCommands(shapes.s01_resized[467]);
-        var instance124 = new Graphics()
-            .drawCommands(shapes.s01_resized[454]);
-        var instance157 = new Graphics()
-            .drawCommands(shapes.s01_resized[712]);
-        var instance156 = new Graphics()
-            .drawCommands(shapes.s01_resized[704]);
-        var instance155 = new Graphics()
-            .drawCommands(shapes.s01_resized[695]);
-        var instance154 = new Graphics()
-            .drawCommands(shapes.s01_resized[676]);
-        var instance153 = new Graphics()
-            .drawCommands(shapes.s01_resized[657]);
-        var instance152 = new Graphics()
-            .drawCommands(shapes.s01_resized[638]);
-        var instance151 = new Graphics()
-            .drawCommands(shapes.s01_resized[619]);
-        var instance150 = new Graphics()
-            .drawCommands(shapes.s01_resized[600]);
-        var instance149 = new Graphics()
-            .drawCommands(shapes.s01_resized[581]);
-        var instance148 = new Graphics()
-            .drawCommands(shapes.s01_resized[560]);
-        var instance147 = new Graphics()
-            .drawCommands(shapes.s01_resized[539]);
-        var instance146 = new Graphics()
-            .drawCommands(shapes.s01_resized[524]);
-        var instance145 = new Graphics()
-            .drawCommands(shapes.s01_resized[509]);
-        var instance144 = new Graphics()
-            .drawCommands(shapes.s01_resized[495]);
-        var instance143 = new Graphics()
-            .drawCommands(shapes.s01_resized[481]);
-        var instance142 = new Graphics()
-            .drawCommands(shapes.s01_resized[468]);
-        var instance141 = new Graphics()
-            .drawCommands(shapes.s01_resized[455]);
-        var instance174 = new Graphics()
-            .drawCommands(shapes.s01_resized[713]);
-        var instance173 = new Graphics()
-            .drawCommands(shapes.s01_resized[705]);
-        var instance172 = new Graphics()
-            .drawCommands(shapes.s01_resized[696]);
-        var instance171 = new Graphics()
-            .drawCommands(shapes.s01_resized[677]);
-        var instance170 = new Graphics()
-            .drawCommands(shapes.s01_resized[658]);
-        var instance169 = new Graphics()
-            .drawCommands(shapes.s01_resized[639]);
-        var instance168 = new Graphics()
-            .drawCommands(shapes.s01_resized[620]);
-        var instance167 = new Graphics()
-            .drawCommands(shapes.s01_resized[601]);
-        var instance166 = new Graphics()
-            .drawCommands(shapes.s01_resized[582]);
-        var instance165 = new Graphics()
-            .drawCommands(shapes.s01_resized[561]);
-        var instance164 = new Graphics()
-            .drawCommands(shapes.s01_resized[540]);
-        var instance163 = new Graphics()
-            .drawCommands(shapes.s01_resized[525]);
-        var instance162 = new Graphics()
-            .drawCommands(shapes.s01_resized[510]);
-        var instance161 = new Graphics()
-            .drawCommands(shapes.s01_resized[496]);
-        var instance160 = new Graphics()
-            .drawCommands(shapes.s01_resized[482]);
-        var instance159 = new Graphics()
-            .drawCommands(shapes.s01_resized[469]);
-        var instance158 = new Graphics()
-            .drawCommands(shapes.s01_resized[456]);
-        var instance191 = new Graphics()
-            .drawCommands(shapes.s01_resized[714]);
-        var instance190 = new Graphics()
-            .drawCommands(shapes.s01_resized[706]);
-        var instance189 = new Graphics()
-            .drawCommands(shapes.s01_resized[697]);
-        var instance188 = new Graphics()
-            .drawCommands(shapes.s01_resized[678]);
-        var instance187 = new Graphics()
-            .drawCommands(shapes.s01_resized[659]);
-        var instance186 = new Graphics()
-            .drawCommands(shapes.s01_resized[640]);
-        var instance185 = new Graphics()
-            .drawCommands(shapes.s01_resized[621]);
-        var instance184 = new Graphics()
-            .drawCommands(shapes.s01_resized[602]);
-        var instance183 = new Graphics()
-            .drawCommands(shapes.s01_resized[583]);
-        var instance182 = new Graphics()
-            .drawCommands(shapes.s01_resized[562]);
-        var instance181 = new Graphics()
-            .drawCommands(shapes.s01_resized[541]);
-        var instance180 = new Graphics()
-            .drawCommands(shapes.s01_resized[526]);
-        var instance179 = new Graphics()
-            .drawCommands(shapes.s01_resized[511]);
-        var instance178 = new Graphics()
-            .drawCommands(shapes.s01_resized[497]);
-        var instance177 = new Graphics()
-            .drawCommands(shapes.s01_resized[483]);
-        var instance176 = new Graphics()
-            .drawCommands(shapes.s01_resized[470]);
-        var instance175 = new Graphics()
-            .drawCommands(shapes.s01_resized[457]);
-        var instance208 = new Graphics()
-            .drawCommands(shapes.s01_resized[715]);
-        var instance207 = new Graphics()
-            .drawCommands(shapes.s01_resized[703]);
-        var instance206 = new Graphics()
-            .drawCommands(shapes.s01_resized[698]);
-        var instance205 = new Graphics()
-            .drawCommands(shapes.s01_resized[679]);
-        var instance204 = new Graphics()
-            .drawCommands(shapes.s01_resized[660]);
-        var instance203 = new Graphics()
-            .drawCommands(shapes.s01_resized[641]);
-        var instance202 = new Graphics()
-            .drawCommands(shapes.s01_resized[622]);
-        var instance201 = new Graphics()
-            .drawCommands(shapes.s01_resized[603]);
-        var instance200 = new Graphics()
-            .drawCommands(shapes.s01_resized[584]);
-        var instance199 = new Graphics()
-            .drawCommands(shapes.s01_resized[563]);
-        var instance198 = new Graphics()
-            .drawCommands(shapes.s01_resized[542]);
-        var instance197 = new Graphics()
-            .drawCommands(shapes.s01_resized[527]);
-        var instance196 = new Graphics()
-            .drawCommands(shapes.s01_resized[512]);
-        var instance195 = new Graphics()
-            .drawCommands(shapes.s01_resized[498]);
-        var instance194 = new Graphics()
-            .drawCommands(shapes.s01_resized[484]);
-        var instance193 = new Graphics()
-            .drawCommands(shapes.s01_resized[471]);
-        var instance192 = new Graphics()
-            .drawCommands(shapes.s01_resized[458]);
-        var instance225 = new Graphics()
-            .drawCommands(shapes.s01_resized[716]);
-        var instance224 = new Graphics()
-            .drawCommands(shapes.s01_resized[708]);
-        var instance223 = new Graphics()
-            .drawCommands(shapes.s01_resized[699]);
-        var instance222 = new Graphics()
-            .drawCommands(shapes.s01_resized[680]);
-        var instance221 = new Graphics()
-            .drawCommands(shapes.s01_resized[661]);
-        var instance220 = new Graphics()
-            .drawCommands(shapes.s01_resized[642]);
-        var instance219 = new Graphics()
-            .drawCommands(shapes.s01_resized[623]);
-        var instance218 = new Graphics()
-            .drawCommands(shapes.s01_resized[604]);
-        var instance217 = new Graphics()
-            .drawCommands(shapes.s01_resized[585]);
-        var instance216 = new Graphics()
-            .drawCommands(shapes.s01_resized[564]);
-        var instance215 = new Graphics()
-            .drawCommands(shapes.s01_resized[543]);
-        var instance214 = new Graphics()
-            .drawCommands(shapes.s01_resized[528]);
-        var instance213 = new Graphics()
-            .drawCommands(shapes.s01_resized[513]);
-        var instance212 = new Graphics()
-            .drawCommands(shapes.s01_resized[499]);
-        var instance211 = new Graphics()
-            .drawCommands(shapes.s01_resized[485]);
-        var instance210 = new Graphics()
-            .drawCommands(shapes.s01_resized[472]);
-        var instance209 = new Graphics()
-            .drawCommands(shapes.s01_resized[459]);
-        var instance242 = new Graphics()
-            .drawCommands(shapes.s01_resized[717]);
-        var instance241 = new Graphics()
-            .drawCommands(shapes.s01_resized[707]);
-        var instance240 = new Graphics()
-            .drawCommands(shapes.s01_resized[700]);
-        var instance239 = new Graphics()
-            .drawCommands(shapes.s01_resized[681]);
-        var instance238 = new Graphics()
-            .drawCommands(shapes.s01_resized[662]);
-        var instance237 = new Graphics()
-            .drawCommands(shapes.s01_resized[643]);
-        var instance236 = new Graphics()
-            .drawCommands(shapes.s01_resized[624]);
-        var instance235 = new Graphics()
-            .drawCommands(shapes.s01_resized[605]);
-        var instance234 = new Graphics()
-            .drawCommands(shapes.s01_resized[586]);
-        var instance233 = new Graphics()
-            .drawCommands(shapes.s01_resized[565]);
-        var instance232 = new Graphics()
-            .drawCommands(shapes.s01_resized[544]);
-        var instance231 = new Graphics()
-            .drawCommands(shapes.s01_resized[529]);
-        var instance230 = new Graphics()
-            .drawCommands(shapes.s01_resized[514]);
-        var instance229 = new Graphics()
-            .drawCommands(shapes.s01_resized[500]);
-        var instance228 = new Graphics()
-            .drawCommands(shapes.s01_resized[486]);
-        var instance227 = new Graphics()
-            .drawCommands(shapes.s01_resized[473]);
-        var instance226 = new Graphics()
-            .drawCommands(shapes.s01_resized[460]);
-        var instance259 = new Graphics()
-            .drawCommands(shapes.s01_resized[718]);
-        var instance258 = new Graphics()
-            .drawCommands(shapes.s01_resized[703]);
-        var instance257 = new Graphics()
             .drawCommands(shapes.s01_resized[701]);
-        var instance256 = new Graphics()
+        var instance8 = new Graphics()
             .drawCommands(shapes.s01_resized[682]);
-        var instance255 = new Graphics()
+        var instance7 = new Graphics()
             .drawCommands(shapes.s01_resized[663]);
-        var instance254 = new Graphics()
+        var instance6 = new Graphics()
             .drawCommands(shapes.s01_resized[644]);
-        var instance253 = new Graphics()
+        var instance5 = new Graphics()
             .drawCommands(shapes.s01_resized[625]);
-        var instance252 = new Graphics()
+        var instance4 = new Graphics()
             .drawCommands(shapes.s01_resized[606]);
-        var instance251 = new Graphics()
+        var instance3 = new Graphics()
             .drawCommands(shapes.s01_resized[587]);
-        var instance250 = new Graphics()
-            .drawCommands(shapes.s01_resized[566]);
-        var instance249 = new Graphics()
-            .drawCommands(shapes.s01_resized[545]);
-        var instance248 = new Graphics()
-            .drawCommands(shapes.s01_resized[530]);
-        var instance247 = new Graphics()
-            .drawCommands(shapes.s01_resized[515]);
-        var instance246 = new Graphics()
-            .drawCommands(shapes.s01_resized[501]);
-        var instance245 = new Graphics()
-            .drawCommands(shapes.s01_resized[487]);
-        var instance244 = new Graphics()
-            .drawCommands(shapes.s01_resized[474]);
-        var instance243 = new Graphics()
-            .drawCommands(shapes.s01_resized[461]);
-        var instance276 = new Graphics()
-            .drawCommands(shapes.s01_resized[719]);
-        var instance275 = new Graphics()
-            .drawCommands(shapes.s01_resized[704]);
-        var instance274 = new Graphics()
-            .drawCommands(shapes.s01_resized[683]);
-        var instance273 = new Graphics()
-            .drawCommands(shapes.s01_resized[664]);
-        var instance272 = new Graphics()
-            .drawCommands(shapes.s01_resized[645]);
-        var instance271 = new Graphics()
-            .drawCommands(shapes.s01_resized[626]);
-        var instance270 = new Graphics()
-            .drawCommands(shapes.s01_resized[588]);
-        var instance269 = new Graphics()
-            .drawCommands(shapes.s01_resized[607]);
-        var instance268 = new Graphics()
-            .drawCommands(shapes.s01_resized[569]);
-        var instance267 = new Graphics()
-            .drawCommands(shapes.s01_resized[567]);
-        var instance266 = new Graphics()
-            .drawCommands(shapes.s01_resized[546]);
-        var instance265 = new Graphics()
-            .drawCommands(shapes.s01_resized[531]);
-        var instance264 = new Graphics()
-            .drawCommands(shapes.s01_resized[516]);
-        var instance263 = new Graphics()
-            .drawCommands(shapes.s01_resized[502]);
-        var instance262 = new Graphics()
-            .drawCommands(shapes.s01_resized[488]);
-        var instance261 = new Graphics()
-            .drawCommands(shapes.s01_resized[475]);
-        var instance260 = new Graphics()
-            .drawCommands(shapes.s01_resized[462]);
-        var instance293 = new Graphics()
-            .drawCommands(shapes.s01_resized[720]);
-        var instance292 = new Graphics()
-            .drawCommands(shapes.s01_resized[705]);
-        var instance291 = new Graphics()
-            .drawCommands(shapes.s01_resized[684]);
-        var instance290 = new Graphics()
-            .drawCommands(shapes.s01_resized[665]);
-        var instance289 = new Graphics()
-            .drawCommands(shapes.s01_resized[646]);
-        var instance288 = new Graphics()
-            .drawCommands(shapes.s01_resized[627]);
-        var instance287 = new Graphics()
-            .drawCommands(shapes.s01_resized[589]);
-        var instance286 = new Graphics()
-            .drawCommands(shapes.s01_resized[608]);
-        var instance285 = new Graphics()
-            .drawCommands(shapes.s01_resized[570]);
-        var instance284 = new Graphics()
+        var instance2 = new Graphics()
             .drawCommands(shapes.s01_resized[568]);
-        var instance283 = new Graphics()
+        var instance1 = new Graphics()
             .drawCommands(shapes.s01_resized[547]);
-        var instance282 = new Graphics()
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s01_resized[683]);
+        var instance16 = new Graphics()
+            .drawCommands(shapes.s01_resized[664]);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s01_resized[645]);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s01_resized[626]);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s01_resized[607]);
+        var instance12 = new Graphics()
+            .drawCommands(shapes.s01_resized[588]);
+        var instance11 = new Graphics()
+            .drawCommands(shapes.s01_resized[569]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s01_resized[548]);
+        var instance25 = new Graphics()
+            .drawCommands(shapes.s01_resized[684]);
+        var instance24 = new Graphics()
+            .drawCommands(shapes.s01_resized[665]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s01_resized[646]);
+        var instance22 = new Graphics()
+            .drawCommands(shapes.s01_resized[627]);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s01_resized[608]);
+        var instance20 = new Graphics()
+            .drawCommands(shapes.s01_resized[589]);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s01_resized[570]);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s01_resized[549]);
+        var instance33 = new Graphics()
+            .drawCommands(shapes.s01_resized[685]);
+        var instance32 = new Graphics()
+            .drawCommands(shapes.s01_resized[666]);
+        var instance31 = new Graphics()
+            .drawCommands(shapes.s01_resized[647]);
+        var instance30 = new Graphics()
+            .drawCommands(shapes.s01_resized[628]);
+        var instance29 = new Graphics()
+            .drawCommands(shapes.s01_resized[609]);
+        var instance28 = new Graphics()
+            .drawCommands(shapes.s01_resized[590]);
+        var instance27 = new Graphics()
+            .drawCommands(shapes.s01_resized[571]);
+        var instance26 = new Graphics()
+            .drawCommands(shapes.s01_resized[550]);
+        var instance41 = new Graphics()
+            .drawCommands(shapes.s01_resized[686]);
+        var instance40 = new Graphics()
+            .drawCommands(shapes.s01_resized[667]);
+        var instance39 = new Graphics()
+            .drawCommands(shapes.s01_resized[648]);
+        var instance38 = new Graphics()
+            .drawCommands(shapes.s01_resized[629]);
+        var instance37 = new Graphics()
+            .drawCommands(shapes.s01_resized[610]);
+        var instance36 = new Graphics()
+            .drawCommands(shapes.s01_resized[591]);
+        var instance35 = new Graphics()
+            .drawCommands(shapes.s01_resized[572]);
+        var instance34 = new Graphics()
+            .drawCommands(shapes.s01_resized[551]);
+        var instance49 = new Graphics()
+            .drawCommands(shapes.s01_resized[687]);
+        var instance48 = new Graphics()
+            .drawCommands(shapes.s01_resized[668]);
+        var instance47 = new Graphics()
+            .drawCommands(shapes.s01_resized[649]);
+        var instance46 = new Graphics()
+            .drawCommands(shapes.s01_resized[630]);
+        var instance45 = new Graphics()
+            .drawCommands(shapes.s01_resized[611]);
+        var instance44 = new Graphics()
+            .drawCommands(shapes.s01_resized[592]);
+        var instance43 = new Graphics()
+            .drawCommands(shapes.s01_resized[573]);
+        var instance42 = new Graphics()
+            .drawCommands(shapes.s01_resized[552]);
+        var instance61 = new Graphics()
+            .drawCommands(shapes.s01_resized[720]);
+        var instance60 = new Graphics()
+            .drawCommands(shapes.s01_resized[702]);
+        var instance59 = new Graphics()
+            .drawCommands(shapes.s01_resized[688]);
+        var instance58 = new Graphics()
+            .drawCommands(shapes.s01_resized[669]);
+        var instance57 = new Graphics()
+            .drawCommands(shapes.s01_resized[650]);
+        var instance56 = new Graphics()
+            .drawCommands(shapes.s01_resized[631]);
+        var instance55 = new Graphics()
+            .drawCommands(shapes.s01_resized[612]);
+        var instance54 = new Graphics()
+            .drawCommands(shapes.s01_resized[593]);
+        var instance53 = new Graphics()
+            .drawCommands(shapes.s01_resized[574]);
+        var instance52 = new Graphics()
+            .drawCommands(shapes.s01_resized[553]);
+        var instance51 = new Graphics()
             .drawCommands(shapes.s01_resized[532]);
-        var instance281 = new Graphics()
+        var instance50 = new Graphics()
             .drawCommands(shapes.s01_resized[517]);
-        var instance280 = new Graphics()
+        var instance74 = new Graphics()
+            .drawCommands(shapes.s01_resized[703]);
+        var instance73 = new Graphics()
+            .drawCommands(shapes.s01_resized[689]);
+        var instance72 = new Graphics()
+            .drawCommands(shapes.s01_resized[670]);
+        var instance71 = new Graphics()
+            .drawCommands(shapes.s01_resized[651]);
+        var instance70 = new Graphics()
+            .drawCommands(shapes.s01_resized[632]);
+        var instance69 = new Graphics()
+            .drawCommands(shapes.s01_resized[613]);
+        var instance68 = new Graphics()
+            .drawCommands(shapes.s01_resized[594]);
+        var instance67 = new Graphics()
+            .drawCommands(shapes.s01_resized[575]);
+        var instance66 = new Graphics()
+            .drawCommands(shapes.s01_resized[554]);
+        var instance65 = new Graphics()
+            .drawCommands(shapes.s01_resized[533]);
+        var instance64 = new Graphics()
+            .drawCommands(shapes.s01_resized[518]);
+        var instance63 = new Graphics()
             .drawCommands(shapes.s01_resized[503]);
-        var instance279 = new Graphics()
+        var instance62 = new Graphics()
             .drawCommands(shapes.s01_resized[489]);
-        var instance278 = new Graphics()
+        var instance89 = new Graphics()
+            .drawCommands(shapes.s01_resized[704]);
+        var instance88 = new Graphics()
+            .drawCommands(shapes.s01_resized[690]);
+        var instance87 = new Graphics()
+            .drawCommands(shapes.s01_resized[671]);
+        var instance86 = new Graphics()
+            .drawCommands(shapes.s01_resized[652]);
+        var instance85 = new Graphics()
+            .drawCommands(shapes.s01_resized[633]);
+        var instance84 = new Graphics()
+            .drawCommands(shapes.s01_resized[614]);
+        var instance83 = new Graphics()
+            .drawCommands(shapes.s01_resized[595]);
+        var instance82 = new Graphics()
+            .drawCommands(shapes.s01_resized[576]);
+        var instance81 = new Graphics()
+            .drawCommands(shapes.s01_resized[555]);
+        var instance80 = new Graphics()
+            .drawCommands(shapes.s01_resized[534]);
+        var instance79 = new Graphics()
+            .drawCommands(shapes.s01_resized[519]);
+        var instance78 = new Graphics()
+            .drawCommands(shapes.s01_resized[504]);
+        var instance77 = new Graphics()
+            .drawCommands(shapes.s01_resized[490]);
+        var instance76 = new Graphics()
             .drawCommands(shapes.s01_resized[476]);
-        var instance277 = new Graphics()
+        var instance75 = new Graphics()
             .drawCommands(shapes.s01_resized[463]);
+        var instance106 = new Graphics()
+            .drawCommands(shapes.s01_resized[708]);
+        var instance105 = new Graphics()
+            .drawCommands(shapes.s01_resized[705]);
+        var instance104 = new Graphics()
+            .drawCommands(shapes.s01_resized[691]);
+        var instance103 = new Graphics()
+            .drawCommands(shapes.s01_resized[672]);
+        var instance102 = new Graphics()
+            .drawCommands(shapes.s01_resized[653]);
+        var instance101 = new Graphics()
+            .drawCommands(shapes.s01_resized[634]);
+        var instance100 = new Graphics()
+            .drawCommands(shapes.s01_resized[615]);
+        var instance99 = new Graphics()
+            .drawCommands(shapes.s01_resized[596]);
+        var instance98 = new Graphics()
+            .drawCommands(shapes.s01_resized[577]);
+        var instance97 = new Graphics()
+            .drawCommands(shapes.s01_resized[556]);
+        var instance96 = new Graphics()
+            .drawCommands(shapes.s01_resized[535]);
+        var instance95 = new Graphics()
+            .drawCommands(shapes.s01_resized[520]);
+        var instance94 = new Graphics()
+            .drawCommands(shapes.s01_resized[505]);
+        var instance93 = new Graphics()
+            .drawCommands(shapes.s01_resized[491]);
+        var instance92 = new Graphics()
+            .drawCommands(shapes.s01_resized[477]);
+        var instance91 = new Graphics()
+            .drawCommands(shapes.s01_resized[464]);
+        var instance90 = new Graphics()
+            .drawCommands(shapes.s01_resized[451]);
+        var instance123 = new Graphics()
+            .drawCommands(shapes.s01_resized[709]);
+        var instance122 = new Graphics()
+            .drawCommands(shapes.s01_resized[706]);
+        var instance121 = new Graphics()
+            .drawCommands(shapes.s01_resized[692]);
+        var instance120 = new Graphics()
+            .drawCommands(shapes.s01_resized[673]);
+        var instance119 = new Graphics()
+            .drawCommands(shapes.s01_resized[654]);
+        var instance118 = new Graphics()
+            .drawCommands(shapes.s01_resized[635]);
+        var instance117 = new Graphics()
+            .drawCommands(shapes.s01_resized[616]);
+        var instance116 = new Graphics()
+            .drawCommands(shapes.s01_resized[597]);
+        var instance115 = new Graphics()
+            .drawCommands(shapes.s01_resized[578]);
+        var instance114 = new Graphics()
+            .drawCommands(shapes.s01_resized[557]);
+        var instance113 = new Graphics()
+            .drawCommands(shapes.s01_resized[536]);
+        var instance112 = new Graphics()
+            .drawCommands(shapes.s01_resized[521]);
+        var instance111 = new Graphics()
+            .drawCommands(shapes.s01_resized[506]);
+        var instance110 = new Graphics()
+            .drawCommands(shapes.s01_resized[492]);
+        var instance109 = new Graphics()
+            .drawCommands(shapes.s01_resized[478]);
+        var instance108 = new Graphics()
+            .drawCommands(shapes.s01_resized[465]);
+        var instance107 = new Graphics()
+            .drawCommands(shapes.s01_resized[452]);
+        var instance140 = new Graphics()
+            .drawCommands(shapes.s01_resized[710]);
+        var instance139 = new Graphics()
+            .drawCommands(shapes.s01_resized[702]);
+        var instance138 = new Graphics()
+            .drawCommands(shapes.s01_resized[693]);
+        var instance137 = new Graphics()
+            .drawCommands(shapes.s01_resized[674]);
+        var instance136 = new Graphics()
+            .drawCommands(shapes.s01_resized[655]);
+        var instance135 = new Graphics()
+            .drawCommands(shapes.s01_resized[636]);
+        var instance134 = new Graphics()
+            .drawCommands(shapes.s01_resized[617]);
+        var instance133 = new Graphics()
+            .drawCommands(shapes.s01_resized[598]);
+        var instance132 = new Graphics()
+            .drawCommands(shapes.s01_resized[579]);
+        var instance131 = new Graphics()
+            .drawCommands(shapes.s01_resized[558]);
+        var instance130 = new Graphics()
+            .drawCommands(shapes.s01_resized[537]);
+        var instance129 = new Graphics()
+            .drawCommands(shapes.s01_resized[522]);
+        var instance128 = new Graphics()
+            .drawCommands(shapes.s01_resized[507]);
+        var instance127 = new Graphics()
+            .drawCommands(shapes.s01_resized[493]);
+        var instance126 = new Graphics()
+            .drawCommands(shapes.s01_resized[479]);
+        var instance125 = new Graphics()
+            .drawCommands(shapes.s01_resized[466]);
+        var instance124 = new Graphics()
+            .drawCommands(shapes.s01_resized[453]);
+        var instance157 = new Graphics()
+            .drawCommands(shapes.s01_resized[711]);
+        var instance156 = new Graphics()
+            .drawCommands(shapes.s01_resized[703]);
+        var instance155 = new Graphics()
+            .drawCommands(shapes.s01_resized[694]);
+        var instance154 = new Graphics()
+            .drawCommands(shapes.s01_resized[675]);
+        var instance153 = new Graphics()
+            .drawCommands(shapes.s01_resized[656]);
+        var instance152 = new Graphics()
+            .drawCommands(shapes.s01_resized[637]);
+        var instance151 = new Graphics()
+            .drawCommands(shapes.s01_resized[618]);
+        var instance150 = new Graphics()
+            .drawCommands(shapes.s01_resized[599]);
+        var instance149 = new Graphics()
+            .drawCommands(shapes.s01_resized[580]);
+        var instance148 = new Graphics()
+            .drawCommands(shapes.s01_resized[559]);
+        var instance147 = new Graphics()
+            .drawCommands(shapes.s01_resized[538]);
+        var instance146 = new Graphics()
+            .drawCommands(shapes.s01_resized[523]);
+        var instance145 = new Graphics()
+            .drawCommands(shapes.s01_resized[508]);
+        var instance144 = new Graphics()
+            .drawCommands(shapes.s01_resized[494]);
+        var instance143 = new Graphics()
+            .drawCommands(shapes.s01_resized[480]);
+        var instance142 = new Graphics()
+            .drawCommands(shapes.s01_resized[467]);
+        var instance141 = new Graphics()
+            .drawCommands(shapes.s01_resized[454]);
+        var instance174 = new Graphics()
+            .drawCommands(shapes.s01_resized[712]);
+        var instance173 = new Graphics()
+            .drawCommands(shapes.s01_resized[704]);
+        var instance172 = new Graphics()
+            .drawCommands(shapes.s01_resized[695]);
+        var instance171 = new Graphics()
+            .drawCommands(shapes.s01_resized[676]);
+        var instance170 = new Graphics()
+            .drawCommands(shapes.s01_resized[657]);
+        var instance169 = new Graphics()
+            .drawCommands(shapes.s01_resized[638]);
+        var instance168 = new Graphics()
+            .drawCommands(shapes.s01_resized[619]);
+        var instance167 = new Graphics()
+            .drawCommands(shapes.s01_resized[600]);
+        var instance166 = new Graphics()
+            .drawCommands(shapes.s01_resized[581]);
+        var instance165 = new Graphics()
+            .drawCommands(shapes.s01_resized[560]);
+        var instance164 = new Graphics()
+            .drawCommands(shapes.s01_resized[539]);
+        var instance163 = new Graphics()
+            .drawCommands(shapes.s01_resized[524]);
+        var instance162 = new Graphics()
+            .drawCommands(shapes.s01_resized[509]);
+        var instance161 = new Graphics()
+            .drawCommands(shapes.s01_resized[495]);
+        var instance160 = new Graphics()
+            .drawCommands(shapes.s01_resized[481]);
+        var instance159 = new Graphics()
+            .drawCommands(shapes.s01_resized[468]);
+        var instance158 = new Graphics()
+            .drawCommands(shapes.s01_resized[455]);
+        var instance191 = new Graphics()
+            .drawCommands(shapes.s01_resized[713]);
+        var instance190 = new Graphics()
+            .drawCommands(shapes.s01_resized[705]);
+        var instance189 = new Graphics()
+            .drawCommands(shapes.s01_resized[696]);
+        var instance188 = new Graphics()
+            .drawCommands(shapes.s01_resized[677]);
+        var instance187 = new Graphics()
+            .drawCommands(shapes.s01_resized[658]);
+        var instance186 = new Graphics()
+            .drawCommands(shapes.s01_resized[639]);
+        var instance185 = new Graphics()
+            .drawCommands(shapes.s01_resized[620]);
+        var instance184 = new Graphics()
+            .drawCommands(shapes.s01_resized[601]);
+        var instance183 = new Graphics()
+            .drawCommands(shapes.s01_resized[582]);
+        var instance182 = new Graphics()
+            .drawCommands(shapes.s01_resized[561]);
+        var instance181 = new Graphics()
+            .drawCommands(shapes.s01_resized[540]);
+        var instance180 = new Graphics()
+            .drawCommands(shapes.s01_resized[525]);
+        var instance179 = new Graphics()
+            .drawCommands(shapes.s01_resized[510]);
+        var instance178 = new Graphics()
+            .drawCommands(shapes.s01_resized[496]);
+        var instance177 = new Graphics()
+            .drawCommands(shapes.s01_resized[482]);
+        var instance176 = new Graphics()
+            .drawCommands(shapes.s01_resized[469]);
+        var instance175 = new Graphics()
+            .drawCommands(shapes.s01_resized[456]);
+        var instance208 = new Graphics()
+            .drawCommands(shapes.s01_resized[714]);
+        var instance207 = new Graphics()
+            .drawCommands(shapes.s01_resized[702]);
+        var instance206 = new Graphics()
+            .drawCommands(shapes.s01_resized[697]);
+        var instance205 = new Graphics()
+            .drawCommands(shapes.s01_resized[678]);
+        var instance204 = new Graphics()
+            .drawCommands(shapes.s01_resized[659]);
+        var instance203 = new Graphics()
+            .drawCommands(shapes.s01_resized[640]);
+        var instance202 = new Graphics()
+            .drawCommands(shapes.s01_resized[621]);
+        var instance201 = new Graphics()
+            .drawCommands(shapes.s01_resized[602]);
+        var instance200 = new Graphics()
+            .drawCommands(shapes.s01_resized[583]);
+        var instance199 = new Graphics()
+            .drawCommands(shapes.s01_resized[562]);
+        var instance198 = new Graphics()
+            .drawCommands(shapes.s01_resized[541]);
+        var instance197 = new Graphics()
+            .drawCommands(shapes.s01_resized[526]);
+        var instance196 = new Graphics()
+            .drawCommands(shapes.s01_resized[511]);
+        var instance195 = new Graphics()
+            .drawCommands(shapes.s01_resized[497]);
+        var instance194 = new Graphics()
+            .drawCommands(shapes.s01_resized[483]);
+        var instance193 = new Graphics()
+            .drawCommands(shapes.s01_resized[470]);
+        var instance192 = new Graphics()
+            .drawCommands(shapes.s01_resized[457]);
+        var instance225 = new Graphics()
+            .drawCommands(shapes.s01_resized[715]);
+        var instance224 = new Graphics()
+            .drawCommands(shapes.s01_resized[707]);
+        var instance223 = new Graphics()
+            .drawCommands(shapes.s01_resized[698]);
+        var instance222 = new Graphics()
+            .drawCommands(shapes.s01_resized[679]);
+        var instance221 = new Graphics()
+            .drawCommands(shapes.s01_resized[660]);
+        var instance220 = new Graphics()
+            .drawCommands(shapes.s01_resized[641]);
+        var instance219 = new Graphics()
+            .drawCommands(shapes.s01_resized[622]);
+        var instance218 = new Graphics()
+            .drawCommands(shapes.s01_resized[603]);
+        var instance217 = new Graphics()
+            .drawCommands(shapes.s01_resized[584]);
+        var instance216 = new Graphics()
+            .drawCommands(shapes.s01_resized[563]);
+        var instance215 = new Graphics()
+            .drawCommands(shapes.s01_resized[542]);
+        var instance214 = new Graphics()
+            .drawCommands(shapes.s01_resized[527]);
+        var instance213 = new Graphics()
+            .drawCommands(shapes.s01_resized[512]);
+        var instance212 = new Graphics()
+            .drawCommands(shapes.s01_resized[498]);
+        var instance211 = new Graphics()
+            .drawCommands(shapes.s01_resized[484]);
+        var instance210 = new Graphics()
+            .drawCommands(shapes.s01_resized[471]);
+        var instance209 = new Graphics()
+            .drawCommands(shapes.s01_resized[458]);
+        var instance242 = new Graphics()
+            .drawCommands(shapes.s01_resized[716]);
+        var instance241 = new Graphics()
+            .drawCommands(shapes.s01_resized[706]);
+        var instance240 = new Graphics()
+            .drawCommands(shapes.s01_resized[699]);
+        var instance239 = new Graphics()
+            .drawCommands(shapes.s01_resized[680]);
+        var instance238 = new Graphics()
+            .drawCommands(shapes.s01_resized[661]);
+        var instance237 = new Graphics()
+            .drawCommands(shapes.s01_resized[642]);
+        var instance236 = new Graphics()
+            .drawCommands(shapes.s01_resized[623]);
+        var instance235 = new Graphics()
+            .drawCommands(shapes.s01_resized[604]);
+        var instance234 = new Graphics()
+            .drawCommands(shapes.s01_resized[585]);
+        var instance233 = new Graphics()
+            .drawCommands(shapes.s01_resized[564]);
+        var instance232 = new Graphics()
+            .drawCommands(shapes.s01_resized[543]);
+        var instance231 = new Graphics()
+            .drawCommands(shapes.s01_resized[528]);
+        var instance230 = new Graphics()
+            .drawCommands(shapes.s01_resized[513]);
+        var instance229 = new Graphics()
+            .drawCommands(shapes.s01_resized[499]);
+        var instance228 = new Graphics()
+            .drawCommands(shapes.s01_resized[485]);
+        var instance227 = new Graphics()
+            .drawCommands(shapes.s01_resized[472]);
+        var instance226 = new Graphics()
+            .drawCommands(shapes.s01_resized[459]);
+        var instance259 = new Graphics()
+            .drawCommands(shapes.s01_resized[717]);
+        var instance258 = new Graphics()
+            .drawCommands(shapes.s01_resized[702]);
+        var instance257 = new Graphics()
+            .drawCommands(shapes.s01_resized[700]);
+        var instance256 = new Graphics()
+            .drawCommands(shapes.s01_resized[681]);
+        var instance255 = new Graphics()
+            .drawCommands(shapes.s01_resized[662]);
+        var instance254 = new Graphics()
+            .drawCommands(shapes.s01_resized[643]);
+        var instance253 = new Graphics()
+            .drawCommands(shapes.s01_resized[624]);
+        var instance252 = new Graphics()
+            .drawCommands(shapes.s01_resized[605]);
+        var instance251 = new Graphics()
+            .drawCommands(shapes.s01_resized[586]);
+        var instance250 = new Graphics()
+            .drawCommands(shapes.s01_resized[565]);
+        var instance249 = new Graphics()
+            .drawCommands(shapes.s01_resized[544]);
+        var instance248 = new Graphics()
+            .drawCommands(shapes.s01_resized[529]);
+        var instance247 = new Graphics()
+            .drawCommands(shapes.s01_resized[514]);
+        var instance246 = new Graphics()
+            .drawCommands(shapes.s01_resized[500]);
+        var instance245 = new Graphics()
+            .drawCommands(shapes.s01_resized[486]);
+        var instance244 = new Graphics()
+            .drawCommands(shapes.s01_resized[473]);
+        var instance243 = new Graphics()
+            .drawCommands(shapes.s01_resized[460]);
+        var instance276 = new Graphics()
+            .drawCommands(shapes.s01_resized[718]);
+        var instance275 = new Graphics()
+            .drawCommands(shapes.s01_resized[703]);
+        var instance274 = new Graphics()
+            .drawCommands(shapes.s01_resized[682]);
+        var instance273 = new Graphics()
+            .drawCommands(shapes.s01_resized[663]);
+        var instance272 = new Graphics()
+            .drawCommands(shapes.s01_resized[644]);
+        var instance271 = new Graphics()
+            .drawCommands(shapes.s01_resized[625]);
+        var instance270 = new Graphics()
+            .drawCommands(shapes.s01_resized[587]);
+        var instance269 = new Graphics()
+            .drawCommands(shapes.s01_resized[606]);
+        var instance268 = new Graphics()
+            .drawCommands(shapes.s01_resized[568]);
+        var instance267 = new Graphics()
+            .drawCommands(shapes.s01_resized[566]);
+        var instance266 = new Graphics()
+            .drawCommands(shapes.s01_resized[545]);
+        var instance265 = new Graphics()
+            .drawCommands(shapes.s01_resized[530]);
+        var instance264 = new Graphics()
+            .drawCommands(shapes.s01_resized[515]);
+        var instance263 = new Graphics()
+            .drawCommands(shapes.s01_resized[501]);
+        var instance262 = new Graphics()
+            .drawCommands(shapes.s01_resized[487]);
+        var instance261 = new Graphics()
+            .drawCommands(shapes.s01_resized[474]);
+        var instance260 = new Graphics()
+            .drawCommands(shapes.s01_resized[461]);
+        var instance293 = new Graphics()
+            .drawCommands(shapes.s01_resized[719]);
+        var instance292 = new Graphics()
+            .drawCommands(shapes.s01_resized[704]);
+        var instance291 = new Graphics()
+            .drawCommands(shapes.s01_resized[683]);
+        var instance290 = new Graphics()
+            .drawCommands(shapes.s01_resized[664]);
+        var instance289 = new Graphics()
+            .drawCommands(shapes.s01_resized[645]);
+        var instance288 = new Graphics()
+            .drawCommands(shapes.s01_resized[626]);
+        var instance287 = new Graphics()
+            .drawCommands(shapes.s01_resized[588]);
+        var instance286 = new Graphics()
+            .drawCommands(shapes.s01_resized[607]);
+        var instance285 = new Graphics()
+            .drawCommands(shapes.s01_resized[569]);
+        var instance284 = new Graphics()
+            .drawCommands(shapes.s01_resized[567]);
+        var instance283 = new Graphics()
+            .drawCommands(shapes.s01_resized[546]);
+        var instance282 = new Graphics()
+            .drawCommands(shapes.s01_resized[531]);
+        var instance281 = new Graphics()
+            .drawCommands(shapes.s01_resized[516]);
+        var instance280 = new Graphics()
+            .drawCommands(shapes.s01_resized[502]);
+        var instance279 = new Graphics()
+            .drawCommands(shapes.s01_resized[488]);
+        var instance278 = new Graphics()
+            .drawCommands(shapes.s01_resized[475]);
+        var instance277 = new Graphics()
+            .drawCommands(shapes.s01_resized[462]);
         this.addTimedChild(instance9, 0, 12)
             .addTimedChild(instance8, 0, 2)
             .addTimedChild(instance7, 0, 2)
@@ -20453,6 +20455,7 @@
     });
 
     lib.s01_resized.assets = {
+        "replace-me-1": "images/spiderman.png",
         "s01_resized": "images/s01_resized.shapes.json"
     };
 })(PIXI, lib = lib || {});
