@@ -26481,7 +26481,7 @@
     });
 
     lib.s01.assets = {
-        "s01": myShapes
+        "s01": "images/s01.shapes.json"
     };
 })(PIXI, lib = lib || {});
 var lib;

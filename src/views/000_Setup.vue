@@ -2,6 +2,7 @@
   <div class="connections">
     <h1>test</h1>
     <!-- <canvas id="stage"></canvas> -->
+    <canvas id="stage" width="550" height="400"></canvas>
   </div>
 </template>
 <script>
@@ -16,9 +17,12 @@
 // import { Application } from 'pixi.js';
 // import { load } from 'pixi-animate';
 
-import { Application } from '../../pixianimate-libs/pixi.js';
-import { load } from '../../pixianimate-libs/pixi-animate.js';
+// import { Application } from '../../pixianimate-libs/pixi.js';
+// import { load } from '../../pixianimate-libs/pixi-animate.js';
 
+import * as PIXI from '../../pixianimate-libs/pixi.js';
+const animate = require('../../pixianimate-libs/pixi-animate.js');
+const s01 = require('../../anims/s01/s01');
 
 
 export default {
@@ -50,13 +54,13 @@ export default {
 
       // const square = require('./square'),
       // circle = require('./circle'),
-      const myShapes = require('../../anims/s01/images/s01.shapes.json');
-      const s01 = require('../../anims/s01/s01');
-      const app = new Application();
+      // const myShapes = require('../../anims/s01/images/s01.shapes.json');
+      // const s01 = require('../../anims/s01/s01');
+      // const app = new Application();
 
-      document.body.appendChild(app.view);
+      // document.body.appendChild(app.view);
 
-      load(s01.stage, app.stage);
+      // load(s01.stage, app.stage);
       // load(circle.stage, app.stage);
 
       // var canvas = document.getElementById('pixi')
@@ -79,14 +83,14 @@ export default {
 
       // app.stage.addChild(graphics)
 
-      // var scene = new PIXI.animate.Scene(960, 540, {
-      //   view: document.getElementById("stage"),
-      //   // backgroundColor: 0xbada55,
-      //   backgroundColor: 0x333333,
-      //   antialias: true
-      // });
+      var scene = new PIXI.animate.Scene(960, 540, {
+        view: document.getElementById("stage"),
+        // backgroundColor: 0xbada55,
+        backgroundColor: 0x333333,
+        antialias: true
+      });
 
-      // scene.load(lib.s01);
+      scene.load(s01);
 
     }
   },
