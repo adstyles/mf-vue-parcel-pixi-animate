@@ -57,11 +57,26 @@ export default {
 
       const s01 = require('../../anims/s01/s01');
       // circle = require('./circle'),
-      const app = new Application();
+      const resizeTo = document.querySelector("#stage");
+      const app = new Application({
+        // width: 1920,
+        // height: 1080
+        // width: 1920,
+        // height: 1080,
+        resizeTo,
+        view: document.getElementById("stage")
+      });
+      // resizeTo.appendChild(app.view);
 
-      document.body.appendChild(app.view);
-
+      // document.body.appendChild(app.view);
       load(s01.stage, app.stage);
+
+      // const resizeTo = document.querySelector("#root");
+      // const app = new PIXI.Application({
+      //   resizeTo,
+      //   resizeThrottle: 100,
+      // });
+      // resizeTo.appendChild(app.view);
       // load(circle.stage, app.stage);
 
       // var scene = new PIXI.animate.Scene(960, 540, {
