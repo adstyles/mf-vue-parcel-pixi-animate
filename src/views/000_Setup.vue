@@ -4,8 +4,8 @@
     <!-- <canvas id="stage"></canvas> -->
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
-      <button v-on:click="pauseScene">pause</button>
-      <button v-on:click="playScene">play</button>
+      <!-- <button v-on:click="pauseScene">pause</button>
+      <button v-on:click="playScene">play</button> -->
     </div>
   </div>
 </template>
@@ -71,7 +71,31 @@ export default {
       // const ref = this.$refs;
       // var ref.stageCanvas = app;
 
-      const s01 = require('../../anims/s01-pngs/s01-resized');
+      // const $s01_settings = {
+      //     "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+      //     "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+      //     "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+      //     "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+      //     "s01": "images/s01.shapes.json"
+      // };
+
+      // window.$s01_settings = $s01_settings;
+
+      const $s02_settings = {
+          "REPLACE_HEADSET": "images/HEADSET.png",
+          "REPLACE_CREATURES": "images/REPLACE_CREATURES.png",
+          "REPLACE_CREATURES_BLINK": "images/REPLACE_CREATURES_BLINK.png",
+          "REPLACE_CAVE_ART": "images/REPLACE_CAVE_ART.png",
+          "s02": "images/s02.shapes.json"
+      };
+
+      window.$s02_settings = $s02_settings;
+
+      // const s01 = require('../../anims/s01-pngs/s01-resized');
+      // const s01 = require('../../anims/s01/s01');
+      const s02 = require('../../anims/s02/s02');
+      // const s03 = require('../../anims/s03/s03');
+      // const s04 = require('../../anims/s04/s04');
       // circle = require('./circle'),
       // const resizeTo = document.querySelector("#stage");
       const app = new Application({
@@ -87,7 +111,41 @@ export default {
       this.$refs.stageCanvas = app;
 
       // document.body.appendChild(app.view);
-      load(s01.stage, app.stage);
+
+
+
+      
+      // load(s01.stage, app.stage);
+      load(s02.stage, app.stage);
+      // load(s03.stage, app.stage);
+      // load(s04.stage, app.stage);
+
+
+
+      // animationFinished = function () {
+      //   console.log("Animation just reached it's end.");
+      //   // movie.gotoAndStop(0);
+      // };
+      // load(s02.stage, app.stage);
+
+
+      // var splashContainer = new PIXI.DisplayObjectContainer();
+      // var instructionsContainer = new PIXI.DisplayObjectContainer();
+      // var room1Container = new PIXI.DisplayObjectContainer();
+      // var room2Container = new PIXI.DisplayObjectContainer();
+      // var room3Container = new PIXI.DisplayObjectContainer();
+      // var gameOverContainer = new PIXI.DisplayObjectContainer();
+      // stage.addChild(splashContainer);
+      // stage.addChild(instructionsContainer);
+      // stage.addChild(room1Container );
+      // stage.addChild(room2Container);
+      // stage.addChild(room3Container);
+      // stage.addChild(gameOverContainer);
+      // instructionsContainer.visible = false;
+      // room1Container.visible = false;
+      // room2Container.visible = false;
+      // room3Container.visible = false;
+      // gameOverContainer.visible = false;
 
       // const resizeTo = document.querySelector("#root");
       // const app = new PIXI.Application({
