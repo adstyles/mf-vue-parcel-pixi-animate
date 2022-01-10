@@ -71,29 +71,29 @@ export default {
       // const ref = this.$refs;
       // var ref.stageCanvas = app;
 
-      // const $s01_settings = {
-      //     "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
-      //     "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
-      //     "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
-      //     "REPLACE_SIGN": "images/REPLACE_SIGN.png",
-      //     "s01": "images/s01.shapes.json"
-      // };
-
-      // window.$s01_settings = $s01_settings;
-
-      const $s02_settings = {
-          "REPLACE_HEADSET": "images/HEADSET.png",
-          "REPLACE_CREATURES": "images/REPLACE_CREATURES.png",
-          "REPLACE_CREATURES_BLINK": "images/REPLACE_CREATURES_BLINK.png",
-          "REPLACE_CAVE_ART": "images/REPLACE_CAVE_ART.png",
-          "s02": "images/s02.shapes.json"
+      const $s01_settings = {
+          "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+          "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+          "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+          "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+          "s01": "images/s01.shapes.json"
       };
 
-      window.$s02_settings = $s02_settings;
+      window.$s01_settings = $s01_settings;
+
+      // const $s02_settings = {
+      //     "REPLACE_HEADSET": "images/HEADSET.png",
+      //     "REPLACE_CREATURES": "images/REPLACE_CREATURES.png",
+      //     "REPLACE_CREATURES_BLINK": "images/REPLACE_CREATURES_BLINK.png",
+      //     "REPLACE_CAVE_ART": "images/REPLACE_CAVE_ART.png",
+      //     "s02": "images/s02.shapes.json"
+      // };
+
+      // window.$s02_settings = $s02_settings;
 
       // const s01 = require('../../anims/s01-pngs/s01-resized');
-      // const s01 = require('../../anims/s01/s01');
-      const s02 = require('../../anims/s02/s02');
+      const s01 = require('../../anims/s01/s01');
+      // const s02 = require('../../anims/s02/s02');
       // const s03 = require('../../anims/s03/s03');
       // const s04 = require('../../anims/s04/s04');
       // circle = require('./circle'),
@@ -115,8 +115,8 @@ export default {
 
 
       
-      // load(s01.stage, app.stage);
-      load(s02.stage, app.stage);
+      load(s01.stage, app.stage);
+      // load(s02.stage, app.stage);
       // load(s03.stage, app.stage);
       // load(s04.stage, app.stage);
 

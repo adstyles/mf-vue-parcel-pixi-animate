@@ -25777,15 +25777,15 @@
                 }
             })
             .addAction(function () {
-                this.emit('s01_started');
+                console.log('s01_started');
             }, 0)
             .addAction(function () {
-                this.emit('s01_end');
+                console.log('s01_end');
             }, 546);
     });
 
     lib.s01.assets = window.$s01_settings;
-    
+
 })(PIXI, lib = lib || {});
 var lib;
 if (typeof module !== 'undefined' && module.exports) {
