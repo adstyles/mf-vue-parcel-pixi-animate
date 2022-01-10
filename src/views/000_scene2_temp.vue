@@ -4,8 +4,8 @@
     <!-- <canvas id="stage"></canvas> -->
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
-     <!--  <button v-on:click="pauseScene">pause</button>
-      <button v-on:click="playScene">play</button> -->
+      <button v-on:click="pauseScene">pause</button>
+      <button v-on:click="playScene">play</button>
     </div>
   </div>
 </template>
@@ -71,6 +71,32 @@ export default {
       // const ref = this.$refs;
       // var ref.stageCanvas = app;
 
+      // const $s02_settings = {
+      //     "REPLACE_HEADSET": this.$store.getters.getCavePainting,
+      //     // "REPLACE_HEADSET": "images/HEADSET.png",
+      //     "REPLACE_CREATURES": "images/REPLACE_CREATURES.png",
+      //     "REPLACE_CREATURES_BLINK": "images/REPLACE_CREATURES_BLINK.png",
+      //     "REPLACE_CAVE_ART": "images/REPLACE_CAVE_ART.png",
+      //     "s02": "images/s02.shapes.json"
+      // };
+
+      // window.$s02_settings = $s02_settings;
+
+      const $all_scenes_settings = {
+        "REPLACE_EMOJI_SAD": "images/HEADSET.png",
+        "REPLACE_EMOJI_HAPPY": "images/HEADSET.png",
+        "REPLACE_SIGN": "images/HEADSET.png",
+        "s01": "images/s01.shapes.json",
+          // "REPLACE_HEADSET": this.$store.getters.getCavePainting,
+        "REPLACE_HEADSET": "images/HEADSET.png",
+        "REPLACE_CREATURES": "images/HEADSET.png",
+        "REPLACE_CREATURES_BLINK": "images/REPLACE_CREATURES_BLINK.png",
+        "REPLACE_CAVE_ART": "images/HEADSET.png",
+        "s02": "images/s02.shapes.json"
+      };
+
+      window.$all_scenes_settings = $all_scenes_settings;
+
       // const s01 = require('../../anims/s01-pngs/s01-resized');
       // const s01 = require('../../anims/s01/s01');
       const s02 = require('../../anims/s02/s02');
@@ -91,6 +117,8 @@ export default {
       this.$refs.stageCanvas = app;
 
       // document.body.appendChild(app.view);
+
+
       
       // load(s01.stage, app.stage);
       load(s02.stage, app.stage);

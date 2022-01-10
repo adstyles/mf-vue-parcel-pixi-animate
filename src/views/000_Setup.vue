@@ -4,8 +4,8 @@
     <!-- <canvas id="stage"></canvas> -->
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
-      <!-- <button v-on:click="pauseScene">pause</button>
-      <button v-on:click="playScene">play</button> -->
+      <button v-on:click="pauseScene">pause</button>
+      <button v-on:click="playScene">play</button>
     </div>
   </div>
 </template>
@@ -27,9 +27,22 @@
 import { Application } from '../../pixianimate-libs/pixi.js';
 import { load } from '../../pixianimate-libs/pixi-animate.js';
 
+// json variables...
+// import { strict as assert } from "../../node_modules/assert";
+// import { jVar } from "../../node_modules/json-variables";
+// import { jVar } from "../../pixianimate-libs/json-variables.esm.js";
+// import { jVar } from "../../pixianimate-libs/json-variables.umd.js";
+// require ("../../pixianimate-libs/json-variables.umd.js");
+// const jv = require("../../pixianimate-libs/json-variables.umd.js");
+
+
+// import { jVar } from '../../node_modules/json-variables';
+
 // import * as PIXI from '../../pixianimate-libs/pixi.js';
 // const animate = require('../../pixianimate-libs/pixi-animate.js');
 // const s01 = require('../../anims/s01/s01');
+
+
 
 
 export default {
@@ -71,12 +84,97 @@ export default {
       // const ref = this.$refs;
       // var ref.stageCanvas = app;
 
+      // %%_dede_skin_%%
+
+      // let s01_shapes_json = '../../images/s01.shapes.variables.json';
+
+      // var res = jVar({
+      //   a: s01_shapes_json,
+      //   dede_skin: "#bada55",
+      // });
+
+      // console.log("res = " + JSON.stringify(res, null, 4));
+
+      // replace in file - to update HEX of skin and hair
+      // const replace = require('../../node_modules/replace-in-file');
+      // const options = {
+      //   files: 'images/s01.shapes.replaced.json',
+      //   from: '#8e4832',
+      //   to: '#bada55',
+      // };
+
+      // try {
+      //   const results = replace.sync(options);
+      //   console.log('Replacement results:', results);
+      // }
+      // catch (error) {
+      //   console.error('Error occurred:', error);
+      // }
+
+      // var fs = require('fs')
+      // fs.readFile('images/s01.shapes.json', 'utf8', function (err,data) {
+        
+      //   if (err) {
+      //     return console.log(err);
+      //   }
+      //   var result = data.replace(/#8e4832/g, '#bada55');
+
+      //   fs.writeFile('images/s01.shapes.replaced.json', result, 'utf8', function (err) {
+      //      if (err) return console.log(err);
+      //   });
+
+      // });
+
+      // dede_skin - "#8e4832"
+      // new_dede_skin = "#bada55";
+
+      // s01_shapes_json = JSON.stringify(s01_shapes_json);
+      // s01_shapes_json = s01_shapes_json.replace('#8e4832', '#bada55'); //convert to string + update hex
+      // console.log({s01_shapes_json});
+      // s01_shapes_json = JSON.parse(s01_shapes_json); //convert back to array
+      // console.log({s01_shapes_json});
+
+      const axios = require('../../node_modules/axios');
+
+      let s01_edited_shapes;
+
+      axios.get('images/s01.shapes.json').then(resp => {
+        console.log(resp.data);
+        s01_edited_shapes = resp.data;
+      });
+
+      // async function makeGetRequest() {
+      //   console.log(makeGetRequest);
+      //   let res = await axios.get('images/s01.shapes.json');
+
+      //   let data = res.data;
+      //   console.log(data);
+      // }
+
+      // makeGetRequest();
+
+      // Make a request for a user with a given ID
+      // axios.get('/user?ID=12345')
+      //   .then(function (response) {
+      //     // handle success
+      //     console.log(response);
+      //   })
+      //   .catch(function (error) {
+      //     // handle error
+      //     console.log(error);
+      //   })
+      //   .then(function () {
+      //     // always executed
+      //   });
+
       const $s01_settings = {
           "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
           "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
           "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
           "REPLACE_SIGN": "images/REPLACE_SIGN.png",
-          "s01": "images/s01.shapes.json"
+          // "s01": "images/s01.shapes.json",
+          "s01": s01_edited_shapes
+          // "s01": "images/s01.shapes.variables.json"
       };
 
       window.$s01_settings = $s01_settings;

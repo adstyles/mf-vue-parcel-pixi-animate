@@ -4,8 +4,8 @@
     <!-- <canvas id="stage"></canvas> -->
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
-     <!--  <button v-on:click="pauseScene">pause</button>
-      <button v-on:click="playScene">play</button> -->
+      <button v-on:click="pauseScene">pause</button>
+      <button v-on:click="playScene">play</button>
     </div>
   </div>
 </template>

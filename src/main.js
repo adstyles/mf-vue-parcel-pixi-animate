@@ -11,6 +11,8 @@ import MicRecorder from '../node_modules/mic-recorder-to-mp3';
 // import Recorder from '../node_modules/recorder-js';
 import howler from '../node_modules/howler';
 
+// import { strict as assert } from "../node_modules/assert";
+// import { jVar } from "../node_modules/json-variables";
 
 // import * as PIXI from '../pixianimate-libs/pixi.js';
 // import * as animate from '../pixianimate-libs/pixi-animate.js';

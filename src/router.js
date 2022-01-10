@@ -35,17 +35,17 @@ export default new Router({
 
     {
       path: '/scene2',
-      name: 'setup',
+      name: 'Scene2',
       component: Scene2,
     },
     {
       path: '/scene3',
-      name: 'setup',
+      name: 'Scene3',
       component: Scene3,
     },
     {
       path: '/scene4',
-      name: 'setup',
+      name: 'Scene4',
       component: Scene4,
     },
 

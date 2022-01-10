@@ -85920,7 +85920,8 @@
             }, 688);
     });
 
-         lib.s02.assets = window.$s02_settings;
+         // lib.s02.assets = window.$s02_settings;
+         lib.s02.assets = window.$all_scenes_settings;
 
     // lib.s02.assets = {
         // "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
