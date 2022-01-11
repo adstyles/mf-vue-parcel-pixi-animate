@@ -25783,8 +25783,10 @@
                 console.log('s01_end');
             }, 546);
     });
-
+    
+    console.log('****-> in s01.JS - window.$s01_settings', window.$s01_settings);
     lib.s01.assets = window.$s01_settings;
+    console.log('****-> in s01.JS - lib.s01.assets', lib.s01.assets);
 
 })(PIXI, lib = lib || {});
 var lib;

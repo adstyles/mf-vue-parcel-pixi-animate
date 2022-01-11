@@ -136,12 +136,123 @@ export default {
 
       const axios = require('../../node_modules/axios');
 
-      let s01_edited_shapes;
+      window.$s01_settings = 'something that will be overwritten';
+      console.log('before, outside axios... window.$s01_settings', window.$s01_settings);
 
-      axios.get('images/s01.shapes.json').then(resp => {
-        console.log(resp.data);
-        s01_edited_shapes = resp.data;
+      // let this.grabbedSettings;
+
+      // axios.get('https://mf.wip/images/s01.shapes.php').then(resp => {
+      //   console.log('resp', resp);
+      //   console.log('resp.data', resp.data);
+      // });
+
+      //////////////////// 
+      // axios attempt 1
+      //////////////////// 
+
+      // axios.get('https://mf.wip/images/s01.shapes.php').then(resp => {
+      axios.get('https://mf.wip/images/s01.shapes.halved.json').then(resp => {
+
+        // console.log('resp.data', resp.data);
+        // resp = JSON.stringify(resp);
+
+        // let data = resp.data;
+        // data = JSON.stringify(data);
+
+        // console.log('data', data);
+        // data = JSON.stringify(data);
+
+        // let reviseddata = data.replace('#8e4832', '#bada55'); //convert to string + update hex
+        // console.log('reviseddata', reviseddata);
+
+        // data = JSON.parse(reviseddata);
+
+        // console.log('new-data', data);
+
+        this.grabbedSettings = resp.data;
+        // this.grabbedSettings = data;
+
+        console.log('this.grabbedSettings', this.grabbedSettings);
+
+
+        // ******** where i got to.
+        // library is expecting a string with a json location "images/s01.shapes.json"
+        // "images/s01.shapes.min.json" is  not working - minify an issue?
+        // https://mf.wip/images/s01.shapes.php is now creating results.json - could that be the answer?
+        // "images/s01.shapes.searchandreplace.json" not working - why???
+
+        let $newStuff = {
+            "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+            "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+            "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+            "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+            // "s01": this.grabbedSettings
+            // "s01": this.grabbedSettings
+            // "s01": [this.grabbedSettings.data]
+            // "s01": "images/s01.shapes.json",
+            "s01": "images/edited/s01.shapes.json",
+            // "s01": "images/s01.shapes.min.json"
+            // "s01": "images/results.json"
+        };
+
+        window.$s01_settings = $newStuff;
+
+        // console.log('inside axios - $s01_settings', $s01_settings);
+        console.log('inside axios - window.$s01_settings', window.$s01_settings);
+
+        const s01 = require('../../anims/s01/s01');
+
+        const app = new Application({
+          width: 1024,
+          height: 576,
+          // width: 1920,
+          // height: 1080,
+          // resizeTo,
+          view: document.getElementById("stage")
+        });
+        // resizeTo.appendChild(app.view);
+
+        this.$refs.stageCanvas = app;
+
+        load(s01.stage, app.stage);
+
       });
+
+      //////////////////// 
+      // axios attempt 1 ends
+      //////////////////// 
+
+      // let $s01_settings = {
+      //     "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+      //     "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+      //     "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+      //     "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+      //     "s01": "images/s01.shapes.json",
+      //     // "s01": "images/s01.shapes.php"
+      //     // "s01": this.grabbedSettings
+      // };
+
+      // window.$s01_settings = $s01_settings;
+
+
+      // console.log('outside axios - $s01_settings', $s01_settings);
+      // console.log('outside axios - this.grabbedSettings', this.grabbedSettings);
+
+      //   const s01 = require('../../anims/s01/s01');
+
+      //   const app = new Application({
+      //     width: 1024,
+      //     height: 576,
+      //     // width: 1920,
+      //     // height: 1080,
+      //     // resizeTo,
+      //     view: document.getElementById("stage")
+      //   });
+      //   // resizeTo.appendChild(app.view);
+
+      //   this.$refs.stageCanvas = app;
+
+      //   load(s01.stage, app.stage);
 
       // async function makeGetRequest() {
       //   console.log(makeGetRequest);
@@ -167,17 +278,17 @@ export default {
       //     // always executed
       //   });
 
-      const $s01_settings = {
-          "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
-          "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
-          "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
-          "REPLACE_SIGN": "images/REPLACE_SIGN.png",
-          // "s01": "images/s01.shapes.json",
-          "s01": s01_edited_shapes
-          // "s01": "images/s01.shapes.variables.json"
-      };
+      // const $s01_settings = {
+      //     "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+      //     "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+      //     "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+      //     "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+      //     // "s01": "images/s01.shapes.json",
+      //     "s01": this.grabbedSettings
+      //     // "s01": "images/s01.shapes.variables.json"
+      // };
 
-      window.$s01_settings = $s01_settings;
+      // window.$s01_settings = $s01_settings;
 
       // const $s02_settings = {
       //     "REPLACE_HEADSET": "images/HEADSET.png",
@@ -190,30 +301,30 @@ export default {
       // window.$s02_settings = $s02_settings;
 
       // const s01 = require('../../anims/s01-pngs/s01-resized');
-      const s01 = require('../../anims/s01/s01');
+      // const s01 = require('../../anims/s01/s01');
       // const s02 = require('../../anims/s02/s02');
       // const s03 = require('../../anims/s03/s03');
       // const s04 = require('../../anims/s04/s04');
       // circle = require('./circle'),
       // const resizeTo = document.querySelector("#stage");
-      const app = new Application({
-        width: 1024,
-        height: 576,
-        // width: 1920,
-        // height: 1080,
-        // resizeTo,
-        view: document.getElementById("stage")
-      });
-      // resizeTo.appendChild(app.view);
+      // const app = new Application({
+      //   width: 1024,
+      //   height: 576,
+      //   // width: 1920,
+      //   // height: 1080,
+      //   // resizeTo,
+      //   view: document.getElementById("stage")
+      // });
+      // // resizeTo.appendChild(app.view);
 
-      this.$refs.stageCanvas = app;
+      // this.$refs.stageCanvas = app;
 
       // document.body.appendChild(app.view);
 
 
 
       
-      load(s01.stage, app.stage);
+      // load(s01.stage, app.stage);
       // load(s02.stage, app.stage);
       // load(s03.stage, app.stage);
       // load(s04.stage, app.stage);
@@ -310,7 +421,9 @@ export default {
   },
 
   data: () => ({
-    stageCanvas: null
+    stageCanvas: null,
+    // grabbedSettings: []
+    grabbedSettings: ['nothing to see here : nothing']
   }),
 
   mounted() {
