@@ -35,28 +35,7 @@ import { load } from '../../pixianimate-libs/pixi-animate.js';
 export default {
   name: 'ConnectionsLayer',
 
-  methods: {
-    // drawPixi() {
-    //   var canvas = document.getElementById('pixi')
-
-    //   const app = new PIXI.Application({
-    //     width: window.innerWidth,
-    //     height: window.innerHeight,
-    //     antialias: true,
-    //     transparent: true,
-    //     view: canvas,
-    //   })
-
-    //   let graphics = new PIXI.Graphics()
-    //   graphics.lineStyle(8, 0x000000)
-
-    //   //start
-    //   graphics.moveTo(300, 250)
-    //   //end
-    //   graphics.lineTo(500, 250)
-
-    //   app.stage.addChild(graphics)
-    // },
+    methods: {
 
     pauseScene() {
       this.$refs.stageCanvas.stop();
@@ -66,124 +45,177 @@ export default {
       this.$refs.stageCanvas.start();
     },
 
+    startScene(scene) {
+
+      // play scene one
+      if (scene == 1) {
+
+        console.log('*-> startScene() called');
+
+        const s01 = require('../../anims/s01/s01');
+
+        const app = new Application({
+          width: 1024,
+          height: 576,
+          // width: 1920,
+          // height: 1080,
+          // resizeTo,
+          view: document.getElementById("stage")
+        });
+        // resizeTo.appendChild(app.view);
+
+        this.$refs.stageCanvas = app;
+
+        load(s01.stage, app.stage);
+
+      } else {
+
+        if (scene == 2) {
+
+          console.log('*-> startScene() called');
+
+          const s02 = require('../../anims/s02/s02');
+
+          const app = new Application({
+            width: 1024,
+            height: 576,
+            // width: 1920,
+            // height: 1080,
+            // resizeTo,
+            view: document.getElementById("stage")
+          });
+          // resizeTo.appendChild(app.view);
+
+          this.$refs.stageCanvas = app;
+
+          load(s02.stage, app.stage);
+
+        }
+
+        if (scene == 3) {
+
+          console.log('*-> startScene() called');
+
+          const s03 = require('../../anims/s03/s03');
+
+          const app = new Application({
+            width: 1024,
+            height: 576,
+            // width: 1920,
+            // height: 1080,
+            // resizeTo,
+            view: document.getElementById("stage")
+          });
+          // resizeTo.appendChild(app.view);
+
+          this.$refs.stageCanvas = app;
+
+          load(s03.stage, app.stage);
+
+        }
+
+        if (scene == 4) {
+
+          console.log('*-> startScene() called');
+
+          const s04 = require('../../anims/s04/s04');
+
+          const app = new Application({
+            width: 1024,
+            height: 576,
+            // width: 1920,
+            // height: 1080,
+            // resizeTo,
+            view: document.getElementById("stage")
+          });
+          // resizeTo.appendChild(app.view);
+
+          this.$refs.stageCanvas = app;
+
+          load(s04.stage, app.stage);
+
+        }
+
+      }
+
+
+
+    },
+
     loadScene() {
 
-      // const ref = this.$refs;
-      // var ref.stageCanvas = app;
+      ////////////////////////////////////////
+      // set global assets for all scenes ////
+      ////////////////////////////////////////
 
-      // const s01 = require('../../anims/s01-pngs/s01-resized');
-      // const s01 = require('../../anims/s01/s01');
-      // const s02 = require('../../anims/s02/s02');
-      // const s03 = require('../../anims/s03/s03');
-      const s04 = require('../../anims/s04/s04');
-      // circle = require('./circle'),
-      // const resizeTo = document.querySelector("#stage");
-      const app = new Application({
-        width: 1024,
-        height: 576,
-        // width: 1920,
-        // height: 1080,
-        // resizeTo,
-        view: document.getElementById("stage")
-      });
-      // resizeTo.appendChild(app.view);
+      let $sceneSettings = {
 
-      this.$refs.stageCanvas = app;
+          // pngs
+          "REPLACE_EMOJI_SAD": "images/pngs/REPLACE_EMOJI_SAD.png",
+          "REPLACE_HEADSET": "images/pngs/REPLACE_HEADSET.png",
+          "REPLACE_EMOJI_HAPPY": "images/pngs/REPLACE_EMOJI_HAPPY.png",
+          "REPLACE_SIGN": "images/pngs/REPLACE_SIGN.png",
+          "REPLACE_CREATURES": "images/pngs/REPLACE_CREATURES.png",
+          "REPLACE_CREATURES_BLINK": "images/pngs/REPLACE_CREATURES_BLINK.png",
+          "REPLACE_CAVE_ART": "images/pngs/REPLACE_CAVE_ART.png",
+          "REPLACE_EI": "images/pngs/REPLACE_EI.png",
+          "EASTER-HEADS": "images/pngs/EASTER-HEADS.jpg",
 
-      // document.body.appendChild(app.view);
-      
-      // load(s01.stage, app.stage);
-      // load(s02.stage, app.stage);
-      // load(s03.stage, app.stage);
-      load(s04.stage, app.stage);
+          // php generated jsons
+          "s01": "images/dist/s01.shapes.json",
+          "s02": "images/dist/s02.shapes.json",
+          "s03": "images/dist/s03.shapes.json",
+          "s04": "images/dist/s04.shapes.json",
+          
+          // "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+          // "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+          // "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+          // "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+          // "s01": "images/dist/s01.shapes.json",
+          
+      };
 
+      // update scene settings global vars
+      window.$sceneSettings = $sceneSettings;
 
+      console.log('window.$sceneSettings', window.$sceneSettings);
 
-      // animationFinished = function () {
-      //   console.log("Animation just reached it's end.");
-      //   // movie.gotoAndStop(0);
-      // };
-      // load(s02.stage, app.stage);
+      // get axios
+      const axios = require('../../node_modules/axios');
 
+      // window vars, so anim compiler can read them // should i use window. ?
+      console.log('before, outside axios... window.$sceneSettings', window.$sceneSettings);
 
-      // var splashContainer = new PIXI.DisplayObjectContainer();
-      // var instructionsContainer = new PIXI.DisplayObjectContainer();
-      // var room1Container = new PIXI.DisplayObjectContainer();
-      // var room2Container = new PIXI.DisplayObjectContainer();
-      // var room3Container = new PIXI.DisplayObjectContainer();
-      // var gameOverContainer = new PIXI.DisplayObjectContainer();
-      // stage.addChild(splashContainer);
-      // stage.addChild(instructionsContainer);
-      // stage.addChild(room1Container );
-      // stage.addChild(room2Container);
-      // stage.addChild(room3Container);
-      // stage.addChild(gameOverContainer);
-      // instructionsContainer.visible = false;
-      // room1Container.visible = false;
-      // room2Container.visible = false;
-      // room3Container.visible = false;
-      // gameOverContainer.visible = false;
+      ////////////////////////////////////////////////////////////////////
+      // axios, hit php and generate shapes.json with colours changed ////
+      ////////////////////////////////////////////////////////////////////
 
-      // const resizeTo = document.querySelector("#root");
-      // const app = new PIXI.Application({
-      //   resizeTo,
-      //   resizeThrottle: 100,
+      // const $s01_generator = 'https://mf.wip/dist/images/shape_generator.php';
+      console.log('window.location.href: ', window.location.href);
+
+      let $staticURL = 'https://a-d.dev';
+      // http://localhost:1234/
+      if (window.location.href.includes("localhost")) {
+        $staticURL = 'https://mf.wip/dist';
+      }
+
+      // const $s01_generator = $staticURL + '/images/shape_generator.php';
+      // console.log({$s01_generator});
+
+      // axios.post($s01_generator, {
+      //     colour: '#bada55',
+      //     filesToChange:[
+      //       's01.shapes.json',
+      //       's02.shapes.json',
+      //       's03.shapes.json',
+      //       's04.shapes.json'
+      //     ],
+      // }).then(resp => {
+        console.log('resp', resp);
+        console.log('resp.data', resp.data);
+        console.log('this.startScene(4) called');
+        this.startScene(4);
       // });
-      // resizeTo.appendChild(app.view);
-      // load(circle.stage, app.stage);
-
-      // var scene = new PIXI.animate.Scene(960, 540, {
-      //   view: document.getElementById("stage"),
-      //   backgroundColor: 0x333333,
-      //   antialias: true
-      // });
-
-      // // console.log(lib.s01);
-
-      // scene.load(s01);
-
-      // scene.load({
-      //   stage: {
-      //     assets: {
-      //       "s01": "../../anims/s01/images/s01.shapes.json"
-      //     }
-      //   }
-      // }, s01);
-
-      // const square = require('./square'),
-      // circle = require('./circle'),
-      // const myShapes = require('../../anims/s01/images/s01.shapes.json');
-      // const s01 = require('../../anims/s01/s01');
-      // const app = new Application();
-
-      // document.body.appendChild(app.view);
-
-      // load(s01.stage, app.stage);
-      // load(circle.stage, app.stage);
-
-      // var canvas = document.getElementById('pixi')
-
-      // const app = new PIXI.Application({
-      //   width: 400,
-      //   height: 400,
-      //   antialias: true,
-      //   backgroundColor: 0x333333,
-      //   view: document.getElementById("stage")
-      // })
-
-      // let graphics = new PIXI.Graphics()
-      // graphics.lineStyle(8, 0x000000)
-
-      // //start
-      // graphics.moveTo(300, 250)
-      // //end
-      // graphics.lineTo(500, 250)
-
-      // app.stage.addChild(graphics)
-
-
-      // scene.load(lib.s01);
-
 
     }
   },

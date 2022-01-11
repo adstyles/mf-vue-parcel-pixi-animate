@@ -65820,6 +65820,7 @@
             }, 0)
             .addAction(function () {
                 /* this.emit('s02_end');*/
+                vm.startScene(3);
             }, 688);
     });
 

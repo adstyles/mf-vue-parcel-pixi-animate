@@ -6,33 +6,37 @@ $data = json_decode($request_body, true);
 print_r($data);
 
 $colour             = "#2778fe"; // defaults
-$fileToChange       = "s01.shapes.json"; // defaults
+$filesToChange      = "s01.shapes.json"; // defaults
 
 $colour = $data["colour"];
-$fileToChange = $data["fileToChange"];
+$filesToChange = $data["filesToChange"];
 
-$jsonFile = file_get_contents($fileToChange);
+foreach($filesToChange as $file) {
 
-$decodedJSON = json_decode($jsonFile, true);
-    
-foreach($decodedJSON as &$values):
-    if(is_array($values)):
-        foreach($values as &$value):
-            if($value === "#8e4832")
-            {
-                $value = $colour;
-            }
-        endforeach;
-    endif;
-endforeach; 
+    $jsonFile = file_get_contents($file);
 
-$newArray = $decodedJSON;
-// $encodedJSON = json_encode($decodedJSON);
+    $decodedJSON = json_decode($jsonFile, true);
+        
+    foreach($decodedJSON as &$values):
+        if(is_array($values)):
+            foreach($values as &$value):
+                if($value === "#8e4832")
+                {
+                    $value = $colour;
+                }
+            endforeach;
+        endif;
+    endforeach; 
 
-// echo $encodedJSON;
+    $newArray = $decodedJSON;
+    // $encodedJSON = json_encode($decodedJSON);
 
-$fp = fopen('dist/'.$fileToChange, 'w');
-fwrite($fp, json_encode($decodedJSON));
-fclose($fp);
+    // echo $encodedJSON;
+
+    $fp = fopen('dist/'.$file, 'w');
+    fwrite($fp, json_encode($decodedJSON));
+    fclose($fp);
+
+}
 
 ?>

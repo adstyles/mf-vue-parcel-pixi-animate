@@ -24914,14 +24914,36 @@
                 }
             })
             .addAction(function () {
-                /* this.emit('s01_started');*/
+                 console.log('s01_started');
             }, 0)
             .addAction(function () {
-                /* this.emit('s01_end');*/
+                 console.log('test firing a function');
+                 // this.startScene(2);
+                 // vm.startScene(2);
+                 const detail = {msgId: "PLAY_SECENE_2"};
+                 const evt = new CustomEvent("WM_MESSAGE", {detail});
+                 console.log('WM_MESSAGE - ', detail);
+            }, 5)
+            .addAction(function () {
+                 console.log('s01_end');
+                 // this.startScene(2);
+                 // vm.startScene(2);
             }, 546);
     });
 
+    // console.log('window.$sceneSettings - ', window.$sceneSettings);
+
     lib.s01.assets = window.$sceneSettings;
+
+    // console.log('lib.s01.assets - ', lib.s01.assets);
+
+    // lib.s01.assets = {
+    //     "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
+    //     "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
+    //     "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
+    //     "REPLACE_SIGN": "images/REPLACE_SIGN.png",
+    //     "s01": "images/dist/s01.shapes.json",
+    // }
 
 })(PIXI, lib = lib || {});
 var lib;
@@ -24933,6 +24955,7 @@ if (typeof module !== 'undefined' && module.exports) {
         height: 576,
         framerate: 12,
         totalFrames: 547,
+        antialias: true,
         library: lib
     };
 }

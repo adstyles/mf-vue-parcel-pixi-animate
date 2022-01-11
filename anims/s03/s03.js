@@ -98789,11 +98789,12 @@
             }, 0)
             .addAction(function () {
                 /* this.emit('s03_end');*/
+                vm.startScene(4);
             }, 926);
     });
 
     lib.s03.assets = window.$sceneSettings;
-    
+
 })(PIXI, lib = lib || {});
 var lib;
 if (typeof module !== 'undefined' && module.exports) {
