@@ -159,8 +159,10 @@ export default {
       const $s01_generator = 'https://mf.wip/dist/images/s01.shapes.php';
 
       axios.post($s01_generator, {
-          // colour: '#bada55',
-          colour: '#35d4c7',
+          colour: '#bada55',
+          // colour: '#35d4c7',
+          // colour: '#66b1d1',
+          // colour: '#FFFFFF',
       }).then(resp => {
       // axios.get('https://mf.wip/images/s01.shapes.halved.json').then(resp => {
 
