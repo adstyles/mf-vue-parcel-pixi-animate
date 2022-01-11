@@ -150,10 +150,22 @@ export default {
       // axios attempt 1
       //////////////////// 
 
-      // axios.get('https://mf.wip/images/s01.shapes.php').then(resp => {
-      axios.get('https://mf.wip/images/s01.shapes.halved.json').then(resp => {
+      // axios.post('inc/vote.php', {
+      //     id: this.selected,
+      // }) .then(function (response) {
+      //     console.log(response);
+      // });
 
-        // console.log('resp.data', resp.data);
+      const $s01_generator = 'https://mf.wip/dist/images/s01.shapes.php';
+
+      axios.post($s01_generator, {
+          // colour: '#bada55',
+          colour: '#35d4c7',
+      }).then(resp => {
+      // axios.get('https://mf.wip/images/s01.shapes.halved.json').then(resp => {
+
+        console.log('resp', resp);
+        console.log('resp.data', resp.data);
         // resp = JSON.stringify(resp);
 
         // let data = resp.data;
@@ -169,10 +181,10 @@ export default {
 
         // console.log('new-data', data);
 
-        this.grabbedSettings = resp.data;
+        // this.grabbedSettings = resp.data;
         // this.grabbedSettings = data;
 
-        console.log('this.grabbedSettings', this.grabbedSettings);
+        // console.log('this.grabbedSettings', this.grabbedSettings);
 
 
         // ******** where i got to.
@@ -190,7 +202,8 @@ export default {
             // "s01": this.grabbedSettings
             // "s01": [this.grabbedSettings.data]
             // "s01": "images/s01.shapes.json",
-            "s01": "images/edited/s01.shapes.json",
+            // "s01": "images/edited/s01.shapes.json",
+            "s01": "images/exported/s01.shapes.json",
             // "s01": "images/s01.shapes.min.json"
             // "s01": "images/results.json"
         };

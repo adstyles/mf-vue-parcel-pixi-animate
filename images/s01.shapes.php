@@ -1,15 +1,32 @@
 <?php
 
-// $colour = $_GET["colour"];
-$colour = "#bada55";
+$request_body = file_get_contents('php://input');
+$data = json_decode($request_body, true);
+
+print_r($data);
+
+$colour = $data["colour"];
+// $colour = "#f14b2e";
+// $colour = "#fee28a";
 // $pathToFile = "https://mf.wip/images/s01.shapes.json";
 // $pathToFile = "s01.shapes.halved.json";
 // $pathToFile = "https://mf.wip/images/s01.shapes.min.json";
 // $pathToFile = "s01.shapes.min.json";
-$pathToFile = "s01.shapes.json";
+$pathToFile = "s01.shapes.original.json";
 $jsonFile = file_get_contents($pathToFile);
 
-// echo 'why not working???';
+// echo 'REQUEST: ';
+// print_r($_REQUEST);
+
+// echo 'GET: ';
+// print_r($_GET);
+
+// echo '_POST: ';
+// print_r($_POST);
+
+
+// echo 'testing 123';
+// echo '$colour: ', $colour;
 // echo $jsonFile;
 
 $decodedJSON = json_decode($jsonFile, true);
@@ -30,7 +47,7 @@ $newArray = $decodedJSON;
 
 // echo $encodedJSON;
 
-$fp = fopen('results.json', 'w');
+$fp = fopen('exported/s01.shapes.json', 'w');
 fwrite($fp, json_encode($decodedJSON));
 fclose($fp);
 
