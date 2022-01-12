@@ -4,10 +4,10 @@
     <!-- <p>There’s magical sculptures in your film! Let’s make them super fun, drag the fancy dress items onto the sculptures until they look super silly!</p> -->
     <!-- <router-link to="/playanimation" class="button router-link">When you're ready, click here to continue!</router-link> -->
 
-    <input class="big-input" placeholder="add your stage name here" v-model="message"> <!-- v-model="stageName"  -->
+    <input class="big-input" placeholder="add your stage name here" v-model="message"> <!-- v-model="KidName"  -->
 
 <!--     <h3>Your stage name is:</h3>
-    <h1 class="name-preview">{{ displayStageName }}</h1> -->
+    <h1 class="name-preview">{{ displayKidName }}</h1> -->
 
     <div class="next-cta">
       <router-link to="/playanimation" class="button button__disabled button-round router-link">
@@ -27,13 +27,13 @@
 
     methods: {
 
-      // getStageName: function(event) {
+      // getKidName: function(event) {
       //   var val = event.target.inputValue;
       //   console.log(val);
       // }
 
-      // setStageName: (event) => {
-      //   store.commit("setStageName", event.target.value);
+      // setKidName: (event) => {
+      //   store.commit("setKidName", event.target.value);
       // }
     },
 
@@ -44,26 +44,26 @@
     computed: {
       message: {
         get () {
-          return this.$store.getters.getStageName
+          return this.$store.getters.getKidName
         },
         set (value) {
-          this.$store.commit('setStageName', value)
+          this.$store.commit('setKidName', value)
         }
       }
     },
 
     // data: ()=> ({
-    //   displayStageName: this.$store.getters.getStageName,
+    //   displayKidName: this.$store.getters.getKidName,
     // }),
 
     // mounted(){
-    //   this.displayStageName = this.$store.getters.getStageName;
+    //   this.displayKidName = this.$store.getters.getKidName;
     // }
 
     // computed() {
-    //   mestageNamessage: {
+    //   meKidNamessage: {
     //     get () {
-    //       return this.$store.stageName
+    //       return this.$store.KidName
     //     },
     //     set (value) {
     //       this.$store.commit('updateMessage', value)
@@ -83,7 +83,7 @@
 
     // methods: {
     //   updateMessage (e) {
-    //     this.$store.commit('setStageName', e.target.value)
+    //     this.$store.commit('setKidName', e.target.value)
     //   }
     // }
 
@@ -91,11 +91,11 @@
 
 
     // data: ()=> ({
-    //   stageName: '',
+    //   KidName: '',
     // }),
 
     // mounted(){
-    //   this.stageName = this.$store.getters.getStageName;
+    //   this.KidName = this.$store.getters.getKidName;
     // }
 
   };

@@ -11,6 +11,14 @@ import MicRecorder from '../node_modules/mic-recorder-to-mp3';
 // import Recorder from '../node_modules/recorder-js';
 import howler from '../node_modules/howler';
 
+// event bus
+export const EventBus = new Vue();
+
+// import myS01 from '../anims/s01/s01';
+// import s02 from '../anims/s02/s02';
+// import s03 from '../anims/s03/s03';
+// import s04 from '../anims/s04/s04';
+
 // import { strict as assert } from "../node_modules/assert";
 // import { jVar } from "../node_modules/json-variables";
 
@@ -83,9 +91,6 @@ var vm = new Vue({
         default:
           // this.playTaskTrack(1);
       }
-
-
-
       // this.sound.stop();
     }
   },

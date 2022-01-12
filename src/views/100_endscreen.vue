@@ -4,7 +4,7 @@
 
     <h1>The End</h1>
 
-    <h1 class="credits">This film was directed by <span class="name-preview">{{ storedStageName }}</h1>
+    <h1 class="credits">This film was directed by <span class="name-preview">{{ storedKidName }}</h1>
 
     <h3>We hope you enjoyed the film!</h3>
 
@@ -26,10 +26,10 @@
     name: 'endscreen',
 
     computed: {
-      storedStageName() {
-        var name = this.$store.state.stageName;
+      storedKidName() {
+        var name = this.$store.state.KidName;
         if (name != null) {
-          return this.$store.state.stageName;
+          return this.$store.state.KidName;
         } else {
           return 'You!';
         }

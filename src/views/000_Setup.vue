@@ -1,269 +1,176 @@
 <template>
-  <div class="connections">
-    <h1>test</h1>
-    <!-- <canvas id="stage"></canvas> -->
-    <canvas id="stage" width="1024" height="576"></canvas>
-    <div class="dev-tools">
-      <button v-on:click="pauseScene">pause</button>
-      <button v-on:click="playScene">play</button>
+  <div class="home">
+    <!-- <debug> -->
+    <h1>Magic Fox Setup</h1>
+
+    <p>Make sure your sound is on! - Test it here: ..........</p>
+
+    <div class="mic-check" :class="micAccess">
+      
+      <div class="mic-test"> 
+        <p>Before we get started, we need to make sure the microphone works!
+        Click the blue button to see if the microphone is working.</p>
+
+        <button class="button__blue" v-on:click="requestsAccessToMic">Request Access to Mic</button>
+      </div>
+
+      <div class="mic-prompt"> 
+        <p>If this is the first time, you might need to click 'Allow' in the little box in the corner</p>    
+        <img src="../assets/mic-prompt.png" alt="Magic Fox" class="" width="400">
+      </div>
+
+      <div class="mic-allowed">    
+        <p>Great! Click the red button below to get started!</p>
+
+        <router-link to="/home" class="button router-link">Let's get started!</router-link>
+
+      </div>
+
+      <div class="mic-blocked">    
+        <p>It looks as if the microphone is blocked. Please allow the microphone by clicking the icon in the top:</p>
+        <img src="../assets/mic-blocked.png" alt="Magic Fox" class="" width="400">
+        <p>Once you've done that, try the button again</p>
+        <button class="button__blue" v-on:click="requestsAccessToMic">Test Mic Access</button>
+      </div>
+
+      <!-- <h3>{{micAccess}}</h3> -->
+
+      <!-- <p>Please click on the red button when the children are ready to start</p> -->
+
     </div>
+    <!-- <router-link to="/home" class="button router-link">Let's get started!</router-link> -->
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <canvasTest msg="Magic Fox Prototype v0.2"> -->
   </div>
 </template>
+
 <script>
-// import * as PIXI from 'pixi.js'
-// import * as PIXI from '../../pixianimate-libs/pixi.js';
-// import * as pixi-animate from '../../pixianimate-libs/pixi-animate.js';
-// import lib from '../../anims/s01/s01.js';
-// lib.s01.assets = {
-//   "s01": "../../anims/s01/images/s01.shapes.txt"
-// };
+  // import HelloWorld from '../components/HelloWorld.vue';
+  // import canvasTest from '../components/canvas-test.vue';
+  // import debug from '../components/debug.vue';
 
-// import { Application } from 'pixi.js';
-// import { load } from 'pixi-animate';
-
-// import { Application } from '../../pixianimate-libs/pixi.js';
-// import { load } from '../../pixianimate-libs/pixi-animate.js';
-
-import { Application } from '../../pixianimate-libs/pixi.js';
-import { load } from '../../pixianimate-libs/pixi-animate.js';
-
-export default {
-  name: 'ConnectionsLayer',
-
-  methods: {
-
-    pauseScene() {
-      this.$refs.stageCanvas.stop();
-    },
-
-    playScene() {
-      this.$refs.stageCanvas.start();
-    },
-
-    /// ******************
-    /// GOT HERE.
-    // NEED LISTENER TO HERE CALLS FROM s01.js
-    /// ******************
-
-    listenForSceneCalls() {
-
-      console.log('*** WM_MESSAGE -- listener');
-      window.addEventListener("WM_MESSAGE", messageHandler);
-
-      function messageHandler(e)
-      {
-        console.log('messageHandler');
-        console.log(e.detail);
-        console.log(e.detail.msgId);
-        if (e.detail.msgId == "PLAY_SECENE_2")
-        {
-          this.startScene(2);
-        }
+  export default {
+    name: 'home',
+    data: function() {
+       return  {
+        micAccess: 'mic--not-checked'
       }
-
     },
+    methods: {
 
-    startScene(scene) {
+      requestsAccessToMic: function(e) {
 
-      // play scene one
-      if (scene == 1) {
+        // navigator.mediaDevices.getUserMedia({video: false, audio: true});
+        // let micAccess = this.micAccess;
+        // let micAccess = this.$refs.micAccess;
+        this.micAccess = 'mic--testing';
 
-        console.log('*-> startScene() called');
+        // The view model.
+        var vm = this;
 
-        const s01 = require('../../anims/s01/s01');
-
-        const app = new Application({
-          width: 1024,
-          height: 576,
-          // width: 1920,
-          // height: 1080,
-          // resizeTo,
-          view: document.getElementById("stage")
+        navigator.mediaDevices.getUserMedia({ audio: true, video: false})
+        .then(function (stream) {
+          if (stream.getAudioTracks().length > 0){
+            //code for when audio of the devices is not available
+            vm.micAccess = 'mic--active';
+          } else {
+            vm.micAccess = 'mic--blocked';
+          }
+        })
+        .catch(function (error) { 
+          // code for when there is an error
+          // vm.micAccess = '';
+          vm.micAccess = 'mic--blocked';
         });
-        // resizeTo.appendChild(app.view);
 
-        this.$refs.stageCanvas = app;
+        // navigator.mediaDevices.getUserMedia({video: false, audio: true}).then( stream => {
+        //   // window.localStream = stream; // A
+        //   // window.localAudio.srcObject = stream; // B
+        //   // window.localAudio.autoplay = true; // C
+        // }).catch( err => {
+        //   console.log("u got an error:" + err)
+        // });
 
-        // listen for scene calls.....
-        this.listenForSceneCalls();
+      },
 
-        load(s01.stage, app.stage);
+      beforeUpdate() {
+        // if Creature is in store, update the class
+        // const storedCreature = this.$store.getters.getCurrentCreature;
+        // console.log('storedCreature ' + storedCreature);
+        // const item = document.querySelector('.creature[data-creature="'+storedCreature+'"]');
+        // console.log(item);
+        // item.classList.add('is-active');
 
-      } else {
+      },
 
-        if (scene == 2) {
+      // data: ()=> ({
+      //   micAccess: 'not checked',
+      // }),
 
-          console.log('*-> startScene() called');
+      // data () {
+      //   return {
+      //     micAccess: 'not checked'
+      //   }
+      // },
 
-          const s02 = require('../../anims/s02/s02');
-
-          // const app = new Application({
-          //   width: 1024,
-          //   height: 576,
-          //   // width: 1920,
-          //   // height: 1080,
-          //   // resizeTo,
-          //   view: document.getElementById("stage")
-          // });
-          // // resizeTo.appendChild(app.view);
-
-          // destroy before loading next scene
-          app.stage.destroy(); // free the meshes! For the resistance! You dont need this if you dont have meshes/ropes.
-          app.renderer.destroy(); // free renderer, all plugins, all shaders, all textures that are loaded in GPU
-
-          this.$refs.stageCanvas = app;
-
-          load(s02.stage, app.stage);
-
-        }
-
-        if (scene == 3) {
-
-          console.log('*-> startScene() called');
-
-          const s03 = require('../../anims/s03/s03');
-
-          // const app = new Application({
-          //   width: 1024,
-          //   height: 576,
-          //   // width: 1920,
-          //   // height: 1080,
-          //   // resizeTo,
-          //   view: document.getElementById("stage")
-          // });
-          // // resizeTo.appendChild(app.view);
-
-          this.$refs.stageCanvas = app;
-
-          load(s03.stage, app.stage);
-
-        }
-
-        if (scene == 4) {
-
-          console.log('*-> startScene() called');
-
-          const s04 = require('../../anims/s04/s04');
-
-          // const app = new Application({
-          //   width: 1024,
-          //   height: 576,
-          //   // width: 1920,
-          //   // height: 1080,
-          //   // resizeTo,
-          //   view: document.getElementById("stage")
-          // });
-          // // resizeTo.appendChild(app.view);
-
-          this.$refs.stageCanvas = app;
-
-          load(s04.stage, app.stage);
-
-        }
-
-      }
-
-
-
-    },
-
-    loadScene() {
-
-      ////////////////////////////////////////
-      // set global assets for all scenes ////
-      ////////////////////////////////////////
-
-      let $sceneSettings = {
-
-          // pngs
-          "REPLACE_EMOJI_SAD": "images/pngs/REPLACE_EMOJI_SAD.png",
-          "REPLACE_HEADSET": "images/pngs/REPLACE_HEADSET.png",
-          "REPLACE_EMOJI_HAPPY": "images/pngs/REPLACE_EMOJI_HAPPY.png",
-          "REPLACE_SIGN": "images/pngs/REPLACE_SIGN.png",
-          "REPLACE_CREATURES": "images/pngs/REPLACE_CREATURES.png",
-          "REPLACE_CREATURES_BLINK": "images/pngs/REPLACE_CREATURES_BLINK.png",
-          "REPLACE_CAVE_ART": "images/pngs/REPLACE_CAVE_ART.png",
-          "REPLACE_EI": "images/pngs/REPLACE_EI.png",
-          "EASTER-HEADS": "images/pngs/EASTER-HEADS.jpg",
-
-          // php generated jsons
-          "s01": "images/dist/s01.shapes.json",
-          "s02": "images/dist/s02.shapes.json",
-          "s03": "images/dist/s03.shapes.json",
-          "s04": "images/dist/s04.shapes.json",
-          
-          // "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
-          // "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
-          // "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
-          // "REPLACE_SIGN": "images/REPLACE_SIGN.png",
-          // "s01": "images/dist/s01.shapes.json",
-          
-      };
-
-      // update scene settings global vars
-      window.$sceneSettings = $sceneSettings;
-
-      console.log('window.$sceneSettings', window.$sceneSettings);
-
-      // get axios
-      const axios = require('../../node_modules/axios');
-
-      // window vars, so anim compiler can read them // should i use window. ?
-      console.log('before, outside axios... window.$sceneSettings', window.$sceneSettings);
-
-      ////////////////////////////////////////////////////////////////////
-      // axios, hit php and generate shapes.json with colours changed ////
-      ////////////////////////////////////////////////////////////////////
-
-      // const $s01_generator = 'https://mf.wip/dist/images/shape_generator.php';
-      console.log('window.location.href: ', window.location.href);
-
-      let $staticURL = 'https://a-d.dev';
-      // http://localhost:1234/
-      if (window.location.href.includes("localhost")) {
-        $staticURL = 'https://mf.wip/dist';
-      }
-
-      const $s01_generator = $staticURL + '/images/shape_generator.php';
-      console.log({$s01_generator});
-
-      axios.post($s01_generator, {
-          colour: '#bada55',
-          filesToChange:[
-            's01.shapes.json',
-            's02.shapes.json',
-            's03.shapes.json',
-            's04.shapes.json'
-          ],
-      }).then(resp => {
-        console.log('resp', resp);
-        console.log('resp.data', resp.data);
-        console.log('this.startScene(1) called');
-
-        this.startScene(1);
-
-      });
+      // mounted(){
+      //   this.micAccess = 'not tested';
+      // }
 
     }
-  },
+    // name: 'home',
+    // components: {
+    //   canvasTest,
+    //   // debug,
+    // },
+  };      
 
-  data: () => ({
-    stageCanvas: null,
-    // grabbedSettings: []
-    // grabbedSettings: null
-  }),
-
-  mounted() {
-    this.loadScene();
-  },
-}
 </script>
-<style lang="scss" scoped>
-#stage {
-  outline: 3px solid teal;
-}
 
-.dev-tools {
-  display: flex;
-}
+<style lang="scss" scoped>
+  .mf {
+    width:  80%;
+    max-width: 600px;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  .mic-check {
+
+    > div {
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      outline: 1px solid black;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      animation: fadein 0.2s;
+      > * {
+        max-width: 600px;
+      }
+    }
+    button {
+      margin: 2rem 0;
+    }
+  }
+  .mic-test {     display: none; }
+  .mic-prompt {   display: none; }
+  .mic-allowed {  display: none; }
+  .mic-blocked {  display: none; }
+
+  .mic-check {
+
+    &.mic--not-checked { .mic-test {    display: flex; } }
+    &.mic--testing { .mic-prompt {      display: flex; } }
+    &.mic--active { .mic-allowed {      display: flex; padding-bottom: 4rem; p {padding-bottom: 2rem;} } }
+    &.mic--blocked { .mic-blocked {     display: flex; } }
+  }
 </style>

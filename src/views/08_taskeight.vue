@@ -33,9 +33,9 @@ export default {
     saveCanvas: function() {
 
       let offsetTop = 0;
-      let offsetLeft = 300;
-      let desiredWidth = 700;
-      let desiredHeight = 500;
+      let offsetLeft = 0;
+      let desiredWidth = 960;
+      let desiredHeight = 540;
 
       // create a canvas
       var c = document.createElement('canvas');

@@ -2,22 +2,44 @@
   <div id="debug" class="debug">
     <ul>
       <li><p>Dede Skin is: {{ storedDedeSkin }}</p></li>
+      <li><p>Dede Hair is: {{ storedDedeHair }}</p></li>
       <li><p>Arlo Skin is: {{ storedArloSkin }}</p></li>
-      <li><p>Creature is: {{ storedCreature }}</p></li>
-      <li><p>Emoji Image is: {{ storedEmojiImage }}</p></li>
-      <li><img v-bind:src="storedEmojiImage" /> </li>
-      <li><p>happyIcon is: {{ storedhappyIcon }}</p></li>
-      <li><p>Note is: {{ storedNote }}</p></li>
-      <li><p>Cave Painting is: {{ storedCavePainting }}</p></li>
-      <li><img v-bind:src="storedCavePainting" /> </li>
+      <li><p>Arlo Hair is: {{ storedArloHair }}</p></li>
+      <li>
+        <p>Creature is: {{ storedCreature }}</p>
+        <img v-bind:src="'images/pngs/creatures/creatures_'+storedCreature+'.png'" />
+        <img v-bind:src="'images/pngs/creatures/creatures_'+storedCreature+'_blink.png'" />
+      </li>
+      <li>
+        <p>Emoji Image is: {{ storedEmojiImage }}</p>
+        <img v-bind:src="storedEmojiImage" />
+      </li>
+      <li>
+        <p>happyIcon is: {{ storedhappyIcon }}</p>
+        <img v-bind:src="storedhappyIcon" />
+      </li>
+      <li>
+        <p>Headset is: {{ storedHeadset }}</p>
+        <img v-bind:src="storedHeadset" />
+      </li>
+      <li>
+        <p>Note is: {{ storedNote }}</p>
+        <img v-bind:src="storedNote" />
+      </li>
+      <li>
+        <p>Cave Painting is: {{ storedCavePainting }}</p>
+        <img v-bind:src="storedCavePainting" />
+      </li>
       <li><p>Mammoth Angry:</p>{{ storedMammothAngry }}</li>
       <li><a v-on:click="playAngryMammothSFX">Play Angry</a></li>
       <li><p>Mammoth Embarrassed:</p>{{ storedMammothEmbarrassed }}</li>
       <li><a v-on:click="playEmbarrassedMammothSFX">Play Embarrassed</a></li>
       <li><p>Mammoth Laugh:</p>{{ storedMammothLaugh }}</li>
       <li><a v-on:click="playLaughMammothSFX">Play Laugh</a></li>
-      <li><p>Easter Island is: {{ storedEasterImage }}</p></li>
-      <li><img v-bind:src="storedEasterImage" /> </li>
+      <li>
+        <p>Easter Island is: {{ storedEasterImage }}</p>
+        <img v-bind:src="storedEasterImage" />
+      </li>
       <li><p>Stage Name is: {{ storedStageName }}</p></li>
     </ul>
   </div>
@@ -68,8 +90,14 @@
       storedDedeSkin() {
         return this.$store.state.skin_dede;
       },
+      storedDedeHair() {
+        return this.$store.state.hair_dede;
+      },
       storedArloSkin() {
         return this.$store.state.skin_arlo;
+      },
+      storedArloHair() {
+        return this.$store.state.hair_arlo;
       },
       storedCreature() {
         return this.$store.state.creature;
@@ -79,6 +107,9 @@
       },
       storedhappyIcon() {
         return this.$store.state.happyIcon;
+      },
+      storedHeadset() {
+        return this.$store.state.headset;
       },
       storedNote() {
         return this.$store.state.note;

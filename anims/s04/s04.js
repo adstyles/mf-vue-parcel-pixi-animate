@@ -1,3 +1,5 @@
+import { EventBus } from '../../src/main';
+
 (function (PIXI, lib) {
 
     var MovieClip = PIXI.animate.MovieClip;
@@ -14667,6 +14669,7 @@
             }, 0)
             .addAction(function () {
                 /* this.emit('s04_end');*/
+                EventBus.$emit('endOfAnimation');
             }, 274);
     });
 

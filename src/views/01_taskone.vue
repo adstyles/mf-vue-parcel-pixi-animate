@@ -2333,6 +2333,8 @@ export default {
       // save to store...
       if (aspect == 'skin') {
 
+        
+
         if (character == 'dede') {
 
           // update Store
@@ -2356,6 +2358,8 @@ export default {
         }
 
       } else if (aspect == 'hair') {
+
+        
 
         if (character == 'dede') {
 
@@ -2398,6 +2402,108 @@ export default {
       // this.skin_dede = this.$store.getters.getCurrentDedeSkin; 
     },
 
+    updateJsonWithNewColours : function() {
+
+      console.log({colour});
+
+      $newSkinDede = this.$store.getters.getCurrentDedeSkin;
+
+      $newSkinArlo = this.$store.getters.getCurrentArloSkin;
+
+      $newHairDede = this.$store.getters.getCurrentDedeHair;
+
+      $newHairDede = this.$store.getters.getCurrentArloHair;
+
+      if ($newSkinDede == 'skin_l') {     $newSkinDede = '#fadcbc'; }
+      if ($newSkinDede == 'skin_m-l') {   $newSkinDede = '#e0bb95'; }
+      if ($newSkinDede == 'skin_m') {     $newSkinDede = '#bf8f68'; }
+      if ($newSkinDede == 'skin_m-d') {   $newSkinDede = '#9b643d'; }
+      if ($newSkinDede == 'skin_d') {     $newSkinDede = '#594539'; }
+
+      if ($newSkinArlo == 'skin_l') {     $newSkinArlo = '#fadcbd'; }
+      if ($newSkinArlo == 'skin_m-l') {   $newSkinArlo = '#e0bb96'; }
+      if ($newSkinArlo == 'skin_m') {     $newSkinArlo = '#bf8f69'; }
+      if ($newSkinArlo == 'skin_m-d') {   $newSkinArlo = '#9b643e'; }
+      if ($newSkinArlo == 'skin_d') {     $newSkinArlo = '#594538'; }
+
+      if ($newHairDede == 'hair_l') {     $newHairDede = '#fadcbc'; }
+      if ($newHairDede == 'hair_m-l') {   $newHairDede = '#e0bb95'; }
+      if ($newHairDede == 'hair_m') {     $newHairDede = '#bf8f68'; }
+      if ($newHairDede == 'hair_m-d') {   $newHairDede = '#9b643d'; }
+      if ($newHairDede == 'hair_d') {     $newHairDede = '#594539'; }
+
+      if ($newHairArlo == 'hair_l') {     $newHairArlo = '#fadcbd'; }
+      if ($newHairArlo == 'hair_m-l') {   $newHairArlo = '#e0bb96'; }
+      if ($newHairArlo == 'hair_m') {     $newHairArlo = '#bf8f69'; }
+      if ($newHairArlo == 'hair_m-d') {   $newHairArlo = '#9b643e'; }
+      if ($newHairArlo == 'hair_d') {     $newHairArlo = '#594538'; }
+
+
+      // vars
+      // original HEX values
+      $dede_skin_original = '#2778fe';
+      $arlo_skin_original = '#eeb09c';
+      $dede_hair_original = '#000001';
+      $arlo_hair_original = '#000002';
+
+      // new Hex Values
+      $dede_skin_new = $newSkinDede;
+      $arlo_skin_new = $newSkinArlo;
+      $dede_hair_new = $newHairDede;
+      $arlo_hair_new = $newHairDede;
+
+      // get axios
+      const axios = require('../../node_modules/axios');
+
+      // window vars, so anim compiler can read them // should i use window. ?
+      console.log('before, outside axios... window.$sceneSettings', window.$sceneSettings);
+
+      ////////////////////////////////////////////////////////////////////
+      // axios, hit php and generate shapes.json with colours changed ////
+      ////////////////////////////////////////////////////////////////////
+
+      // const $s01_generator = 'https://mf.wip/dist/images/shape_generator.php';
+      console.log('window.location.href: ', window.location.href);
+
+      let $staticURL = 'https://a-d.dev';
+      // http://localhost:1234/
+      if (window.location.href.includes("localhost")) {
+        $staticURL = 'https://mf.wip/dist';
+      }
+
+      const $s01_generator = $staticURL + '/images/shape_generator.php';
+      console.log({$s01_generator});
+
+      axios.post($s01_generator, {
+
+          // colour: '#bada55',
+          $dede_skin_original: $dede_skin_original,
+          $arlo_skin_original: $arlo_skin_original,
+          $dede_hair_original: $dede_hair_original,
+          $arlo_hair_original: $arlo_hair_original,
+
+          $dede_skin_new: $newSkinDede,
+          $arlo_skin_new: $newSkinArlo,
+          $dede_hair_new: $newHairDede,
+          $arlo_hair_new: $newHairDede,
+
+          filesToChange:[
+            's01.shapes.json',
+            's02.shapes.json',
+            's03.shapes.json',
+            's04.shapes.json'
+          ],
+
+      }).then(resp => {
+        console.log('resp', resp);
+        console.log('resp.data', resp.data);
+        console.log('this.startScene(1) called');
+
+        this.startScene(1);
+
+      });
+
+    },
 
     // updateDedeSkin: function(event){
     //   // alert('Hello ' + this.skin + '!')

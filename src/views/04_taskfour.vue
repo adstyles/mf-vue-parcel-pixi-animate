@@ -1,20 +1,9 @@
 <template>
   <div class="taskfour">
+
     <h1>Task 4 – Design your own VR Headset</h1>
-    <!-- <p>Look at all these cool bits and bobs! Click on each section to make an awesome time travel headset for your story!</p> -->
+
     <div>
-      <!-- <h1>Design VR Headset</h1> -->
-      <!-- <div class="select-vrPart"> -->
-      <!-- <ul class="vrParts"> -->
-      <!-- <li><button href="#" class="vrPart" v-on:click="addPart" data-vrPart="visor">visor</button></li> -->
-      <!-- <li><button href="#" class="vrPart" v-on:click="choosevrPart" data-vrPart="lights">lights</button></li>
-          <li><button href="#" class="vrPart" v-on:click="choosevrPart" data-vrPart="blam">blam</button></li>
-          <li><button href="#" class="vrPart" v-on:click="choosevrPart" data-vrPart="something">something</button></li> -->
-      <!-- </ul> -->
-      <!-- <ul> -->
-      <!-- <li><button href="#" class="vrPart" v-on:click="removePart" data-vrPart="visor">remove visor</button></li> -->
-      <!-- </ul> -->
-      <!-- </div> -->
       <div class="headset-constructor">
         <ul>
           <li><button href="#" class="vrPart button-round button-round__small button__blue arrow-left" data-section="top" data-direction="prev" v-on:click="swapPart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -36,14 +25,10 @@
       </div>
     </div>
     <button href="#" v-on:click="saveCanvas">SAVE</button>
-    <!-- <textarea name="backup" id="backup" cols="60" rows="10"></textarea> -->
     <img v-bind:src="savedCanvas" />
-    <!-- <h1>You've selected the: {{vrPart}}</h1> -->
-    <!-- <router-link to="/taskfive" class="button router-link">When you're ready, click here to continue!</router-link> -->
     <div class="next-cta">
       <p>When you're ready, click the red button to continue</p>
       <router-link to="/taskfive" class="button button__disabled button-round router-link">
-        <!-- <img src="../assets/iconmonstr-arrow-1.svg" /> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M13 7v-6l11 11-11 11v-6h-13v-10z" /></svg>
       </router-link>
@@ -210,15 +195,17 @@ export default {
     // },
 
     saveCanvas: function() {
-      const emojiCanvas = this.$refs.myCanvas.toDataURL({
+      const headsetCaptureCanvas = this.$refs.myCanvas.toDataURL({
         format: 'png',
         left: 300,
         top: 250,
         width: 200,
         height: 150
       });
-      // const backup = document.getElementById('backup').value = emojiCanvas;
-      this.savedCanvas = emojiCanvas;
+      // const backup = document.getElementById('backup').value = headsetCaptureCanvas;
+      this.savedCanvas = headsetCaptureCanvas;
+      // save to store..
+      this.$store.commit('setHeadset', headsetCaptureCanvas);
     }
   },
 

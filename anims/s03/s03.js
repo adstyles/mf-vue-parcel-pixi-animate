@@ -1,3 +1,5 @@
+import { EventBus } from '../../src/main';
+
 (function (PIXI, lib) {
 
     var MovieClip = PIXI.animate.MovieClip;
@@ -98789,7 +98791,9 @@
             }, 0)
             .addAction(function () {
                 /* this.emit('s03_end');*/
-                vm.startScene(4);
+                // vm.startScene(4);
+                console.log('event Bus changeScene');
+                EventBus.$emit('changeScene', 4);
             }, 926);
     });
 

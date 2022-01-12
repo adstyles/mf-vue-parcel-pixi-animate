@@ -2,11 +2,6 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Setup from './views/000_Setup.vue';
 
-// temp add in scenes
-import Scene2 from './views/000_scene2_temp.vue';
-import Scene3 from './views/000_scene3_temp.vue';
-import Scene4 from './views/000_scene4_temp.vue';
-
 import Home from './views/001_Home.vue';
 import TaskOne from './views/01_taskone.vue';
 import TaskTwo from './views/02_tasktwo.vue';
@@ -32,23 +27,6 @@ export default new Router({
       name: 'setup',
       component: Setup,
     },
-
-    {
-      path: '/scene2',
-      name: 'Scene2',
-      component: Scene2,
-    },
-    {
-      path: '/scene3',
-      name: 'Scene3',
-      component: Scene3,
-    },
-    {
-      path: '/scene4',
-      name: 'Scene4',
-      component: Scene4,
-    },
-
     {
       path: '/home',
       name: 'home',

@@ -46,7 +46,7 @@
         </li>
       </ul>
     </div>
-    <h1>You've selected the: {{creature}}</h1>
+    <!-- <h1>You've selected the {{creature}}</h1> -->
     <!-- <router-link to="/taskthree" class="button router-link">When you're ready, click here to continue!</router-link> -->
     <div class="next-cta">
       <p>When you're ready, click the red button to continue</p>

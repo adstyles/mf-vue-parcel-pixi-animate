@@ -27,6 +27,7 @@
     "howler": "^2.2.3",
     "images": "^3.2.3",
     "json-variables": "10.0.0",
+    "main": "^1000.0.1",
     "mic-recorder-to-mp3": "^2.2.2",
     "postcss-modules": "^1.3.2",
     "public": "^0.1.5",
