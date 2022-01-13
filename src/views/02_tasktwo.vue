@@ -1,6 +1,6 @@
 <template>
   <div class="tasktwo">
-    <h1>Task Two: Choose a creature to appear throughout the animation!</h1>
+    <h1>Task 2: Choose a creature to appear throughout the animation!</h1>
     <!--     <p>Let’s choose a creature you’d like to use as a background character! Click on your favourite silly animal and see if you can spot it in your animation!</p> -->
     <div class="select-creature">
       <ul class="creatures">

@@ -1,21 +1,21 @@
 <template>
   <div class="taskeight">
-    <h1>Task Eight - Dress up your Easter Island Head</h1>
+    <h1>Task 8 - Dress up your Easter Island Head</h1>
     <!-- <p>There’s magical sculptures in your film! Let’s make them super fun, drag the fancy dress items onto the sculptures until they look super silly!</p> -->
     <div class="canvas-container">
       <!-- <h1>Easter Island Heads</h1> -->
-      <canvas ref="myCanvas" id="canvas" width=960 height=540></canvas>
+      <canvas ref="myCanvas" id="canvas" width=1024 height=576></canvas>
       <div class="canvas--background"></div>
     </div>
-    <button href="#" v-on:click="saveCanvas">SAVE CANVAS</button>
-    <textarea name="backup" id="backup" cols="60" rows="10"></textarea>
-    <div class="preview-img-wrapper">
+    <!-- <button href="#" v-on:click="saveCanvas">SAVE CANVAS</button> -->
+    <!-- <textarea name="backup" id="backup" cols="60" rows="10"></textarea> -->
+    <!-- <div class="preview-img-wrapper">
       <img class="preview-img" v-bind:src="savedCanvas" />
-    </div>
+    </div> -->
     <!-- <router-link to="/playanimation" class="button router-link">When you're ready, click here to continue!</router-link> -->
     <div class="next-cta">
       <p>When you're ready, click the red button to continue</p>
-      <router-link to="/tasknine" class="button button__disabled button-round router-link">
+      <router-link @click.native="saveCanvas" to="/tasknine" class="button button__disabled button-round router-link">
         <!-- <img src="../assets/iconmonstr-arrow-1.svg" /> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M13 7v-6l11 11-11 11v-6h-13v-10z" /></svg>
@@ -34,8 +34,8 @@ export default {
 
       let offsetTop = 0;
       let offsetLeft = 0;
-      let desiredWidth = 960;
-      let desiredHeight = 540;
+      let desiredWidth = 1024;
+      let desiredHeight = 576;
 
       // create a canvas
       var c = document.createElement('canvas');
@@ -218,8 +218,8 @@ h1 {
 
 .canvas-container {
   outline: 1px dashed red;
-  width: 960px;
-  height: 540px;
+  width: 1024px;
+  height: 576px;
   position: relative;
 }
 
@@ -227,8 +227,8 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 960px;
-  height: 540px;
+  width: 1024px;
+  height: 576px;
   background-image: url('https://mf.wip/src/assets/easter.jpg');
   background-size: contain;
   z-index: -1;

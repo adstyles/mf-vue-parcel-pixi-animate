@@ -2255,6 +2255,9 @@
         </ul>
       </div>
     </div>
+
+    <button href="#" v-on:click="updateJsonWithNewColours">UPDATE JSON</button>
+
     <!--     <h1>[ Selected Dede Skin is: {{skin_dede}} ]</h1>
     <h1>[ Selected Dede hair is: {{hair_dede}} ]</h1>
 
@@ -2263,7 +2266,7 @@
     <!-- <router-link to="/tasktwo" class="button router-link">When you're ready, click here to continue! <img src="../assets/iconmonstr-arrow-1.svg" /></router-link> -->
     <div class="next-cta">
       <p>When you're ready, click the red button to continue</p>
-      <router-link to="/tasktwo" class="button button__disabled button-round router-link">
+      <router-link @click.native="updateJsonWithNewColours" to="/tasktwo" class="button button__disabled button-round router-link">
         <!-- <img src="../assets/iconmonstr-arrow-1.svg" /> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M13 7v-6l11 11-11 11v-6h-13v-10z" /></svg>
@@ -2404,15 +2407,19 @@ export default {
 
     updateJsonWithNewColours : function() {
 
-      console.log({colour});
+      // console.log({colour});
 
-      $newSkinDede = this.$store.getters.getCurrentDedeSkin;
+      let $newSkinDede = this.$store.getters.getCurrentDedeSkin;
+      let $newSkinArlo = this.$store.getters.getCurrentArloSkin;
+      let $newHairDede = this.$store.getters.getCurrentDedeHair;
+      let $newHairArlo = this.$store.getters.getCurrentArloHair;
 
-      $newSkinArlo = this.$store.getters.getCurrentArloSkin;
+      // console.log({colour});
 
-      $newHairDede = this.$store.getters.getCurrentDedeHair;
-
-      $newHairDede = this.$store.getters.getCurrentArloHair;
+      console.log({$newSkinDede});
+      console.log({$newSkinArlo});
+      console.log({$newHairDede});
+      console.log({$newHairArlo});
 
       if ($newSkinDede == 'skin_l') {     $newSkinDede = '#fadcbc'; }
       if ($newSkinDede == 'skin_m-l') {   $newSkinDede = '#e0bb95'; }
@@ -2426,31 +2433,30 @@ export default {
       if ($newSkinArlo == 'skin_m-d') {   $newSkinArlo = '#9b643e'; }
       if ($newSkinArlo == 'skin_d') {     $newSkinArlo = '#594538'; }
 
-      if ($newHairDede == 'hair_l') {     $newHairDede = '#fadcbc'; }
-      if ($newHairDede == 'hair_m-l') {   $newHairDede = '#e0bb95'; }
-      if ($newHairDede == 'hair_m') {     $newHairDede = '#bf8f68'; }
-      if ($newHairDede == 'hair_m-d') {   $newHairDede = '#9b643d'; }
-      if ($newHairDede == 'hair_d') {     $newHairDede = '#594539'; }
+      if ($newHairDede == 'hair_l') {     $newHairDede = '#000003'; }
+      if ($newHairDede == 'hair_m-l') {   $newHairDede = '#561f00'; }
+      if ($newHairDede == 'hair_m') {     $newHairDede = '#edc201'; }
+      if ($newHairDede == 'hair_m-d') {   $newHairDede = '#ff6600'; }
+      if ($newHairDede == 'hair_d') {     $newHairDede = '#0066cb'; }
 
-      if ($newHairArlo == 'hair_l') {     $newHairArlo = '#fadcbd'; }
-      if ($newHairArlo == 'hair_m-l') {   $newHairArlo = '#e0bb96'; }
-      if ($newHairArlo == 'hair_m') {     $newHairArlo = '#bf8f69'; }
-      if ($newHairArlo == 'hair_m-d') {   $newHairArlo = '#9b643e'; }
-      if ($newHairArlo == 'hair_d') {     $newHairArlo = '#594538'; }
-
+      if ($newHairArlo == 'hair_l') {     $newHairArlo = '#000004'; }
+      if ($newHairArlo == 'hair_m-l') {   $newHairArlo = '#561f01'; }
+      if ($newHairArlo == 'hair_m') {     $newHairArlo = '#edc202'; }
+      if ($newHairArlo == 'hair_m-d') {   $newHairArlo = '#ff6601'; }
+      if ($newHairArlo == 'hair_d') {     $newHairArlo = '#0066cc'; }
 
       // vars
       // original HEX values
-      $dede_skin_original = '#2778fe';
-      $arlo_skin_original = '#eeb09c';
-      $dede_hair_original = '#000001';
-      $arlo_hair_original = '#000002';
+      const $dede_skin_original = '#8e4832';
+      const $arlo_skin_original = '#eeb09c';
+      const $dede_hair_original = '#000001';
+      const $arlo_hair_original = '#000002';
 
       // new Hex Values
-      $dede_skin_new = $newSkinDede;
-      $arlo_skin_new = $newSkinArlo;
-      $dede_hair_new = $newHairDede;
-      $arlo_hair_new = $newHairDede;
+      const $dede_skin_new = $newSkinDede;
+      const $arlo_skin_new = $newSkinArlo;
+      const $dede_hair_new = $newHairDede;
+      const $arlo_hair_new = $newHairArlo;
 
       // get axios
       const axios = require('../../node_modules/axios');
@@ -2472,7 +2478,7 @@ export default {
       }
 
       const $s01_generator = $staticURL + '/images/shape_generator.php';
-      console.log({$s01_generator});
+      console.log('axios $s01_generator URL: ' + $s01_generator);
 
       axios.post($s01_generator, {
 
@@ -2485,21 +2491,20 @@ export default {
           $dede_skin_new: $newSkinDede,
           $arlo_skin_new: $newSkinArlo,
           $dede_hair_new: $newHairDede,
-          $arlo_hair_new: $newHairDede,
+          $arlo_hair_new: $newHairArlo,
 
-          filesToChange:[
-            's01.shapes.json',
-            's02.shapes.json',
-            's03.shapes.json',
-            's04.shapes.json'
-          ],
+          // filesToChange:[
+          //   's01.shapes.json',
+          //   's02.shapes.json',
+          //   's03.shapes.json',
+          //   's04.shapes.json'
+          // ],
 
       }).then(resp => {
+
         console.log('resp', resp);
         console.log('resp.data', resp.data);
         console.log('this.startScene(1) called');
-
-        this.startScene(1);
 
       });
 

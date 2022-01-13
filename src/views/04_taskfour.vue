@@ -24,11 +24,11 @@
         </ul>
       </div>
     </div>
-    <button href="#" v-on:click="saveCanvas">SAVE</button>
-    <img v-bind:src="savedCanvas" />
+    <!-- <button href="#" v-on:click="saveCanvas">SAVE</button> -->
+    <!-- <img v-bind:src="savedCanvas" /> -->
     <div class="next-cta">
       <p>When you're ready, click the red button to continue</p>
-      <router-link to="/taskfive" class="button button__disabled button-round router-link">
+      <router-link @click.native="saveCanvas" to="/taskfive" class="button button__disabled button-round router-link">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M13 7v-6l11 11-11 11v-6h-13v-10z" /></svg>
       </router-link>

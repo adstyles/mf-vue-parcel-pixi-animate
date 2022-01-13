@@ -1,6 +1,6 @@
 <template>
     <div class="taskseven">
-        <h1>Task Seven - Record your mammoth sound effects</h1>
+        <h1>Task 7 - Record your mammoth sound effects</h1>
         <!-- <p>Let’s record sound effects for the wooly mammoth in your film! Click the blue button to hear an example, click the red button to record your own mammoth emotion! Let us hear you roarrrrrrr! or roar.</p> -->
         <!-- <div> -->
         <!-- <h1>Record Mammoth Sounds!</h1> -->

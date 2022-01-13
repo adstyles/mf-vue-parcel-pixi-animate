@@ -59,15 +59,21 @@ var sound = null;
 
 // let $track = null;
 
-const taskTrack1 = require('./mp3/radiohead.mp3');
-const taskTrack2 = require('./mp3/macumba.mp3');
-// const taskTrack3 = require('./mp3/radiohead.mp3');
-// const taskTrack4 = require('./mp3/radiohead.mp3');
-// const taskTrack5 = require('./mp3/radiohead.mp3');
-// const taskTrack6 = require('./mp3/radiohead.mp3');
-// const taskTrack7 = require('./mp3/radiohead.mp3');
-// const taskTrack8 = require('./mp3/radiohead.mp3');
-// const taskTrack9 = require('./mp3/radiohead.mp3');
+const taskTrack1 = require('./mp3/tasks/01_COLOURS.mp3');
+const taskTrack2 = require('./mp3/tasks/02_CREATURES.mp3');
+const taskTrack3 = require('./mp3/tasks/03_EMOJIS.mp3');
+const taskTrack4 = require('./mp3/tasks/04_HEADSET.mp3');
+const taskTrack5 = require('./mp3/tasks/05_SIGN.mp3');
+const taskTrack6 = require('./mp3/tasks/06_CAVE_ART.mp3');
+const taskTrack7 = require('./mp3/tasks/07_MAMMOTH.mp3');
+const taskTrack8 = require('./mp3/tasks/08_STATUES.mp3');
+const taskTrack9 = require('./mp3/tasks/09_NAME.mp3');
+const nowWatchFilm = require('./mp3/tasks/10_WATCH.mp3');
+const nowRestart = require('./mp3/tasks/11_RESTART.mp3');
+
+// tasks/07a_ANGRY.mp3 
+// tasks/07b_EMBARRASSED.mp3 
+// tasks/07c_LAUGH.mp3
 
 var vm = new Vue({
   router,
@@ -78,20 +84,57 @@ var vm = new Vue({
       // if (to.name == '') {}
 
       console.log(to['name']);
+      console.log(from['name']);
 
+      if(from['name'] == 'playanimation'){
+        console.log('killAnimation');
+        EventBus.$emit('killAnimation');
+      }
+
+      // stop all tracks
       this.stopTaskTracks();
 
+      // choose track to play
       switch (to['name']) {
         case 'taskone':
-          // this.playTaskTrack(taskTrack1);
+          this.playTaskTrack(taskTrack1);
           break;
         case 'tasktwo':
-          // this.playTaskTrack(taskTrack2);         
+          this.playTaskTrack(taskTrack2);         
+          break;
+        case 'taskthree':
+          this.playTaskTrack(taskTrack3);         
+          break;
+        case 'taskfour':
+          this.playTaskTrack(taskTrack4);         
+          break;
+        case 'taskfive':
+          this.playTaskTrack(taskTrack5);         
+          break;
+        case 'tasksix':
+          this.playTaskTrack(taskTrack6);         
+          break;
+        case 'taskseven':
+          this.playTaskTrack(taskTrack7);         
+          break;
+        case 'taskeight':
+          this.playTaskTrack(taskTrack8);         
+          break;
+        case 'tasknine':
+          this.playTaskTrack(taskTrack9);         
+          break;
+        case 'getready':
+          this.playTaskTrack(nowWatchFilm);         
+          break;
+        case 'endscreen':
+          this.playTaskTrack(nowRestart);         
           break;
         default:
           // this.playTaskTrack(1);
       }
-      // this.sound.stop();
+
+      
+
     }
   },
   methods: {

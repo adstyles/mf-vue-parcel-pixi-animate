@@ -11,23 +11,23 @@
         <img v-bind:src="'images/pngs/creatures/creatures_'+storedCreature+'_blink.png'" />
       </li>
       <li>
-        <p>Emoji Image is: {{ storedEmojiImage }}</p>
+        <p>Emoji Image is:</p>
         <img v-bind:src="storedEmojiImage" />
       </li>
       <li>
         <p>happyIcon is: {{ storedhappyIcon }}</p>
-        <img v-bind:src="storedhappyIcon" />
+        <img v-bind:src="'images/pngs/emojis/'+storedhappyIcon+'.png'" />
       </li>
       <li>
-        <p>Headset is: {{ storedHeadset }}</p>
+        <p>Headset is:</p>
         <img v-bind:src="storedHeadset" />
       </li>
       <li>
         <p>Note is: {{ storedNote }}</p>
-        <img v-bind:src="storedNote" />
+        <img v-bind:src="'images/pngs/signs/'+storedNote+'.png'" />
       </li>
       <li>
-        <p>Cave Painting is: {{ storedCavePainting }}</p>
+        <p>Cave Painting is:</p>
         <img v-bind:src="storedCavePainting" />
       </li>
       <li><p>Mammoth Angry:</p>{{ storedMammothAngry }}</li>
@@ -37,7 +37,7 @@
       <li><p>Mammoth Laugh:</p>{{ storedMammothLaugh }}</li>
       <li><a v-on:click="playLaughMammothSFX">Play Laugh</a></li>
       <li>
-        <p>Easter Island is: {{ storedEasterImage }}</p>
+        <p>Easter Island is:</p>
         <img v-bind:src="storedEasterImage" />
       </li>
       <li><p>Stage Name is: {{ storedStageName }}</p></li>

@@ -6,9 +6,13 @@
     <div class="tasks-wrapper">
       <div class="emoji-creator task-box">
         <h1>Create your own sad face emoji</h1>
-        <p>Drag the bits onto the face!</p>
-        <div class="canvas-and-created-emoji">
+        <p>Drag the bits onto the circle below to make an emoji: <img class="example-icon" src="../../images/pngs/EMOJI_SAD.png"></p>
+        <div class="canvas-and-created-emoji js-emoji-container">
           <canvas class="myCanvas" ref="myCanvas" id="canvas" width=420 height=460></canvas>
+          <div class="status">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z" /></svg>
+          </div>
           <!-- <canvas class="exportCanvas" ref="exportCanvas" id="exportCanvas" width=140 height=120></canvas> -->
           <!-- <div class="canvas-control"> -->
           <!-- <div class="created-emoji-wrapper"> -->
@@ -59,7 +63,7 @@
                 <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z" /></svg>
             </div>
           </li>
-          <li class="happyIcon" v-on:click="choosehappyIcon" data-happyIcon="thumb">
+          <li class="happyIcon" v-on:click="choosehappyIcon" data-happyIcon="thumbsup">
             <img src="../assets/inline-emoji-thumb.svg">
             <div class="status">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -73,7 +77,7 @@
     <!-- <router-link to="/taskfour" class="button router-link">When you're ready, click here to continue!</router-link> -->
     <div class="next-cta">
       <p>When you're ready, click the red button to continue</p>
-      <router-link to="/taskfour" class="button button__disabled button-round router-link">
+      <router-link @click.native="saveCanvas" to="/taskfour" class="button button__disabled button-round router-link">
         <!-- <img src="../assets/iconmonstr-arrow-1.svg" /> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M13 7v-6l11 11-11 11v-6h-13v-10z" /></svg>
@@ -114,10 +118,15 @@ export default {
 
     saveCanvas: function() {
 
+      // let offsetTop = 150;
+      // let offsetLeft = 130;
+      // let desiredWidth = 140;
+      // let desiredHeight = 120;
+
       let offsetTop = 150;
       let offsetLeft = 130;
-      let desiredWidth = 140;
-      let desiredHeight = 120;
+      let desiredWidth = 278;
+      let desiredHeight = 240;
 
       // let x = (offsetLeft * 2);
       // let y = (offsetTop * 2);
@@ -131,8 +140,13 @@ export default {
 
       let x = (offsetLeft * 2);
       let y = (offsetTop * 2);
-      let w = (desiredWidth * 2);
-      let h = (desiredHeight * 2);
+      // let w = (desiredWidth * 2);
+      // let h = (desiredHeight * 2);
+
+      // let x = offsetLeft;
+      // let y = offsetTop;
+      let w = desiredWidth;
+      let h = desiredHeight;
 
       // deselect objects
       this.activeCanvas.discardActiveObject().renderAll();
@@ -141,18 +155,23 @@ export default {
       // save to Data
       let emojiCanvas = c.toDataURL({
         format: 'png',
-        top: offsetTop,
-        left: offsetLeft,
+        top: 0,
+        left: 0,
         width: desiredWidth,
         height: desiredHeight
       });
       // display in code and image
       // const backup = document.getElementById('backup').value = emojiCanvas;
       // save to store..
+      this.$store.commit('setEmojiImage', emojiCanvas);
       this.savedCanvas = emojiCanvas;
     }
 
   },
+
+  // detectCanvasInteraction() {
+  //   // js-emoji-container
+  // },
 
   beforeUpdate() {
 
@@ -294,6 +313,20 @@ export default {
 
     }
 
+    // canvas interaction detection...
+    let $i = 0;
+    canvas.on('mouse:up', function (event) {
+      $i++;
+      if ($i >= 2) {
+        document.querySelector('.js-emoji-container').classList.add('is-active');
+      }
+      // if (isObjectMoving){
+      //   isObjectMoving = false;
+      //   recCanvas(canvas) // fire this if finished
+      // } 
+      // 
+    });
+
   }
 
 };
@@ -433,6 +466,12 @@ $active: darken($mf-red, 30%);
 
 img.created-emoji {
   opacity: 1;
+}
+
+img.example-icon {
+  opacity: 1;
+  width: 30px;
+  height: 30px;
 }
 
 .is-active {

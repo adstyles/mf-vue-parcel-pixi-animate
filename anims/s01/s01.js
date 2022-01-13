@@ -24917,7 +24917,9 @@ import { EventBus } from '../../src/main';
                 })
                 .addAction(function () {
                      console.log('s01_started');
-                }, 0)
+                     console.log('call playTrack');
+                     EventBus.$emit('playTrack', 's01');
+                }, 1)
                 .addAction(function () {
                      console.log('test firing a function');
                      // this.startScene(2);

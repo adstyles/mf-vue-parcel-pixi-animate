@@ -1,6 +1,6 @@
 <template>
   <div class="taskfive">
-    <h1>Task Five - Choose which note you want to leave for Dad</h1>
+    <h1>Task 5 - Choose which note you want to leave for Dad</h1>
     <!-- <p>Your character needs to tell Dad they’ve gone time travelling, we don’t want him to worry! Which note would you choose to leave for him? Click on your favourite.</p> -->
     <div class="select-note">
       <ul class="notes">
@@ -48,18 +48,23 @@ export default {
   methods: {
     chooseNote: function(event) {
       // get attribute and commit to changeSkin in store
-      var note = event.target.getAttribute('data-note');
+      var note = event.target.parentNode.getAttribute('data-note');
 
       console.log(note);
       // update active state
-      const active = document.querySelector('.is-active');
-      if (active) {
-        active.classList.remove('is-active');
-      }
-      event.target.parentNode.classList.toggle('is-active');
+      const active = document.querySelectorAll('.note');
+      active.forEach(function(userItem) {
+        // deleteUser(userItem);
+        userItem.classList.remove('is-active');
+      });
+
+      // event.target.parentNode.classList.toggle('is-active');
+      document.querySelector('[data-note="' + note + '"]').classList.toggle('is-active');
+
       this.$store.commit('setNote', note);
       // sets {{skin}} on this Vue
       this.note = this.$store.getters.getCurrentNote;
+
     }
   },
 
