@@ -141,7 +141,7 @@ export default {
 
       // let this.grabbedSettings;
 
-      // axios.get('https://mf.wip/images/s01.shapes.php').then(resp => {
+      // axios.get('https://a-d.dev/images/s01.shapes.php').then(resp => {
       //   console.log('resp', resp);
       //   console.log('resp.data', resp.data);
       // });
@@ -156,7 +156,7 @@ export default {
       //     console.log(response);
       // });
 
-      const $s01_generator = 'https://mf.wip/dist/images/s01.shapes.php';
+      const $s01_generator = 'https://a-d.dev/dist/images/s01.shapes.php';
 
       axios.post($s01_generator, {
           colour: '#bada55',
@@ -164,7 +164,7 @@ export default {
           // colour: '#66b1d1',
           // colour: '#FFFFFF',
       }).then(resp => {
-      // axios.get('https://mf.wip/images/s01.shapes.halved.json').then(resp => {
+      // axios.get('https://a-d.dev/images/s01.shapes.halved.json').then(resp => {
 
         console.log('resp', resp);
         console.log('resp.data', resp.data);
@@ -192,7 +192,7 @@ export default {
         // ******** where i got to.
         // library is expecting a string with a json location "images/s01.shapes.json"
         // "images/s01.shapes.min.json" is  not working - minify an issue?
-        // https://mf.wip/images/s01.shapes.php is now creating results.json - could that be the answer?
+        // https://a-d.dev/images/s01.shapes.php is now creating results.json - could that be the answer?
         // "images/s01.shapes.searchandreplace.json" not working - why???
 
         let $newStuff = {

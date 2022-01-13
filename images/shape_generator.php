@@ -3,8 +3,8 @@
 $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
 
-print_r($data);
-error_log("$data", $data);
+// print_r($data);
+// error_log("$data", $data);
 
 // defaults
 // $colour             = "#2778fe"; // defaults
@@ -47,54 +47,64 @@ if (!empty($data)) {
 
 }
 
-foreach($filesToChange as $file) {
+try {
 
-    $jsonFile = file_get_contents($file);
-    $decodedJSON = json_decode($jsonFile, true);
-        
-    foreach($decodedJSON as &$values):
-        if(is_array($values)):
-            foreach($values as &$value):
-                if($value === $dede_skin_original) { $value = $dede_skin_new; }
-                if($value === $arlo_skin_original) { $value = $arlo_skin_new; }
-                if($value === $dede_hair_original) { $value = $dede_hair_new; }
-                if($value === $arlo_hair_original) { $value = $arlo_hair_new; }
-                unset($value);
-            endforeach;
-        endif;
-    endforeach; 
+    foreach($filesToChange as $file) {
 
-    // foreach($decodedJSON as &$values):
-    //     if(is_array($values)):
-    //         foreach($values as &$value):
-    //             if($value === $dede_skin_original) { $value = $dede_skin_new; }
-    //             unset($value);
-    //         endforeach;
-    //         foreach($values as &$value):
-    //             if($value === $arlo_skin_original) { $value = $arlo_skin_new; }
-    //             unset($value);
-    //         endforeach;
-    //         foreach($values as &$value):
-    //             if($value === $dede_hair_original) { $value = $dede_hair_new; }
-    //             unset($value);
-    //         endforeach;
-    //         foreach($values as &$value):
-    //             if($value === $arlo_hair_original) { $value = $arlo_hair_new; }
-    //             unset($value);
-    //         endforeach;
-    //     endif;
-    // endforeach; 
+        $jsonFile = file_get_contents($file);
+        $decodedJSON = json_decode($jsonFile, true);
+            
+        foreach($decodedJSON as &$values):
+            if(is_array($values)):
+                foreach($values as &$value):
+                    if($value === $dede_skin_original) { $value = $dede_skin_new; }
+                    if($value === $arlo_skin_original) { $value = $arlo_skin_new; }
+                    if($value === $dede_hair_original) { $value = $dede_hair_new; }
+                    if($value === $arlo_hair_original) { $value = $arlo_hair_new; }
+                    unset($value);
+                endforeach;
+            endif;
+        endforeach; 
 
-    $newArray = $decodedJSON;
-    // $encodedJSON = json_encode($decodedJSON);
+        // foreach($decodedJSON as &$values):
+        //     if(is_array($values)):
+        //         foreach($values as &$value):
+        //             if($value === $dede_skin_original) { $value = $dede_skin_new; }
+        //             unset($value);
+        //         endforeach;
+        //         foreach($values as &$value):
+        //             if($value === $arlo_skin_original) { $value = $arlo_skin_new; }
+        //             unset($value);
+        //         endforeach;
+        //         foreach($values as &$value):
+        //             if($value === $dede_hair_original) { $value = $dede_hair_new; }
+        //             unset($value);
+        //         endforeach;
+        //         foreach($values as &$value):
+        //             if($value === $arlo_hair_original) { $value = $arlo_hair_new; }
+        //             unset($value);
+        //         endforeach;
+        //     endif;
+        // endforeach; 
 
-    // echo $encodedJSON;
+        $newArray = $decodedJSON;
+        // $encodedJSON = json_encode($decodedJSON);
 
-    $fp = fopen('dist/'.$file, 'w');
-    fwrite($fp, json_encode($decodedJSON));
-    fclose($fp);
-    unset($decodedJSON);
+        // echo $encodedJSON;
 
+        $fp = fopen('dist/'.$file, 'w');
+        fwrite($fp, json_encode($decodedJSON));
+        fclose($fp);
+        unset($decodedJSON);
+
+    }
+}
+    catch (exception $e) {
+     //code to handle the exception
+
+        echo $e->getMessage();
+    
+        error_log("catch error:", $e);
 }
 
 ?>

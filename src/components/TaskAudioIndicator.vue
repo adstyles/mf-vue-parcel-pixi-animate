@@ -18,8 +18,6 @@
 
   import {Howl, Howler} from 'howler';
 
-  var $taskTrack = require('../mp3/radiohead.mp3');
-
   // data: function() {
   //    return  {
   //     micAccess: 'mic--not-checked'

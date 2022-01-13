@@ -3,7 +3,7 @@
     <!-- <debug> -->
     <h1>Magic Fox Setup</h1>
 
-    <p>Make sure your sound is on! - Test it here: ..........</p>
+    <p>Make sure your sound is on!</p>
 
     <div class="mic-check" :class="micAccess">
       

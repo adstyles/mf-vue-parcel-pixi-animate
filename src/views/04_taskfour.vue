@@ -161,7 +161,7 @@ export default {
 
       // let myCanvas = this.canvas;
 
-      // fabric.loadSVGFromURL('https://mf.wip/src/assets/test_svgs/1.svg', function(objects, options) { 
+      // fabric.loadSVGFromURL('https://a-d.dev/src/assets/test_svgs/1.svg', function(objects, options) { 
       //   console.log('hello');
       //   // console.log('this.canvas is', myCanvas);
       //   var test_1 = fabric.util.groupSVGElements(objects, options);
@@ -307,7 +307,7 @@ export default {
         left = lowPart_left;
       }
 
-      fabric.loadSVGFromURL('https://mf.wip/src/assets/' + partUrl, function(objects, options) {
+      fabric.loadSVGFromURL('https://a-d.dev/images/assets/' + partUrl, function(objects, options) {
         var p = fabric.util.groupSVGElements(objects, options);
         // console.log(p.height);
         // console.log(p);
@@ -337,7 +337,7 @@ export default {
       // console.log(i);
       // // console.log(topOffset);
 
-      // fabric.loadSVGFromURL('https://mf.wip/src/assets/'+mouth, function(objects, options) { 
+      // fabric.loadSVGFromURL('https://a-d.dev/src/assets/'+mouth, function(objects, options) { 
       //     var mouth = fabric.util.groupSVGElements(objects, options);
       //     // console.log(mouth.height);
       //     console.log(mouth);
@@ -354,14 +354,14 @@ export default {
     }
 
     // need to be SOP / CORS url to allow SVG to load
-    // fabric.loadSVGFromURL('https://mf.wip/src/assets/test_svgs/mouth_2.svg', function(objects, options) { 
+    // fabric.loadSVGFromURL('https://a-d.dev/src/assets/test_svgs/mouth_2.svg', function(objects, options) { 
     //     var mouth_2 = fabric.util.groupSVGElements(objects, options);
     //     canvas.add(mouth_2); 
     //     canvas.calcOffset();
     //     canvas.renderAll();
     // }); 
 
-    // fabric.loadSVGFromURL('https://mf.wip/src/assets/test_svgs/mouth_1.svg', function(objects, options) { 
+    // fabric.loadSVGFromURL('https://a-d.dev/src/assets/test_svgs/mouth_1.svg', function(objects, options) { 
     //     var mouth_1 = fabric.util.groupSVGElements(objects, options);
     //     canvas.add(mouth_1); 
     //     canvas.calcOffset();

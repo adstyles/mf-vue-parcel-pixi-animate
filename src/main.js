@@ -167,7 +167,6 @@ var vm = new Vue({
         // autoplay: true,
         // 1
         src: [
-          // require('./mp3/radiohead.mp3')
           $track
         ],
 

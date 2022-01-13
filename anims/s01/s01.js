@@ -24922,6 +24922,9 @@ import { EventBus } from '../../src/main';
                 }, 1)
                 .addAction(function () {
                      console.log('test firing a function');
+                     // EventBus.$emit('playTrack', 'mam_angry');
+                     // EventBus.$emit('playTrack', 'mam_embar');
+                     // EventBus.$emit('playTrack', 'mam_laugh');
                      // this.startScene(2);
                      // vm.startScene(2);
                      // const detail = {msgId: "PLAY_SECENE_2"};

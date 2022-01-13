@@ -14666,7 +14666,13 @@ import { EventBus } from '../../src/main';
             })
             .addAction(function () {
                 /* this.emit('s04_started');*/
-            }, 0)
+                console.log('call playTrack');
+                EventBus.$emit('playTrack', 's04');
+            }, 1)
+            .addAction(function () {
+                 console.log('play mammoth track');
+                 EventBus.$emit('playTrack', 'mam_laugh');
+            }, 220)
             .addAction(function () {
                 /* this.emit('s04_end');*/
                 EventBus.$emit('endOfAnimation');

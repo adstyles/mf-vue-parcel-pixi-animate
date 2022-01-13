@@ -205,7 +205,7 @@
 
       // EMOJI BLANK FACE
 
-      fabric.loadSVGFromURL('https://mf.wip/src/assets/inline-emoji-face.svg', function(objects, options) { 
+      fabric.loadSVGFromURL('https://a-d.dev/src/assets/inline-emoji-face.svg', function(objects, options) { 
           var face = fabric.util.groupSVGElements(objects, options);
           console.log(face.height);
           face.top = 150;
@@ -288,7 +288,7 @@
           console.log(j);
           // console.log(topOffset);
 
-          fabric.loadSVGFromURL('https://mf.wip/src/assets/'+eye, function(objects, options) { 
+          fabric.loadSVGFromURL('https://a-d.dev/src/assets/'+eye, function(objects, options) { 
               var eye = fabric.util.groupSVGElements(objects, options);
               // console.log(eye);
               eye.top = (topOffset - eye.height);
@@ -334,7 +334,7 @@
           console.log(i);
           // console.log(topOffset);
 
-          fabric.loadSVGFromURL('https://mf.wip/src/assets/'+mouth, function(objects, options) { 
+          fabric.loadSVGFromURL('https://a-d.dev/src/assets/'+mouth, function(objects, options) { 
               var mouth = fabric.util.groupSVGElements(objects, options);
               // console.log(mouth.height);
               console.log(mouth);
@@ -353,7 +353,7 @@
 
 
 
-      // fabric.loadSVGFromURL('https://mf.wip/src/assets/test_svgs/mouth_1.svg', function(objects, options) { 
+      // fabric.loadSVGFromURL('https://a-d.dev/src/assets/test_svgs/mouth_1.svg', function(objects, options) { 
       //     var mouth_1 = fabric.util.groupSVGElements(objects, options);
       //     canvas.add(mouth_1); 
       //     canvas.calcOffset();
@@ -361,7 +361,7 @@
       // }); 
 
       // // need to be SOP / CORS url to allow SVG to load
-      // fabric.loadSVGFromURL('https://mf.wip/src/assets/test_svgs/mouth_2.svg', function(objects, options) { 
+      // fabric.loadSVGFromURL('https://a-d.dev/src/assets/test_svgs/mouth_2.svg', function(objects, options) { 
       //     var mouth_2 = fabric.util.groupSVGElements(objects, options);
       //     canvas.add(mouth_2); 
       //     canvas.calcOffset();

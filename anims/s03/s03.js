@@ -98788,7 +98788,13 @@ import { EventBus } from '../../src/main';
             })
             .addAction(function () {
                 /* this.emit('s03_started');*/
-            }, 0)
+                console.log('call playTrack');
+                EventBus.$emit('playTrack', 's03');
+            }, 1)
+            .addAction(function () {
+                 console.log('play mammoth track');
+                 EventBus.$emit('playTrack', 'mam_embar');
+            }, 875)
             .addAction(function () {
                 /* this.emit('s03_end');*/
                 // vm.startScene(4);

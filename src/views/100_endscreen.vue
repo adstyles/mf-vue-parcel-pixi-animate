@@ -10,10 +10,14 @@
 
 
     <!-- <div class="next-cta"> -->
-      <router-link to="/home" class="button router-link">
+      <!-- <router-link to="/home" class="button router-link"> -->
         <!-- <img src="../assets/iconmonstr-arrow-1.svg" /> -->
-        Start again from the beginning!
-      </router-link>
+        <!-- Start again from the beginning! -->
+      <!-- </router-link> -->
+
+      <button v-on:click="startAgain" class="button">
+        Start Again!
+      </button>
     <!-- </div> -->
 
   </div>
@@ -24,6 +28,15 @@
   export default {
 
     name: 'endscreen',
+
+    methods : {
+
+    startAgain() {
+      // window.location.reload();
+      document.location.href="/";
+    }
+
+    },
 
     computed: {
       storedKidName() {

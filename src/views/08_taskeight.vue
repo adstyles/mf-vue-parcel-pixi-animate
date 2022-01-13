@@ -124,7 +124,7 @@ export default {
       console.log(j);
       console.log(topOffset);
 
-      fabric.loadSVGFromURL('https://mf.wip/src/assets/' + prop, function(objects, options) {
+      fabric.loadSVGFromURL('https://a-d.dev/images/assets/' + prop, function(objects, options) {
         var prop = fabric.util.groupSVGElements(objects, options);
         prop.top = (topOffset - prop.height);
         prop.left = 20;
@@ -137,7 +137,7 @@ export default {
 
     // manually add in earrings
 
-    fabric.loadSVGFromURL('https://mf.wip/src/assets/inline-earring1.svg', function(objects, options) {
+    fabric.loadSVGFromURL('https://a-d.dev/images/assets/inline-earring1.svg', function(objects, options) {
       var item = fabric.util.groupSVGElements(objects, options);
       item.top = (480 - item.height);
       item.left = 20;
@@ -146,7 +146,7 @@ export default {
       canvas.renderAll();
     });
 
-    fabric.loadSVGFromURL('https://mf.wip/src/assets/inline-earring2.svg', function(objects, options) {
+    fabric.loadSVGFromURL('https://a-d.dev/images/assets/inline-earring2.svg', function(objects, options) {
       var item = fabric.util.groupSVGElements(objects, options);
       item.top = (480 - item.height);
       item.left = 220;
@@ -189,7 +189,7 @@ export default {
     //   console.log({heightOffset});
     //   // console.log(j);
 
-    //   fabric.loadSVGFromURL('https://mf.wip/src/assets/'+prop[0], function(objects, options) { 
+    //   fabric.loadSVGFromURL('https://a-d.dev/images/assets/'+prop[0], function(objects, options) { 
     //       var item = fabric.util.groupSVGElements(objects, options);
     //       item.top = (heightOffset - item.height);
     //       item.left = 20;
@@ -229,7 +229,7 @@ h1 {
   right: 0;
   width: 1024px;
   height: 576px;
-  background-image: url('https://mf.wip/src/assets/easter.jpg');
+  background-image: url('https://a-d.dev/images/assets/easter.jpg');
   background-size: contain;
   z-index: -1;
 }

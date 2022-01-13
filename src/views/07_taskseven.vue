@@ -13,7 +13,7 @@
                         <h3>Angry<br />Mammoth</h3>
                         <h4>{{angry_pretty_duration}}</h4>
                     </div>
-                    <button id="mam-angry__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <button v-on:click="playAngryMammothExample" id="mam-angry__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                             <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg></button>
                     <div id="mammoth-row--content__angry" class="mammoth-row--content mammoth-row--content__angry rec-btn-is-visible" v-bind:class="{ recording_in_store : storedMammothAngry }">
                         <button id="mam-angry__recBtn" class="recBtn" data-emotion="angry" :disabled='!this.allowRec' v-on:click="startRecordingAudio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@
                         <h3>Embarrassed<br />Mammoth</h3>
                         <h4>{{embarrassed_pretty_duration}}</h4>
                     </div>
-                    <button id="mam-embarrassed__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <button v-on:click="playEmbarrassedMammothExample" id="mam-embarrassed__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                             <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg></button>
                     <div id="mammoth-row--content__embarrassed" class="mammoth-row--content mammoth-row--content__embarrassed rec-btn-is-visible" v-bind:class="{ recording_in_store : storedMammothEmbarrassed }">
                         <button id="mam-embarrassed__recBtn" class="recBtn" data-emotion="embarrassed" :disabled='!this.allowRec' v-on:click="startRecordingAudio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@
                         <h3>Laughing<br />Mammoth</h3>
                         <h4>{{laugh_pretty_duration}}</h4>
                     </div>
-                    <button id="mam-laugh__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <button v-on:click="playLaughMammothExample" id="mam-laugh__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                             <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg></button>
                     <div id="mammoth-row--content__laugh" class="mammoth-row--content mammoth-row--content__laugh rec-btn-is-visible" v-bind:class="{ recording_in_store : storedMammothLaugh }">
                         <button id="mam-laugh__recBtn" class="recBtn" data-emotion="laugh" :disabled='!this.allowRec' v-on:click="startRecordingAudio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -232,7 +232,7 @@ export default {
                     player.controls = true;
                     // li.appendChild(player);
 
-                    ref.$store.commit('setMammothAngry', blob);
+                    // ref.$store.commit('setMammothAngry', blob);
 
                     if (emotion == 'angry') {
                         ref.$store.commit('setMammothAngry', blob);
@@ -304,6 +304,33 @@ export default {
         //     this.allowRec = 'false';          
         //   }
         // }
+
+        playAngryMammothExample() {
+            console.log('play AngryMammothExample via Howler');
+            const $mammoth_angry_mp3 = 'images/mp3/mammoth/mam_angry.mp3';
+            var howlSound = new Howl({
+                autoplay: true,
+                src: [ $mammoth_angry_mp3 ],
+            })
+        },
+
+        playEmbarrassedMammothExample() {
+            console.log('play EmbarrassedMammothExample via Howler');
+            const $mammoth_embar_mp3 = 'images/mp3/mammoth/mam_embar.mp3';
+            var howlSound = new Howl({
+                autoplay: true,
+                src: [ $mammoth_embar_mp3 ],
+            })
+        },
+
+        playLaughMammothExample() {
+            console.log('play LaughMammothExample via Howler');
+            const $mammoth_laugh_mp3 = 'images/mp3/mammoth/mam_laugh.mp3';
+            var howlSound = new Howl({
+                autoplay: true,
+                src: [ $mammoth_laugh_mp3 ],
+            })
+        },
 
         playAngryMammothSFX() {
             console.log('play AngryMammothSFX via Howler');
@@ -401,11 +428,11 @@ export default {
         AudioContext: window.AudioContext || window.webkitAudioContext,
         audioContext: "",
         mammoth_angry: "",
-        mammoth_angry_duration: 6000, // in miliseconds
+        mammoth_angry_duration: 4000, // in miliseconds
         mammoth_embarrassed: "",
-        mammoth_embarrassed_duration: 3000, // in miliseconds
+        mammoth_embarrassed_duration: 5000, // in miliseconds
         mammoth_laugh: "",
-        mammoth_laugh_duration: 2000, // in miliseconds
+        mammoth_laugh_duration: 4000, // in miliseconds
 
 
     }),

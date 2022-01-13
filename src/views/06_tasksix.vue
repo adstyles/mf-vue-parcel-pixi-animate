@@ -147,7 +147,7 @@ export default {
 			originY: 'bottom',
 		});
 
-		// fabric.loadSVGFromURL('https://mf.wip/src/assets/inline-earring1.svg', function(objects, options) {
+		// fabric.loadSVGFromURL('https://a-d.dev/src/assets/inline-earring1.svg', function(objects, options) {
 		// 	const mousecursor = fabric.util.groupSVGElements(objects, options);
 		// 	mousecursor.top = 20;
 		// 	mousecursor.left = 20;

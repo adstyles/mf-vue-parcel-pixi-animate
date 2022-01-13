@@ -2336,8 +2336,6 @@ export default {
       // save to store...
       if (aspect == 'skin') {
 
-        
-
         if (character == 'dede') {
 
           // update Store
@@ -2468,45 +2466,44 @@ export default {
       // axios, hit php and generate shapes.json with colours changed ////
       ////////////////////////////////////////////////////////////////////
 
-      // const $s01_generator = 'https://mf.wip/dist/images/shape_generator.php';
-      console.log('window.location.href: ', window.location.href);
+      // // const $s01_generator = 'https://mf.wip/dist/images/shape_generator.php';
+      // console.log('window.location.href: ', window.location.href);
 
-      let $staticURL = 'https://a-d.dev';
-      // http://localhost:1234/
-      if (window.location.href.includes("localhost")) {
-        $staticURL = 'https://mf.wip/dist';
-      }
+      // let $staticURL = 'https://a-d.dev';
+      // // http://localhost:1234/
+      // if (window.location.href.includes("localhost")) {
+      //   $staticURL = 'https://mf.wip/dist';
+      // }
 
-      const $s01_generator = $staticURL + '/images/shape_generator.php';
-      console.log('axios $s01_generator URL: ' + $s01_generator);
+      // const $s01_generator = $staticURL + '/images/shape_generator.php';
+      // console.log('axios $s01_generator URL: ' + $s01_generator);
 
-      axios.post($s01_generator, {
+      // axios.post($s01_generator, {
 
-          // colour: '#bada55',
-          $dede_skin_original: $dede_skin_original,
-          $arlo_skin_original: $arlo_skin_original,
-          $dede_hair_original: $dede_hair_original,
-          $arlo_hair_original: $arlo_hair_original,
+      //     // colour: '#bada55',
+      //     $dede_skin_original: $dede_skin_original,
+      //     $arlo_skin_original: $arlo_skin_original,
+      //     $dede_hair_original: $dede_hair_original,
+      //     $arlo_hair_original: $arlo_hair_original,
 
-          $dede_skin_new: $newSkinDede,
-          $arlo_skin_new: $newSkinArlo,
-          $dede_hair_new: $newHairDede,
-          $arlo_hair_new: $newHairArlo,
+      //     $dede_skin_new: $newSkinDede,
+      //     $arlo_skin_new: $newSkinArlo,
+      //     $dede_hair_new: $newHairDede,
+      //     $arlo_hair_new: $newHairArlo,
 
-          // filesToChange:[
-          //   's01.shapes.json',
-          //   's02.shapes.json',
-          //   's03.shapes.json',
-          //   's04.shapes.json'
-          // ],
+      //     // filesToChange:[
+      //     //   's01.shapes.json',
+      //     //   's02.shapes.json',
+      //     //   's03.shapes.json',
+      //     //   's04.shapes.json'
+      //     // ],
 
-      }).then(resp => {
+      // }).then(resp => {
 
-        console.log('resp', resp);
-        console.log('resp.data', resp.data);
-        console.log('this.startScene(1) called');
+      //   console.log('resp', resp);
+      //   console.log('resp.data', resp.data);
 
-      });
+      // });
 
     },
 
