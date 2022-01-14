@@ -2466,13 +2466,13 @@ export default {
       // axios, hit php and generate shapes.json with colours changed ////
       ////////////////////////////////////////////////////////////////////
 
-      // // const $s01_generator = 'https://mf.wip/dist/images/shape_generator.php';
+      // // const $s01_generator = 'https://a-d.dev/dist/images/shape_generator.php';
       // console.log('window.location.href: ', window.location.href);
 
       // let $staticURL = 'https://a-d.dev';
       // // http://localhost:1234/
       // if (window.location.href.includes("localhost")) {
-      //   $staticURL = 'https://mf.wip/dist';
+      //   $staticURL = 'https://a-d.dev/dist';
       // }
 
       // const $s01_generator = $staticURL + '/images/shape_generator.php';
