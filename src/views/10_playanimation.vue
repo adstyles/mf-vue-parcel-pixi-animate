@@ -333,7 +333,7 @@ export default {
       ////////////////////////////////////////
 
       // if on local use dist folder???? - because json are made dynamically?
-      let $urlPrefix = 'images';
+      let $urlPrefix = 'https://a-d.dev/images';
       // http://localhost:1234/
       if (window.location.href.includes("localhost")) {
         $urlPrefix = 'https://mf.wip/dist/images';
