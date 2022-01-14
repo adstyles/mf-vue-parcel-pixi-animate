@@ -21,6 +21,7 @@ export default new Vuex.Store({
     mammoth_laugh:  null,
     easterImage:    'images/pngs/ei_props.png',
     KidName: null,
+    sessionID: Math.ceil(Math.random()*1000000)
   },
   mutations: { // syncronus
     changeDedeSkin (state, str) {           state.skin_dede = str;            },
@@ -74,6 +75,7 @@ export default new Vuex.Store({
     getMammothLaugh(state){         return state.mammoth_laugh;       },
     getEasterImage(state){          return state.easterImage;         },
     getKidName(state){              return state.KidName;             },
+    getSessionID(state){            return state.sessionID;           },
     // getSkin: state => state.skin
   },
   methods: {

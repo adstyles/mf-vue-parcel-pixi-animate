@@ -258,24 +258,26 @@ export default {
 
     // MOUTHS
     let parts = [
-      ['inline-vr-low-1.svg', 'low', 1],
-      ['inline-vr-low-2.svg', 'low', 2],
-      ['inline-vr-low-3.svg', 'low', 3],
       ['inline-vr-top-1.svg', 'top', 1],
       ['inline-vr-top-2.svg', 'top', 2],
       ['inline-vr-top-3.svg', 'top', 3],
       ['inline-vr-mid-1.svg', 'mid', 1],
       ['inline-vr-mid-2.svg', 'mid', 2],
       ['inline-vr-mid-3.svg', 'mid', 3],
+      ['inline-vr-low-1.svg', 'low', 1],
+      ['inline-vr-low-2.svg', 'low', 2],
+      ['inline-vr-low-3.svg', 'low', 3],
     ];
 
     let i = 0;
     const topPart_top = 0;
-    const topPart_left = 10;
+    const topPart_left = 20;
+
     const midPart_top = 110;
-    const midPart_left = 0;
+    const midPart_left = 10;
+    
     const lowPart_top = 190;
-    const lowPart_left = 10;
+    const lowPart_left = 0;
 
     for (const part of parts) {
 
@@ -307,7 +309,13 @@ export default {
         left = lowPart_left;
       }
 
-      fabric.loadSVGFromURL('https://a-d.dev/images/assets/' + partUrl, function(objects, options) {
+      let $staticDomain = 'a-d.dev';
+      // http://localhost:1234/
+      if (window.location.href.includes("localhost")) {
+        $staticDomain = 'mf.wip';
+      }
+
+      fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/' + partUrl, function(objects, options) {
         var p = fabric.util.groupSVGElements(objects, options);
         // console.log(p.height);
         // console.log(p);

@@ -3,6 +3,9 @@
     <!-- <canvas id="stage"></canvas> -->
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
+
+      <h1>{{sessionID}}</h1>
+
       <p>these buttons are just for us to test with and will prob make it crash 😅:</p>
       <button v-on:click="pauseScene">pause</button>
       <button v-on:click="playScene">play</button>
@@ -331,6 +334,9 @@ export default {
 
       console.log('setup scene vars');
 
+      const myUserID = this.$store.getters.getSessionID;
+      console.log('+++++++++++++++++++ myUserID: ', myUserID);
+
       let $sceneSettings = {
 
           // pngs
@@ -349,10 +355,15 @@ export default {
           "EASTER-HEADS": "images/pngs/EASTER-HEADS.jpg",
 
           // php generated jsons
-          "s01": "images/dist/s01.shapes.json",
-          "s02": "images/dist/s02.shapes.json",
-          "s03": "images/dist/s03.shapes.json",
-          "s04": "images/dist/s04.shapes.json",
+          // "s01": "images/json/"+myUserID+"/s01.shapes.json",
+          // "s02": "images/json/"+myUserID+"/s02.shapes.json",
+          // "s03": "images/json/"+myUserID+"/s03.shapes.json",
+          // "s04": "images/json/"+myUserID+"/s04.shapes.json",
+
+          "s01": "images/json/_default/s01.shapes.json",
+          "s02": "images/json/_default/s02.shapes.json",
+          "s03": "images/json/_default/s03.shapes.json",
+          "s04": "images/json/_default/s04.shapes.json",
           
           // "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
           // "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
@@ -488,6 +499,8 @@ export default {
 
     currScene: null,
 
+    sessionID: '_default'
+
     // grabbedSettings: []
     // grabbedSettings: null
   }),
@@ -546,6 +559,10 @@ export default {
   mounted() {
     this.setupMammothTracks();
     this.loadScene();
+
+    // var setSessionID = this.$store.getters.getSessionID;
+    // this.sessionID = setSessionID;
+
   },
 
   computed: {

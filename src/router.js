@@ -15,7 +15,6 @@ import TaskNine from './views/09_tasknine.vue';
 import PlayAnimation from './views/10_playanimation.vue';
 import EndScreen from './views/100_endscreen.vue';
 
-
 Vue.use(Router);
 
 export default new Router({

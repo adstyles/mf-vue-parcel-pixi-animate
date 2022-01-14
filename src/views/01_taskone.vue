@@ -2256,6 +2256,8 @@
       </div>
     </div>
 
+    <h1>{{sessionID}}</h1>
+
     <button href="#" v-on:click="updateJsonWithNewColours">UPDATE JSON</button>
 
     <!--     <h1>[ Selected Dede Skin is: {{skin_dede}} ]</h1>
@@ -2456,6 +2458,9 @@ export default {
       const $dede_hair_new = $newHairDede;
       const $arlo_hair_new = $newHairArlo;
 
+      // user ID - makes folder on server with this name & reference in json url in window.scene_settings
+      const myUserID = this.sessionID;
+
       // get axios
       const axios = require('../../node_modules/axios');
 
@@ -2466,44 +2471,46 @@ export default {
       // axios, hit php and generate shapes.json with colours changed ////
       ////////////////////////////////////////////////////////////////////
 
-      // // const $s01_generator = 'https://a-d.dev/dist/images/shape_generator.php';
-      // console.log('window.location.href: ', window.location.href);
+      // const $s01_generator = 'https://a-d.dev/dist/images/json/shape_generator.php';
+      console.log('window.location.href: ', window.location.href);
 
-      // let $staticURL = 'https://a-d.dev';
-      // // http://localhost:1234/
-      // if (window.location.href.includes("localhost")) {
-      //   $staticURL = 'https://a-d.dev/dist';
-      // }
+      let $staticURL = 'https://a-d.dev';
+      // http://localhost:1234/
+      if (window.location.href.includes("localhost")) {
+        $staticURL = 'https://mf.wip';
+      }
 
-      // const $s01_generator = $staticURL + '/images/shape_generator.php';
-      // console.log('axios $s01_generator URL: ' + $s01_generator);
+      const $s01_generator = $staticURL + '/images/json/shape_generator.php';
+      console.log('axios $s01_generator URL: ' + $s01_generator);
 
-      // axios.post($s01_generator, {
+      axios.post($s01_generator, {
 
-      //     // colour: '#bada55',
-      //     $dede_skin_original: $dede_skin_original,
-      //     $arlo_skin_original: $arlo_skin_original,
-      //     $dede_hair_original: $dede_hair_original,
-      //     $arlo_hair_original: $arlo_hair_original,
+          // colour: '#bada55',
+          $dede_skin_original: $dede_skin_original,
+          $arlo_skin_original: $arlo_skin_original,
+          $dede_hair_original: $dede_hair_original,
+          $arlo_hair_original: $arlo_hair_original,
 
-      //     $dede_skin_new: $newSkinDede,
-      //     $arlo_skin_new: $newSkinArlo,
-      //     $dede_hair_new: $newHairDede,
-      //     $arlo_hair_new: $newHairArlo,
+          $dede_skin_new: $newSkinDede,
+          $arlo_skin_new: $newSkinArlo,
+          $dede_hair_new: $newHairDede,
+          $arlo_hair_new: $newHairArlo,
 
-      //     // filesToChange:[
-      //     //   's01.shapes.json',
-      //     //   's02.shapes.json',
-      //     //   's03.shapes.json',
-      //     //   's04.shapes.json'
-      //     // ],
+          uniqueID : myUserID,
 
-      // }).then(resp => {
+          // filesToChange:[
+          //   's01.shapes.json',
+          //   's02.shapes.json',
+          //   's03.shapes.json',
+          //   's04.shapes.json'
+          // ],
 
-      //   console.log('resp', resp);
-      //   console.log('resp.data', resp.data);
+      }).then(resp => {
 
-      // });
+        console.log('resp', resp);
+        console.log('resp.data', resp.data);
+
+      });
 
     },
 
@@ -2617,6 +2624,7 @@ export default {
     skin_arlo_used: false,
     hair_arlo_used: false,
     $i: 0,
+    sessionID: 'something here'
   }),
   mounted() {
     var setDedeSkin = this.$store.getters.getCurrentDedeSkin;
@@ -2627,6 +2635,8 @@ export default {
     this.skin_arlo = setArloSkin;
     var setArloHair = this.$store.getters.getCurrentArloHair;
     this.hair_arlo = setArloHair;
+    var setSessionID = this.$store.getters.getSessionID;
+    this.sessionID = setSessionID;
   }
 };
 </script>

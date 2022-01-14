@@ -202,7 +202,13 @@ export default {
 
     // EMOJI BLANK FACE
 
-    fabric.loadSVGFromURL('https://a-d.dev/images/assets/inline-emoji-face.svg', function(objects, options) {
+    let $staticDomain = 'a-d.dev';
+    // http://localhost:1234/
+    if (window.location.href.includes("localhost")) {
+      $staticDomain = 'mf.wip';
+    }
+
+    fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/inline-emoji-face.svg', function(objects, options) {
       var face = fabric.util.groupSVGElements(objects, options);
       console.log(face.height);
       face.top = 150;
@@ -254,7 +260,7 @@ export default {
       console.log(eye);
       console.log(j);
 
-      fabric.loadSVGFromURL('https://a-d.dev/images/assets/' + eye, function(objects, options) {
+      fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/' + eye, function(objects, options) {
         var eye = fabric.util.groupSVGElements(objects, options);
         eye.top = (topOffset - eye.height);
         eye.left = 330;
@@ -295,7 +301,7 @@ export default {
       console.log(i);
       // console.log(topOffset);
 
-      fabric.loadSVGFromURL('https://a-d.dev/images/assets/' + mouth, function(objects, options) {
+      fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/' + mouth, function(objects, options) {
         var mouth = fabric.util.groupSVGElements(objects, options);
         // console.log(mouth.height);
         console.log(mouth);

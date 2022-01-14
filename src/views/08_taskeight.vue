@@ -115,6 +115,12 @@ export default {
 
     let j = 1;
 
+    let $staticDomain = 'a-d.dev';
+    // http://localhost:1234/
+    if (window.location.href.includes("localhost")) {
+      $staticDomain = 'mf.wip';
+    }
+
     for (const prop of easterIslandProps) {
 
       j++;
@@ -124,7 +130,7 @@ export default {
       console.log(j);
       console.log(topOffset);
 
-      fabric.loadSVGFromURL('https://a-d.dev/images/assets/' + prop, function(objects, options) {
+      fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/' + prop, function(objects, options) {
         var prop = fabric.util.groupSVGElements(objects, options);
         prop.top = (topOffset - prop.height);
         prop.left = 20;
@@ -137,7 +143,7 @@ export default {
 
     // manually add in earrings
 
-    fabric.loadSVGFromURL('https://a-d.dev/images/assets/inline-earring1.svg', function(objects, options) {
+    fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/inline-earring1.svg', function(objects, options) {
       var item = fabric.util.groupSVGElements(objects, options);
       item.top = (480 - item.height);
       item.left = 20;
@@ -146,7 +152,7 @@ export default {
       canvas.renderAll();
     });
 
-    fabric.loadSVGFromURL('https://a-d.dev/images/assets/inline-earring2.svg', function(objects, options) {
+    fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/inline-earring2.svg', function(objects, options) {
       var item = fabric.util.groupSVGElements(objects, options);
       item.top = (480 - item.height);
       item.left = 220;
