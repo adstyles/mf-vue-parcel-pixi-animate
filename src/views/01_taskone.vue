@@ -2474,13 +2474,13 @@ export default {
       // const $s01_generator = 'https://a-d.dev/dist/images/json/shape_generator.php';
       console.log('window.location.href: ', window.location.href);
 
-      let $staticURL = 'https://a-d.dev';
+      let $staticURL = 'https://a-d.dev/images';
       // http://localhost:1234/
       if (window.location.href.includes("localhost")) {
-        $staticURL = 'https://mf.wip';
+        $staticURL = 'https://mf.wip/dist/images'; // is this correct, to add dist??
       }
 
-      const $s01_generator = $staticURL + '/images/json/shape_generator.php';
+      const $s01_generator = $staticURL + '/json/shape_generator.php';
       console.log('axios $s01_generator URL: ' + $s01_generator);
 
       axios.post($s01_generator, {

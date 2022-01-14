@@ -332,6 +332,13 @@ export default {
       // set global assets for all scenes ////
       ////////////////////////////////////////
 
+      // if on local use dist folder???? - because json are made dynamically?
+      let $urlPrefix = 'images';
+      // http://localhost:1234/
+      if (window.location.href.includes("localhost")) {
+        $urlPrefix = 'https://mf.wip/dist/images';
+      }
+
       console.log('setup scene vars');
 
       const myUserID = this.$store.getters.getSessionID;
@@ -360,11 +367,18 @@ export default {
           // "s03": "images/json/"+myUserID+"/s03.shapes.json",
           // "s04": "images/json/"+myUserID+"/s04.shapes.json",
 
-          "s01": "images/json/_default/s01.shapes.json",
-          "s02": "images/json/_default/s02.shapes.json",
-          "s03": "images/json/_default/s03.shapes.json",
-          "s04": "images/json/_default/s04.shapes.json",
-          
+          // default
+          // "s01": $urlPrefix+"/json/_default/s01.shapes.json",
+          // "s02": $urlPrefix+"/json/_default/s02.shapes.json",
+          // "s03": $urlPrefix+"/json/_default/s03.shapes.json",
+          // "s04": $urlPrefix+"/json/_default/s04.shapes.json",
+ 
+          // using user ID           
+          "s01": $urlPrefix+"/json/"+myUserID+"/s01.shapes.json",
+          "s02": $urlPrefix+"/json/"+myUserID+"/s02.shapes.json",
+          "s03": $urlPrefix+"/json/"+myUserID+"/s03.shapes.json",
+          "s04": $urlPrefix+"/json/"+myUserID+"/s04.shapes.json",
+
           // "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
           // "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
           // "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
