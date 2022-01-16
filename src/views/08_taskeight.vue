@@ -5,7 +5,9 @@
     <div class="canvas-container">
       <!-- <h1>Easter Island Heads</h1> -->
       <canvas ref="myCanvas" id="canvas" width=1024 height=576></canvas>
-      <div class="canvas--background"></div>
+      <div class="canvas--background">
+        <img src="../assets/easter.jpg" alt="">
+      </div>
     </div>
     <!-- <button href="#" v-on:click="saveCanvas">SAVE CANVAS</button> -->
     <!-- <textarea name="backup" id="backup" cols="60" rows="10"></textarea> -->
@@ -24,6 +26,13 @@
   </div>
 </template>
 <script>
+
+  let $staticURL = 'https://a-d.dev/images';
+  // http://localhost:1234/
+  if (window.location.href.includes("localhost")) {
+    $staticURL = 'https://mf.wip/dist/images'; // is this correct, to add dist??
+  }
+
 import { fabric } from 'fabric';
 
 export default {
@@ -235,9 +244,13 @@ h1 {
   right: 0;
   width: 1024px;
   height: 576px;
-  background-image: url('https://a-d.dev/images/assets/easter.jpg');
+  // background-image: url($siteURL + '/images/assets/easter.jpg');
   background-size: contain;
   z-index: -1;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #canvas {

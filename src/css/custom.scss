@@ -807,4 +807,8 @@ button.button__disabled {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
 }
