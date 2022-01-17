@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- <debug> -->
-    <h1>Magic Fox Setup</h1>
+    <h1>Hello! Welcome to Magic Fox</h1>
 
     <p>Make sure your sound is on!</p>
 

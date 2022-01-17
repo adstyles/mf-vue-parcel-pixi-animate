@@ -65,6 +65,8 @@ export default {
       // sets {{skin}} on this Vue
       this.note = this.$store.getters.getCurrentNote;
 
+      document.querySelector('.router-link').classList.remove('button__disabled');
+
     }
   },
 

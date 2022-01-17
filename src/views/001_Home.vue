@@ -6,7 +6,7 @@
     <!-- <TaskAudioIndicator></TaskAudioIndicator> -->
 
     <!-- <debug> -->
-    <h1>Hello! Welcome to Magic Fox</h1>
+    <!-- <h1>Hello! Welcome to Magic Fox</h1> -->
     
     <!-- <p>This page will feature an intro from the Magic Fox!</p> -->
 

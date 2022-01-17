@@ -4,7 +4,7 @@
     <!-- <p>There’s magical sculptures in your film! Let’s make them super fun, drag the fancy dress items onto the sculptures until they look super silly!</p> -->
     <!-- <router-link to="/playanimation" class="button router-link">When you're ready, click here to continue!</router-link> -->
 
-    <input class="big-input" placeholder="add your stage name here" v-model="message"> <!-- v-model="KidName"  -->
+    <input class="big-input" placeholder="add your stage name here" v-on:input="inputChange" v-model="message"> <!-- v-model="KidName"  -->
 
 <!--     <h3>Your stage name is:</h3>
     <h1 class="name-preview">{{ displayKidName }}</h1> -->
@@ -35,6 +35,12 @@
       // setKidName: (event) => {
       //   store.commit("setKidName", event.target.value);
       // }
+
+      inputChange: function() {
+        console.log('inputChage!');
+        document.querySelector('.router-link').classList.remove('button__disabled');
+      }
+
     },
 
     beforeUpdate() {

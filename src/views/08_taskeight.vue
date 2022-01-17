@@ -170,6 +170,25 @@ export default {
       canvas.renderAll();
     });
 
+
+    // canvas interaction detection...
+    let $i = 0;
+    canvas.on('mouse:up', function (event) {
+      $i++;
+      if ($i >= 3) {
+        document.querySelector('.router-link').classList.remove('button__disabled');
+        // document.querySelector('.next-cta').classList.add('canvas-is-active');
+        // EventBus.$emit('taskInteraction', 'emoji');
+        // this.readyToProgress();
+      }
+      // if (isObjectMoving){
+      //   isObjectMoving = false;
+      //   recCanvas(canvas) // fire this if finished
+      // } 
+      // 
+    });
+
+
     // let width = 20;
     // let height = 100;
 

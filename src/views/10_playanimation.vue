@@ -4,12 +4,12 @@
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
 
-      <h1>{{sessionID}}</h1>
+      <!-- <h1>{{sessionID}}</h1> -->
 
-      <p>these buttons are just for us to test with and will prob make it crash 😅:</p>
-      <button v-on:click="pauseScene">pause</button>
-      <button v-on:click="playScene">play</button>
-      <button v-on:click="skipScene">Next Scene</button>
+      <!-- <p>these buttons are just for us to test with and will prob make it crash 😅:</p> -->
+      <!-- <button v-on:click="pauseScene">pause</button> -->
+      <!-- <button v-on:click="playScene">play</button> -->
+      <!-- <button v-on:click="skipScene">Next Scene</button> -->
     </div>
   </div>
 </template>
@@ -106,90 +106,144 @@ export default {
 
       console.log('***-> startScene() called', scene);
 
-      // set global vars for scenes (or replaces it with latest selections)
-      this.setupAnimVariables();
+      // first, check json is ready...
 
-      //setup scene if there isn't one
-      if (this.$refs.stageCanvas == null) {
+      if (!this.$refs.jsonChecked) {
 
-        const app = new Application({
-          width: 1024,
-          height: 576,
-          view: document.getElementById("stage")
+        // axios
+        const axios = require('../../node_modules/axios');
+
+        // if on local use dist folder???? - because json are made dynamically?
+        let $urlPrefix = 'https://a-d.dev/images';
+        // http://localhost:1234/
+        if (window.location.href.includes("localhost")) {
+          $urlPrefix = 'https://mf.wip/dist/images';
+        }
+
+        // let jsonToUse = 'user';
+        let myUserID = this.$store.getters.getSessionID;
+        console.log('+++++++++++++++++++ myUserID: ', myUserID);
+
+        // detect if jsons are there and ready. Test to see if s04 is present..
+        axios.get($urlPrefix+"/json/"+myUserID+"/s04.shapes.json").then((response) => {
+            console.log('+++++++++++++++++++ AXIOS - response: ', response.status);
+            if (response.status == 404) {
+              // if json missing, use default JSON...
+              console.log('use default JSON');
+              this.setupAnimVariables('default');
+              this.playTheVideo(scene);
+              this.$refs.jsonChecked = true;
+            } else {
+              console.log('use the USER JSON...');
+              this.setupAnimVariables('userCreated');
+              this.playTheVideo(scene);
+              this.$refs.jsonChecked = true;
+            }
+        }).catch((error) => {
+            console.log(error);
+            console.log('use default JSON');
+            this.setupAnimVariables('default');
+            this.playTheVideo(scene);
+            this.$refs.jsonChecked = true;
         });
-        // resizeTo.appendChild(app.view);
 
-        this.$refs.stageCanvas = app;
+      } else {
+
+        console.log('jsonChecked already...')
+        this.playTheVideo(scene);
 
       }
 
-      // play scene one
-      if (scene == 1) {
+    },
 
-        const s01 = require('../../anims/s01/s01');
+    playTheVideo(scene) {
 
-        // this.loadSceneTrack(this.$refs.s01Howl, s01_audio);
+        // set global vars for scenes (or replaces it with latest selections)
+        // this.setupAnimVariables();
 
-        load(s01.stage).onComplete.once(() => {
-             const s01Stage = new s01.stage();
-             this.$refs.s01Stage = s01Stage;
-             this.$refs.stageCanvas.stage.addChild(s01Stage);
-             this.$refs.currScene = 1;
-             // call to play track from anim instead...
-             // this.playSceneTrack(this.$refs.s01Howl);
-        });
+        //setup scene if there isn't one
+        if (this.$refs.stageCanvas == null) {
 
-      } else if (scene == 2) {
+          const app = new Application({
+            width: 1024,
+            height: 576,
+            view: document.getElementById("stage")
+          });
+          // resizeTo.appendChild(app.view);
 
-        const s02 = require('../../anims/s02/s02');
+          this.$refs.stageCanvas = app;
 
-        // unload pre scene track
-        this.$refs.s01Howl.unload();
+        }
 
-        load(s02.stage).onComplete.once(() => {
-             const s02Stage = new s02.stage();
-             this.$refs.s02Stage = s02Stage;
+        // play scene one
+        if (scene == 1) {
 
-             this.$refs.stageCanvas.stage.removeChild(this.$refs.s01Stage);
-             this.$refs.stageCanvas.stage.addChild(s02Stage);
-             this.$refs.currScene = 2;
-        });
+          const s01 = require('../../anims/s01/s01');
 
-      } else if (scene == 3) {
+          // this.loadSceneTrack(this.$refs.s01Howl, s01_audio);
 
-        // console.log('*-> startScene(3) called');
+          load(s01.stage).onComplete.once(() => {
+               const s01Stage = new s01.stage();
+               this.$refs.s01Stage = s01Stage;
+               this.$refs.stageCanvas.stage.addChild(s01Stage);
+               this.$refs.currScene = 1;
+               // call to play track from anim instead...
+               // this.playSceneTrack(this.$refs.s01Howl);
+          });
 
-        const s03 = require('../../anims/s03/s03');
+        } else if (scene == 2) {
 
-        // unload pre scene track
-        this.$refs.s02Howl.unload();
+          const s02 = require('../../anims/s02/s02');
 
-        load(s03.stage).onComplete.once(() => {
-             const s03Stage = new s03.stage();
-             this.$refs.s03Stage = s03Stage;
-             this.$refs.stageCanvas.stage.removeChild(this.$refs.s02Stage);
-             this.$refs.stageCanvas.stage.addChild(s03Stage);
-             this.$refs.currScene = 3;
-        });
+          // unload pre scene track
+          this.$refs.s01Howl.unload();
 
-      } else if (scene == 4) {
+          load(s02.stage).onComplete.once(() => {
+               const s02Stage = new s02.stage();
+               this.$refs.s02Stage = s02Stage;
 
-        // console.log('*-> startScene(4) called');
+               this.$refs.stageCanvas.stage.removeChild(this.$refs.s01Stage);
+               this.$refs.stageCanvas.stage.addChild(s02Stage);
+               this.$refs.currScene = 2;
+          });
 
-        const s04 = require('../../anims/s04/s04');
+        } else if (scene == 3) {
 
-        // unload pre scene track
-        this.$refs.s03Howl.unload();
+          // console.log('*-> startScene(3) called');
 
-        load(s04.stage).onComplete.once(() => {
-             const s04Stage = new s04.stage();
-             this.$refs.s04Stage = s04Stage;
-             this.$refs.stageCanvas.stage.removeChild(this.$refs.s03Stage);
-             this.$refs.stageCanvas.stage.addChild(s04Stage);
-             this.$refs.currScene = 4;
-        });
+          const s03 = require('../../anims/s03/s03');
 
-      }
+          // unload pre scene track
+          this.$refs.s02Howl.unload();
+
+          load(s03.stage).onComplete.once(() => {
+               const s03Stage = new s03.stage();
+               this.$refs.s03Stage = s03Stage;
+               this.$refs.stageCanvas.stage.removeChild(this.$refs.s02Stage);
+               this.$refs.stageCanvas.stage.addChild(s03Stage);
+               this.$refs.currScene = 3;
+          });
+
+        } else if (scene == 4) {
+
+          // console.log('*-> startScene(4) called');
+
+          const s04 = require('../../anims/s04/s04');
+
+          // unload pre scene track
+          this.$refs.s03Howl.unload();
+
+          load(s04.stage).onComplete.once(() => {
+               const s04Stage = new s04.stage();
+               this.$refs.s04Stage = s04Stage;
+               this.$refs.stageCanvas.stage.removeChild(this.$refs.s03Stage);
+               this.$refs.stageCanvas.stage.addChild(s04Stage);
+               this.$refs.currScene = 4;
+          });
+
+        }
+
+      
 
     },
 
@@ -312,7 +366,9 @@ export default {
 
     },
 
-    setupAnimVariables() {
+    setupAnimVariables($json_location) {
+
+      console.log('=== setupAnimVariables called - $json_location is: ', $json_location);
 
       ////////////////////////////////////////
       // setup all audio Howler tracks    ////
@@ -341,56 +397,77 @@ export default {
 
       console.log('setup scene vars');
 
-      const myUserID = this.$store.getters.getSessionID;
-      console.log('+++++++++++++++++++ myUserID: ', myUserID);
+      if ($json_location == 'default') {
 
-      let $sceneSettings = {
+        let $sceneSettings = {
 
-          // pngs
-          "REPLACE_CAVE_ART":         this.$store.state.cavePainting,
+            // pngs
+            "REPLACE_CAVE_ART":         this.$store.state.cavePainting,
 
-          "REPLACE_EMOJI_SAD":        this.$store.state.emojiImage,
-          "REPLACE_HEADSET":          this.$store.state.headset,
-          "REPLACE_EI":               this.$store.state.easterImage,
-          
-          "REPLACE_EMOJI_HAPPY":      "images/pngs/emojis/"+this.$store.state.happyIcon+".png",
-          "REPLACE_SIGN":             "images/pngs/signs/"+this.$store.state.note+".png",
-          "REPLACE_CREATURES":        "images/pngs/creatures/creatures_"+this.$store.state.creature+".png",
-          "REPLACE_CREATURES_BLINK":  "images/pngs/creatures/creatures_"+this.$store.state.creature+"_blink.png",
+            "REPLACE_EMOJI_SAD":        this.$store.state.emojiImage,
+            "REPLACE_HEADSET":          this.$store.state.headset,
+            "REPLACE_EI":               this.$store.state.easterImage,
+            
+            "REPLACE_EMOJI_HAPPY":      "images/pngs/emojis/"+this.$store.state.happyIcon+".png",
+            "REPLACE_SIGN":             "images/pngs/signs/"+this.$store.state.note+".png",
+            "REPLACE_CREATURES":        "images/pngs/creatures/creatures_"+this.$store.state.creature+".png",
+            "REPLACE_CREATURES_BLINK":  "images/pngs/creatures/creatures_"+this.$store.state.creature+"_blink.png",
 
-          // doesn't change - need to optimise
-          "EASTER-HEADS": "images/pngs/EASTER-HEADS.jpg",
+            // doesn't change - need to optimise
+            "EASTER-HEADS": "images/pngs/EASTER-HEADS.jpg",
+        
+            // using user ID           
+            "s01": $urlPrefix+"/json/_default/s01.shapes.json",
+            "s02": $urlPrefix+"/json/_default/s02.shapes.json",
+            "s03": $urlPrefix+"/json/_default/s03.shapes.json",
+            "s04": $urlPrefix+"/json/_default/s04.shapes.json",
+            
+        };
 
-          // php generated jsons
-          // "s01": "images/json/"+myUserID+"/s01.shapes.json",
-          // "s02": "images/json/"+myUserID+"/s02.shapes.json",
-          // "s03": "images/json/"+myUserID+"/s03.shapes.json",
-          // "s04": "images/json/"+myUserID+"/s04.shapes.json",
+        // update scene settings global vars
+        window.$sceneSettings = $sceneSettings;
 
-          // default
-          // "s01": $urlPrefix+"/json/_default/s01.shapes.json",
-          // "s02": $urlPrefix+"/json/_default/s02.shapes.json",
-          // "s03": $urlPrefix+"/json/_default/s03.shapes.json",
-          // "s04": $urlPrefix+"/json/_default/s04.shapes.json",
- 
-          // using user ID           
-          "s01": $urlPrefix+"/json/"+myUserID+"/s01.shapes.json",
-          "s02": $urlPrefix+"/json/"+myUserID+"/s02.shapes.json",
-          "s03": $urlPrefix+"/json/"+myUserID+"/s03.shapes.json",
-          "s04": $urlPrefix+"/json/"+myUserID+"/s04.shapes.json",
+        console.log('window.$sceneSettings', window.$sceneSettings);
 
-          // "REPLACE_EMOJI_SAD": "images/REPLACE_EMOJI_SAD.png",
-          // "REPLACE_HEADSET": "images/REPLACE_HEADSET.png",
-          // "REPLACE_EMOJI_HAPPY": "images/REPLACE_EMOJI_HAPPY.png",
-          // "REPLACE_SIGN": "images/REPLACE_SIGN.png",
-          // "s01": "images/dist/s01.shapes.json",
-          
-      };
+      } else {
 
-      // update scene settings global vars
-      window.$sceneSettings = $sceneSettings;
+        // let jsonToUse = 'user';
+        let myUserID = this.$store.getters.getSessionID;
+        console.log('+++++++++++++++++++ myUserID: ', myUserID);
 
-      console.log('window.$sceneSettings', window.$sceneSettings);
+        let $sceneSettings = {
+
+            // pngs
+            "REPLACE_CAVE_ART":         this.$store.state.cavePainting,
+
+            "REPLACE_EMOJI_SAD":        this.$store.state.emojiImage,
+            "REPLACE_HEADSET":          this.$store.state.headset,
+            "REPLACE_EI":               this.$store.state.easterImage,
+            
+            "REPLACE_EMOJI_HAPPY":      "images/pngs/emojis/"+this.$store.state.happyIcon+".png",
+            "REPLACE_SIGN":             "images/pngs/signs/"+this.$store.state.note+".png",
+            "REPLACE_CREATURES":        "images/pngs/creatures/creatures_"+this.$store.state.creature+".png",
+            "REPLACE_CREATURES_BLINK":  "images/pngs/creatures/creatures_"+this.$store.state.creature+"_blink.png",
+
+            // doesn't change - need to optimise
+            "EASTER-HEADS": "images/pngs/EASTER-HEADS.jpg",
+   
+            // using user ID           
+            "s01": $urlPrefix+"/json/"+myUserID+"/s01.shapes.json",
+            "s02": $urlPrefix+"/json/"+myUserID+"/s02.shapes.json",
+            "s03": $urlPrefix+"/json/"+myUserID+"/s03.shapes.json",
+            "s04": $urlPrefix+"/json/"+myUserID+"/s04.shapes.json",
+            
+        };
+
+        // update scene settings global vars
+        window.$sceneSettings = $sceneSettings;
+
+        console.log('window.$sceneSettings', window.$sceneSettings);
+
+      }
+
+      
 
     },
 
@@ -512,6 +589,8 @@ export default {
     $mammoth_laugh_mp3: null,
 
     currScene: null,
+
+    jsonChecked: false,
 
     sessionID: '_default'
 

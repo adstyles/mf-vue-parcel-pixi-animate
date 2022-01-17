@@ -1,6 +1,6 @@
 <template>
   <div class="taskthree">
-    <h1>Task 3</h1>
+    <!-- <h1>Task 3</h1> -->
     <!-- <p>Design your character’s phone! Drag the features onto the face to make a mega sad emoji. Then select your favourite happy icon!</p> -->
     <!-- <h1>Sad Face Emoji</h1> -->
     <div class="tasks-wrapper">
@@ -89,13 +89,26 @@
 import { fabric } from 'fabric';
 import { fabricHistory } from 'fabric-history';
 
+import { EventBus } from '../main';
+
 
 export default {
   name: 'taskthree',
   methods: {
-    enableNext: function() {
-      document.querySelector('.router-link').classList.remove('button__disabled');
-    },
+
+    // enableNext: function() {
+    //   document.querySelector('.router-link').classList.remove('button__disabled');
+    // },
+
+    // readyToProgress: function() {
+    //   console.log('readyToProgress called');
+    //   console.log('this.$refs.canvasInteractedWith ', this.$refs.canvasInteractedWith);
+    //   console.log('this.$refs.happyIcon ', this.$refs.happyIcon);
+    //   if (this.$refs.canvasInteractedWith && this.$refs.happyIcon != 'not set') {
+    //     this.enableNext();
+    //   }
+    // },
+
     choosehappyIcon: function(event) {
       // get attribute and commit to changeSkin in store
       var happyIcon = event.target.parentNode.getAttribute('data-happyIcon');
@@ -114,6 +127,9 @@ export default {
       this.$store.commit('changehappyIcon', happyIcon);
       // sets {{skin}} on this Vue
       this.happyIcon = this.$store.getters.getCurrenthappyIcon;
+
+      // document.querySelector('.next-cta').classList.add('happyicon-is-active');
+      EventBus.$emit('taskInteraction', 'happyIcon');
     },
 
     saveCanvas: function() {
@@ -184,11 +200,32 @@ export default {
 
   },
 
+  
+
   data: () => ({
     happyIcon: 'not set',
     savedCanvas: null,
+    canvasInteractedWith: null,
+    happyIconSelected: null,
     activeCanvas: null,
   }),
+
+  created() {
+
+    EventBus.$on('taskInteraction', (data) => {
+      console.log('taskInteraction: ', data);    
+      // this.router.go({ name: 'endscreen' });
+      // this.startScene(data);
+      if (data == 'emoji') { this.$refs.canvasInteractedWith = true; }
+      if (data == 'happyIcon') { this.$refs.happyIconSelected = true; }
+      if (this.$refs.happyIconSelected && this.$refs.canvasInteractedWith) {
+        console.log('ready to progress');
+        // document.querySelector('.next-cta').classList.remove('button__disabled');
+        document.querySelector('.router-link').classList.remove('button__disabled');
+      }
+    });
+
+  },
 
   mounted() {
 
@@ -325,6 +362,9 @@ export default {
       $i++;
       if ($i >= 2) {
         document.querySelector('.js-emoji-container').classList.add('is-active');
+        // document.querySelector('.next-cta').classList.add('canvas-is-active');
+        EventBus.$emit('taskInteraction', 'emoji');
+        // this.readyToProgress();
       }
       // if (isObjectMoving){
       //   isObjectMoving = false;
@@ -395,6 +435,7 @@ $blue: #2c9ffc;
   align-items: center;
   // justify-content: center;
   // flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 #canvas {
@@ -491,4 +532,11 @@ img.example-icon {
     }
   }
 }
+
+
+// .button.happyicon-is-active.canvas-is-active {
+
+// }
+
+
 </style>

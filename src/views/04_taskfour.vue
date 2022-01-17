@@ -38,6 +38,8 @@
 <script>
 import { fabric } from 'fabric';
 
+let $i = 0;
+
 export default {
   name: 'taskfour',
   methods: {
@@ -135,6 +137,12 @@ export default {
         this.currLowPart = num;
       }
 
+
+      $i++;
+
+      if ($i >= 3) {
+        document.querySelector('.router-link').classList.remove('button__disabled');
+      }
 
       // update button data
       // event.target.setAttribute('data-num') = num;
@@ -334,7 +342,14 @@ export default {
         canvas.add(p);
         canvas.calcOffset();
         canvas.renderAll();
+
+        if (partPos == 'top') {
+          canvas.sendToBack(p);
+        }
+
       });
+
+
 
       // i++;
       // let topOffset = (50*i);

@@ -2256,9 +2256,9 @@
       </div>
     </div>
 
-    <h1>{{sessionID}}</h1>
+    <!-- <h1>{{sessionID}}</h1> -->
 
-    <button href="#" v-on:click="updateJsonWithNewColours">UPDATE JSON</button>
+    <!-- <button href="#" v-on:click="updateJsonWithNewColours">UPDATE JSON</button> -->
 
     <!--     <h1>[ Selected Dede Skin is: {{skin_dede}} ]</h1>
     <h1>[ Selected Dede hair is: {{hair_dede}} ]</h1>

@@ -250,6 +250,8 @@ img {
 	opacity: 0.3;
 	transition: all 0.2s;
 
+	cursor: default;
+
 	// padding: 5px 10px;
 	// border-radius: 5px;
 	// margin: 5px 10px 5px 0;
@@ -258,7 +260,7 @@ img {
 	&:hover,
 	&:focus {
 		// background-color: darken($mf-red, 10%);
-		opacity: 1;
+		// opacity: 1;
 		// color: #fff;
 	}
 

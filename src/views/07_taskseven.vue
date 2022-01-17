@@ -5,7 +5,7 @@
         <!-- <div> -->
         <!-- <h1>Record Mammoth Sounds!</h1> -->
         <ul class="mammoth-rows-container">
-            <li class="mammoth-row">
+            <li id="angry" class="mammoth-row">
                 <div class="mammoth-row--title">
                     <img src="../assets/inline-angry.svg" alt="Wooly Mammoth" class="mammoth">
                     <!-- <h3>Angry Mammoth - {{angry_pretty_duration}}</h3> -->
@@ -13,18 +13,28 @@
                         <h3>Angry<br />Mammoth</h3>
                         <h4>{{angry_pretty_duration}}</h4>
                     </div>
-                    <button v-on:click="playAngryMammothExample" id="mam-angry__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                            <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg></button>
+                    <button v-on:click="playAngryMammothExample" id="mam-angry__sample" class="button__blue button-round sample_button">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" />
+                        </svg>
+                    </button>
+                    <div class="dividing-line"></div>
                     <div id="mammoth-row--content__angry" class="mammoth-row--content mammoth-row--content__angry rec-btn-is-visible" v-bind:class="{ recording_in_store : storedMammothAngry }">
                         <button id="mam-angry__recBtn" class="recBtn" data-emotion="angry" :disabled='!this.allowRec' v-on:click="startRecordingAudio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M15.526 11.409c-1.052.842-7.941 6.358-9.536 7.636l-2.697-2.697 7.668-9.504 4.565 4.565zm5.309-9.867c-2.055-2.055-5.388-2.055-7.443 0-1.355 1.356-1.47 2.842-1.536 3.369l5.61 5.61c.484-.054 2.002-.169 3.369-1.536 2.056-2.055 2.056-5.388 0-7.443zm-9.834 17.94c-2.292 0-3.339 1.427-4.816 2.355-1.046.656-2.036.323-2.512-.266-.173-.211-.667-.971.174-1.842l-.125-.125-1.126-1.091c-1.372 1.416-1.129 3.108-.279 4.157.975 1.204 2.936 1.812 4.795.645 1.585-.995 2.287-2.088 3.889-2.088 1.036 0 1.98.464 3.485 2.773l1.461-.952c-1.393-2.14-2.768-3.566-4.946-3.566z" /></svg> Record your Angry Mammoth</button>
                         <h2 id="mam-angry__countdown" class="countdown"></h2>
                         <progress id="mam-angry__progress" class="progress" max="100" value="0"></progress>
-                        <button id="mam-angry__listenBack" class="button__blue listenback-button" v-on:click="playAngryMammothSFX">Listen to your Angry Mammoth</button>
+                        <button id="mam-angry__listenBack" class="button__blue listenback-button" v-on:click="playAngryMammothSFX"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg>
+                        Listen to your Angry Mammoth</button>
+                    </div>
+                    <div class="status">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z" /></svg>
                     </div>
                 </div>
             </li>
-            <li class="mammoth-row">
+            <li id="embar" class="mammoth-row">
                 <div class="mammoth-row--title">
                     <img src="../assets/inline-embarrassed.svg" alt="Wooly Mammoth" class="mammoth">
                     <!-- <h3>Embarrassed Mammoth - {{embarrassed_pretty_duration}}</h3> -->
@@ -32,18 +42,26 @@
                         <h3>Embarrassed<br />Mammoth</h3>
                         <h4>{{embarrassed_pretty_duration}}</h4>
                     </div>
-                    <button v-on:click="playEmbarrassedMammothExample" id="mam-embarrassed__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <button v-on:click="playEmbarrassedMammothExample" id="mam-embarrassed__sample" class="button__blue button-round sample_button"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                             <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg></button>
+                    <div class="dividing-line"></div>
+
                     <div id="mammoth-row--content__embarrassed" class="mammoth-row--content mammoth-row--content__embarrassed rec-btn-is-visible" v-bind:class="{ recording_in_store : storedMammothEmbarrassed }">
                         <button id="mam-embarrassed__recBtn" class="recBtn" data-emotion="embarrassed" :disabled='!this.allowRec' v-on:click="startRecordingAudio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M15.526 11.409c-1.052.842-7.941 6.358-9.536 7.636l-2.697-2.697 7.668-9.504 4.565 4.565zm5.309-9.867c-2.055-2.055-5.388-2.055-7.443 0-1.355 1.356-1.47 2.842-1.536 3.369l5.61 5.61c.484-.054 2.002-.169 3.369-1.536 2.056-2.055 2.056-5.388 0-7.443zm-9.834 17.94c-2.292 0-3.339 1.427-4.816 2.355-1.046.656-2.036.323-2.512-.266-.173-.211-.667-.971.174-1.842l-.125-.125-1.126-1.091c-1.372 1.416-1.129 3.108-.279 4.157.975 1.204 2.936 1.812 4.795.645 1.585-.995 2.287-2.088 3.889-2.088 1.036 0 1.98.464 3.485 2.773l1.461-.952c-1.393-2.14-2.768-3.566-4.946-3.566z" /></svg> Record your Embarrassed Mammoth</button>
                         <h2 id="mam-embarrassed__countdown" class="countdown"></h2>
                         <progress id="mam-embarrassed__progress" class="progress" max="100" value="0"></progress>
-                        <button id="mam-embarrassed__listenBack" v-bind:class="storedMammothEmbarrassed" class="button__blue listenback-button" v-on:click="playEmbarrassedMammothSFX">Listen to your Embarrassed Mammoth</button>
+                        <button id="mam-embarrassed__listenBack" v-bind:class="storedMammothEmbarrassed" class="button__blue listenback-button" v-on:click="playEmbarrassedMammothSFX"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg>
+                        Listen to your Embarrassed Mammoth</button>
+                    </div>
+                    <div class="status">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z" /></svg>
                     </div>
                 </div>
             </li>
-            <li class="mammoth-row">
+            <li id="laugh" class="mammoth-row">
                 <div class="mammoth-row--title">
                     <img src="../assets/inline-laughing.svg" alt="Wooly Mammoth" class="mammoth">
                     <!-- <h3>Laughing Mammoth - {{laugh_pretty_duration}}</h3> -->
@@ -51,14 +69,21 @@
                         <h3>Laughing<br />Mammoth</h3>
                         <h4>{{laugh_pretty_duration}}</h4>
                     </div>
-                    <button v-on:click="playLaughMammothExample" id="mam-laugh__sample" class="button__blue"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <button v-on:click="playLaughMammothExample" id="mam-laugh__sample" class="button__blue button-round sample_button"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                             <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg></button>
+                    <div class="dividing-line"></div>
                     <div id="mammoth-row--content__laugh" class="mammoth-row--content mammoth-row--content__laugh rec-btn-is-visible" v-bind:class="{ recording_in_store : storedMammothLaugh }">
                         <button id="mam-laugh__recBtn" class="recBtn" data-emotion="laugh" :disabled='!this.allowRec' v-on:click="startRecordingAudio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M15.526 11.409c-1.052.842-7.941 6.358-9.536 7.636l-2.697-2.697 7.668-9.504 4.565 4.565zm5.309-9.867c-2.055-2.055-5.388-2.055-7.443 0-1.355 1.356-1.47 2.842-1.536 3.369l5.61 5.61c.484-.054 2.002-.169 3.369-1.536 2.056-2.055 2.056-5.388 0-7.443zm-9.834 17.94c-2.292 0-3.339 1.427-4.816 2.355-1.046.656-2.036.323-2.512-.266-.173-.211-.667-.971.174-1.842l-.125-.125-1.126-1.091c-1.372 1.416-1.129 3.108-.279 4.157.975 1.204 2.936 1.812 4.795.645 1.585-.995 2.287-2.088 3.889-2.088 1.036 0 1.98.464 3.485 2.773l1.461-.952c-1.393-2.14-2.768-3.566-4.946-3.566z" /></svg> Record your laughing Mammoth</button>
                         <h2 id="mam-laugh__countdown" class="countdown"></h2>
                         <progress id="mam-laugh__progress" class="progress" max="100" value="0"></progress>
-                        <button id="mam-laugh__listenBack" v-bind:class="storedMammothLaugh" class="button__blue listenback-button" v-on:click="playLaughMammothSFX">Listen to your laughing Mammoth</button>
+                        <button id="mam-laugh__listenBack" v-bind:class="storedMammothLaugh" class="button__blue listenback-button" v-on:click="playLaughMammothSFX"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M18.923 24c-2.402 0-3.776-1.891-4.508-4.229-.266-.86-.518-1.786-1.732-3.021-2.214-2.255-3.164-4.829-3.164-7.352 0-4.208 3.316-7.398 6.958-7.398 4.317 0 7.585 3.782 5.438 9.689l-1.915-.689c1.691-4.835-.899-6.764-3.582-6.815-2.328-.045-4.428 2.01-4.715 4.41-.25 2.094.298 4.627 2.3 6.548 1.735 1.664 1.971 2.766 2.288 3.857.731 2.516 1.883 2.903 2.705 2.849 1.923-.127 2.76-2.145.944-4.439l1.822-1.025c.841 1.239 1.231 2.572 1.238 3.615.016 2.45-1.939 4-4.077 4zm-12.267-6.589l-1.387 1.589c-2.612-2.323-4.269-5.714-4.269-9.501 0-3.787 1.657-7.178 4.269-9.5l1.387 1.588c-2.177 1.936-3.56 4.762-3.56 7.912 0 3.15 1.383 5.975 3.56 7.912zm.44-7.912c0-1.891.829-3.586 2.135-4.748l-1.386-1.585c-1.742 1.548-2.845 3.808-2.845 6.333 0 2.525 1.103 4.785 2.845 6.333l1.386-1.585c-1.306-1.162-2.135-2.858-2.135-4.748zm11.536 5.662c-1.24.655-2.362-.289-2.86-1.444-.476-1.101-.187-2.362.767-3.374.657-.697 1.022-1.531.884-2.167-.051-.242-.196-.565-.584-.724-.389-.161-.792-.111-1.117.07-.522.29-.937.995-1.08 1.839l-1.479-.25c.222-1.304.906-2.388 1.831-2.9.731-.405 1.601-.482 2.415-.147.764.314 1.303.969 1.482 1.797.244 1.135-.251 2.44-1.262 3.512 2.06.514 2.312 2.99 1.003 3.788z" /></svg>
+                        Listen to your laughing Mammoth</button>
+                    </div>
+                    <div class="status">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z" /></svg>
                     </div>
                 </div>
             </li>
@@ -81,6 +106,8 @@
 // import Recorder from 'recorder-js';
 // import MicRecorder from 'MicRecorder';
 import { MicRecorder } from 'mic-recorder-to-mp3';
+
+import { EventBus } from '../main';
 
 export default {
     name: 'taskseven',
@@ -118,6 +145,9 @@ export default {
         },
 
         startRecordingAudio: function(e) {
+
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
 
             /// Grab the mic
             const MicRecorder = require('mic-recorder-to-mp3');
@@ -236,10 +266,19 @@ export default {
 
                     if (emotion == 'angry') {
                         ref.$store.commit('setMammothAngry', blob);
+                        const mammRow = document.getElementById("angry");
+                        mammRow.classList.add('is-active');
+                        EventBus.$emit('audioRecorded', 'angry');
                     } else if (emotion == 'embarrassed') {
                         ref.$store.commit('setMammothEmbarrassed', blob);
+                        const mammRow = document.getElementById("embar");
+                        mammRow.classList.add('is-active');
+                        EventBus.$emit('audioRecorded', 'embar');
                     } else if (emotion == 'laugh') {
                         ref.$store.commit('setMammothLaugh', blob);
+                        const mammRow = document.getElementById("laugh");
+                        mammRow.classList.add('is-active');
+                        EventBus.$emit('audioRecorded', 'laugh');
                     }
 
                     // listenBack.appendChild(player);
@@ -312,6 +351,8 @@ export default {
                 autoplay: true,
                 src: [ $mammoth_angry_mp3 ],
             })
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
         },
 
         playEmbarrassedMammothExample() {
@@ -321,6 +362,8 @@ export default {
                 autoplay: true,
                 src: [ $mammoth_embar_mp3 ],
             })
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
         },
 
         playLaughMammothExample() {
@@ -330,6 +373,8 @@ export default {
                 autoplay: true,
                 src: [ $mammoth_laugh_mp3 ],
             })
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
         },
 
         playAngryMammothSFX() {
@@ -341,6 +386,8 @@ export default {
                 html5: true,
                 format: ['mp3'],
             })
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
         },
 
         playEmbarrassedMammothSFX() {
@@ -352,6 +399,8 @@ export default {
                 html5: true,
                 format: ['mp3'],
             })
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
         },
 
         playLaughMammothSFX() {
@@ -363,6 +412,8 @@ export default {
                 html5: true,
                 format: ['mp3'],
             })
+            EventBus.$emit('stopVO');
+            // Emit call to stop Task VO
         }
 
     },
@@ -433,11 +484,41 @@ export default {
         mammoth_embarrassed_duration: 5000, // in miliseconds
         mammoth_laugh: "",
         mammoth_laugh_duration: 4000, // in miliseconds
+        angryRecorded: null,
+        embarRecorded: null,
+        laughRecorded: null,
 
 
     }),
 
+    created() {
 
+      EventBus.$on('audioRecorded', (data) => {
+        console.log('audioRecorded: ', data);    
+        // this.router.go({ name: 'endscreen' });
+        // this.startScene(data);
+        if (data == 'angry') { this.$refs.angryRecorded = true; }
+        if (data == 'embar') { this.$refs.embarRecorded = true; }
+        if (data == 'laugh') { this.$refs.laughRecorded = true; }
+        
+
+        if (this.$refs.angryRecorded && this.$refs.embarRecorded && this.$refs.laughRecorded) {
+          console.log('ready to progress');
+          // document.querySelector('.next-cta').classList.remove('button__disabled');
+          document.querySelector('.router-link').classList.remove('button__disabled');
+        }
+      });
+
+      EventBus.$on('stopVO', () => {
+        console.log('stopVO on Task 7');   
+
+        this.$parent.$parent.stopTaskTracks();
+
+        // this.router.go({ name: 'endscreen' });
+        // this.gotoEndScreen();
+      });
+
+    },
 
     mounted() {
 
@@ -484,6 +565,15 @@ export default {
     margin-top: 1rem;
     border-bottom: 1px solid red;
     width: 100%;
+
+    .button-round {
+        width: 65px;
+        height: 65px;
+        svg {
+            width: auto;
+            height: auto;
+        }
+    }
 }
 
 .mammoth-row--title,
@@ -498,12 +588,27 @@ export default {
     justify-content: center;
 
     >* {
-        margin: 0 1rem;
+        margin: 0 0.8rem;
     }
 }
 
 .mammoth-row-title {
-    min-width: 140px;
+    min-width: 120px;
+}
+
+// .sample_button {
+//     &:after {
+//         content: "";
+//         position: relative;
+//         right: -10px;
+//         border-right: 1px solid red;
+//     }
+// }
+
+.dividing-line {
+    background: #e6d9c1;
+    width: 1px;
+    height: 100%;
 }
 
 .mammoth-row--content {
@@ -564,6 +669,18 @@ export default {
 .mammoth-row--title>*,
 .mammoth-row--content>* {
     /*flex: 1 0 1/6fr;*/
+}
+
+.mammoth-row.is-active {
+  .status {
+    opacity: 1;
+        svg {
+            path {
+                fill: green;
+            }
+        }
+    }
+
 }
 
 

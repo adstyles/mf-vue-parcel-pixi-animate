@@ -176,6 +176,8 @@ export default {
 
 
 
+		let $i = 0;
+
 		this.canvas.on('mouse:down', function(e) {
 			// e.preventdefault();
 			if (!this.promptRemoved) {
@@ -183,6 +185,21 @@ export default {
 				prompt.remove();
 				this.promptRemoved = true;
 			}
+
+			// canvas interaction detection...
+			
+			
+		  	$i++;
+		  	if ($i >= 3) {
+		    	document.querySelector('.router-link').classList.remove('button__disabled');
+		  	}
+			  // if (isObjectMoving){
+			  //   isObjectMoving = false;
+			  //   recCanvas(canvas) // fire this if finished
+			  // } 
+			  // 
+			
+
 		});
 
 		// var rect = new fabric.Rect({
