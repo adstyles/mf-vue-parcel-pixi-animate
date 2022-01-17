@@ -41,8 +41,14 @@ export default {
 
     saveCanvas: function() {
 
-      let offsetTop = 0;
-      let offsetLeft = 0;
+      var scale = window.devicePixelRatio;
+      console.log('scale is... ', scale);
+
+      // let offsetTop = 0;
+      // let offsetLeft = 0;
+      let canvWidth = 1024;
+      let canvHeight = 576;
+
       let desiredWidth = 1024;
       let desiredHeight = 576;
 
@@ -51,10 +57,11 @@ export default {
       c.width = desiredWidth;
       c.height = desiredHeight;
 
-      let x = (offsetLeft * 2);
-      let y = (offsetTop * 2);
-      let w = (desiredWidth * 2);
-      let h = (desiredHeight * 2);
+      let x = 0;
+      let y = 0;
+
+      let w = (desiredWidth * scale);
+      let h = (desiredHeight * scale);
 
       // deselect objects
       this.activeCanvas.discardActiveObject().renderAll();
@@ -63,8 +70,8 @@ export default {
       // save to Data
       const easterImage = c.toDataURL({
         format: 'png',
-        left: offsetLeft,
-        top: offsetTop,
+        left: 0,
+        top: 0,
         width: desiredWidth,
         height: desiredHeight
       });

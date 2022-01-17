@@ -25,6 +25,9 @@
       <div class="dividing-line"></div>
       <!-- <textarea name="backup" id="backup" cols="60" rows="10"></textarea> -->
       <!-- <h1>Your Sad Face Emoji</h1> -->
+
+
+
       <div class="select-happyIcon task-box task-box__emoji-select">
         <h1>Choose a happy emoji</h1>
         <ul class="happyIcons">
@@ -72,6 +75,10 @@
           </li>
         </ul>
       </div>
+
+
+
+
       <!-- <h1>You've selected the: {{happyIcon}}</h1> -->
     </div>
     <!-- <router-link to="/taskfour" class="button router-link">When you're ready, click here to continue!</router-link> -->
@@ -139,10 +146,17 @@ export default {
       // let desiredWidth = 140;
       // let desiredHeight = 120;
 
+      var scale = window.devicePixelRatio;
+      console.log('scale is... ', scale);
+
+
       let offsetTop = 150;
       let offsetLeft = 130;
-      let desiredWidth = 278;
-      let desiredHeight = 240;
+      // let desiredWidth = 278;
+      // let desiredHeight = 240;
+
+      let desiredWidth = 139;
+      let desiredHeight = 120;
 
       // let x = (offsetLeft * 2);
       // let y = (offsetTop * 2);
@@ -151,30 +165,32 @@ export default {
 
       // create a canvas
       var c = document.createElement('canvas');
-      c.width = desiredWidth;
-      c.height = desiredHeight;
+      c.width = (desiredWidth * scale);
+      c.height = (desiredHeight * scale);
 
-      let x = (offsetLeft * 2);
-      let y = (offsetTop * 2);
+      // let x = (offsetLeft * 2);
+      // let y = (offsetTop * 2);
+      let x = (offsetLeft * scale);
+      let y = (offsetTop * scale);
       // let w = (desiredWidth * 2);
       // let h = (desiredHeight * 2);
 
       // let x = offsetLeft;
       // let y = offsetTop;
-      let w = desiredWidth;
-      let h = desiredHeight;
+      let w = (desiredWidth * scale);
+      let h = (desiredHeight * scale);
 
       // deselect objects
       this.activeCanvas.discardActiveObject().renderAll();
       // draw part of old canvas onto new temp canvas
-      c.getContext('2d').drawImage(this.$refs.myCanvas, x, y, w, h, 0, 0, desiredWidth, desiredHeight);
+      c.getContext('2d').drawImage(this.$refs.myCanvas, x, y, w, h, 0, 0, (desiredWidth * scale), (desiredHeight * scale));
       // save to Data
       let emojiCanvas = c.toDataURL({
         format: 'png',
         top: 0,
         left: 0,
         width: desiredWidth,
-        height: desiredHeight
+        height: desiredHeight 
       });
       // display in code and image
       // const backup = document.getElementById('backup').value = emojiCanvas;
@@ -245,19 +261,6 @@ export default {
       $staticDomain = 'mf.wip';
     }
 
-    fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/inline-emoji-face.svg', function(objects, options) {
-      var face = fabric.util.groupSVGElements(objects, options);
-      console.log(face.height);
-      face.top = 150;
-      face.left = 130;
-      face.lockMovementX = true;
-      face.lockMovementY = true;
-      face.selectable = false;
-      face.hoverCursor = "default";
-      canvas.add(face);
-      canvas.calcOffset();
-      canvas.renderAll();
-    });
 
 
     // DETECT MOVE, STOP FROM HITTING EDGE
@@ -355,6 +358,23 @@ export default {
       });
 
     }
+
+
+    fabric.loadSVGFromURL('https://'+$staticDomain+'/images/assets/inline-emoji-face.svg', function(objects, options) {
+      var face = fabric.util.groupSVGElements(objects, options);
+      console.log(face.height);
+      face.top = 150;
+      face.left = 130;
+      face.lockMovementX = true;
+      face.lockMovementY = true;
+      face.selectable = false;
+      face.hoverCursor = "default";
+      canvas.add(face);
+      canvas.calcOffset();
+      canvas.renderAll();
+      canvas.sendToBack(face);
+    });
+
 
     // canvas interaction detection...
     let $i = 0;
@@ -533,6 +553,10 @@ img.example-icon {
   }
 }
 
+
+// * {
+//   outline: 1px solid red;
+// }
 
 // .button.happyicon-is-active.canvas-is-active {
 

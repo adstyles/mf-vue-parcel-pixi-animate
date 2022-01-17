@@ -33,7 +33,7 @@
       <router-view/>
     </div>
 
-    <debug><debug/>
+    <!-- <debug><debug/> -->
 
   </div>
 </template>

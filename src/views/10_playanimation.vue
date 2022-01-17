@@ -1,6 +1,24 @@
 <template>
   <div class="playanimation">
-    <!-- <canvas id="stage"></canvas> -->
+
+    <div id="anim-loading-screen" class="anim-loading-screen">
+      <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+          <g fill="none" fill-rule="evenodd">
+              <g transform="translate(1 1)" stroke-width="2">
+                  <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+                  <path d="M36 18c0-9.94-8.06-18-18-18">
+                      <animateTransform
+                          attributeName="transform"
+                          type="rotate"
+                          from="0 18 18"
+                          to="360 18 18"
+                          dur="1s"
+                          repeatCount="indefinite"/>
+                  </path>
+              </g>
+          </g>
+      </svg>
+    </div>
     <canvas id="stage" width="1024" height="576"></canvas>
     <div class="dev-tools">
 
@@ -161,6 +179,9 @@ export default {
         // set global vars for scenes (or replaces it with latest selections)
         // this.setupAnimVariables();
 
+        // trigger a resize event (that does nothing) to stop screen dimming
+        window.dispatchEvent(new Event('resize'));
+
         //setup scene if there isn't one
         if (this.$refs.stageCanvas == null) {
 
@@ -183,6 +204,7 @@ export default {
           // this.loadSceneTrack(this.$refs.s01Howl, s01_audio);
 
           load(s01.stage).onComplete.once(() => {
+              document.getElementById("anim-loading-screen").classList.remove('is-visible');
                const s01Stage = new s01.stage();
                this.$refs.s01Stage = s01Stage;
                this.$refs.stageCanvas.stage.addChild(s01Stage);
@@ -199,6 +221,7 @@ export default {
           this.$refs.s01Howl.unload();
 
           load(s02.stage).onComplete.once(() => {
+              document.getElementById("anim-loading-screen").classList.remove('is-visible');
                const s02Stage = new s02.stage();
                this.$refs.s02Stage = s02Stage;
 
@@ -217,6 +240,7 @@ export default {
           this.$refs.s02Howl.unload();
 
           load(s03.stage).onComplete.once(() => {
+              document.getElementById("anim-loading-screen").classList.remove('is-visible');
                const s03Stage = new s03.stage();
                this.$refs.s03Stage = s03Stage;
                this.$refs.stageCanvas.stage.removeChild(this.$refs.s02Stage);
@@ -234,6 +258,7 @@ export default {
           this.$refs.s03Howl.unload();
 
           load(s04.stage).onComplete.once(() => {
+              document.getElementById("anim-loading-screen").classList.remove('is-visible');
                const s04Stage = new s04.stage();
                this.$refs.s04Stage = s04Stage;
                this.$refs.stageCanvas.stage.removeChild(this.$refs.s03Stage);
@@ -473,6 +498,7 @@ export default {
 
     loadScene() {
       this.startScene(1);
+      document.getElementById("anim-loading-screen").classList.add('is-visible');
     },
 
     loadSceneTrack($trackID, $track) {
@@ -604,6 +630,7 @@ export default {
     EventBus.$on('changeScene', (data) => {
       console.log('changeScene to: ', data);    
       // this.router.go({ name: 'endscreen' });
+      document.getElementById("anim-loading-screen").classList.add('is-visible');
       this.startScene(data);
     });
 
@@ -712,6 +739,38 @@ export default {
 #stage {
   // outline: 3px solid teal;
   margin: 2rem 0;
+}
+
+.playanimation {
+  position: relative;
+}
+
+.anim-loading-screen {
+  // padding: 2rem 0;
+  background-color: rgba(#000, 0.2);
+  position: absolute;
+  top: 2rem;
+  // left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 400px;
+  // height: 400px;
+  width: 1024px;
+  height: 576px;
+
+  transition: all 0.4s;
+  // width: calc(100% - 2rem);
+  // height: calc(100% - 2rem);
+
+  display: none;
+
+  // opacity: 0;
+
+  &.is-visible {
+    // opacity: 1;
+    display: flex;
+  }
 }
 
 .dev-tools {

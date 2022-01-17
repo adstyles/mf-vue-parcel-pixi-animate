@@ -56,17 +56,54 @@ export default {
 	name: 'tasksix',
 	methods: {
 		saveCanvas: function() {
-			const cavePainting = this.$refs.myCanvas.toDataURL({
-				format: 'png',
-				left: 0,
-				top: 0,
-				width: 2329,
-				height: 935
+
+			// var desiredWidth = 1538; 769
+			// var desiredHeight = 618; 309
+
+			var scale = window.devicePixelRatio;
+			console.log('scale is... ', scale);
+
+			var desiredWidth = 769; 
+			var desiredHeight = 309; 
+
+			// const cavePainting = this.$refs.myCanvas.toDataURL({
+			// 	format: 'png',
+			// 	left: 0,
+			// 	top: 0,
+			// 	width: desiredWidth,
+			// 	height: desiredHeight
+			// });
+
+			var c = document.createElement('canvas');
+			c.width = (desiredWidth * scale);
+			c.height = (desiredHeight * scale);
+
+			// let x = (offsetLeft * 2);
+			// let y = (offsetTop * 2);
+			let x = 0;
+			let y = 0;
+			// let w = (desiredWidth * 2);
+			// let h = (desiredHeight * 2);
+
+			// let x = offsetLeft;
+			// let y = offsetTop;
+			let w = (desiredWidth * scale);
+			let h = (desiredHeight * scale);
+
+			c.getContext('2d').drawImage(this.$refs.myCanvas, x, y, w, h, 0, 0, 
+				desiredWidth, desiredHeight);
+			// save to Data
+			let newCanvas = c.toDataURL({
+			  format: 'png',
+			  top: 0,
+			  left: 0,
+			  width: desiredWidth,
+			  height: desiredHeight 
 			});
 
 			// const backup = document.getElementById('backup').value = cavePainting;
 			// this.savedCanvas = cavePainting;
-			this.$store.commit('setCavePainting', cavePainting);
+			this.$store.commit('setCavePainting', newCanvas);
 			// sets {{skin}} on this Vue
 			this.savedCanvas = this.$store.getters.getCavePainting;
 		},

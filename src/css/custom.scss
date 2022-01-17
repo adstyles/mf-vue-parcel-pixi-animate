@@ -314,7 +314,7 @@ img {
 
 	// display: none; 
 
-	// pointer-events: none;
+	pointer-events: none;
 
 	position: fixed;
 	bottom: 5px;
@@ -805,7 +805,7 @@ button.button__disabled {
 	}
 
 	display: flex;
-	width: 100%;
+	width: auto;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;

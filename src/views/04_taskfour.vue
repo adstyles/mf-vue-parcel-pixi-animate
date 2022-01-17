@@ -203,13 +203,61 @@ export default {
     // },
 
     saveCanvas: function() {
-      const headsetCaptureCanvas = this.$refs.myCanvas.toDataURL({
+
+      var scale = window.devicePixelRatio;
+      console.log('scale is... ', scale);
+
+      // hack night before testing...      
+      // scale = 2;
+
+      let canvWidth = 340;
+      let canvHeight = 300;
+
+      let desiredWidth = 680;
+      let desiredHeight = 600;
+
+      // hack night before testing...
+      // if (scale == 1.25) {
+      //   let myWidth = 680;
+      //   let myHeight = 600;
+      // }
+
+      // create a canvas
+      var c = document.createElement('canvas');
+      // c.width = (canvWidth * scale);
+      // c.height = (canvHeight * scale);
+      c.width = desiredWidth;
+      c.height = desiredHeight;
+
+      // let x = (offsetLeft * 2);
+      // let y = (offsetTop * 2);
+      let x = 0;
+      let y = 0;
+      // let w = (canvWidth * 2);
+      // let h = (canvHeight * 2);
+
+      // let x = offsetLeft;
+      // let y = offsetTop;
+      let w = (canvWidth * scale);
+      let h = (canvHeight * scale);
+
+      c.getContext('2d').drawImage(this.$refs.myCanvas, x, y, w, h, 0, 0, desiredWidth , desiredHeight);
+      // save to Data
+      let headsetCaptureCanvas = c.toDataURL({
         format: 'png',
-        left: 300,
-        top: 250,
-        width: 200,
-        height: 150
+        top: 0,
+        left: 0,
+        width: desiredWidth,
+        height: desiredHeight 
       });
+
+      // const headsetCaptureCanvas = this.$refs.myCanvas.toDataURL({
+      //   format: 'png',
+      //   left: 0,
+      //   top: 0,
+      //   width: (myWidth/scale),
+      //   height: (myHeight/scale)
+      // });
       // const backup = document.getElementById('backup').value = headsetCaptureCanvas;
       this.savedCanvas = headsetCaptureCanvas;
       // save to store..
