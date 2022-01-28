@@ -9,7 +9,7 @@ import { EventBus } from '../../src/main';
     var Graphics = PIXI.Graphics;
     var shapes = PIXI.animate.ShapesCache;
 
-    var Graphic128 = MovieClip.extend(function (mode) {
+    var Graphic80 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 4, loop: false });
         var instance1 = new Graphics()
             .drawCommands(shapes.s04[0])
@@ -17,462 +17,67 @@ import { EventBus } from '../../src/main';
         this.addTimedChild(instance1);
     });
 
-    var Graphic129 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[16]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[15])
-            .setTransform(390.5, 46);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[14])
-            .setTransform(390.5, 46);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[13])
-            .setTransform(390.5, 46);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[12])
-            .setTransform(390.5, 46);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[11]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[10]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[9]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[8]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[7]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[6]);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[5])
-            .setTransform(390.5, 46);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[4])
-            .setTransform(390.5, 46);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[3])
-            .setTransform(390.5, 46);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[2])
-            .setTransform(390.5, 46);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[1])
-            .setTransform(390.5, 46);
-        this.addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic130 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[27]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[26]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[25]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[24]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[23]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[22]);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[21]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[20]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[19]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[18]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[17]);
-        this.addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic1 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 27, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[30])
-            .setTransform(-232.65, 9.85, 1, 1, -1.003);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-320.412, 185.184, 0.821, 0.779, -2.007);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-318.623, 168.445, 0.775, 0.775, -2.007);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[28])
-            .setTransform(-349.395, 211.326, 1, 1, -2.007);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic2 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[30])
-            .setTransform(-232.65, 9.85, 1, 1, -1.003);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-320.412, 185.184, 0.821, 0.779, -2.007);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-318.623, 168.445, 0.775, 0.775, -2.007);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[28])
-            .setTransform(-349.395, 211.326, 1, 1, -2.007);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic3 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[34]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[33])
-            .setTransform(-140.35, -356.35);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[32])
-            .setTransform(-140.35, -356.35);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[31])
-            .setTransform(-138, -357);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic4 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[37]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[35])
-            .setTransform(-13.65, -133.65);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[36])
-            .setTransform(-8.2, -137.15);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[35])
-            .setTransform(-22.4, -144.05);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic5 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[30])
-            .setTransform(-232.65, 9.85, 1, 1, -1.003);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-320.412, 185.184, 0.821, 0.779, -2.007);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-318.623, 168.445, 0.775, 0.775, -2.007);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[28])
-            .setTransform(-349.395, 211.326, 1, 1, -2.007);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic6 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[30])
-            .setTransform(-232.65, 9.85, 1, 1, -1.003);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-320.412, 185.184, 0.821, 0.779, -2.007);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-318.623, 168.445, 0.775, 0.775, -2.007);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[28])
-            .setTransform(-349.395, 211.326, 1, 1, -2.007);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic7 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[30])
-            .setTransform(-232.65, 9.85, 1, 1, -1.003);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-320.412, 185.184, 0.821, 0.779, -2.007);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-318.623, 168.445, 0.775, 0.775, -2.007);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[28])
-            .setTransform(-349.395, 211.326, 1, 1, -2.007);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic8 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[30])
-            .setTransform(-232.65, 9.85, 1, 1, -1.003);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-320.412, 185.184, 0.821, 0.779, -2.007);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-318.623, 168.445, 0.775, 0.775, -2.007);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[28])
-            .setTransform(-349.395, 211.326, 1, 1, -2.007);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    lib.Graphic9 = Container.extend(function () {
+    lib.BG_OL_TABLE = Container.extend(function () {
         Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[38]);
+            .drawCommands(shapes.s04[1]);
         this.addChild(instance1);
     });
 
-    var Graphic10 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 57, loop: false });
+    lib.BG_PLANT_CLEAN = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[38]);
-        this.addTimedChild(instance1);
+            .drawCommands(shapes.s04[2]);
+        this.addChild(instance1);
     });
 
-    var Graphic25 = MovieClip.extend(function (mode) {
+    var Graphic15 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[39]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[40]);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[41]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[42]);
-        var instance13 = new Graphic10(MovieClip.SYNCHED)
-            .setTransform(245.8, 119.1, 1, 1, -0.186);
-        var instance8 = new Graphic8(MovieClip.SYNCHED);
-        var instance7 = new Graphic7(MovieClip.SYNCHED);
-        var instance6 = new Graphic6(MovieClip.SYNCHED);
-        var instance5 = new Graphic5(MovieClip.SYNCHED);
-        var instance4 = new Graphic4(MovieClip.SYNCHED);
-        var instance3 = new Graphic3(MovieClip.SYNCHED)
-            .setTransform(335.65, 643.9, 1, 1, -1.204);
-        var instance2 = new Graphic2(MovieClip.SYNCHED);
-        var instance1 = new Graphic1(MovieClip.SYNCHED);
-        var instance11 = new lib.Graphic9();
-        this.addTimedChild(instance9, 0, 26)
-            .addTimedChild(instance10, 26, 1)
-            .addTimedChild(instance12, 27, 1)
-            .addTimedChild(instance14, 28, 57)
-            .addTimedChild(instance13, 28, 57)
-            .addTimedChild(instance8, 0, 85, {
-                "0": {
-                    x: 339.75,
-                    y: 277.3,
-                    r: 0.489
-                },
-                "26": {
-                    x: 342.1,
-                    y: 274.55
-                },
-                "28": {
-                    x: 343,
-                    y: 274.05
-                }
-            })
-            .addTimedChild(instance7, 0, 85, {
-                "0": {
-                    x: 53.95,
-                    y: 105.1,
-                    r: -0.226
-                },
-                "26": {
-                    x: 70.6,
-                    y: 81.8,
-                    r: -0.379
-                },
-                "27": {
-                    x: 113.65,
-                    y: 22.9,
-                    r: 0.206
-                },
-                "28": {
-                    x: 117.15,
-                    y: 21.25
-                }
-            })
-            .addTimedChild(instance6, 0, 85, {
-                "0": {
-                    x: 265.3,
-                    y: 480.6,
-                    r: 0.061
-                },
-                "26": {
-                    x: 270,
-                    y: 475.5
-                },
-                "27": {
-                    x: 270.6,
-                    y: 474.9
-                },
-                "28": {
-                    x: 271.5,
-                    y: 475.5
-                }
-            })
-            .addTimedChild(instance5, 0, 85, {
-                "0": {
-                    x: 448.3,
-                    y: 395.1,
-                    r: 0.206
-                },
-                "26": {
-                    x: 451.05,
-                    y: 391.05
-                },
-                "27": {
-                    x: 453.45,
-                    y: 389.55
-                },
-                "28": {
-                    x: 454.6,
-                    y: 391.5
-                }
-            })
-            .addTimedChild(instance4, 0, 85, {
-                "0": {
-                    x: 166.3,
-                    y: 334.3,
-                    r: -0.468
-                },
-                "26": {
-                    x: 176.85,
-                    y: 320.55,
-                    r: -0.39
-                },
-                "27": {
-                    x: 181.4,
-                    y: 299.8,
-                    r: -0.33
-                },
-                "28": {
-                    x: 183.15,
-                    y: 297.45,
-                    r: -0.295
-                }
-            })
-            .addTimedChild(instance3)
-            .addTimedChild(instance2, 0, 85, {
-                "0": {
-                    x: 486.95,
-                    y: 532.75,
-                    r: 0.206
-                },
-                "26": {
-                    x: 490.5,
-                    y: 526.45
-                },
-                "27": {
-                    x: 492.85,
-                    y: 523.35
-                },
-                "28": {
-                    x: 494.85,
-                    y: 523.7
-                }
-            })
-            .addTimedChild(instance1, 0, 27, {
-                "0": {
-                    x: 166.6,
-                    y: 186.6,
-                    r: -0.374
-                },
-                "26": {
-                    x: 219.25,
-                    y: 141.8,
-                    r: -0.44
-                }
-            })
-            .addTimedChild(instance11, 27, 1, {
-                "27": {
-                    x: 243.1,
-                    y: 121.65,
-                    r: -0.186
-                }
-            });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[3]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[5]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[4]);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[7]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[6]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[9]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[8]);
+        this.addTimedChild(instance1, 0, 26)
+            .addTimedChild(instance3, 26, 1)
+            .addTimedChild(instance2, 26, 1)
+            .addTimedChild(instance5, 27, 1)
+            .addTimedChild(instance4, 27, 1)
+            .addTimedChild(instance7, 28, 57)
+            .addTimedChild(instance6, 28, 57);
     });
 
-    var Graphic26 = MovieClip.extend(function (mode) {
+    var Graphic16 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[48])
+            .drawCommands(shapes.s04[15])
             .setTransform(-1.45, 32.05);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[47])
+            .drawCommands(shapes.s04[14])
             .setTransform(-3.4, 32.05);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[46])
+            .drawCommands(shapes.s04[13])
             .setTransform(-3.05, 30.55);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[45])
+            .drawCommands(shapes.s04[12])
             .setTransform(-3.95, 32.5);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[44])
+            .drawCommands(shapes.s04[11])
             .setTransform(623.65, 745.15, 1, 1.019, 0, 2.799, -2.807);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[43])
+            .drawCommands(shapes.s04[10])
             .setTransform(596.75, 624.35, 0.839, 1, -2.946);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[43])
+            .drawCommands(shapes.s04[10])
             .setTransform(617, 590.25, 0.839, 1, -3.002);
         this.addTimedChild(instance7)
             .addTimedChild(instance6)
@@ -483,43 +88,43 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic27 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MOP = Container.extend(function () {
+        Container.call(this);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[50]);
+            .drawCommands(shapes.s04[17]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[49]);
-        this.addTimedChild(instance2)
-            .addTimedChild(instance1);
+            .drawCommands(shapes.s04[16]);
+        this.addChild(instance2, instance1);
     });
 
-    var Graphic11 = MovieClip.extend(function (mode) {
+    var Graphic1 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[51]);
+            .drawCommands(shapes.s04[18]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic12 = MovieClip.extend(function (mode) {
+    var Graphic2 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[58]);
+            .drawCommands(shapes.s04[25]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[57])
+            .drawCommands(shapes.s04[24])
             .setTransform(-1156.4, -390.2);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[56])
+            .drawCommands(shapes.s04[23])
             .setTransform(-1156.4, -390.2);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[55])
+            .drawCommands(shapes.s04[22])
             .setTransform(-1156.4, -390.2);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[54]);
+            .drawCommands(shapes.s04[21])
+            .setTransform(-1156.4, -390.2);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[53])
+            .drawCommands(shapes.s04[20])
             .setTransform(-1156.4, -390.2);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[52])
+            .drawCommands(shapes.s04[19])
             .setTransform(-1156.4, -390.2);
         this.addTimedChild(instance7)
             .addTimedChild(instance6)
@@ -530,26 +135,26 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic13 = MovieClip.extend(function (mode) {
+    var Graphic3 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[59])
+            .drawCommands(shapes.s04[26])
             .setTransform(-1092.65, -484.9);
         this.addTimedChild(instance1);
     });
 
-    var Graphic14 = MovieClip.extend(function (mode) {
+    var Graphic4 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[62]);
+            .drawCommands(shapes.s04[29]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[61]);
+            .drawCommands(shapes.s04[28]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[60]);
+            .drawCommands(shapes.s04[27]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[63]);
+            .drawCommands(shapes.s04[30]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[60]);
+            .drawCommands(shapes.s04[27]);
         this.addTimedChild(instance2, 0, 31, {
                 "0": {
                     x: -1088.75,
@@ -567,70 +172,128 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance5, 44, 41);
     });
 
-    var Graphic15 = MovieClip.extend(function (mode) {
+    var Graphic5 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[37])
+            .setTransform(-2172.1, -495.6);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[36])
+            .setTransform(-2172.1, -495.6);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[35])
+            .setTransform(-2172.1, -495.6);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[34])
+            .setTransform(-2172.1, -495.6);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[33])
+            .setTransform(-2172.1, -495.6);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[32])
+            .setTransform(-2172.1, -495.6);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[64]);
-        this.addTimedChild(instance1);
+            .drawCommands(shapes.s04[31])
+            .setTransform(-2172.1, -495.6);
+        this.addTimedChild(instance7)
+            .addTimedChild(instance6)
+            .addTimedChild(instance5)
+            .addTimedChild(instance4)
+            .addTimedChild(instance3)
+            .addTimedChild(instance2)
+            .addTimedChild(instance1);
     });
 
-    var Graphic16 = MovieClip.extend(function (mode) {
+    var Graphic6 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[46])
+            .setTransform(-1050.05, -368.7);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[45])
+            .setTransform(-2100.1, -737.4);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[44])
+            .setTransform(-2100.1, -737.4);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[43])
+            .setTransform(-2100.1, -737.4);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[42])
+            .setTransform(-2100.1, -737.4);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[41])
+            .setTransform(-2100.1, -737.4);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[40])
+            .setTransform(-2100.1, -737.4);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[39])
+            .setTransform(-2100.1, -737.4);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[65]);
-        this.addTimedChild(instance1);
+            .drawCommands(shapes.s04[38])
+            .setTransform(-2100.1, -737.4);
+        this.addTimedChild(instance9)
+            .addTimedChild(instance8)
+            .addTimedChild(instance7)
+            .addTimedChild(instance6)
+            .addTimedChild(instance5)
+            .addTimedChild(instance4)
+            .addTimedChild(instance3)
+            .addTimedChild(instance2)
+            .addTimedChild(instance1);
     });
 
-    var Graphic17 = MovieClip.extend(function (mode) {
+    var Graphic7 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[66])
+            .drawCommands(shapes.s04[47])
             .setTransform(-3.1, -15.5);
         this.addTimedChild(instance1);
     });
 
-    var Graphic18 = MovieClip.extend(function (mode) {
+    var Graphic8 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[67])
+            .drawCommands(shapes.s04[48])
             .setTransform(-1045.9, -309.8);
         this.addTimedChild(instance1);
     });
 
-    var Graphic19 = MovieClip.extend(function (mode) {
+    var Graphic9 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[68])
+            .drawCommands(shapes.s04[49])
             .setTransform(-1078.65, -311.6);
         this.addTimedChild(instance1);
     });
 
-    var Graphic23 = MovieClip.extend(function (mode) {
+    var Graphic13 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 15, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[43])
+            .drawCommands(shapes.s04[10])
             .setTransform(-480.857, -129.654, 0.6, 0.283);
         this.addTimedChild(instance1);
     });
 
-    var Graphic24 = MovieClip.extend(function (mode) {
+    var Graphic14 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 15, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[43])
+            .drawCommands(shapes.s04[10])
             .setTransform(-480.857, -129.654, 0.6, 0.283);
         this.addTimedChild(instance1);
     });
 
-    var Graphic20 = MovieClip.extend(function (mode) {
+    var Graphic10 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[69]);
+            .drawCommands(shapes.s04[50]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[70]);
+            .drawCommands(shapes.s04[51]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[70]);
+            .drawCommands(shapes.s04[51]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[69]);
+            .drawCommands(shapes.s04[50]);
         this.addTimedChild(instance1, 0, 28)
             .addTimedChild(instance3, 28, 15, {
                 "28": {
@@ -651,43 +314,43 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance4, 43, 42);
     });
 
-    var Graphic21 = MovieClip.extend(function (mode) {
+    var Graphic11 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[71]);
+            .drawCommands(shapes.s04[52]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic22 = MovieClip.extend(function (mode) {
+    var Graphic12 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[51]);
+            .drawCommands(shapes.s04[18]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic28 = MovieClip.extend(function (mode) {
+    var Graphic17 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance12 = new Graphic22(MovieClip.SYNCHED)
+        var instance12 = new Graphic12(MovieClip.SYNCHED)
             .setTransform(-145.7, -85.2, 1, 1, 0, 0.299, 2.842);
-        var instance11 = new Graphic21(MovieClip.SYNCHED)
+        var instance11 = new Graphic11(MovieClip.SYNCHED)
             .setTransform(-93.75, -20.35);
-        var instance10 = new Graphic20(MovieClip.SYNCHED);
-        var instance14 = new Graphic24(MovieClip.SYNCHED);
-        var instance13 = new Graphic23(MovieClip.SYNCHED);
-        var instance9 = new Graphic19(MovieClip.SYNCHED);
-        var instance8 = new Graphic18(MovieClip.SYNCHED);
-        var instance7 = new Graphic17(MovieClip.SYNCHED)
+        var instance10 = new Graphic10(MovieClip.SYNCHED);
+        var instance14 = new Graphic14(MovieClip.SYNCHED);
+        var instance13 = new Graphic13(MovieClip.SYNCHED);
+        var instance9 = new Graphic9(MovieClip.SYNCHED);
+        var instance8 = new Graphic8(MovieClip.SYNCHED);
+        var instance7 = new Graphic7(MovieClip.SYNCHED)
             .setTransform(-79.5, -152.5);
-        var instance6 = new Graphic16(MovieClip.SYNCHED)
+        var instance6 = new Graphic6(MovieClip.SYNCHED)
             .setTransform(-105.95, -19.4);
-        var instance5 = new Graphic15(MovieClip.SYNCHED)
+        var instance5 = new Graphic5(MovieClip.SYNCHED)
             .setTransform(-69.95, -140.3);
-        var instance4 = new Graphic14(MovieClip.SYNCHED);
-        var instance3 = new Graphic13(MovieClip.SYNCHED)
+        var instance4 = new Graphic4(MovieClip.SYNCHED);
+        var instance3 = new Graphic3(MovieClip.SYNCHED)
             .setTransform(-63.35, 96.8);
-        var instance2 = new Graphic12(MovieClip.SYNCHED)
+        var instance2 = new Graphic2(MovieClip.SYNCHED)
             .setTransform(0.4, 2.1);
-        var instance1 = new Graphic11(MovieClip.SYNCHED)
+        var instance1 = new Graphic1(MovieClip.SYNCHED)
             .setTransform(-10.65, -85.5);
         this.addTimedChild(instance12)
             .addTimedChild(instance11)
@@ -817,16 +480,88 @@ import { EventBus } from '../../src/main';
                     sy: 1.028
                 },
                 "53": {
+                    x: -67.25,
+                    y: 125.15,
+                    sx: 1.07,
+                    sy: 0.949
+                },
+                "54": {
+                    sx: 1.028,
+                    sy: 1.06
+                },
+                "55": {
+                    sx: 1.053,
+                    sy: 1.021
+                },
+                "57": {
+                    y: 125.2,
+                    sx: 1.095,
+                    sy: 0.967
+                },
+                "58": {
+                    x: -67.3,
+                    sx: 1.025,
+                    sy: 1.028
+                },
+                "59": {
+                    x: -67.25,
+                    y: 125.15,
+                    sx: 1.07,
+                    sy: 0.949
+                },
+                "60": {
+                    sx: 1.028,
+                    sy: 1.06
+                },
+                "61": {
+                    sx: 1.053,
+                    sy: 1.021
+                },
+                "63": {
+                    y: 125.2,
+                    sx: 1.095,
+                    sy: 0.967
+                },
+                "64": {
+                    x: -67.3,
+                    sx: 1.025,
+                    sy: 1.028
+                },
+                "65": {
+                    x: -67.25,
+                    y: 125.15,
+                    sx: 1.07,
+                    sy: 0.949
+                },
+                "66": {
+                    sx: 1.028,
+                    sy: 1.06
+                },
+                "67": {
+                    sx: 1.053,
+                    sy: 1.021
+                },
+                "69": {
+                    y: 125.2,
+                    sx: 1.095,
+                    sy: 0.967
+                },
+                "70": {
+                    x: -67.3,
+                    sx: 1.025,
+                    sy: 1.028
+                },
+                "71": {
                     x: -67.35,
                     sx: 0.984,
                     sy: 1.067
                 },
-                "59": {
+                "77": {
                     y: 125.25,
                     sx: 1.012,
                     sy: 1.017
                 },
-                "60": {
+                "78": {
                     y: 125.3,
                     sx: 1.034,
                     sy: 1.002
@@ -837,94 +572,94 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic29 = MovieClip.extend(function (mode) {
+    var Graphic18 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
         var instance31 = new Graphics()
-            .drawCommands(shapes.s04[102]);
+            .drawCommands(shapes.s04[83]);
         var instance30 = new Graphics()
-            .drawCommands(shapes.s04[101]);
+            .drawCommands(shapes.s04[82]);
         var instance29 = new Graphics()
-            .drawCommands(shapes.s04[100]);
+            .drawCommands(shapes.s04[81]);
         var instance28 = new Graphics()
-            .drawCommands(shapes.s04[99])
+            .drawCommands(shapes.s04[80])
             .setTransform(-965.55, -489.2);
         var instance27 = new Graphics()
-            .drawCommands(shapes.s04[98])
-            .setTransform(-966.95, -484.95);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s04[97])
-            .setTransform(-966.95, -484.95);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[96])
-            .setTransform(-966.95, -484.95);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[95])
-            .setTransform(-966.95, -484.95);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s04[94])
-            .setTransform(-966.95, -484.95);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s04[93])
-            .setTransform(-966.95, -484.95);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s04[92])
-            .setTransform(-966.95, -484.95);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s04[91])
-            .setTransform(-966.95, -484.95);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[90])
-            .setTransform(-966.95, -484.95);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[89])
-            .setTransform(-966.95, -484.95);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[88])
-            .setTransform(-966.95, -484.95);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[87])
-            .setTransform(-966.95, -484.95);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[86])
-            .setTransform(-966.95, -484.95);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[85])
-            .setTransform(-966.95, -484.95);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[84])
-            .setTransform(-966.95, -484.95);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[83])
-            .setTransform(-966.95, -484.95);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[82])
-            .setTransform(-966.95, -484.95);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[81])
-            .setTransform(-966.95, -484.95);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[80])
-            .setTransform(-966.95, -484.95);
-        var instance8 = new Graphics()
             .drawCommands(shapes.s04[79])
             .setTransform(-966.95, -484.95);
-        var instance7 = new Graphics()
+        var instance26 = new Graphics()
             .drawCommands(shapes.s04[78])
             .setTransform(-966.95, -484.95);
-        var instance6 = new Graphics()
+        var instance25 = new Graphics()
             .drawCommands(shapes.s04[77])
             .setTransform(-966.95, -484.95);
-        var instance5 = new Graphics()
+        var instance24 = new Graphics()
             .drawCommands(shapes.s04[76])
             .setTransform(-966.95, -484.95);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[75]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[74]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[73]);
-        var instance1 = new Graphics()
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s04[75])
+            .setTransform(-966.95, -484.95);
+        var instance22 = new Graphics()
+            .drawCommands(shapes.s04[74])
+            .setTransform(-966.95, -484.95);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s04[73])
+            .setTransform(-966.95, -484.95);
+        var instance20 = new Graphics()
             .drawCommands(shapes.s04[72])
+            .setTransform(-966.95, -484.95);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s04[71])
+            .setTransform(-966.95, -484.95);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s04[70])
+            .setTransform(-966.95, -484.95);
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s04[69])
+            .setTransform(-966.95, -484.95);
+        var instance16 = new Graphics()
+            .drawCommands(shapes.s04[68])
+            .setTransform(-966.95, -484.95);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s04[67])
+            .setTransform(-966.95, -484.95);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s04[66])
+            .setTransform(-966.95, -484.95);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s04[65])
+            .setTransform(-966.95, -484.95);
+        var instance12 = new Graphics()
+            .drawCommands(shapes.s04[64])
+            .setTransform(-966.95, -484.95);
+        var instance11 = new Graphics()
+            .drawCommands(shapes.s04[63])
+            .setTransform(-966.95, -484.95);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[62])
+            .setTransform(-966.95, -484.95);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[61])
+            .setTransform(-966.95, -484.95);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[60])
+            .setTransform(-966.95, -484.95);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[59])
+            .setTransform(-966.95, -484.95);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[58])
+            .setTransform(-966.95, -484.95);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[57])
+            .setTransform(-966.95, -484.95);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[56]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[55]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[54]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[53])
             .setTransform(-5.7);
         this.addTimedChild(instance31)
             .addTimedChild(instance30)
@@ -959,469 +694,384 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic30 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.APRON = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[103]);
-        this.addTimedChild(instance1);
+            .drawCommands(shapes.s04[84]);
+        this.addChild(instance1);
     });
 
-    var Graphic31 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_TUFTS_1 = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[104])
+            .drawCommands(shapes.s04[85])
             .setTransform(-1094.5, -719);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic32 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_TUFTS_2 = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[105])
+            .drawCommands(shapes.s04[86])
             .setTransform(-1220.8, -767.2);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic33 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_BODY_BACK = Container.extend(function () {
+        Container.call(this);
         var instance17 = new Graphics()
-            .drawCommands(shapes.s04[122]);
+            .drawCommands(shapes.s04[103]);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[121])
+            .drawCommands(shapes.s04[102])
             .setTransform(-1273.7, -460.55);
         var instance15 = new Graphics()
-            .drawCommands(shapes.s04[120])
+            .drawCommands(shapes.s04[101])
             .setTransform(-1273.7, -460.55);
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[119])
+            .drawCommands(shapes.s04[100])
             .setTransform(-1273.7, -460.55);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[118])
+            .drawCommands(shapes.s04[99])
             .setTransform(-1273.7, -460.55);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[117])
+            .drawCommands(shapes.s04[98])
             .setTransform(-1273.7, -460.55);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[116])
+            .drawCommands(shapes.s04[97])
             .setTransform(-1273.7, -460.55);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[115])
+            .drawCommands(shapes.s04[96])
             .setTransform(-1273.7, -460.55);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[114])
+            .drawCommands(shapes.s04[95])
             .setTransform(-1273.7, -460.55);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[113])
+            .drawCommands(shapes.s04[94])
             .setTransform(-1273.7, -460.55);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[112])
+            .drawCommands(shapes.s04[93])
             .setTransform(-1273.7, -460.55);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[111])
+            .drawCommands(shapes.s04[92])
             .setTransform(-1273.7, -460.55);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[110])
+            .drawCommands(shapes.s04[91])
             .setTransform(-1273.7, -460.55);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[109])
+            .drawCommands(shapes.s04[90])
             .setTransform(-1273.7, -460.55);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[108])
+            .drawCommands(shapes.s04[89])
             .setTransform(-1277.3, -468.35);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[107])
+            .drawCommands(shapes.s04[88])
             .setTransform(-1273.7, -460.55);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[106])
+            .drawCommands(shapes.s04[87])
             .setTransform(-1273.7, -460.55);
-        this.addTimedChild(instance17)
-            .addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance17, instance16, instance15, instance14, instance13, instance12, instance11, instance10, instance9, instance8, instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic34 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_LEG_FL = Container.extend(function () {
+        Container.call(this);
         var instance17 = new Graphics()
-            .drawCommands(shapes.s04[139])
+            .drawCommands(shapes.s04[120])
             .setTransform(-1125.4, -770);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[138])
+            .drawCommands(shapes.s04[119])
             .setTransform(-1125.4, -770);
         var instance15 = new Graphics()
-            .drawCommands(shapes.s04[137])
+            .drawCommands(shapes.s04[118])
             .setTransform(-1125.4, -770);
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[136])
+            .drawCommands(shapes.s04[117])
             .setTransform(-1125.4, -770);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[135])
+            .drawCommands(shapes.s04[116])
             .setTransform(-1125.4, -770);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[134])
+            .drawCommands(shapes.s04[115])
             .setTransform(-1125.4, -770);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[133])
+            .drawCommands(shapes.s04[114])
             .setTransform(-1125.4, -770);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[132])
+            .drawCommands(shapes.s04[113])
             .setTransform(-1125.4, -770);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[131])
+            .drawCommands(shapes.s04[112])
             .setTransform(-1125.4, -770);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[130]);
+            .drawCommands(shapes.s04[111]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[129]);
+            .drawCommands(shapes.s04[110]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[128]);
+            .drawCommands(shapes.s04[109]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[127]);
+            .drawCommands(shapes.s04[108]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[126]);
+            .drawCommands(shapes.s04[107]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[125]);
+            .drawCommands(shapes.s04[106]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[124]);
+            .drawCommands(shapes.s04[105]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[123]);
-        this.addTimedChild(instance17)
-            .addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+            .drawCommands(shapes.s04[104]);
+        this.addChild(instance17, instance16, instance15, instance14, instance13, instance12, instance11, instance10, instance9, instance8, instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic35 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_TUFTS_3 = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[140])
+            .drawCommands(shapes.s04[121])
             .setTransform(-1384.55, -762.8);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic36 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_LEG_BL = Container.extend(function () {
+        Container.call(this);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[151])
+            .drawCommands(shapes.s04[132])
             .setTransform(0, 80);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[150]);
+            .drawCommands(shapes.s04[131]);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[149])
+            .drawCommands(shapes.s04[130])
             .setTransform(-1416.45, -776.65);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[148])
+            .drawCommands(shapes.s04[129])
             .setTransform(-1416.45, -776.65);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[147])
+            .drawCommands(shapes.s04[128])
             .setTransform(-1416.45, -776.65);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[146])
+            .drawCommands(shapes.s04[127])
             .setTransform(-1416.45, -776.65);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[145])
+            .drawCommands(shapes.s04[126])
             .setTransform(-1416.45, -776.65);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[144])
+            .drawCommands(shapes.s04[125])
             .setTransform(-1416.45, -776.65);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[143])
+            .drawCommands(shapes.s04[124])
             .setTransform(-1416.45, -776.65);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[142])
+            .drawCommands(shapes.s04[123])
             .setTransform(-1416.45, -776.65);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[141])
+            .drawCommands(shapes.s04[122])
             .setTransform(-1415.95, -776.5);
-        this.addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance11, instance10, instance9, instance8, instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic37 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_OVERLAPPING_HAIRS_2 = Container.extend(function () {
+        Container.call(this);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[154])
+            .drawCommands(shapes.s04[135])
             .setTransform(-1010.75, -587.2);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[153])
+            .drawCommands(shapes.s04[134])
             .setTransform(-1010.75, -587.2);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[152])
+            .drawCommands(shapes.s04[133])
             .setTransform(-1010.75, -587.2);
-        this.addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance3, instance2, instance1);
     });
 
-    var Graphic38 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_OVERLAPPING_HAIR_1 = Container.extend(function () {
+        Container.call(this);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[157])
+            .drawCommands(shapes.s04[138])
             .setTransform(-1279.75, -710.8);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[156])
+            .drawCommands(shapes.s04[137])
             .setTransform(-1279.75, -710.8);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[155])
+            .drawCommands(shapes.s04[136])
             .setTransform(-1279.75, -710.8);
-        this.addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance3, instance2, instance1);
     });
 
-    var Graphic39 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_BODY_FRONT = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[158])
+            .drawCommands(shapes.s04[139])
             .setTransform(-998.2, -516.65);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic40 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_BODY_MIDDLE = Container.extend(function () {
+        Container.call(this);
         var instance22 = new Graphics()
-            .drawCommands(shapes.s04[180]);
+            .drawCommands(shapes.s04[161]);
         var instance21 = new Graphics()
-            .drawCommands(shapes.s04[179])
-            .setTransform(-1185.2, -604.45);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s04[178])
-            .setTransform(-1185.2, -604.45);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[177])
-            .setTransform(-1185.2, -604.45);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[176])
-            .setTransform(-1185.2, -604.45);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[175])
-            .setTransform(-1185.2, -604.45);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[174])
-            .setTransform(-1185.2, -604.45);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[173])
-            .setTransform(-1185.2, -604.45);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[172])
-            .setTransform(-1185.2, -604.45);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[171])
-            .setTransform(-1185.2, -604.45);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[170])
-            .setTransform(-1185.2, -604.45);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[169])
-            .setTransform(-1185.2, -604.45);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[168])
-            .setTransform(-1185.2, -604.45);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[167])
-            .setTransform(-1185.2, -604.45);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[166])
-            .setTransform(-1185.2, -604.45);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[165])
-            .setTransform(-1185.2, -604.45);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[164])
-            .setTransform(-1185.2, -604.45);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[163])
-            .setTransform(-1185.2, -604.45);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[162])
-            .setTransform(-1185.2, -604.45);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[161])
-            .setTransform(-1185.2, -604.45);
-        var instance2 = new Graphics()
             .drawCommands(shapes.s04[160])
             .setTransform(-1185.2, -604.45);
-        var instance1 = new Graphics()
+        var instance20 = new Graphics()
             .drawCommands(shapes.s04[159])
             .setTransform(-1185.2, -604.45);
-        this.addTimedChild(instance22)
-            .addTimedChild(instance21)
-            .addTimedChild(instance20)
-            .addTimedChild(instance19)
-            .addTimedChild(instance18)
-            .addTimedChild(instance17)
-            .addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s04[158])
+            .setTransform(-1185.2, -604.45);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s04[157])
+            .setTransform(-1185.2, -604.45);
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s04[156])
+            .setTransform(-1185.2, -604.45);
+        var instance16 = new Graphics()
+            .drawCommands(shapes.s04[155])
+            .setTransform(-1185.2, -604.45);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s04[154])
+            .setTransform(-1185.2, -604.45);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s04[153])
+            .setTransform(-1185.2, -604.45);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s04[152])
+            .setTransform(-1185.2, -604.45);
+        var instance12 = new Graphics()
+            .drawCommands(shapes.s04[151])
+            .setTransform(-1185.2, -604.45);
+        var instance11 = new Graphics()
+            .drawCommands(shapes.s04[150])
+            .setTransform(-1185.2, -604.45);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[149])
+            .setTransform(-1185.2, -604.45);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[148])
+            .setTransform(-1185.2, -604.45);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[147])
+            .setTransform(-1185.2, -604.45);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[146])
+            .setTransform(-1185.2, -604.45);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[145])
+            .setTransform(-1185.2, -604.45);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[144])
+            .setTransform(-1185.2, -604.45);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[143])
+            .setTransform(-1185.2, -604.45);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[142])
+            .setTransform(-1185.2, -604.45);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[141])
+            .setTransform(-1185.2, -604.45);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[140])
+            .setTransform(-1185.2, -604.45);
+        this.addChild(instance22, instance21, instance20, instance19, instance18, instance17, instance16, instance15, instance14, instance13, instance12, instance11, instance10, instance9, instance8, instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic41 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_LEG_BR = Container.extend(function () {
+        Container.call(this);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[187]);
+            .drawCommands(shapes.s04[168]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[186]);
+            .drawCommands(shapes.s04[167]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[185])
+            .drawCommands(shapes.s04[166])
             .setTransform(-1300.3, -773.3);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[184])
+            .drawCommands(shapes.s04[165])
             .setTransform(-1300.3, -773.3);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[183])
+            .drawCommands(shapes.s04[164])
             .setTransform(-1300.3, -773.3);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[182])
+            .drawCommands(shapes.s04[163])
             .setTransform(-1300.3, -773.3);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[181])
+            .drawCommands(shapes.s04[162])
             .setTransform(-1300.3, -773.3);
-        this.addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic42 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_LEG_FR = Container.extend(function () {
+        Container.call(this);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[196]);
+            .drawCommands(shapes.s04[177]);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[195]);
+            .drawCommands(shapes.s04[176]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[194])
+            .drawCommands(shapes.s04[175])
             .setTransform(-983.3, -760.95);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[193])
+            .drawCommands(shapes.s04[174])
             .setTransform(-982.1, -760.95);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[192])
+            .drawCommands(shapes.s04[173])
             .setTransform(-982.1, -760.95);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[191])
+            .drawCommands(shapes.s04[172])
             .setTransform(-982.1, -760.95);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[190])
+            .drawCommands(shapes.s04[171])
             .setTransform(-982.1, -760.95);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[189])
+            .drawCommands(shapes.s04[170])
             .setTransform(-982.1, -760.95);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[188]);
-        this.addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+            .drawCommands(shapes.s04[169]);
+        this.addChild(instance9, instance8, instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic43 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 85, loop: false });
+    lib.MAMMOTH_TUSK_R = Container.extend(function () {
+        Container.call(this);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[201]);
+            .drawCommands(shapes.s04[182]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[200])
+            .drawCommands(shapes.s04[181])
             .setTransform(-78.9, -99.3);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[199])
+            .drawCommands(shapes.s04[180])
             .setTransform(-78.9, -99.3);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[198])
+            .drawCommands(shapes.s04[179])
             .setTransform(-78.9, -99.3);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[197])
+            .drawCommands(shapes.s04[178])
             .setTransform(-78.9, -99.3);
-        this.addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic149 = MovieClip.extend(function (mode) {
+    var Graphic93 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 85, loop: false });
-        var instance19 = new Graphic43(MovieClip.SYNCHED);
-        var instance18 = new Graphic42(MovieClip.SYNCHED)
+        var instance19 = new lib.MAMMOTH_TUSK_R();
+        var instance18 = new lib.MAMMOTH_LEG_FR()
             .setTransform(-183.55, -167.3);
-        var instance17 = new Graphic41(MovieClip.SYNCHED)
+        var instance17 = new lib.MAMMOTH_LEG_BR()
             .setTransform(134.65, -154.95);
-        var instance16 = new Graphic40(MovieClip.SYNCHED);
-        var instance15 = new Graphic39(MovieClip.SYNCHED)
+        var instance16 = new lib.MAMMOTH_BODY_MIDDLE();
+        var instance15 = new lib.MAMMOTH_BODY_FRONT()
             .setTransform(-167.45, -411.6);
-        var instance14 = new Graphic38(MovieClip.SYNCHED)
+        var instance14 = new lib.MAMMOTH_OVERLAPPING_HAIR_1()
             .setTransform(114.1, -217.45);
-        var instance13 = new Graphic37(MovieClip.SYNCHED)
+        var instance13 = new lib.MAMMOTH_OVERLAPPING_HAIRS_2()
             .setTransform(-154.9, -341.05);
-        var instance12 = new Graphic36(MovieClip.SYNCHED)
+        var instance12 = new lib.MAMMOTH_LEG_BL()
             .setTransform(250.8, -151.6);
-        var instance11 = new Graphic35(MovieClip.SYNCHED);
-        var instance10 = new Graphic34(MovieClip.SYNCHED)
+        var instance11 = new lib.MAMMOTH_TUFTS_3();
+        var instance10 = new lib.MAMMOTH_LEG_FL()
             .setTransform(-40.25, -158.25);
-        var instance9 = new Graphic33(MovieClip.SYNCHED);
-        var instance8 = new Graphic32(MovieClip.SYNCHED);
-        var instance7 = new Graphic31(MovieClip.SYNCHED)
+        var instance9 = new lib.MAMMOTH_BODY_BACK();
+        var instance8 = new lib.MAMMOTH_TUFTS_2();
+        var instance7 = new lib.MAMMOTH_TUFTS_1()
             .setTransform(-71.15, -209.25);
-        var instance6 = new Graphic30(MovieClip.SYNCHED);
-        var instance5 = new Graphic29(MovieClip.SYNCHED);
-        var instance4 = new Graphic28(MovieClip.SYNCHED);
-        var instance3 = new Graphic27(MovieClip.SYNCHED);
-        var instance2 = new Graphic26(MovieClip.SYNCHED);
-        var instance1 = new Graphic25(MovieClip.SYNCHED);
+        var instance6 = new lib.APRON();
+        var instance5 = new Graphic18(MovieClip.SYNCHED);
+        var instance4 = new Graphic17(MovieClip.SYNCHED);
+        var instance3 = new lib.MOP();
+        var instance2 = new Graphic16(MovieClip.SYNCHED);
+        var instance1 = new Graphic15(MovieClip.SYNCHED);
         this.addTimedChild(instance19, 0, 85, {
                 "0": {
                     x: -160.8,
@@ -1465,10 +1115,46 @@ import { EventBus } from '../../src/main';
                     r: 0.065
                 },
                 "53": {
+                    r: 0
+                },
+                "54": {
+                    r: 0.034
+                },
+                "56": {
+                    r: 0
+                },
+                "57": {
+                    r: 0.065
+                },
+                "59": {
+                    r: 0
+                },
+                "60": {
+                    r: 0.034
+                },
+                "62": {
+                    r: 0
+                },
+                "63": {
+                    r: 0.065
+                },
+                "65": {
+                    r: 0
+                },
+                "66": {
+                    r: 0.034
+                },
+                "68": {
+                    r: 0
+                },
+                "69": {
+                    r: 0.065
+                },
+                "71": {
                     y: -445.35,
                     r: 0.034
                 },
-                "54": {
+                "72": {
                     y: -444.15,
                     r: 0
                 }
@@ -1502,9 +1188,45 @@ import { EventBus } from '../../src/main';
                     y: -327.4
                 },
                 "53": {
-                    y: -326.2
+                    y: -323.8
                 },
                 "54": {
+                    y: -327.4
+                },
+                "56": {
+                    y: -323.8
+                },
+                "57": {
+                    y: -327.4
+                },
+                "59": {
+                    y: -323.8
+                },
+                "60": {
+                    y: -327.4
+                },
+                "62": {
+                    y: -323.8
+                },
+                "63": {
+                    y: -327.4
+                },
+                "65": {
+                    y: -323.8
+                },
+                "66": {
+                    y: -327.4
+                },
+                "68": {
+                    y: -323.8
+                },
+                "69": {
+                    y: -327.4
+                },
+                "71": {
+                    y: -326.2
+                },
+                "72": {
                     y: -323.8
                 }
             })
@@ -1540,9 +1262,45 @@ import { EventBus } from '../../src/main';
                     r: -0.112
                 },
                 "53": {
-                    r: -0.083
+                    r: 0
                 },
                 "54": {
+                    r: -0.112
+                },
+                "56": {
+                    r: 0
+                },
+                "57": {
+                    r: -0.112
+                },
+                "59": {
+                    r: 0
+                },
+                "60": {
+                    r: -0.112
+                },
+                "62": {
+                    r: 0
+                },
+                "63": {
+                    r: -0.112
+                },
+                "65": {
+                    r: 0
+                },
+                "66": {
+                    r: -0.112
+                },
+                "68": {
+                    r: 0
+                },
+                "69": {
+                    r: -0.112
+                },
+                "71": {
+                    r: -0.083
+                },
+                "72": {
                     r: 0
                 }
             })
@@ -1574,9 +1332,45 @@ import { EventBus } from '../../src/main';
                     y: -470.1
                 },
                 "53": {
-                    y: -468.95
+                    y: -467.7
                 },
                 "54": {
+                    y: -470.1
+                },
+                "56": {
+                    y: -467.7
+                },
+                "57": {
+                    y: -470.1
+                },
+                "59": {
+                    y: -467.7
+                },
+                "60": {
+                    y: -470.1
+                },
+                "62": {
+                    y: -467.7
+                },
+                "63": {
+                    y: -470.1
+                },
+                "65": {
+                    y: -467.7
+                },
+                "66": {
+                    y: -470.1
+                },
+                "68": {
+                    y: -467.7
+                },
+                "69": {
+                    y: -470.1
+                },
+                "71": {
+                    y: -468.95
+                },
+                "72": {
                     y: -467.7
                 }
             })
@@ -1608,9 +1402,45 @@ import { EventBus } from '../../src/main';
                     r: -0.091
                 },
                 "53": {
-                    r: -0.06
+                    r: 0
                 },
                 "54": {
+                    r: -0.091
+                },
+                "56": {
+                    r: 0
+                },
+                "57": {
+                    r: -0.091
+                },
+                "59": {
+                    r: 0
+                },
+                "60": {
+                    r: -0.091
+                },
+                "62": {
+                    r: 0
+                },
+                "63": {
+                    r: -0.091
+                },
+                "65": {
+                    r: 0
+                },
+                "66": {
+                    r: -0.091
+                },
+                "68": {
+                    r: 0
+                },
+                "69": {
+                    r: -0.091
+                },
+                "71": {
+                    r: -0.06
+                },
+                "72": {
                     r: 0
                 }
             })
@@ -1657,11 +1487,71 @@ import { EventBus } from '../../src/main';
                     r: -0.014
                 },
                 "53": {
+                    x: -97.85,
+                    y: -270.4,
+                    r: 0
+                },
+                "54": {
+                    x: -95,
+                    y: -270.1,
+                    r: -0.014
+                },
+                "56": {
+                    x: -97.85,
+                    y: -270.4,
+                    r: 0
+                },
+                "57": {
+                    x: -95,
+                    y: -270.1,
+                    r: -0.014
+                },
+                "59": {
+                    x: -97.85,
+                    y: -270.4,
+                    r: 0
+                },
+                "60": {
+                    x: -95,
+                    y: -270.1,
+                    r: -0.014
+                },
+                "62": {
+                    x: -97.85,
+                    y: -270.4,
+                    r: 0
+                },
+                "63": {
+                    x: -95,
+                    y: -270.1,
+                    r: -0.014
+                },
+                "65": {
+                    x: -97.85,
+                    y: -270.4,
+                    r: 0
+                },
+                "66": {
+                    x: -95,
+                    y: -270.1,
+                    r: -0.014
+                },
+                "68": {
+                    x: -97.85,
+                    y: -270.4,
+                    r: 0
+                },
+                "69": {
+                    x: -95,
+                    y: -270.1,
+                    r: -0.014
+                },
+                "71": {
                     x: -96.5,
                     y: -270.25,
                     r: -0.008
                 },
-                "54": {
+                "72": {
                     x: -97.85,
                     y: -270.4,
                     r: 0
@@ -1727,6 +1617,54 @@ import { EventBus } from '../../src/main';
                 "54": {
                     y: -452.35,
                     sy: 0.97
+                },
+                "56": {
+                    y: -453.6,
+                    sy: 1
+                },
+                "57": {
+                    y: -452.35,
+                    sy: 0.97
+                },
+                "59": {
+                    y: -453.6,
+                    sy: 1
+                },
+                "60": {
+                    y: -452.35,
+                    sy: 0.97
+                },
+                "62": {
+                    y: -453.6,
+                    sy: 1
+                },
+                "63": {
+                    y: -452.35,
+                    sy: 0.97
+                },
+                "65": {
+                    y: -453.6,
+                    sy: 1
+                },
+                "66": {
+                    y: -452.35,
+                    sy: 0.97
+                },
+                "68": {
+                    y: -453.6,
+                    sy: 1
+                },
+                "69": {
+                    y: -452.35,
+                    sy: 0.97
+                },
+                "71": {
+                    y: -453.6,
+                    sy: 1
+                },
+                "72": {
+                    y: -452.35,
+                    sy: 0.97
                 }
             })
             .addTimedChild(instance4, 0, 85, {
@@ -1779,11 +1717,59 @@ import { EventBus } from '../../src/main';
                     r: 0.034
                 },
                 "53": {
+                    x: -9.65,
+                    r: 0
+                },
+                "54": {
+                    x: -9.6,
+                    r: 0.034
+                },
+                "56": {
+                    x: -9.65,
+                    r: 0
+                },
+                "57": {
+                    x: -9.6,
+                    r: 0.034
+                },
+                "59": {
+                    x: -9.65,
+                    r: 0
+                },
+                "60": {
+                    x: -9.6,
+                    r: 0.034
+                },
+                "62": {
+                    x: -9.65,
+                    r: 0
+                },
+                "63": {
+                    x: -9.6,
+                    r: 0.034
+                },
+                "65": {
+                    x: -9.65,
+                    r: 0
+                },
+                "66": {
+                    x: -9.6,
+                    r: 0.034
+                },
+                "68": {
+                    x: -9.65,
+                    r: 0
+                },
+                "69": {
+                    x: -9.6,
+                    r: 0.034
+                },
+                "71": {
                     x: -9.55,
                     y: -540.2,
                     r: 0.009
                 },
-                "54": {
+                "72": {
                     x: -9.65,
                     y: -540.15,
                     r: 0
@@ -1845,6 +1831,54 @@ import { EventBus } from '../../src/main';
                 "54": {
                     y: -149.85,
                     r: -0.009
+                },
+                "56": {
+                    y: -149.8,
+                    r: -0.006
+                },
+                "57": {
+                    y: -149.85,
+                    r: -0.009
+                },
+                "59": {
+                    y: -149.8,
+                    r: -0.006
+                },
+                "60": {
+                    y: -149.85,
+                    r: -0.009
+                },
+                "62": {
+                    y: -149.8,
+                    r: -0.006
+                },
+                "63": {
+                    y: -149.85,
+                    r: -0.009
+                },
+                "65": {
+                    y: -149.8,
+                    r: -0.006
+                },
+                "66": {
+                    y: -149.85,
+                    r: -0.009
+                },
+                "68": {
+                    y: -149.8,
+                    r: -0.006
+                },
+                "69": {
+                    y: -149.85,
+                    r: -0.009
+                },
+                "71": {
+                    y: -149.8,
+                    r: -0.006
+                },
+                "72": {
+                    y: -149.85,
+                    r: -0.009
                 }
             })
             .addTimedChild(instance2, 0, 85, {
@@ -1903,6 +1937,54 @@ import { EventBus } from '../../src/main';
                 "54": {
                     y: -475.65,
                     r: -0.004
+                },
+                "56": {
+                    y: -477.75,
+                    r: 0
+                },
+                "57": {
+                    y: -475.65,
+                    r: -0.004
+                },
+                "59": {
+                    y: -477.75,
+                    r: 0
+                },
+                "60": {
+                    y: -475.65,
+                    r: -0.004
+                },
+                "62": {
+                    y: -477.75,
+                    r: 0
+                },
+                "63": {
+                    y: -475.65,
+                    r: -0.004
+                },
+                "65": {
+                    y: -477.75,
+                    r: 0
+                },
+                "66": {
+                    y: -475.65,
+                    r: -0.004
+                },
+                "68": {
+                    y: -477.75,
+                    r: 0
+                },
+                "69": {
+                    y: -475.65,
+                    r: -0.004
+                },
+                "71": {
+                    y: -477.75,
+                    r: 0
+                },
+                "72": {
+                    y: -475.65,
+                    r: -0.004
                 }
             })
             .addTimedChild(instance1, 0, 85, {
@@ -1935,2217 +2017,69 @@ import { EventBus } from '../../src/main';
                     y: -737.75
                 },
                 "54": {
+                    y: -742.65
+                },
+                "56": {
+                    y: -737.75
+                },
+                "57": {
+                    y: -742.65
+                },
+                "59": {
+                    y: -737.75
+                },
+                "60": {
+                    y: -742.65
+                },
+                "62": {
+                    y: -737.75
+                },
+                "63": {
+                    y: -742.65
+                },
+                "65": {
+                    y: -737.75
+                },
+                "66": {
+                    y: -742.65
+                },
+                "68": {
+                    y: -737.75
+                },
+                "69": {
+                    y: -742.65
+                },
+                "71": {
+                    y: -737.75
+                },
+                "72": {
                     y: -732.85
                 }
             });
     });
 
-    var Graphic138 = MovieClip.extend(function (mode) {
+    var Graphic84 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 4, loop: false });
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
+            .drawCommands(shapes.s04[187]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
+            .drawCommands(shapes.s04[186]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
+            .drawCommands(shapes.s04[185]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
+            .drawCommands(shapes.s04[184]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
+            .drawCommands(shapes.s04[183]);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
+            .drawCommands(shapes.s04[192]);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
+            .drawCommands(shapes.s04[191]);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
+            .drawCommands(shapes.s04[190]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
+            .drawCommands(shapes.s04[189]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic140 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211])
-            .setTransform(0.2, 0.4);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210])
-            .setTransform(0.25, 0.45, 1.103, 1.103);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209])
-            .setTransform(-0.3, 0.5, 1.103, 1.103);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208])
-            .setTransform(-1.35, 1.05, 1.103, 1.103);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207])
-            .setTransform(0.05, 2.6, 1.103, 1.103);
-        this.addTimedChild(instance5, 1, 2, {
-                "1": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "2": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 1, 2, {
-                "1": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "2": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 1, 2, {
-                "1": {
-                    x: -0.2,
-                    y: 0
-                },
-                "2": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 1, 2, {
-                "1": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "2": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 1, 2, {
-                "1": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "2": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 3, 1)
-            .addTimedChild(instance9, 3, 1)
-            .addTimedChild(instance8, 3, 1)
-            .addTimedChild(instance7, 3, 1)
-            .addTimedChild(instance6, 3, 1);
-    });
-
-    var Graphic141 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211])
-            .setTransform(0.2, 0.4);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210])
-            .setTransform(0.25, 0.45, 1.103, 1.103);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209])
-            .setTransform(-0.3, 0.5, 1.103, 1.103);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208])
-            .setTransform(-1.35, 1.05, 1.103, 1.103);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207])
-            .setTransform(0.05, 2.6, 1.103, 1.103);
-        this.addTimedChild(instance5, 1, 2, {
-                "1": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "2": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 1, 2, {
-                "1": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "2": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 1, 2, {
-                "1": {
-                    x: -0.2,
-                    y: 0
-                },
-                "2": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 1, 2, {
-                "1": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "2": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 1, 2, {
-                "1": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "2": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 3, 1)
-            .addTimedChild(instance9, 3, 1)
-            .addTimedChild(instance8, 3, 1)
-            .addTimedChild(instance7, 3, 1)
-            .addTimedChild(instance6, 3, 1);
-    });
-
-    var Graphic143 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211])
-            .setTransform(0.2, 0.4);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210])
-            .setTransform(0.25, 0.45, 1.103, 1.103);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209])
-            .setTransform(-0.3, 0.5, 1.103, 1.103);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208])
-            .setTransform(-1.35, 1.05, 1.103, 1.103);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207])
-            .setTransform(0.05, 2.6, 1.103, 1.103);
-        this.addTimedChild(instance5, 1, 2, {
-                "1": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "2": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 1, 2, {
-                "1": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "2": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 1, 2, {
-                "1": {
-                    x: -0.2,
-                    y: 0
-                },
-                "2": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 1, 2, {
-                "1": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "2": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 1, 2, {
-                "1": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "2": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 3, 1)
-            .addTimedChild(instance9, 3, 1)
-            .addTimedChild(instance8, 3, 1)
-            .addTimedChild(instance7, 3, 1)
-            .addTimedChild(instance6, 3, 1);
-    });
-
-    var Graphic145 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic150 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic152 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic154 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic157 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic159 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic131 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic139 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic142 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211])
-            .setTransform(0.2, 0.4);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210])
-            .setTransform(0.25, 0.45, 1.103, 1.103);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209])
-            .setTransform(-0.3, 0.5, 1.103, 1.103);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208])
-            .setTransform(-1.35, 1.05, 1.103, 1.103);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207])
-            .setTransform(0.05, 2.6, 1.103, 1.103);
-        this.addTimedChild(instance5, 1, 2, {
-                "1": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "2": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 1, 2, {
-                "1": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "2": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 1, 2, {
-                "1": {
-                    x: -0.2,
-                    y: 0
-                },
-                "2": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 1, 2, {
-                "1": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "2": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 1, 2, {
-                "1": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "2": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 3, 1)
-            .addTimedChild(instance9, 3, 1)
-            .addTimedChild(instance8, 3, 1)
-            .addTimedChild(instance7, 3, 1)
-            .addTimedChild(instance6, 3, 1);
-    });
-
-    var Graphic144 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211])
-            .setTransform(0.2, 0.4);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210])
-            .setTransform(0.25, 0.45, 1.103, 1.103);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209])
-            .setTransform(-0.3, 0.5, 1.103, 1.103);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208])
-            .setTransform(-1.35, 1.05, 1.103, 1.103);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207])
-            .setTransform(0.05, 2.6, 1.103, 1.103);
-        this.addTimedChild(instance5, 1, 2, {
-                "1": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "2": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 1, 2, {
-                "1": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "2": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 1, 2, {
-                "1": {
-                    x: -0.2,
-                    y: 0
-                },
-                "2": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 1, 2, {
-                "1": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "2": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 1, 2, {
-                "1": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "2": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 3, 1)
-            .addTimedChild(instance9, 3, 1)
-            .addTimedChild(instance8, 3, 1)
-            .addTimedChild(instance7, 3, 1)
-            .addTimedChild(instance6, 3, 1);
-    });
-
-    var Graphic146 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic147 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic148 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic151 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic153 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211])
-            .setTransform(0.2, 0.4);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210])
-            .setTransform(0.25, 0.45, 1.103, 1.103);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209])
-            .setTransform(-0.3, 0.5, 1.103, 1.103);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208])
-            .setTransform(-1.35, 1.05, 1.103, 1.103);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207])
-            .setTransform(0.05, 2.6, 1.103, 1.103);
-        this.addTimedChild(instance5, 1, 2, {
-                "1": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "2": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 1, 2, {
-                "1": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "2": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 1, 2, {
-                "1": {
-                    x: -0.2,
-                    y: 0
-                },
-                "2": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 1, 2, {
-                "1": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "2": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 1, 2, {
-                "1": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "2": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 3, 1)
-            .addTimedChild(instance9, 3, 1)
-            .addTimedChild(instance8, 3, 1)
-            .addTimedChild(instance7, 3, 1)
-            .addTimedChild(instance6, 3, 1);
-    });
-
-    var Graphic156 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic158 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
-        this.addTimedChild(instance5, 0, 2, {
-                "0": {
-                    x: 6.6,
-                    y: 4.3
-                },
-                "1": {
-                    x: -0.45,
-                    y: 2.75
-                }
-            })
-            .addTimedChild(instance4, 0, 2, {
-                "0": {
-                    x: 0.65,
-                    y: 7.3
-                },
-                "1": {
-                    x: 0.2,
-                    y: 0
-                }
-            })
-            .addTimedChild(instance3, 0, 2, {
-                "0": {
-                    x: -0.2,
-                    y: 0
-                },
-                "1": {
-                    x: 6.25,
-                    y: -4.2
-                }
-            })
-            .addTimedChild(instance2, 0, 2, {
-                "0": {
-                    x: -4.3,
-                    y: -3.85
-                },
-                "1": {
-                    x: -1.2,
-                    y: 0.6
-                }
-            })
-            .addTimedChild(instance1, 0, 2, {
-                "0": {
-                    x: 2.95,
-                    y: -1.95
-                },
-                "1": {
-                    x: 0.3,
-                    y: 2
-                }
-            })
-            .addTimedChild(instance10, 2, 1, {
-                "2": {
-                    x: 0.2,
-                    y: 0.4
-                }
-            })
-            .addTimedChild(instance9, 2, 1, {
-                "2": {
-                    x: 0.25,
-                    y: 0.45,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance8, 2, 1, {
-                "2": {
-                    x: -0.3,
-                    y: 0.5,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance7, 2, 1, {
-                "2": {
-                    x: -1.35,
-                    y: 1.05,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            })
-            .addTimedChild(instance6, 2, 1, {
-                "2": {
-                    x: 0.05,
-                    y: 2.6,
-                    sx: 1.103,
-                    sy: 1.103
-                }
-            });
-    });
-
-    var Graphic160 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[206]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[205]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[204]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[203]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[202]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[211]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[210]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[209]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[208]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[207]);
+            .drawCommands(shapes.s04[188]);
         this.addTimedChild(instance5, 0, 2, {
                 "0": {
                     x: 6.6,
@@ -4237,39 +2171,1999 @@ import { EventBus } from '../../src/main';
     });
 
     var Graphic86 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192])
+            .setTransform(0.2, 0.4);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191])
+            .setTransform(0.25, 0.45, 1.103, 1.103);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190])
+            .setTransform(-0.3, 0.5, 1.103, 1.103);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189])
+            .setTransform(-1.35, 1.05, 1.103, 1.103);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188])
+            .setTransform(0.05, 2.6, 1.103, 1.103);
+        this.addTimedChild(instance5, 1, 2, {
+                "1": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "2": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 1, 2, {
+                "1": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "2": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 1, 2, {
+                "1": {
+                    x: -0.2,
+                    y: 0
+                },
+                "2": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 1, 2, {
+                "1": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "2": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 1, 2, {
+                "1": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "2": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 3, 1)
+            .addTimedChild(instance9, 3, 1)
+            .addTimedChild(instance8, 3, 1)
+            .addTimedChild(instance7, 3, 1)
+            .addTimedChild(instance6, 3, 1);
+    });
+
+    var Graphic87 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192])
+            .setTransform(0.2, 0.4);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191])
+            .setTransform(0.25, 0.45, 1.103, 1.103);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190])
+            .setTransform(-0.3, 0.5, 1.103, 1.103);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189])
+            .setTransform(-1.35, 1.05, 1.103, 1.103);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188])
+            .setTransform(0.05, 2.6, 1.103, 1.103);
+        this.addTimedChild(instance5, 1, 2, {
+                "1": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "2": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 1, 2, {
+                "1": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "2": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 1, 2, {
+                "1": {
+                    x: -0.2,
+                    y: 0
+                },
+                "2": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 1, 2, {
+                "1": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "2": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 1, 2, {
+                "1": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "2": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 3, 1)
+            .addTimedChild(instance9, 3, 1)
+            .addTimedChild(instance8, 3, 1)
+            .addTimedChild(instance7, 3, 1)
+            .addTimedChild(instance6, 3, 1);
+    });
+
+    var Graphic89 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192])
+            .setTransform(0.2, 0.4);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191])
+            .setTransform(0.25, 0.45, 1.103, 1.103);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190])
+            .setTransform(-0.3, 0.5, 1.103, 1.103);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189])
+            .setTransform(-1.35, 1.05, 1.103, 1.103);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188])
+            .setTransform(0.05, 2.6, 1.103, 1.103);
+        this.addTimedChild(instance5, 1, 2, {
+                "1": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "2": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 1, 2, {
+                "1": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "2": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 1, 2, {
+                "1": {
+                    x: -0.2,
+                    y: 0
+                },
+                "2": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 1, 2, {
+                "1": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "2": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 1, 2, {
+                "1": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "2": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 3, 1)
+            .addTimedChild(instance9, 3, 1)
+            .addTimedChild(instance8, 3, 1)
+            .addTimedChild(instance7, 3, 1)
+            .addTimedChild(instance6, 3, 1);
+    });
+
+    var Graphic91 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic94 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic96 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic98 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic101 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic103 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic81 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic85 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic88 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192])
+            .setTransform(0.2, 0.4);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191])
+            .setTransform(0.25, 0.45, 1.103, 1.103);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190])
+            .setTransform(-0.3, 0.5, 1.103, 1.103);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189])
+            .setTransform(-1.35, 1.05, 1.103, 1.103);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188])
+            .setTransform(0.05, 2.6, 1.103, 1.103);
+        this.addTimedChild(instance5, 1, 2, {
+                "1": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "2": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 1, 2, {
+                "1": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "2": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 1, 2, {
+                "1": {
+                    x: -0.2,
+                    y: 0
+                },
+                "2": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 1, 2, {
+                "1": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "2": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 1, 2, {
+                "1": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "2": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 3, 1)
+            .addTimedChild(instance9, 3, 1)
+            .addTimedChild(instance8, 3, 1)
+            .addTimedChild(instance7, 3, 1)
+            .addTimedChild(instance6, 3, 1);
+    });
+
+    var Graphic90 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192])
+            .setTransform(0.2, 0.4);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191])
+            .setTransform(0.25, 0.45, 1.103, 1.103);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190])
+            .setTransform(-0.3, 0.5, 1.103, 1.103);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189])
+            .setTransform(-1.35, 1.05, 1.103, 1.103);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188])
+            .setTransform(0.05, 2.6, 1.103, 1.103);
+        this.addTimedChild(instance5, 1, 2, {
+                "1": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "2": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 1, 2, {
+                "1": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "2": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 1, 2, {
+                "1": {
+                    x: -0.2,
+                    y: 0
+                },
+                "2": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 1, 2, {
+                "1": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "2": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 1, 2, {
+                "1": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "2": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 3, 1)
+            .addTimedChild(instance9, 3, 1)
+            .addTimedChild(instance8, 3, 1)
+            .addTimedChild(instance7, 3, 1)
+            .addTimedChild(instance6, 3, 1);
+    });
+
+    var Graphic92 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic95 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic97 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192])
+            .setTransform(0.2, 0.4);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191])
+            .setTransform(0.25, 0.45, 1.103, 1.103);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190])
+            .setTransform(-0.3, 0.5, 1.103, 1.103);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189])
+            .setTransform(-1.35, 1.05, 1.103, 1.103);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188])
+            .setTransform(0.05, 2.6, 1.103, 1.103);
+        this.addTimedChild(instance5, 1, 2, {
+                "1": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "2": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 1, 2, {
+                "1": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "2": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 1, 2, {
+                "1": {
+                    x: -0.2,
+                    y: 0
+                },
+                "2": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 1, 2, {
+                "1": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "2": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 1, 2, {
+                "1": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "2": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 3, 1)
+            .addTimedChild(instance9, 3, 1)
+            .addTimedChild(instance8, 3, 1)
+            .addTimedChild(instance7, 3, 1)
+            .addTimedChild(instance6, 3, 1);
+    });
+
+    var Graphic100 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic102 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic104 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[187]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[186]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[185]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[184]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[183]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[192]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[191]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[190]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[189]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[188]);
+        this.addTimedChild(instance5, 0, 2, {
+                "0": {
+                    x: 6.6,
+                    y: 4.3
+                },
+                "1": {
+                    x: -0.45,
+                    y: 2.75
+                }
+            })
+            .addTimedChild(instance4, 0, 2, {
+                "0": {
+                    x: 0.65,
+                    y: 7.3
+                },
+                "1": {
+                    x: 0.2,
+                    y: 0
+                }
+            })
+            .addTimedChild(instance3, 0, 2, {
+                "0": {
+                    x: -0.2,
+                    y: 0
+                },
+                "1": {
+                    x: 6.25,
+                    y: -4.2
+                }
+            })
+            .addTimedChild(instance2, 0, 2, {
+                "0": {
+                    x: -4.3,
+                    y: -3.85
+                },
+                "1": {
+                    x: -1.2,
+                    y: 0.6
+                }
+            })
+            .addTimedChild(instance1, 0, 2, {
+                "0": {
+                    x: 2.95,
+                    y: -1.95
+                },
+                "1": {
+                    x: 0.3,
+                    y: 2
+                }
+            })
+            .addTimedChild(instance10, 2, 1, {
+                "2": {
+                    x: 0.2,
+                    y: 0.4
+                }
+            })
+            .addTimedChild(instance9, 2, 1, {
+                "2": {
+                    x: 0.25,
+                    y: 0.45,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance8, 2, 1, {
+                "2": {
+                    x: -0.3,
+                    y: 0.5,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance7, 2, 1, {
+                "2": {
+                    x: -1.35,
+                    y: 1.05,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            })
+            .addTimedChild(instance6, 2, 1, {
+                "2": {
+                    x: 0.05,
+                    y: 2.6,
+                    sx: 1.103,
+                    sy: 1.103
+                }
+            });
+    });
+
+    var Graphic54 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 152, loop: false });
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[222])
+            .drawCommands(shapes.s04[203])
             .setTransform(-3.45, -28.35);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[221])
+            .drawCommands(shapes.s04[202])
             .setTransform(17.2, 0.1, 1, 1, 0.714);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[220])
+            .drawCommands(shapes.s04[201])
             .setTransform(10.85, -42.1, 1, 1, -0.069);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[219])
+            .drawCommands(shapes.s04[200])
             .setTransform(0.55, -37.45);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[218])
+            .drawCommands(shapes.s04[199])
             .setTransform(-3.45, -28.35);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[217])
+            .drawCommands(shapes.s04[198])
             .setTransform(-3.45, -28.35);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[216])
+            .drawCommands(shapes.s04[197])
             .setTransform(11.05, 34.75, 1, 1, 1.207);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[215])
+            .drawCommands(shapes.s04[196])
             .setTransform(-3.45, -28.35);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[214])
+            .drawCommands(shapes.s04[195])
             .setTransform(-3.45, -28.35);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[213])
+            .drawCommands(shapes.s04[194])
             .setTransform(-3.45, -28.35);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[212])
+            .drawCommands(shapes.s04[193])
             .setTransform(-3.45, -28.35);
         this.addTimedChild(instance11)
             .addTimedChild(instance10)
@@ -4284,1116 +4178,1006 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic46 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 6, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic57 = MovieClip.extend(function (mode) {
+    var Graphic31 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 7, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
-    var Graphic59 = MovieClip.extend(function (mode) {
+    var Graphic33 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 4, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
-    var Graphic61 = MovieClip.extend(function (mode) {
+    var Graphic35 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 7, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
-    var Graphic63 = MovieClip.extend(function (mode) {
+    var Graphic37 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 81, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
-    var Graphic65 = MovieClip.extend(function (mode) {
+    var Graphic39 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 4, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
-    var Graphic67 = MovieClip.extend(function (mode) {
+    var Graphic41 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 10, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
-    var Graphic69 = MovieClip.extend(function (mode) {
+    var Graphic45 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 6, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic71 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 17, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic73 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 71, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic47 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 6, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic58 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 7, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic60 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic62 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 7, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic64 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 81, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic66 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic68 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 10, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic70 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 6, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic72 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 17, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
-            .setTransform(-1219.5, -229.25, 0.896, 0.896);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic74 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 71, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[225])
+            .drawCommands(shapes.s04[205])
             .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
     var Graphic48 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[229]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[228]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[226]);
+        MovieClip.call(this, { mode: mode, duration: 17, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance31 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance30 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance32 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance34 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance33 = new Graphics()
-            .drawCommands(shapes.s04[226]);
-        var instance35 = new Graphics()
-            .drawCommands(shapes.s04[227]);
-        var instance37 = new Graphics()
-            .drawCommands(shapes.s04[226])
-            .setTransform(-1289.25, -221.05);
-        var instance36 = new Graphics()
-            .drawCommands(shapes.s04[226])
-            .setTransform(-1263.8, -221.2);
-        this.addTimedChild(instance4, 0, 275, {
-                "0": {
-                    x: -1289.25,
-                    y: -221.05
-                },
-                "6": {
-                    y: -220.85
-                },
-                "8": {
-                    y: -221.05
-                },
-                "34": {
-                    y: -220.85
-                },
-                "39": {
-                    y: -221.05
-                },
-                "46": {
-                    y: -220.85
-                },
-                "48": {
-                    y: -221.05
-                },
-                "52": {
-                    y: -220.85
-                },
-                "54": {
-                    y: -221.05
-                },
-                "61": {
-                    y: -220.85
-                },
-                "63": {
-                    y: -221.05
-                },
-                "144": {
-                    y: -220.85
-                },
-                "146": {
-                    y: -221.05
-                },
-                "150": {
-                    y: -220.85
-                },
-                "151": {
-                    y: -221.05
-                },
-                "161": {
-                    y: -220.85
-                },
-                "163": {
-                    y: -221.05
-                },
-                "169": {
-                    y: -220.85
-                },
-                "171": {
-                    y: -221.05
-                },
-                "188": {
-                    y: -220.85
-                },
-                "190": {
-                    y: -221.05
-                },
-                "261": {
-                    y: -220.85
-                },
-                "263": {
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance3, 0, 275, {
-                "0": {
-                    x: -1289.25,
-                    y: -221.05
-                },
-                "6": {
-                    y: -220.85
-                },
-                "8": {
-                    y: -221.05
-                },
-                "34": {
-                    y: -220.85
-                },
-                "39": {
-                    y: -221.05
-                },
-                "46": {
-                    y: -220.85
-                },
-                "48": {
-                    y: -221.05
-                },
-                "52": {
-                    y: -220.85
-                },
-                "54": {
-                    y: -221.05
-                },
-                "61": {
-                    y: -220.85
-                },
-                "63": {
-                    y: -221.05
-                },
-                "144": {
-                    y: -220.85
-                },
-                "146": {
-                    y: -221.05
-                },
-                "150": {
-                    y: -220.85
-                },
-                "151": {
-                    y: -221.05
-                },
-                "161": {
-                    y: -220.85
-                },
-                "163": {
-                    y: -221.05
-                },
-                "169": {
-                    y: -220.85
-                },
-                "171": {
-                    y: -221.05
-                },
-                "188": {
-                    y: -220.85
-                },
-                "190": {
-                    y: -221.05
-                },
-                "261": {
-                    y: -220.85
-                },
-                "263": {
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance2, 0, 6, {
-                "0": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance1, 0, 6, {
-                "0": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance5, 6, 2)
-            .addTimedChild(instance7, 8, 26, {
-                "8": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance6, 8, 26, {
-                "8": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance8, 34, 5)
-            .addTimedChild(instance10, 39, 7, {
-                "39": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance9, 39, 7, {
-                "39": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance11, 46, 2)
-            .addTimedChild(instance13, 48, 4, {
-                "48": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance12, 48, 4, {
-                "48": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance14, 52, 2)
-            .addTimedChild(instance16, 54, 7, {
-                "54": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance15, 54, 7, {
-                "54": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance17, 61, 2)
-            .addTimedChild(instance19, 63, 81, {
-                "63": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance18, 63, 81, {
-                "63": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance20, 144, 2)
-            .addTimedChild(instance22, 146, 4, {
-                "146": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance21, 146, 4, {
-                "146": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance23, 150, 1)
-            .addTimedChild(instance25, 151, 10, {
-                "151": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance24, 151, 10, {
-                "151": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance26, 161, 2)
-            .addTimedChild(instance28, 163, 6, {
-                "163": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance27, 163, 6, {
-                "163": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance29, 169, 2)
-            .addTimedChild(instance31, 171, 17, {
-                "171": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance30, 171, 17, {
-                "171": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance32, 188, 2)
-            .addTimedChild(instance34, 190, 71, {
-                "190": {
-                    x: -1289.25,
-                    y: -221.05
-                }
-            })
-            .addTimedChild(instance33, 190, 71, {
-                "190": {
-                    x: -1263.8,
-                    y: -221.2
-                }
-            })
-            .addTimedChild(instance35, 261, 2)
-            .addTimedChild(instance37, 263, 12)
-            .addTimedChild(instance36, 263, 12);
-    });
-
-    var Graphic49 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[230])
-            .setTransform(-1303.95, -197.85);
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
         this.addTimedChild(instance1);
     });
 
     var Graphic50 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+        MovieClip.call(this, { mode: mode, duration: 14, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[231])
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic32 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 7, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic34 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic36 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 7, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic38 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 81, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic40 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 4, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic42 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 10, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic46 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 6, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic49 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 17, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic51 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 14, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[205])
+            .setTransform(-1219.5, -229.25, 0.896, 0.896);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic22 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[209]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[208]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance11 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance12 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance16 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance20 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance22 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance24 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance26 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance25 = new Graphics()
+            .drawCommands(shapes.s04[207]);
+        var instance27 = new Graphics()
+            .drawCommands(shapes.s04[206]);
+        var instance29 = new Graphics()
+            .drawCommands(shapes.s04[207])
+            .setTransform(-1289.25, -221.05);
+        var instance28 = new Graphics()
+            .drawCommands(shapes.s04[207])
+            .setTransform(-1263.8, -221.2);
+        this.addTimedChild(instance3, 0, 170, {
+                "0": {
+                    x: -1289.25,
+                    y: -220.85
+                },
+                "5": {
+                    y: -221.05
+                },
+                "12": {
+                    y: -220.85
+                },
+                "14": {
+                    y: -221.05
+                },
+                "18": {
+                    y: -220.85
+                },
+                "20": {
+                    y: -221.05
+                },
+                "27": {
+                    y: -220.85
+                },
+                "29": {
+                    y: -221.05
+                },
+                "110": {
+                    y: -220.85
+                },
+                "112": {
+                    y: -221.05
+                },
+                "116": {
+                    y: -220.85
+                },
+                "117": {
+                    y: -221.05
+                },
+                "127": {
+                    y: -220.85
+                },
+                "129": {
+                    y: -221.05
+                },
+                "135": {
+                    y: -220.85
+                },
+                "137": {
+                    y: -221.05
+                },
+                "154": {
+                    y: -220.85
+                },
+                "156": {
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance2, 0, 170, {
+                "0": {
+                    x: -1289.25,
+                    y: -220.85
+                },
+                "5": {
+                    y: -221.05
+                },
+                "12": {
+                    y: -220.85
+                },
+                "14": {
+                    y: -221.05
+                },
+                "18": {
+                    y: -220.85
+                },
+                "20": {
+                    y: -221.05
+                },
+                "27": {
+                    y: -220.85
+                },
+                "29": {
+                    y: -221.05
+                },
+                "110": {
+                    y: -220.85
+                },
+                "112": {
+                    y: -221.05
+                },
+                "116": {
+                    y: -220.85
+                },
+                "117": {
+                    y: -221.05
+                },
+                "127": {
+                    y: -220.85
+                },
+                "129": {
+                    y: -221.05
+                },
+                "135": {
+                    y: -220.85
+                },
+                "137": {
+                    y: -221.05
+                },
+                "154": {
+                    y: -220.85
+                },
+                "156": {
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance1, 0, 5)
+            .addTimedChild(instance5, 5, 7, {
+                "5": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance4, 5, 7, {
+                "5": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance6, 12, 2)
+            .addTimedChild(instance8, 14, 4, {
+                "14": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance7, 14, 4, {
+                "14": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance9, 18, 2)
+            .addTimedChild(instance11, 20, 7, {
+                "20": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance10, 20, 7, {
+                "20": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance12, 27, 2)
+            .addTimedChild(instance14, 29, 81, {
+                "29": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance13, 29, 81, {
+                "29": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance15, 110, 2)
+            .addTimedChild(instance17, 112, 4, {
+                "112": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance16, 112, 4, {
+                "112": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance18, 116, 1)
+            .addTimedChild(instance20, 117, 10, {
+                "117": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance19, 117, 10, {
+                "117": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance21, 127, 2)
+            .addTimedChild(instance23, 129, 6, {
+                "129": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance22, 129, 6, {
+                "129": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance24, 135, 2)
+            .addTimedChild(instance26, 137, 17, {
+                "137": {
+                    x: -1289.25,
+                    y: -221.05
+                }
+            })
+            .addTimedChild(instance25, 137, 17, {
+                "137": {
+                    x: -1263.8,
+                    y: -221.2
+                }
+            })
+            .addTimedChild(instance27, 154, 2)
+            .addTimedChild(instance29, 156, 14)
+            .addTimedChild(instance28, 156, 14);
+    });
+
+    var Graphic23 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 112, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[210])
+            .setTransform(-1303.95, -197.85);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic43 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 43, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[210])
+            .setTransform(-1303.95, -197.85);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic24 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 112, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[212])
             .setTransform(-1268.05, -199.05);
         this.addTimedChild(instance1);
     });
 
     var Graphic44 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[250]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[244]);
+        MovieClip.call(this, { mode: mode, duration: 43, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[240]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[232]);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[233]);
+            .drawCommands(shapes.s04[212])
+            .setTransform(-1268.05, -199.05);
+        this.addTimedChild(instance1);
+    });
+
+    var Graphic19 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 112, loop: false });
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[214]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[215]);
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[214]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[232]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[251]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[245]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[241]);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[237]);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[236]);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[230]);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[226]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[222]);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[234]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[238]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[232]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[237]);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[236]);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[219]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[218]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[217]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[216]);
+        var instance11 = new Graphics()
+            .drawCommands(shapes.s04[220]);
+        var instance12 = new Graphics()
+            .drawCommands(shapes.s04[214]);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[219]);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s04[218]);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s04[217]);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s04[216]);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s04[230]);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s04[226]);
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s04[222]);
         var instance22 = new Graphics()
-            .drawCommands(shapes.s04[251]);
+            .drawCommands(shapes.s04[231]);
         var instance21 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[227]);
         var instance20 = new Graphics()
-            .drawCommands(shapes.s04[241]);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[250]);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[244]);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s04[240]);
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s04[237]);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s04[236]);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[223]);
         var instance26 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[219]);
+        var instance25 = new Graphics()
+            .drawCommands(shapes.s04[218]);
+        var instance24 = new Graphics()
+            .drawCommands(shapes.s04[217]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s04[216]);
+        var instance29 = new Graphics()
+            .drawCommands(shapes.s04[232]);
+        var instance28 = new Graphics()
+            .drawCommands(shapes.s04[228]);
+        var instance27 = new Graphics()
+            .drawCommands(shapes.s04[224]);
         var instance32 = new Graphics()
-            .drawCommands(shapes.s04[252]);
+            .drawCommands(shapes.s04[225]);
         var instance31 = new Graphics()
-            .drawCommands(shapes.s04[246]);
+            .drawCommands(shapes.s04[229]);
         var instance30 = new Graphics()
-            .drawCommands(shapes.s04[242]);
+            .drawCommands(shapes.s04[225]);
         var instance35 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[230]);
         var instance34 = new Graphics()
-            .drawCommands(shapes.s04[247]);
+            .drawCommands(shapes.s04[226]);
         var instance33 = new Graphics()
-            .drawCommands(shapes.s04[243]);
-        var instance38 = new Graphics()
-            .drawCommands(shapes.s04[251]);
-        var instance37 = new Graphics()
-            .drawCommands(shapes.s04[245]);
-        var instance36 = new Graphics()
-            .drawCommands(shapes.s04[241]);
-        var instance42 = new Graphics()
-            .drawCommands(shapes.s04[237]);
-        var instance41 = new Graphics()
-            .drawCommands(shapes.s04[236]);
-        var instance40 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[222]);
         var instance39 = new Graphics()
-            .drawCommands(shapes.s04[234]);
-        var instance43 = new Graphics()
-            .drawCommands(shapes.s04[239]);
-        var instance46 = new Graphics()
-            .drawCommands(shapes.s04[243]);
-        var instance45 = new Graphics()
-            .drawCommands(shapes.s04[247]);
-        var instance44 = new Graphics()
-            .drawCommands(shapes.s04[243]);
-        var instance49 = new Graphics()
-            .drawCommands(shapes.s04[252]);
-        var instance48 = new Graphics()
-            .drawCommands(shapes.s04[246]);
-        var instance47 = new Graphics()
-            .drawCommands(shapes.s04[242]);
-        var instance52 = new Graphics()
-            .drawCommands(shapes.s04[251]);
-        var instance51 = new Graphics()
-            .drawCommands(shapes.s04[245]);
-        var instance50 = new Graphics()
-            .drawCommands(shapes.s04[241]);
-        var instance55 = new Graphics()
-            .drawCommands(shapes.s04[253]);
-        var instance54 = new Graphics()
-            .drawCommands(shapes.s04[249]);
-        var instance53 = new Graphics()
-            .drawCommands(shapes.s04[248]);
-        var instance58 = new Graphics()
-            .drawCommands(shapes.s04[250]);
-        var instance57 = new Graphics()
-            .drawCommands(shapes.s04[244]);
-        var instance56 = new Graphics()
-            .drawCommands(shapes.s04[240]);
-        var instance61 = new Graphics()
-            .drawCommands(shapes.s04[251]);
-        var instance60 = new Graphics()
-            .drawCommands(shapes.s04[245]);
-        var instance59 = new Graphics()
-            .drawCommands(shapes.s04[241]);
-        var instance65 = new Graphics()
-            .drawCommands(shapes.s04[237]);
-        var instance64 = new Graphics()
-            .drawCommands(shapes.s04[236]);
-        var instance63 = new Graphics()
-            .drawCommands(shapes.s04[235]);
-        var instance62 = new Graphics()
-            .drawCommands(shapes.s04[234]);
-        var instance68 = new Graphics()
-            .drawCommands(shapes.s04[251]);
-        var instance67 = new Graphics()
-            .drawCommands(shapes.s04[245]);
-        var instance66 = new Graphics()
-            .drawCommands(shapes.s04[241]);
-        var instance69 = new Graphics()
-            .drawCommands(shapes.s04[239]);
-        var instance72 = new Graphics()
-            .drawCommands(shapes.s04[250]);
-        var instance71 = new Graphics()
-            .drawCommands(shapes.s04[244]);
-        var instance70 = new Graphics()
-            .drawCommands(shapes.s04[240]);
-        this.addTimedChild(instance3, 0, 34)
-            .addTimedChild(instance2, 0, 34)
-            .addTimedChild(instance1, 0, 34)
-            .addTimedChild(instance4, 34, 6)
-            .addTimedChild(instance5, 40, 1)
-            .addTimedChild(instance6, 41, 6)
-            .addTimedChild(instance9, 47, 1)
-            .addTimedChild(instance8, 47, 1)
-            .addTimedChild(instance7, 47, 1)
-            .addTimedChild(instance13, 48, 1, {
-                "48": {
+            .drawCommands(shapes.s04[219]);
+        var instance38 = new Graphics()
+            .drawCommands(shapes.s04[218]);
+        var instance37 = new Graphics()
+            .drawCommands(shapes.s04[217]);
+        var instance36 = new Graphics()
+            .drawCommands(shapes.s04[216]);
+        var instance40 = new Graphics()
+            .drawCommands(shapes.s04[221])
+            .setTransform(-5.8, 25);
+        this.addTimedChild(instance1, 0, 6)
+            .addTimedChild(instance2, 6, 1)
+            .addTimedChild(instance3, 7, 6)
+            .addTimedChild(instance6, 13, 1)
+            .addTimedChild(instance5, 13, 1)
+            .addTimedChild(instance4, 13, 1)
+            .addTimedChild(instance10, 14, 1, {
+                "14": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance12, 48, 1, {
-                "48": {
+            .addTimedChild(instance9, 14, 1, {
+                "14": {
                     x: -5.8,
                     y: 27.5
                 }
             })
-            .addTimedChild(instance11, 48, 1, {
-                "48": {
+            .addTimedChild(instance8, 14, 1, {
+                "14": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance10, 48, 1, {
-                "48": {
+            .addTimedChild(instance7, 14, 1, {
+                "14": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance14, 49, 1, {
-                "49": {
+            .addTimedChild(instance11, 15, 1, {
+                "15": {
                     x: -7.8,
                     y: 40.9
                 }
             })
-            .addTimedChild(instance15, 50, 1)
-            .addTimedChild(instance19, 51, 1, {
-                "51": {
+            .addTimedChild(instance12, 16, 1)
+            .addTimedChild(instance16, 17, 1, {
+                "17": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance18, 51, 1, {
-                "51": {
+            .addTimedChild(instance15, 17, 1, {
+                "17": {
                     x: -5.8,
                     y: 27.5
                 }
             })
-            .addTimedChild(instance17, 51, 1, {
-                "51": {
+            .addTimedChild(instance14, 17, 1, {
+                "17": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance16, 51, 1, {
-                "51": {
+            .addTimedChild(instance13, 17, 1, {
+                "17": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance22, 52, 1)
-            .addTimedChild(instance21, 52, 1)
-            .addTimedChild(instance20, 52, 1)
-            .addTimedChild(instance25, 53, 1)
-            .addTimedChild(instance24, 53, 1)
-            .addTimedChild(instance23, 53, 1)
-            .addTimedChild(instance29, 54, 2, {
-                "54": {
+            .addTimedChild(instance19, 18, 1)
+            .addTimedChild(instance18, 18, 1)
+            .addTimedChild(instance17, 18, 1)
+            .addTimedChild(instance22, 19, 1)
+            .addTimedChild(instance21, 19, 1)
+            .addTimedChild(instance20, 19, 1)
+            .addTimedChild(instance26, 20, 2, {
+                "20": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance28, 54, 2, {
-                "54": {
+            .addTimedChild(instance25, 20, 2, {
+                "20": {
                     x: -5.8,
                     y: 27.5
                 }
             })
-            .addTimedChild(instance27, 54, 2, {
-                "54": {
+            .addTimedChild(instance24, 20, 2, {
+                "20": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance26, 54, 2, {
-                "54": {
+            .addTimedChild(instance23, 20, 2, {
+                "20": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance32, 56, 1)
-            .addTimedChild(instance31, 56, 1)
-            .addTimedChild(instance30, 56, 1)
-            .addTimedChild(instance35, 57, 3)
-            .addTimedChild(instance34, 57, 3)
-            .addTimedChild(instance33, 57, 3)
-            .addTimedChild(instance38, 60, 1)
-            .addTimedChild(instance37, 60, 1)
-            .addTimedChild(instance36, 60, 1)
-            .addTimedChild(instance42, 61, 10, {
-                "61": {
+            .addTimedChild(instance29, 22, 1)
+            .addTimedChild(instance28, 22, 1)
+            .addTimedChild(instance27, 22, 1)
+            .addTimedChild(instance32, 23, 3)
+            .addTimedChild(instance31, 23, 3)
+            .addTimedChild(instance30, 23, 3)
+            .addTimedChild(instance35, 26, 1)
+            .addTimedChild(instance34, 26, 1)
+            .addTimedChild(instance33, 26, 1)
+            .addTimedChild(instance39, 27, 10, {
+                "27": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance41, 61, 10, {
-                "61": {
+            .addTimedChild(instance38, 27, 10, {
+                "27": {
                     x: -5.8,
                     y: 27.5
                 }
             })
-            .addTimedChild(instance40, 61, 10, {
-                "61": {
+            .addTimedChild(instance37, 27, 10, {
+                "27": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance39, 61, 10, {
-                "61": {
+            .addTimedChild(instance36, 27, 10, {
+                "27": {
                     x: -484.2,
                     y: -500.85
                 }
             })
-            .addTimedChild(instance43, 71, 92, {
-                "71": {
-                    x: -5.8,
-                    y: 25
-                }
-            })
-            .addTimedChild(instance46, 163, 1)
-            .addTimedChild(instance45, 163, 1)
-            .addTimedChild(instance44, 163, 1)
-            .addTimedChild(instance49, 164, 3)
-            .addTimedChild(instance48, 164, 3)
-            .addTimedChild(instance47, 164, 3)
-            .addTimedChild(instance52, 167, 2)
-            .addTimedChild(instance51, 167, 2)
-            .addTimedChild(instance50, 167, 2)
-            .addTimedChild(instance55, 169, 1)
-            .addTimedChild(instance54, 169, 1)
-            .addTimedChild(instance53, 169, 1)
-            .addTimedChild(instance58, 170, 1)
-            .addTimedChild(instance57, 170, 1)
-            .addTimedChild(instance56, 170, 1)
-            .addTimedChild(instance61, 171, 1)
-            .addTimedChild(instance60, 171, 1)
-            .addTimedChild(instance59, 171, 1)
-            .addTimedChild(instance65, 172, 4, {
-                "172": {
-                    x: -484.2,
-                    y: -500.85
-                }
-            })
-            .addTimedChild(instance64, 172, 4, {
-                "172": {
-                    x: -5.8,
-                    y: 27.5
-                }
-            })
-            .addTimedChild(instance63, 172, 4, {
-                "172": {
-                    x: -484.2,
-                    y: -500.85
-                }
-            })
-            .addTimedChild(instance62, 172, 4, {
-                "172": {
-                    x: -484.2,
-                    y: -500.85
-                }
-            })
-            .addTimedChild(instance68, 176, 12)
-            .addTimedChild(instance67, 176, 12)
-            .addTimedChild(instance66, 176, 12)
-            .addTimedChild(instance69, 188, 67, {
-                "188": {
-                    x: -5.8,
-                    y: 25
-                }
-            })
-            .addTimedChild(instance72, 255, 20)
-            .addTimedChild(instance71, 255, 20)
-            .addTimedChild(instance70, 255, 20);
+            .addTimedChild(instance40, 37, 75);
     });
 
-    var Graphic51 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphic44(MovieClip.SYNCHED);
-        this.addTimedChild(instance1, 0, 275, {
+    var Graphic25 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 112, loop: false });
+        var instance1 = new Graphic19(MovieClip.SYNCHED);
+        this.addTimedChild(instance1, 0, 112, {
             "0": {
                 x: -0.05,
-                y: -26.1,
-                sx: 1,
-                sy: 1
-            },
-            "34": {
                 y: -12.45,
                 sx: 0.237,
                 sy: 0.479
             },
-            "35": {
+            "1": {
                 y: -12.4,
                 sx: 0.251
             },
-            "36": {
+            "2": {
                 x: -0.15,
                 y: -12.45,
                 sx: 0.202,
                 sy: 0.48
             },
-            "37": {
+            "3": {
                 x: -0.1,
                 y: -11.2,
                 sx: 0.293,
                 sy: 0.436
             },
-            "38": {
+            "4": {
                 x: -0.15,
                 y: -12,
                 sx: 0.208,
                 sy: 0.468
             },
-            "39": {
+            "5": {
                 y: -10.3,
                 sx: 0.245,
                 sy: 0.403
             },
-            "40": {
+            "6": {
                 x: -0.2,
                 y: -19.1,
                 sx: 0.918,
                 sy: 0.737
             },
-            "41": {
+            "7": {
                 x: -0.05,
                 y: -22.35,
                 sx: 0.778,
                 sy: 0.857
             },
-            "42": {
+            "8": {
                 y: -23.25,
                 sx: 0.544,
                 sy: 0.894
             },
-            "47": {
+            "13": {
                 y: -22.35,
                 sx: 0.996,
                 sy: 0.857
             },
-            "48": {
+            "14": {
                 y: -26.1,
                 sx: 1,
                 sy: 1
             },
-            "50": {
+            "16": {
                 y: -29.25,
                 sx: 0.894,
                 sy: 1.121
             },
-            "51": {
+            "17": {
                 sx: 1.092
             },
-            "52": {
+            "18": {
                 y: -18.35,
                 sx: 1.198,
                 sy: 0.702
             },
-            "53": {
+            "19": {
                 x: -0.1,
                 y: -24.2,
                 sx: 1.012,
                 sy: 0.93
             },
-            "55": {
+            "21": {
                 x: -0.15,
                 y: -29.75,
                 sx: 0.911,
                 sy: 1.146
             },
-            "56": {
+            "22": {
                 x: -0.1,
                 y: -24.2,
                 sx: 1.012,
                 sy: 0.93
             },
-            "60": {
+            "26": {
                 x: 0,
                 y: -28.85,
                 sx: 1.246,
                 sy: 1.11
             },
-            "61": {
+            "27": {
                 x: -0.1,
                 y: -24.2,
                 sx: 1.012,
                 sy: 0.93
             },
-            "62": {
+            "28": {
                 y: -20.75,
                 sx: 1.068,
                 sy: 0.798
             },
-            "71": {
+            "37": {
                 sx: 1.214
-            },
-            "163": {
+            }
+        });
+    });
+
+    var Graphic20 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 41, loop: false });
+        var instance3 = new Graphics()
+            .drawCommands(shapes.s04[225]);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[229]);
+        var instance1 = new Graphics()
+            .drawCommands(shapes.s04[225]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[232]);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[228]);
+        var instance4 = new Graphics()
+            .drawCommands(shapes.s04[224]);
+        var instance9 = new Graphics()
+            .drawCommands(shapes.s04[230]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s04[226]);
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[222]);
+        var instance12 = new Graphics()
+            .drawCommands(shapes.s04[236]);
+        var instance11 = new Graphics()
+            .drawCommands(shapes.s04[235]);
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s04[234]);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s04[231]);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s04[227]);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s04[223]);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s04[230]);
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s04[226]);
+        var instance16 = new Graphics()
+            .drawCommands(shapes.s04[222]);
+        var instance22 = new Graphics()
+            .drawCommands(shapes.s04[219]);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s04[218]);
+        var instance20 = new Graphics()
+            .drawCommands(shapes.s04[217]);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s04[216]);
+        var instance25 = new Graphics()
+            .drawCommands(shapes.s04[230]);
+        var instance24 = new Graphics()
+            .drawCommands(shapes.s04[226]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s04[222]);
+        var instance26 = new Graphics()
+            .drawCommands(shapes.s04[221])
+            .setTransform(-5.8, 25);
+        this.addTimedChild(instance3, 0, 1)
+            .addTimedChild(instance2, 0, 1)
+            .addTimedChild(instance1, 0, 1)
+            .addTimedChild(instance6, 1, 3)
+            .addTimedChild(instance5, 1, 3)
+            .addTimedChild(instance4, 1, 3)
+            .addTimedChild(instance9, 4, 2)
+            .addTimedChild(instance8, 4, 2)
+            .addTimedChild(instance7, 4, 2)
+            .addTimedChild(instance12, 6, 1)
+            .addTimedChild(instance11, 6, 1)
+            .addTimedChild(instance10, 6, 1)
+            .addTimedChild(instance15, 7, 1)
+            .addTimedChild(instance14, 7, 1)
+            .addTimedChild(instance13, 7, 1)
+            .addTimedChild(instance18, 8, 1)
+            .addTimedChild(instance17, 8, 1)
+            .addTimedChild(instance16, 8, 1)
+            .addTimedChild(instance22, 9, 4, {
+                "9": {
+                    x: -484.2,
+                    y: -500.85
+                }
+            })
+            .addTimedChild(instance21, 9, 4, {
+                "9": {
+                    x: -5.8,
+                    y: 27.5
+                }
+            })
+            .addTimedChild(instance20, 9, 4, {
+                "9": {
+                    x: -484.2,
+                    y: -500.85
+                }
+            })
+            .addTimedChild(instance19, 9, 4, {
+                "9": {
+                    x: -484.2,
+                    y: -500.85
+                }
+            })
+            .addTimedChild(instance25, 13, 12)
+            .addTimedChild(instance24, 13, 12)
+            .addTimedChild(instance23, 13, 12)
+            .addTimedChild(instance26, 25, 16);
+    });
+
+    var Graphic47 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 41, loop: false });
+        var instance1 = new Graphic20(MovieClip.SYNCHED);
+        this.addTimedChild(instance1, 0, 41, {
+            "0": {
                 x: -0.2,
                 y: -24.6,
                 sx: 1.039,
                 sy: 0.951
             },
-            "164": {
+            "1": {
                 x: -0.25,
                 y: -28.6,
                 sx: 1.056,
                 sy: 1.109
             },
-            "165": {
+            "2": {
                 x: -0.3,
                 y: -30.25,
                 sx: 1.018,
                 sy: 1.174
             },
-            "167": {
+            "4": {
                 y: -26.4,
                 sx: 1.106,
                 sy: 1.026
             },
-            "168": {
+            "5": {
                 y: -22.7,
                 sx: 1.116,
                 sy: 0.883
             },
-            "169": {
+            "6": {
                 x: -0.15,
                 y: -31.55,
                 sx: 1.162,
                 sy: 1.221
             },
-            "172": {
+            "9": {
                 y: -28.15,
                 sx: 1.25,
                 sy: 1.093
             },
-            "176": {
+            "13": {
                 x: -0.25,
                 y: -25.95,
                 sx: 1.056,
                 sy: 1.012
             },
-            "177": {
+            "14": {
                 y: -22.1,
                 sx: 1.102,
                 sy: 0.862
             },
-            "189": {
+            "26": {
                 sx: 1.21
-            },
-            "255": {
-                x: -0.05,
-                y: -26.1,
-                sx: 1,
-                sy: 1
             }
         });
     });
 
-    var Graphic52 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    var Graphic26 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[254]);
+            .drawCommands(shapes.s04[237]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic53 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    var Graphic27 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1336.85, -168.4, 1.033, 1.033);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1357.3, -164.4, 1.033, 1.033);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1317.25, -167, 1.033, 1.033);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1316.95, -139.1, 0.978, 0.978);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1265.9, -139.25, 1.033, 1.033);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1170.45, -142.3, 0.948, 0.948);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1185.7, -149.8, 0.948, 0.948);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1177.25, -135.65, 0.881, 0.881);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1201.55, -112.45, 0.881, 0.881);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1213, -97.9, 0.881, 0.881);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[258])
+            .drawCommands(shapes.s04[241])
             .setTransform(-1255.65, -125.65, 1.033, 1.033);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[257]);
+            .drawCommands(shapes.s04[240]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[256]);
+            .drawCommands(shapes.s04[239]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[255])
+            .drawCommands(shapes.s04[238])
             .setTransform(-1294.65, -163.3);
         this.addTimedChild(instance14)
             .addTimedChild(instance13)
@@ -5411,86 +5195,99 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic45 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    var Graphic21 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[260])
+            .drawCommands(shapes.s04[243])
             .setTransform(-1294.55, -252.5);
         this.addTimedChild(instance1);
     });
 
-    var Graphic54 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance2 = new Graphic45(MovieClip.SYNCHED)
+    var Graphic28 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
+        var instance2 = new Graphic21(MovieClip.SYNCHED)
             .setTransform(6.55, -82.85);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[259]);
+            .drawCommands(shapes.s04[242]);
         this.addTimedChild(instance2)
             .addTimedChild(instance1);
     });
 
-    var Graphic55 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    var Graphic29 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[262]);
+            .drawCommands(shapes.s04[245]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[261]);
+            .drawCommands(shapes.s04[244]);
         this.addTimedChild(instance2)
             .addTimedChild(instance1);
     });
 
-    var Graphic56 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    var Graphic30 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[264]);
+            .drawCommands(shapes.s04[247]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[263]);
+            .drawCommands(shapes.s04[246]);
         this.addTimedChild(instance2)
             .addTimedChild(instance1);
     });
 
-    var Graphic78 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance11 = new Graphic56(MovieClip.SYNCHED)
+    var Graphic52 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 170, loop: false });
+        var instance9 = new Graphic30(MovieClip.SYNCHED)
             .setTransform(-61.45, -103.85);
-        var instance10 = new Graphic55(MovieClip.SYNCHED)
+        var instance8 = new Graphic29(MovieClip.SYNCHED)
             .setTransform(81.05, -103.55);
-        var instance9 = new Graphic54(MovieClip.SYNCHED)
+        var instance7 = new Graphic28(MovieClip.SYNCHED)
             .setTransform(0.05);
-        var instance8 = new Graphic53(MovieClip.SYNCHED)
+        var instance6 = new Graphic27(MovieClip.SYNCHED)
             .setTransform(6.7, -172.05);
-        var instance7 = new Graphic52(MovieClip.SYNCHED)
-            .setTransform(-6.35, -91.75);
-        var instance6 = new Graphic51(MovieClip.SYNCHED);
-        var instance5 = new Graphic50(MovieClip.SYNCHED);
-        var instance4 = new Graphic49(MovieClip.SYNCHED);
-        var instance3 = new Graphic48(MovieClip.SYNCHED);
-        var instance2 = new Graphic47(MovieClip.SYNCHED);
-        var instance1 = new Graphic46(MovieClip.SYNCHED);
-        var instance13 = new Graphic58(MovieClip.SYNCHED);
-        var instance12 = new Graphic57(MovieClip.SYNCHED);
-        var instance15 = new Graphic60(MovieClip.SYNCHED);
-        var instance14 = new Graphic59(MovieClip.SYNCHED);
-        var instance17 = new Graphic62(MovieClip.SYNCHED);
-        var instance16 = new Graphic61(MovieClip.SYNCHED);
-        var instance19 = new Graphic64(MovieClip.SYNCHED);
-        var instance18 = new Graphic63(MovieClip.SYNCHED);
-        var instance21 = new Graphic66(MovieClip.SYNCHED);
-        var instance20 = new Graphic65(MovieClip.SYNCHED);
-        var instance23 = new Graphic68(MovieClip.SYNCHED);
-        var instance22 = new Graphic67(MovieClip.SYNCHED);
-        var instance25 = new Graphic70(MovieClip.SYNCHED);
-        var instance24 = new Graphic69(MovieClip.SYNCHED);
-        var instance27 = new Graphic72(MovieClip.SYNCHED);
-        var instance26 = new Graphic71(MovieClip.SYNCHED);
-        var instance29 = new Graphic74(MovieClip.SYNCHED);
-        var instance28 = new Graphic73(MovieClip.SYNCHED);
-        this.addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
+        var instance5 = new Graphic26(MovieClip.SYNCHED);
+        var instance4 = new Graphic25(MovieClip.SYNCHED);
+        var instance3 = new Graphic24(MovieClip.SYNCHED);
+        var instance2 = new Graphic23(MovieClip.SYNCHED);
+        var instance22 = new Graphics()
+            .drawCommands(shapes.s04[233]);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s04[213]);
+        var instance20 = new Graphics()
+            .drawCommands(shapes.s04[211]);
+        var instance29 = new Graphic47(MovieClip.SYNCHED);
+        var instance26 = new Graphic44(MovieClip.SYNCHED);
+        var instance25 = new Graphic43(MovieClip.SYNCHED);
+        var instance1 = new Graphic22(MovieClip.SYNCHED);
+        var instance11 = new Graphic32(MovieClip.SYNCHED);
+        var instance10 = new Graphic31(MovieClip.SYNCHED);
+        var instance13 = new Graphic34(MovieClip.SYNCHED);
+        var instance12 = new Graphic33(MovieClip.SYNCHED);
+        var instance15 = new Graphic36(MovieClip.SYNCHED);
+        var instance14 = new Graphic35(MovieClip.SYNCHED);
+        var instance17 = new Graphic38(MovieClip.SYNCHED);
+        var instance16 = new Graphic37(MovieClip.SYNCHED);
+        var instance19 = new Graphic40(MovieClip.SYNCHED);
+        var instance18 = new Graphic39(MovieClip.SYNCHED);
+        var instance24 = new Graphic42(MovieClip.SYNCHED);
+        var instance23 = new Graphic41(MovieClip.SYNCHED);
+        var instance28 = new Graphic46(MovieClip.SYNCHED);
+        var instance27 = new Graphic45(MovieClip.SYNCHED);
+        var instance31 = new Graphic49(MovieClip.SYNCHED);
+        var instance30 = new Graphic48(MovieClip.SYNCHED);
+        var instance33 = new Graphic51(MovieClip.SYNCHED)
+            .setTransform(-18.85, -111.75);
+        var instance32 = new Graphic50(MovieClip.SYNCHED)
+            .setTransform(6.55, -111.95);
+        this.addTimedChild(instance9)
             .addTimedChild(instance8)
             .addTimedChild(instance7)
-            .addTimedChild(instance6, 0, 275, {
+            .addTimedChild(instance6)
+            .addTimedChild(instance5, 0, 170, {
+                "0": {
+                    x: -6.35,
+                    y: -91.75
+                }
+            })
+            .addTimedChild(instance4, 0, 112, {
                 "0": {
                     x: -2.6,
                     y: -68.75,
@@ -5498,142 +5295,198 @@ import { EventBus } from '../../src/main';
                     sy: 1,
                     kx: 0
                 },
-                "145": {
+                "111": {
                     x: -2.65,
                     sx: 0.953,
                     sy: 0.633,
                     kx: 0.872
+                }
+            })
+            .addTimedChild(instance3, 0, 112, {
+                "0": {
+                    x: -19.55,
+                    y: -132.85,
+                    r: 0
                 },
-                "146": {
+                "6": {
+                    x: -19.6,
+                    y: -135.8
+                },
+                "7": {
+                    x: -19.9,
+                    y: -136.3
+                },
+                "12": {
+                    x: -18.8,
+                    y: -124.45
+                },
+                "13": {
+                    x: -18.7,
+                    y: -124
+                },
+                "14": {
+                    x: -19.15,
+                    y: -131.75
+                },
+                "15": {
+                    x: -19.3,
+                    y: -131.35
+                },
+                "18": {
+                    x: -18.8,
+                    y: -124.45
+                },
+                "19": {
+                    x: -18.7,
+                    y: -124
+                },
+                "20": {
+                    x: -18.45,
+                    y: -130.55,
+                    r: -0.262
+                },
+                "21": {
+                    x: -18.9,
+                    y: -131.15,
+                    r: -0.296
+                },
+                "27": {
+                    x: -18.8,
+                    y: -124.45,
+                    r: 0
+                },
+                "28": {
+                    x: -18.7,
+                    y: -124
+                },
+                "29": {
+                    x: -19.9,
+                    y: -135.35
+                },
+                "30": {
+                    y: -136.3
+                },
+                "99": {
+                    x: -17.25,
+                    y: -130.2,
+                    r: -0.044
+                },
+                "110": {
+                    x: -17.45,
+                    y: -122.05
+                },
+                "111": {
+                    x: -17.25,
+                    y: -121.55
+                }
+            })
+            .addTimedChild(instance2, 0, 112, {
+                "0": {
+                    x: 16.15,
+                    y: -134.05,
+                    r: 0
+                },
+                "6": {
+                    x: 15.9,
+                    y: -136.7
+                },
+                "7": {
+                    x: 16,
+                    y: -137.5
+                },
+                "12": {
+                    x: 17.1,
+                    y: -125.65
+                },
+                "13": {
+                    x: 17.2,
+                    y: -125.2
+                },
+                "14": {
+                    x: 16.65,
+                    y: -132.9
+                },
+                "15": {
+                    x: 16.6,
+                    y: -132.55
+                },
+                "18": {
+                    x: 17.1,
+                    y: -125.65
+                },
+                "19": {
+                    x: 17.2,
+                    y: -125.2
+                },
+                "20": {
+                    x: 15.8,
+                    y: -131.95,
+                    r: 0.293
+                },
+                "21": {
+                    x: 16.6,
+                    y: -132.55,
+                    r: 0.353
+                },
+                "27": {
+                    x: 17.1,
+                    y: -125.65,
+                    r: 0
+                },
+                "28": {
+                    x: 17.2,
+                    y: -125.2
+                },
+                "29": {
+                    x: 15.05,
+                    y: -133.1
+                },
+                "30": {
+                    y: -133.65
+                },
+                "99": {
+                    x: 15.7,
+                    y: -131.1,
+                    r: 0.062
+                },
+                "110": {
+                    x: 15.5,
+                    y: -122.95
+                },
+                "111": {
+                    x: 15.7,
+                    y: -122.45
+                }
+            })
+            .addTimedChild(instance22, 112, 17)
+            .addTimedChild(instance21, 112, 15)
+            .addTimedChild(instance20, 112, 15)
+            .addTimedChild(instance29, 129, 41, {
+                "129": {
                     x: -2.6,
-                    sx: 1.063,
-                    sy: 0.368,
-                    kx: 1.194
-                },
-                "163": {
+                    y: -68.75,
                     sx: 1,
                     sy: 1,
                     kx: 0
                 },
-                "188": {
+                "154": {
                     sx: 1.092,
                     sy: 0.688
                 },
-                "189": {
+                "155": {
                     x: -2.65,
                     sx: 1.173,
                     sy: 0.229,
                     kx: 3.142
                 },
-                "190": {
+                "156": {
                     x: -2.6,
                     sx: 1.181,
                     sy: 0.873
-                },
-                "255": {
-                    sx: 1,
-                    sy: 1,
-                    kx: 0
                 }
             })
-            .addTimedChild(instance5, 0, 275, {
-                "0": {
-                    x: -19.9,
-                    y: -136.3,
-                    sx: 1,
-                    sy: 1,
-                    kx: 0,
-                    ky: 0,
-                    r: 0
-                },
-                "6": {
-                    y: -135.6
-                },
-                "8": {
-                    x: -19.55,
-                    y: -132.85
-                },
-                "40": {
-                    x: -19.6,
-                    y: -135.8
-                },
-                "41": {
-                    x: -19.9,
-                    y: -136.3
-                },
-                "46": {
-                    x: -18.8,
-                    y: -124.45
-                },
-                "47": {
-                    x: -18.7,
-                    y: -124
-                },
-                "48": {
-                    x: -19.15,
-                    y: -131.75
-                },
-                "49": {
-                    x: -19.3,
-                    y: -131.35
-                },
-                "52": {
-                    x: -18.8,
-                    y: -124.45
-                },
-                "53": {
-                    x: -18.7,
-                    y: -124
-                },
-                "54": {
-                    x: -18.45,
-                    y: -130.55,
-                    r: -0.262
-                },
-                "55": {
-                    x: -18.9,
-                    y: -131.15,
-                    r: -0.296
-                },
-                "61": {
-                    x: -18.8,
-                    y: -124.45,
-                    r: 0
-                },
-                "62": {
-                    x: -18.7,
-                    y: -124
-                },
-                "63": {
-                    x: -19.9,
-                    y: -135.35
-                },
-                "64": {
-                    y: -136.3
-                },
-                "133": {
-                    x: -17.25,
-                    y: -130.2,
-                    r: -0.044
-                },
-                "144": {
-                    x: -17.45,
-                    y: -122.05
-                },
-                "145": {
-                    x: -17.25,
-                    y: -121.55
-                },
-                "146": {
-                    x: -15.55,
-                    y: -126.65,
-                    sx: 0.986,
-                    sy: 0.37,
-                    kx: 0.936,
-                    ky: -0.044,
-                    r: 0
-                },
-                "161": {
+            .addTimedChild(instance26, 127, 43, {
+                "127": {
                     x: -17.45,
                     y: -120.85,
                     sx: 1,
@@ -5642,11 +5495,11 @@ import { EventBus } from '../../src/main';
                     ky: 0,
                     r: -0.044
                 },
-                "162": {
+                "128": {
                     x: -17.05,
                     y: -119.75
                 },
-                "163": {
+                "129": {
                     x: -15.65,
                     y: -125.85,
                     sx: 0.986,
@@ -5655,11 +5508,11 @@ import { EventBus } from '../../src/main';
                     ky: -0.044,
                     r: 0
                 },
-                "164": {
+                "130": {
                     x: -15.55,
                     y: -126.65
                 },
-                "169": {
+                "135": {
                     x: -17.45,
                     y: -120.85,
                     sx: 1,
@@ -5668,30 +5521,30 @@ import { EventBus } from '../../src/main';
                     ky: 0,
                     r: -0.044
                 },
-                "170": {
+                "136": {
                     x: -17.05,
                     y: -119.75
                 },
-                "171": {
+                "137": {
                     x: -18.55,
                     y: -130.55,
                     r: -0.306
                 },
-                "172": {
+                "138": {
                     x: -18.9,
                     y: -131.15,
                     r: -0.296
                 },
-                "188": {
+                "154": {
                     x: -17.45,
                     y: -120.85,
                     r: -0.044
                 },
-                "189": {
+                "155": {
                     x: -17.05,
                     y: -119.75
                 },
-                "190": {
+                "156": {
                     x: -15.9,
                     y: -138.05,
                     sx: 1.179,
@@ -5700,126 +5553,15 @@ import { EventBus } from '../../src/main';
                     ky: -0.053,
                     r: 0
                 },
-                "191": {
+                "157": {
                     x: -16.05,
                     y: -138.45,
                     sy: 0.81,
                     kx: 0.275
-                },
-                "255": {
-                    x: -19.9,
-                    y: -136.3,
-                    sx: 1,
-                    sy: 1,
-                    kx: 0,
-                    ky: 0
-                },
-                "261": {
-                    y: -135.6
-                },
-                "263": {
-                    x: -19.55,
-                    y: -132.85
                 }
             })
-            .addTimedChild(instance4, 0, 275, {
-                "0": {
-                    x: 16,
-                    y: -137.5,
-                    sx: 1,
-                    sy: 1,
-                    kx: 0,
-                    ky: 0,
-                    r: 0
-                },
-                "6": {
-                    y: -136.8
-                },
-                "8": {
-                    x: 16.15,
-                    y: -134.05
-                },
-                "40": {
-                    x: 15.9,
-                    y: -136.7
-                },
-                "41": {
-                    x: 16,
-                    y: -137.5
-                },
-                "46": {
-                    x: 17.1,
-                    y: -125.65
-                },
-                "47": {
-                    x: 17.2,
-                    y: -125.2
-                },
-                "48": {
-                    x: 16.65,
-                    y: -132.9
-                },
-                "49": {
-                    x: 16.6,
-                    y: -132.55
-                },
-                "52": {
-                    x: 17.1,
-                    y: -125.65
-                },
-                "53": {
-                    x: 17.2,
-                    y: -125.2
-                },
-                "54": {
-                    x: 15.8,
-                    y: -131.95,
-                    r: 0.293
-                },
-                "55": {
-                    x: 16.6,
-                    y: -132.55,
-                    r: 0.353
-                },
-                "61": {
-                    x: 17.1,
-                    y: -125.65,
-                    r: 0
-                },
-                "62": {
-                    x: 17.2,
-                    y: -125.2
-                },
-                "63": {
-                    x: 15.05,
-                    y: -133.1
-                },
-                "64": {
-                    y: -133.65
-                },
-                "133": {
-                    x: 15.7,
-                    y: -131.1,
-                    r: 0.062
-                },
-                "144": {
-                    x: 15.5,
-                    y: -122.95
-                },
-                "145": {
-                    x: 15.7,
-                    y: -122.45
-                },
-                "146": {
-                    x: 14.8,
-                    y: -126.65,
-                    sx: 1.056,
-                    sy: 0.435,
-                    kx: 1.098,
-                    ky: 0.062,
-                    r: 0
-                },
-                "161": {
+            .addTimedChild(instance25, 127, 43, {
+                "127": {
                     x: 15.5,
                     y: -121.75,
                     sx: 1,
@@ -5828,11 +5570,11 @@ import { EventBus } from '../../src/main';
                     ky: 0,
                     r: 0.062
                 },
-                "162": {
+                "128": {
                     x: 15.9,
                     y: -120.65
                 },
-                "163": {
+                "129": {
                     x: 14.7,
                     y: -125.85,
                     sx: 1.056,
@@ -5841,11 +5583,11 @@ import { EventBus } from '../../src/main';
                     ky: 0.062,
                     r: 0
                 },
-                "164": {
+                "130": {
                     x: 14.8,
                     y: -126.65
                 },
-                "169": {
+                "135": {
                     x: 15.5,
                     y: -121.75,
                     sx: 1,
@@ -5854,30 +5596,30 @@ import { EventBus } from '../../src/main';
                     ky: 0,
                     r: 0.062
                 },
-                "170": {
+                "136": {
                     x: 15.9,
                     y: -120.65
                 },
-                "171": {
+                "137": {
                     x: 16.4,
                     y: -131.8,
                     r: 0.349
                 },
-                "172": {
+                "138": {
                     x: 16.6,
                     y: -132.55,
                     r: 0.353
                 },
-                "188": {
+                "154": {
                     x: 15.5,
                     y: -121.75,
                     r: 0.062
                 },
-                "189": {
+                "155": {
                     x: 15.9,
                     y: -120.65
                 },
-                "190": {
+                "156": {
                     x: 15.65,
                     y: -128.35,
                     sx: 1.111,
@@ -5886,272 +5628,215 @@ import { EventBus } from '../../src/main';
                     ky: 0.188,
                     r: 0
                 },
-                "191": {
+                "157": {
                     x: 15.45,
                     y: -128.75
-                },
-                "255": {
-                    x: 16,
-                    y: -137.5,
-                    sx: 1,
-                    sy: 1,
-                    kx: 0,
-                    ky: 0
-                },
-                "261": {
-                    y: -136.8
-                },
-                "263": {
-                    x: 16.15,
-                    y: -134.05
                 }
             })
-            .addTimedChild(instance3, 0, 275, {
+            .addTimedChild(instance1, 0, 170, {
                 "0": {
                     x: 1.3,
                     y: -114.3
                 }
             })
-            .addTimedChild(instance2, 0, 6, {
-                "0": {
-                    x: -16.5,
-                    y: -115.1
-                }
-            })
-            .addTimedChild(instance1, 0, 6, {
-                "0": {
-                    x: 8.9,
-                    y: -115.3
-                }
-            })
-            .addTimedChild(instance13, 39, 7, {
-                "39": {
+            .addTimedChild(instance11, 5, 7, {
+                "5": {
                     x: -18.3,
                     y: -117.1
                 }
             })
-            .addTimedChild(instance12, 39, 7, {
-                "39": {
+            .addTimedChild(instance10, 5, 7, {
+                "5": {
                     x: 7.1,
                     y: -117.3
                 }
             })
-            .addTimedChild(instance15, 48, 4, {
-                "48": {
+            .addTimedChild(instance13, 14, 4, {
+                "14": {
                     x: -19.55,
                     y: -113.35
                 },
-                "49": {
+                "15": {
                     x: -19.8,
                     y: -113.45
                 }
             })
-            .addTimedChild(instance14, 48, 4, {
-                "48": {
+            .addTimedChild(instance12, 14, 4, {
+                "14": {
                     x: 5.85,
                     y: -113.55
                 },
-                "49": {
+                "15": {
                     x: 5.6,
                     y: -113.65
                 }
             })
-            .addTimedChild(instance17, 54, 7, {
-                "54": {
+            .addTimedChild(instance15, 20, 7, {
+                "20": {
                     x: -10.4,
                     y: -111.65
                 },
-                "55": {
+                "21": {
                     x: -9.9,
                     y: -111.8
                 }
             })
-            .addTimedChild(instance16, 54, 7, {
-                "54": {
+            .addTimedChild(instance14, 20, 7, {
+                "20": {
                     x: 15.1,
                     y: -111.5
                 },
-                "55": {
+                "21": {
                     x: 15.5
                 }
             })
-            .addTimedChild(instance19, 63, 81, {
-                "63": {
+            .addTimedChild(instance17, 29, 81, {
+                "29": {
                     x: -17.9,
                     y: -111.65
                 },
-                "64": {
+                "30": {
                     x: -18.35,
                     y: -111.7
                 },
-                "133": {
+                "99": {
                     x: -17.3,
                     y: -112.85
                 }
             })
-            .addTimedChild(instance18, 63, 81, {
-                "63": {
+            .addTimedChild(instance16, 29, 81, {
+                "29": {
                     x: 7.5,
                     y: -111.35
                 },
-                "64": {
+                "30": {
                     x: 7.05,
                     y: -111.9
                 },
-                "133": {
+                "99": {
                     x: 8.1,
                     y: -113.05
                 }
             })
-            .addTimedChild(instance21, 146, 4, {
-                "146": {
+            .addTimedChild(instance19, 112, 4, {
+                "112": {
                     x: -17.3,
                     y: -112.85
                 }
             })
-            .addTimedChild(instance20, 146, 4, {
-                "146": {
+            .addTimedChild(instance18, 112, 4, {
+                "112": {
                     x: 8.1,
                     y: -113.05
                 }
             })
-            .addTimedChild(instance23, 151, 10, {
-                "151": {
+            .addTimedChild(instance24, 117, 10, {
+                "117": {
                     x: -17.3,
                     y: -112.85
                 },
-                "156": {
+                "122": {
                     x: -16.95,
                     y: -112.6
                 },
-                "160": {
+                "126": {
                     x: -17.3,
                     y: -112.85
                 }
             })
-            .addTimedChild(instance22, 151, 10, {
-                "151": {
+            .addTimedChild(instance23, 117, 10, {
+                "117": {
                     x: 8.1,
                     y: -113.05
                 },
-                "156": {
+                "122": {
                     x: 8.55,
                     y: -112.85
                 },
-                "160": {
+                "126": {
                     x: 8.1,
                     y: -113.05
                 }
             })
-            .addTimedChild(instance25, 163, 6, {
-                "163": {
+            .addTimedChild(instance28, 129, 6, {
+                "129": {
                     x: -17.3,
                     y: -112.85
                 }
             })
-            .addTimedChild(instance24, 163, 6, {
-                "163": {
+            .addTimedChild(instance27, 129, 6, {
+                "129": {
                     x: 8.1,
                     y: -113.05
                 }
             })
-            .addTimedChild(instance27, 171, 17, {
-                "171": {
+            .addTimedChild(instance31, 137, 17, {
+                "137": {
                     x: -15.65,
                     y: -117.35
                 },
-                "172": {
+                "138": {
                     x: -15.6,
                     y: -117.6
                 },
-                "179": {
+                "145": {
                     x: -18.05,
                     y: -115.5
                 },
-                "180": {
+                "146": {
                     x: -18.45,
                     y: -115.2
                 }
             })
-            .addTimedChild(instance26, 171, 17, {
-                "171": {
+            .addTimedChild(instance30, 137, 17, {
+                "137": {
                     x: 9.75,
                     y: -117.55
                 },
-                "172": {
+                "138": {
                     x: 9.8,
                     y: -117.8
                 },
-                "179": {
+                "145": {
                     x: 7.35,
                     y: -115.7
                 },
-                "180": {
+                "146": {
                     x: 6.95,
                     y: -115.4
                 }
             })
-            .addTimedChild(instance29, 190, 71, {
-                "190": {
-                    x: -18.85,
-                    y: -111.75
-                },
-                "255": {
-                    x: -16.5,
-                    y: -115.1
-                }
-            })
-            .addTimedChild(instance28, 190, 71, {
-                "190": {
-                    x: 6.55,
-                    y: -111.95
-                },
-                "255": {
-                    x: 8.9,
-                    y: -115.3
-                }
-            });
+            .addTimedChild(instance33, 156, 14)
+            .addTimedChild(instance32, 156, 14);
     });
 
-    var Graphic79 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DAD_NECK = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[265])
+            .drawCommands(shapes.s04[248])
             .setTransform(-1222.8, -397.15, 0.95);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic80 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[268]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[267]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[220])
-            .setTransform(14.3, -13.75, 1, 1, -0.069);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[219])
-            .setTransform(4, -9.1);
+    var Graphic53 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 3, loop: false });
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[218]);
+            .drawCommands(shapes.s04[251]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[217]);
+            .drawCommands(shapes.s04[201])
+            .setTransform(14.3, -13.75, 1, 1, -0.069);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[266]);
+            .drawCommands(shapes.s04[200])
+            .setTransform(4, -9.1);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[215]);
+            .drawCommands(shapes.s04[199]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[214]);
+            .drawCommands(shapes.s04[198]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[213]);
+            .drawCommands(shapes.s04[250]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[212]);
-        this.addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
+            .drawCommands(shapes.s04[249]);
+        this.addTimedChild(instance7)
             .addTimedChild(instance6)
             .addTimedChild(instance5)
             .addTimedChild(instance4)
@@ -6160,58 +5845,28 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance1);
     });
 
-    var Graphic75 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[269])
-            .setTransform(-1236.75, -620.1);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic76 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[270])
-            .setTransform(-1236.45, -620.35);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic77 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    var Graphic55 = MovieClip.extend(function (mode) {
+        MovieClip.call(this, { mode: mode, duration: 3, loop: false });
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[251]);
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s04[201])
+            .setTransform(14.3, -13.75, 1, 1, -0.069);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[275])
-            .setTransform(-1333.4, -620.6);
+            .drawCommands(shapes.s04[200])
+            .setTransform(4, -9.1);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[274])
-            .setTransform(-1333.4, -621.4);
+            .drawCommands(shapes.s04[199]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[273])
-            .setTransform(-1333.4, -621.4);
+            .drawCommands(shapes.s04[198]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[272])
-            .setTransform(-1333.4, -622.3);
+            .drawCommands(shapes.s04[250]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[271])
-            .setTransform(-1333.4, -620.6);
-        this.addTimedChild(instance5)
+            .drawCommands(shapes.s04[249]);
+        this.addTimedChild(instance7)
+            .addTimedChild(instance6)
+            .addTimedChild(instance5)
             .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic81 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[276])
-            .setTransform(-1256, -621.8, 0.972);
-        var instance3 = new Graphic77(MovieClip.SYNCHED)
-            .setTransform(41.85, -0.4);
-        var instance2 = new Graphic76(MovieClip.SYNCHED)
-            .setTransform(41.6, -0.85);
-        var instance1 = new Graphic75(MovieClip.SYNCHED)
-            .setTransform(-56, -2.7);
-        this.addTimedChild(instance4)
             .addTimedChild(instance3)
             .addTimedChild(instance2)
             .addTimedChild(instance1);
@@ -6219,317 +5874,14 @@ import { EventBus } from '../../src/main';
 
     var Graphic82 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[291]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[290]);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[289])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[288])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[287])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[286])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[285])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[284])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[283])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[282])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[281])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[280])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[279])
-            .setTransform(-1.9, -40.95, 0.96);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[278])
-            .setTransform(-1.9, -40.95, 0.96);
+        var instance4 = new Graphic53(MovieClip.SYNCHED);
+        var instance6 = new Graphic55(MovieClip.SYNCHED);
+        var instance3 = new lib.DAD_NECK();
+        var instance2 = new Graphic52(MovieClip.SYNCHED);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[277])
-            .setTransform(-1.9, -40.95, 0.96);
-        this.addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic83 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[308])
-            .setTransform(-1393.25, -963.3);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[307])
-            .setTransform(-1393.25, -963.3);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[306])
-            .setTransform(-1393.25, -963.3);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[305])
-            .setTransform(-1393.25, -963.3);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[304])
-            .setTransform(-1393.25, -963.3);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[303])
-            .setTransform(-1393.25, -963.3);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[302])
-            .setTransform(-1393.25, -963.3);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[301])
-            .setTransform(-1393.25, -963.3);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[300])
-            .setTransform(-1393.25, -963.3);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[299])
-            .setTransform(-1393.25, -963.3);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[298])
-            .setTransform(-1393.25, -963.3);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[297]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[296])
-            .setTransform(-1393.25, -963.3);
-        this.addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic84 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[308])
-            .setTransform(-1393.25, -963.3);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[307])
-            .setTransform(-1393.25, -963.3);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[306])
-            .setTransform(-1393.25, -963.3);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[305])
-            .setTransform(-1393.25, -963.3);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[304])
-            .setTransform(-1393.25, -963.3);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[303])
-            .setTransform(-1393.25, -963.3);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[302])
-            .setTransform(-1393.25, -963.3);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[301])
-            .setTransform(-1393.25, -963.3);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[300])
-            .setTransform(-1393.25, -963.3);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[299])
-            .setTransform(-1393.25, -963.3);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[298])
-            .setTransform(-1393.25, -963.3);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[297]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[296])
-            .setTransform(-1393.25, -963.3);
-        this.addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic85 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 3, loop: false });
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[268]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[220])
-            .setTransform(14.3, -13.75, 1, 1, -0.069);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[219])
-            .setTransform(4, -9.1);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[218]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[217]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[311]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[310]);
-        this.addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic87 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 3, loop: false });
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[268]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[220])
-            .setTransform(14.3, -13.75, 1, 1, -0.069);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[219])
-            .setTransform(4, -9.1);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[218]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[217]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[311]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[310]);
-        this.addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic132 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance13 = new Graphic85(MovieClip.SYNCHED);
-        var instance41 = new Graphic87(MovieClip.SYNCHED);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[309])
-            .setTransform(104.3);
-        var instance11 = new Graphic84(MovieClip.SYNCHED)
-            .setTransform(89.05, -0.6);
-        var instance10 = new Graphic83(MovieClip.SYNCHED);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance30 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance32 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance31 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance34 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance33 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance36 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance35 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance38 = new Graphics()
-            .drawCommands(shapes.s04[294]);
-        var instance37 = new Graphics()
-            .drawCommands(shapes.s04[292]);
-        var instance40 = new Graphics()
-            .drawCommands(shapes.s04[295]);
-        var instance39 = new Graphics()
-            .drawCommands(shapes.s04[293]);
-        var instance43 = new Graphics()
-            .drawCommands(shapes.s04[294])
-            .setTransform(-77.85, -442, 1, 1, 1.571);
-        var instance42 = new Graphics()
-            .drawCommands(shapes.s04[292])
-            .setTransform(-78.4, -442.95, 1, 1, 1.571);
-        var instance7 = new Graphic82(MovieClip.SYNCHED)
-            .setTransform(114, -352.8, 1, 1, -0.087);
-        var instance6 = new Graphic81(MovieClip.SYNCHED)
-            .setTransform(107.5, -341.55);
-        var instance5 = new Graphic80(MovieClip.SYNCHED)
-            .setTransform(245.95, -305.7);
-        var instance4 = new Graphic79(MovieClip.SYNCHED);
-        var instance3 = new Graphic78(MovieClip.SYNCHED);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[224])
-            .setTransform(-32.35, 179.15);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[223]);
-        var instance16 = new Graphic86(MovieClip.SYNCHED);
-        this.addTimedChild(instance13, 34, 3, {
+            .drawCommands(shapes.s04[204]);
+        var instance5 = new Graphic54(MovieClip.SYNCHED);
+        this.addTimedChild(instance4, 34, 3, {
                 "34": {
                     x: -7.85,
                     y: -449.1,
@@ -6544,7 +5896,7 @@ import { EventBus } from '../../src/main';
                     y: -453.2
                 }
             })
-            .addTimedChild(instance41, 189, 3, {
+            .addTimedChild(instance6, 189, 3, {
                 "189": {
                     x: -7.85,
                     y: -449.1,
@@ -6559,137 +5911,7 @@ import { EventBus } from '../../src/main';
                     y: -427.85
                 }
             })
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10, 0, 275, {
-                "0": {
-                    x: 208,
-                    y: -0.05
-                }
-            })
-            .addTimedChild(instance9, 0, 35, {
-                "0": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance8, 0, 35, {
-                "0": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance15, 35, 2)
-            .addTimedChild(instance14, 35, 2)
-            .addTimedChild(instance18, 37, 9, {
-                "37": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance17, 37, 9, {
-                "37": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance20, 46, 3)
-            .addTimedChild(instance19, 46, 3)
-            .addTimedChild(instance22, 49, 4, {
-                "49": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance21, 49, 4, {
-                "49": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance24, 53, 2)
-            .addTimedChild(instance23, 53, 2)
-            .addTimedChild(instance26, 55, 7, {
-                "55": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance25, 55, 7, {
-                "55": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance28, 62, 2)
-            .addTimedChild(instance27, 62, 2)
-            .addTimedChild(instance30, 64, 99, {
-                "64": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance29, 64, 99, {
-                "64": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance32, 163, 2)
-            .addTimedChild(instance31, 163, 2)
-            .addTimedChild(instance34, 165, 12, {
-                "165": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance33, 165, 12, {
-                "165": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance36, 177, 3)
-            .addTimedChild(instance35, 177, 3)
-            .addTimedChild(instance38, 180, 9, {
-                "180": {
-                    x: -77.85,
-                    y: -442,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance37, 180, 9, {
-                "180": {
-                    x: -78.4,
-                    y: -442.95,
-                    r: 1.571
-                }
-            })
-            .addTimedChild(instance40, 189, 13)
-            .addTimedChild(instance39, 189, 13)
-            .addTimedChild(instance43, 202, 73)
-            .addTimedChild(instance42, 202, 73)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4, 0, 275, {
-                "0": {
-                    x: 70.7,
-                    y: -505.25,
-                    r: -0.156
-                },
+            .addTimedChild(instance3, 34, 170, {
                 "34": {
                     x: -0.35,
                     y: -520.15,
@@ -6741,7 +5963,7 @@ import { EventBus } from '../../src/main';
                     r: -0.544
                 },
                 "178": {
-                    x: -36.599,
+                    x: -36.549,
                     y: -527.892
                 },
                 "179": {
@@ -6752,37 +5974,37 @@ import { EventBus } from '../../src/main';
                     y: -525.85
                 },
                 "190": {
-                    x: -36.108,
+                    x: -36.158,
                     y: -525.937,
                     r: -0.543
                 },
                 "191": {
-                    x: -34.957,
-                    y: -525.964,
+                    x: -35.007,
+                    y: -526.014,
                     r: -0.539
                 },
                 "192": {
-                    x: -33.013,
-                    y: -526.107,
+                    x: -33.063,
+                    y: -526.157,
                     r: -0.533
                 },
                 "193": {
-                    x: -30.342,
-                    y: -526.264,
+                    x: -30.392,
+                    y: -526.314,
                     r: -0.525
                 },
                 "194": {
-                    x: -26.88,
-                    y: -526.514,
+                    x: -26.93,
+                    y: -526.564,
                     r: -0.513
                 },
                 "195": {
-                    x: -22.635,
+                    x: -22.685,
                     y: -526.841,
                     r: -0.5
                 },
                 "196": {
-                    x: -17.601,
+                    x: -17.651,
                     y: -527.229,
                     r: -0.484
                 },
@@ -6793,7 +6015,7 @@ import { EventBus } from '../../src/main';
                 },
                 "198": {
                     x: -5.256,
-                    y: -528.013,
+                    y: -528.063,
                     r: -0.445
                 },
                 "199": {
@@ -6817,12 +6039,7 @@ import { EventBus } from '../../src/main';
                     r: -0.336
                 }
             })
-            .addTimedChild(instance3, 0, 275, {
-                "0": {
-                    x: 43.9,
-                    y: -560,
-                    r: -0.061
-                },
+            .addTimedChild(instance2, 34, 170, {
                 "34": {
                     x: -20.2,
                     y: -559.1,
@@ -6982,9 +6199,8 @@ import { EventBus } from '../../src/main';
                     r: -0.241
                 }
             })
-            .addTimedChild(instance2)
             .addTimedChild(instance1)
-            .addTimedChild(instance16, 37, 152, {
+            .addTimedChild(instance5, 37, 152, {
                 "37": {
                     x: -89.85,
                     y: -439.25,
@@ -7010,90 +6226,83 @@ import { EventBus } from '../../src/main';
             });
     });
 
-    var Graphic88 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.Graphic56 = Container.extend(function () {
+        Container.call(this);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[315])
+            .drawCommands(shapes.s04[255])
             .setTransform(-17.65, 14.8, 0.95);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[314])
+            .drawCommands(shapes.s04[254])
             .setTransform(-470, -630.85, 0.95);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[313])
+            .drawCommands(shapes.s04[253])
             .setTransform(-470, -630.85, 0.95);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[312])
+            .drawCommands(shapes.s04[252])
             .setTransform(-470, -630.85, 0.95);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance4, instance3, instance2, instance1);
     });
 
-    var Graphic89 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.Graphic57 = Container.extend(function () {
+        Container.call(this);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[318])
+            .drawCommands(shapes.s04[258])
             .setTransform(14.05, 13.35, 0.95);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[317])
+            .drawCommands(shapes.s04[257])
             .setTransform(-438.25, -629.9, 0.95);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[316])
+            .drawCommands(shapes.s04[256])
             .setTransform(-438.25, -629.9, 0.95);
-        this.addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance3, instance2, instance1);
     });
 
-    var Graphic117 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_SHIRT = Container.extend(function () {
+        Container.call(this);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[319]);
-        var instance2 = new Graphic89(MovieClip.SYNCHED)
+            .drawCommands(shapes.s04[259]);
+        var instance2 = new lib.Graphic57()
             .setTransform(-9.2, -101.15);
-        var instance1 = new Graphic88(MovieClip.SYNCHED)
+        var instance1 = new lib.Graphic56()
             .setTransform(22.55, -100.2);
-        this.addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+        this.addChild(instance3, instance2, instance1);
     });
 
-    var Graphic118 = MovieClip.extend(function (mode) {
+    var Graphic77 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[369]);
+            .drawCommands(shapes.s04[309]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[366]);
+            .drawCommands(shapes.s04[306]);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[370]);
+            .drawCommands(shapes.s04[310]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[367]);
+            .drawCommands(shapes.s04[307]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[364]);
+            .drawCommands(shapes.s04[304]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[362]);
+            .drawCommands(shapes.s04[302]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[360]);
+            .drawCommands(shapes.s04[300]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[358]);
+            .drawCommands(shapes.s04[298]);
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[371]);
+            .drawCommands(shapes.s04[311]);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[368]);
+            .drawCommands(shapes.s04[308]);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[365]);
+            .drawCommands(shapes.s04[305]);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[363]);
+            .drawCommands(shapes.s04[303]);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[361]);
+            .drawCommands(shapes.s04[301]);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[359]);
+            .drawCommands(shapes.s04[299]);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[369])
+            .drawCommands(shapes.s04[309])
             .setTransform(6.6, 5.05, 1, 1, 0, 0.354, 2.788);
         var instance15 = new Graphics()
-            .drawCommands(shapes.s04[366]);
+            .drawCommands(shapes.s04[306]);
         this.addTimedChild(instance2, 0, 98, {
                 "0": {
                     x: 6.6,
@@ -7183,69 +6392,66 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance15, 190, 85);
     });
 
-    var Graphic119 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_SHORTS = Container.extend(function () {
+        Container.call(this);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[375]);
+            .drawCommands(shapes.s04[315]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[374]);
+            .drawCommands(shapes.s04[314]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[373]);
+            .drawCommands(shapes.s04[313]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[372]);
-        this.addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+            .drawCommands(shapes.s04[312]);
+        this.addChild(instance4, instance3, instance2, instance1);
     });
 
-    var Graphic120 = MovieClip.extend(function (mode) {
+    var Graphic78 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[369]);
+            .drawCommands(shapes.s04[309]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[366]);
+            .drawCommands(shapes.s04[306]);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[370]);
+            .drawCommands(shapes.s04[310]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[367]);
+            .drawCommands(shapes.s04[307]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[364]);
+            .drawCommands(shapes.s04[304]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[362]);
+            .drawCommands(shapes.s04[302]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[360]);
+            .drawCommands(shapes.s04[300]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[358]);
+            .drawCommands(shapes.s04[298]);
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[371]);
+            .drawCommands(shapes.s04[311]);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[368]);
+            .drawCommands(shapes.s04[308]);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[365]);
+            .drawCommands(shapes.s04[305]);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[363]);
+            .drawCommands(shapes.s04[303]);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[361]);
+            .drawCommands(shapes.s04[301]);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[359]);
+            .drawCommands(shapes.s04[299]);
         var instance20 = new Graphics()
-            .drawCommands(shapes.s04[370]);
+            .drawCommands(shapes.s04[310]);
         var instance19 = new Graphics()
-            .drawCommands(shapes.s04[367]);
+            .drawCommands(shapes.s04[307]);
         var instance18 = new Graphics()
-            .drawCommands(shapes.s04[364]);
+            .drawCommands(shapes.s04[304]);
         var instance17 = new Graphics()
-            .drawCommands(shapes.s04[362]);
+            .drawCommands(shapes.s04[302]);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[360]);
+            .drawCommands(shapes.s04[300]);
         var instance15 = new Graphics()
-            .drawCommands(shapes.s04[358]);
+            .drawCommands(shapes.s04[298]);
         var instance22 = new Graphics()
-            .drawCommands(shapes.s04[369])
+            .drawCommands(shapes.s04[309])
             .setTransform(6.6, 5.05, 1, 1, 0, 0.354, 2.788);
         var instance21 = new Graphics()
-            .drawCommands(shapes.s04[366]);
+            .drawCommands(shapes.s04[306]);
         this.addTimedChild(instance2, 0, 74, {
                 "0": {
                     x: 6.6,
@@ -7369,330 +6575,245 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance21, 216, 59);
     });
 
-    var Graphic90 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_SHOE = MovieClip.extend(function () {
+        MovieClip.call(this, {
+            duration: 2
+        });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
+            .drawCommands(shapes.s04[373]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic91 = MovieClip.extend(function (mode) {
+    var Graphic59 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
+            .drawCommands(shapes.s04[374]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic92 = MovieClip.extend(function (mode) {
+    var Graphic60 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic93 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic121 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[434]);
-        var instance4 = new Graphic93(MovieClip.SYNCHED)
-            .setTransform(-54.7, -18.8, 1, 1, 0.117);
-        var instance3 = new Graphic92(MovieClip.SYNCHED)
-            .setTransform(-49.6, -8.1, 1, 1, 0.117);
-        var instance2 = new Graphic91(MovieClip.SYNCHED)
-            .setTransform(-77.75, -9.3, 1, 1, 0.117);
-        var instance1 = new Graphic90(MovieClip.SYNCHED)
-            .setTransform(-89, -7.25, 1, 1, 0.117);
-        this.addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic94 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic95 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic96 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic97 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[433]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic122 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[434]);
-        var instance4 = new Graphic97(MovieClip.SYNCHED)
-            .setTransform(-54.7, -18.8, 1, 1, 0.117);
-        var instance3 = new Graphic96(MovieClip.SYNCHED)
-            .setTransform(-49.6, -8.1, 1, 1, 0.117);
-        var instance2 = new Graphic95(MovieClip.SYNCHED)
-            .setTransform(-77.75, -9.3, 1, 1, 0.117);
-        var instance1 = new Graphic94(MovieClip.SYNCHED)
-            .setTransform(-89, -7.25, 1, 1, 0.117);
-        this.addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic99 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[435]);
-        this.addTimedChild(instance1);
-    });
-
-    var Graphic100 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[436])
+            .drawCommands(shapes.s04[375])
             .setTransform(-466.8, -453.85);
         this.addTimedChild(instance1);
     });
 
-    var Graphic101 = MovieClip.extend(function (mode) {
+    var Graphic61 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[437])
+            .drawCommands(shapes.s04[376])
             .setTransform(-504.35, -453.65);
         this.addTimedChild(instance1);
     });
 
-    var Graphic102 = MovieClip.extend(function (mode) {
+    var Graphic62 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 7, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic109 = MovieClip.extend(function (mode) {
+    var Graphic69 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 11, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic111 = MovieClip.extend(function (mode) {
+    var Graphic71 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 8, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic113 = MovieClip.extend(function (mode) {
+    var Graphic73 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 173, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic115 = MovieClip.extend(function (mode) {
+    var Graphic75 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 14, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic103 = MovieClip.extend(function (mode) {
+    var Graphic63 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 7, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic110 = MovieClip.extend(function (mode) {
+    var Graphic70 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 11, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic112 = MovieClip.extend(function (mode) {
+    var Graphic72 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 8, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic114 = MovieClip.extend(function (mode) {
+    var Graphic74 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 173, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic116 = MovieClip.extend(function (mode) {
+    var Graphic76 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 14, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[29])
-            .setTransform(-116.225, -187.5, 0.843, 0.814);
+            .drawCommands(shapes.s04[377])
+            .setTransform(-458.45, -480.9, 0.972);
         this.addTimedChild(instance1);
     });
 
-    var Graphic104 = MovieClip.extend(function (mode) {
+    var Graphic64 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[443]);
+            .drawCommands(shapes.s04[383]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[442]);
+            .drawCommands(shapes.s04[382]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[441]);
+            .drawCommands(shapes.s04[381]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[440]);
+            .drawCommands(shapes.s04[380]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[439]);
+            .drawCommands(shapes.s04[379]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[438]);
+            .drawCommands(shapes.s04[378]);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[449]);
+            .drawCommands(shapes.s04[389]);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[448]);
+            .drawCommands(shapes.s04[388]);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[447]);
+            .drawCommands(shapes.s04[387]);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[446]);
+            .drawCommands(shapes.s04[386]);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[445]);
+            .drawCommands(shapes.s04[385]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[444]);
+            .drawCommands(shapes.s04[384]);
         var instance18 = new Graphics()
-            .drawCommands(shapes.s04[443]);
+            .drawCommands(shapes.s04[383]);
         var instance17 = new Graphics()
-            .drawCommands(shapes.s04[442]);
+            .drawCommands(shapes.s04[382]);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[441]);
+            .drawCommands(shapes.s04[381]);
         var instance15 = new Graphics()
-            .drawCommands(shapes.s04[440]);
+            .drawCommands(shapes.s04[380]);
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[439]);
+            .drawCommands(shapes.s04[379]);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[438]);
+            .drawCommands(shapes.s04[378]);
         var instance24 = new Graphics()
-            .drawCommands(shapes.s04[449]);
+            .drawCommands(shapes.s04[389]);
         var instance23 = new Graphics()
-            .drawCommands(shapes.s04[448]);
+            .drawCommands(shapes.s04[388]);
         var instance22 = new Graphics()
-            .drawCommands(shapes.s04[447]);
+            .drawCommands(shapes.s04[387]);
         var instance21 = new Graphics()
-            .drawCommands(shapes.s04[446]);
+            .drawCommands(shapes.s04[386]);
         var instance20 = new Graphics()
-            .drawCommands(shapes.s04[445]);
+            .drawCommands(shapes.s04[385]);
         var instance19 = new Graphics()
-            .drawCommands(shapes.s04[444]);
+            .drawCommands(shapes.s04[384]);
         var instance30 = new Graphics()
-            .drawCommands(shapes.s04[443]);
+            .drawCommands(shapes.s04[383]);
         var instance29 = new Graphics()
-            .drawCommands(shapes.s04[442]);
+            .drawCommands(shapes.s04[382]);
         var instance28 = new Graphics()
-            .drawCommands(shapes.s04[441]);
+            .drawCommands(shapes.s04[381]);
         var instance27 = new Graphics()
-            .drawCommands(shapes.s04[440]);
+            .drawCommands(shapes.s04[380]);
         var instance26 = new Graphics()
-            .drawCommands(shapes.s04[439]);
+            .drawCommands(shapes.s04[379]);
         var instance25 = new Graphics()
-            .drawCommands(shapes.s04[438]);
+            .drawCommands(shapes.s04[378]);
         var instance36 = new Graphics()
-            .drawCommands(shapes.s04[449]);
+            .drawCommands(shapes.s04[389]);
         var instance35 = new Graphics()
-            .drawCommands(shapes.s04[448]);
+            .drawCommands(shapes.s04[388]);
         var instance34 = new Graphics()
-            .drawCommands(shapes.s04[447]);
+            .drawCommands(shapes.s04[387]);
         var instance33 = new Graphics()
-            .drawCommands(shapes.s04[446]);
+            .drawCommands(shapes.s04[386]);
         var instance32 = new Graphics()
-            .drawCommands(shapes.s04[445]);
+            .drawCommands(shapes.s04[385]);
         var instance31 = new Graphics()
-            .drawCommands(shapes.s04[444]);
+            .drawCommands(shapes.s04[384]);
         var instance42 = new Graphics()
-            .drawCommands(shapes.s04[443]);
+            .drawCommands(shapes.s04[383]);
         var instance41 = new Graphics()
-            .drawCommands(shapes.s04[442]);
+            .drawCommands(shapes.s04[382]);
         var instance40 = new Graphics()
-            .drawCommands(shapes.s04[441]);
+            .drawCommands(shapes.s04[381]);
         var instance39 = new Graphics()
-            .drawCommands(shapes.s04[440]);
+            .drawCommands(shapes.s04[380]);
         var instance38 = new Graphics()
-            .drawCommands(shapes.s04[439]);
+            .drawCommands(shapes.s04[379]);
         var instance37 = new Graphics()
-            .drawCommands(shapes.s04[438]);
+            .drawCommands(shapes.s04[378]);
         var instance48 = new Graphics()
-            .drawCommands(shapes.s04[449]);
+            .drawCommands(shapes.s04[389]);
         var instance47 = new Graphics()
-            .drawCommands(shapes.s04[448]);
+            .drawCommands(shapes.s04[388]);
         var instance46 = new Graphics()
-            .drawCommands(shapes.s04[447]);
+            .drawCommands(shapes.s04[387]);
         var instance45 = new Graphics()
-            .drawCommands(shapes.s04[451]);
+            .drawCommands(shapes.s04[391]);
         var instance44 = new Graphics()
-            .drawCommands(shapes.s04[445]);
+            .drawCommands(shapes.s04[385]);
         var instance43 = new Graphics()
-            .drawCommands(shapes.s04[450]);
+            .drawCommands(shapes.s04[390]);
         var instance54 = new Graphics()
-            .drawCommands(shapes.s04[443]);
+            .drawCommands(shapes.s04[383]);
         var instance53 = new Graphics()
-            .drawCommands(shapes.s04[442]);
+            .drawCommands(shapes.s04[382]);
         var instance52 = new Graphics()
-            .drawCommands(shapes.s04[441]);
+            .drawCommands(shapes.s04[381]);
         var instance51 = new Graphics()
-            .drawCommands(shapes.s04[440]);
+            .drawCommands(shapes.s04[380]);
         var instance50 = new Graphics()
-            .drawCommands(shapes.s04[439]);
+            .drawCommands(shapes.s04[379]);
         var instance49 = new Graphics()
-            .drawCommands(shapes.s04[438]);
+            .drawCommands(shapes.s04[378]);
         var instance60 = new Graphics()
-            .drawCommands(shapes.s04[449])
+            .drawCommands(shapes.s04[389])
             .setTransform(-2.45, 1.7, 1.289, 0.827);
         var instance59 = new Graphics()
-            .drawCommands(shapes.s04[448])
+            .drawCommands(shapes.s04[388])
             .setTransform(-0.05, 1.8, 1.289, 0.827);
         var instance58 = new Graphics()
-            .drawCommands(shapes.s04[447])
+            .drawCommands(shapes.s04[387])
             .setTransform(6.85, 1.9, 0.95, 0.95);
         var instance57 = new Graphics()
-            .drawCommands(shapes.s04[451])
+            .drawCommands(shapes.s04[391])
             .setTransform(1.1, 0, 0.95, 0.95);
         var instance56 = new Graphics()
-            .drawCommands(shapes.s04[445])
+            .drawCommands(shapes.s04[385])
             .setTransform(-9.25, -1.15, 0.95, 0.95);
         var instance55 = new Graphics()
-            .drawCommands(shapes.s04[450])
+            .drawCommands(shapes.s04[390])
             .setTransform(-0.25, -0.15, 0.95, 0.95);
         this.addTimedChild(instance6, 0, 7, {
                 "0": {
@@ -8081,417 +7202,417 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance55, 224, 51);
     });
 
-    var Graphic98 = MovieClip.extend(function (mode) {
+    var Graphic58 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[452]);
+            .drawCommands(shapes.s04[392]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance8 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance12 = new Graphics()
-            .drawCommands(shapes.s04[462]);
+            .drawCommands(shapes.s04[402]);
         var instance11 = new Graphics()
-            .drawCommands(shapes.s04[249]);
+            .drawCommands(shapes.s04[235]);
         var instance10 = new Graphics()
-            .drawCommands(shapes.s04[248]);
+            .drawCommands(shapes.s04[234]);
         var instance9 = new Graphics()
-            .drawCommands(shapes.s04[454]);
+            .drawCommands(shapes.s04[394]);
         var instance15 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance14 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance13 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance17 = new Graphics()
-            .drawCommands(shapes.s04[239]);
+            .drawCommands(shapes.s04[221]);
         var instance20 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance19 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance18 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance24 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance23 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance22 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance21 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance27 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance26 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance25 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance30 = new Graphics()
-            .drawCommands(shapes.s04[463]);
+            .drawCommands(shapes.s04[403]);
         var instance29 = new Graphics()
-            .drawCommands(shapes.s04[244]);
+            .drawCommands(shapes.s04[227]);
         var instance28 = new Graphics()
-            .drawCommands(shapes.s04[240]);
+            .drawCommands(shapes.s04[223]);
         var instance34 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance33 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance32 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance31 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance37 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance36 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance35 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance40 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance39 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance38 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance44 = new Graphics()
-            .drawCommands(shapes.s04[462]);
+            .drawCommands(shapes.s04[402]);
         var instance43 = new Graphics()
-            .drawCommands(shapes.s04[249]);
+            .drawCommands(shapes.s04[235]);
         var instance42 = new Graphics()
-            .drawCommands(shapes.s04[248]);
+            .drawCommands(shapes.s04[234]);
         var instance41 = new Graphics()
-            .drawCommands(shapes.s04[454]);
+            .drawCommands(shapes.s04[394]);
         var instance45 = new Graphics()
-            .drawCommands(shapes.s04[238]);
+            .drawCommands(shapes.s04[220]);
         var instance49 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance48 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance47 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance46 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance52 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance51 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance50 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance55 = new Graphics()
-            .drawCommands(shapes.s04[464]);
+            .drawCommands(shapes.s04[404]);
         var instance54 = new Graphics()
-            .drawCommands(shapes.s04[246]);
+            .drawCommands(shapes.s04[228]);
         var instance53 = new Graphics()
-            .drawCommands(shapes.s04[242]);
+            .drawCommands(shapes.s04[224]);
         var instance58 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance57 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance56 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance62 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance61 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance60 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance59 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance63 = new Graphics()
-            .drawCommands(shapes.s04[239]);
+            .drawCommands(shapes.s04[221]);
         var instance66 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance65 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance64 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance69 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance68 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance67 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance70 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance74 = new Graphics()
-            .drawCommands(shapes.s04[462]);
+            .drawCommands(shapes.s04[402]);
         var instance73 = new Graphics()
-            .drawCommands(shapes.s04[249]);
+            .drawCommands(shapes.s04[235]);
         var instance72 = new Graphics()
-            .drawCommands(shapes.s04[248]);
+            .drawCommands(shapes.s04[234]);
         var instance71 = new Graphics()
-            .drawCommands(shapes.s04[454]);
+            .drawCommands(shapes.s04[394]);
         var instance78 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance77 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance76 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance75 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance81 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance80 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance79 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance84 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance83 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance82 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance88 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance87 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance86 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance85 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance89 = new Graphics()
-            .drawCommands(shapes.s04[455]);
+            .drawCommands(shapes.s04[395]);
         var instance93 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance92 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance91 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance90 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance96 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance95 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance94 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance99 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance98 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance97 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance100 = new Graphics()
-            .drawCommands(shapes.s04[455]);
+            .drawCommands(shapes.s04[395]);
         var instance101 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance102 = new Graphics()
-            .drawCommands(shapes.s04[239]);
+            .drawCommands(shapes.s04[221]);
         var instance106 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance105 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance104 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance103 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance109 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance108 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance107 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance113 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance112 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance111 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance110 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance114 = new Graphics()
-            .drawCommands(shapes.s04[239]);
+            .drawCommands(shapes.s04[221]);
         var instance117 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance116 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance115 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance118 = new Graphics()
-            .drawCommands(shapes.s04[238]);
+            .drawCommands(shapes.s04[220]);
         var instance121 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance120 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance119 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance125 = new Graphics()
-            .drawCommands(shapes.s04[462]);
+            .drawCommands(shapes.s04[402]);
         var instance124 = new Graphics()
-            .drawCommands(shapes.s04[249]);
+            .drawCommands(shapes.s04[235]);
         var instance123 = new Graphics()
-            .drawCommands(shapes.s04[248]);
+            .drawCommands(shapes.s04[234]);
         var instance122 = new Graphics()
-            .drawCommands(shapes.s04[454]);
+            .drawCommands(shapes.s04[394]);
         var instance128 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance127 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance126 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance131 = new Graphics()
-            .drawCommands(shapes.s04[463]);
+            .drawCommands(shapes.s04[403]);
         var instance130 = new Graphics()
-            .drawCommands(shapes.s04[244]);
+            .drawCommands(shapes.s04[227]);
         var instance129 = new Graphics()
-            .drawCommands(shapes.s04[240]);
+            .drawCommands(shapes.s04[223]);
         var instance135 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance134 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance133 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance132 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance136 = new Graphics()
-            .drawCommands(shapes.s04[239]);
+            .drawCommands(shapes.s04[221]);
         var instance140 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance139 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance138 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance137 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance141 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance144 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance143 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance142 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance148 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance147 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance146 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance145 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance151 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance150 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance149 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance154 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance153 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance152 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance158 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance157 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance156 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance155 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance161 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance160 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance159 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance164 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance163 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance162 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance168 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance167 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance166 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance165 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance169 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance173 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance172 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance171 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance174 = new Graphics()
-            .drawCommands(shapes.s04[456]);
+            .drawCommands(shapes.s04[396]);
         var instance170 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance175 = new Graphics()
-            .drawCommands(shapes.s04[453]);
+            .drawCommands(shapes.s04[393]);
         var instance178 = new Graphics()
-            .drawCommands(shapes.s04[465]);
+            .drawCommands(shapes.s04[405]);
         var instance177 = new Graphics()
-            .drawCommands(shapes.s04[459]);
+            .drawCommands(shapes.s04[399]);
         var instance176 = new Graphics()
-            .drawCommands(shapes.s04[457]);
+            .drawCommands(shapes.s04[397]);
         var instance179 = new Graphics()
-            .drawCommands(shapes.s04[452]);
+            .drawCommands(shapes.s04[392]);
         var instance183 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance182 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance181 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance180 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance186 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance185 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance184 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance189 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance188 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance187 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance193 = new Graphics()
-            .drawCommands(shapes.s04[237]);
+            .drawCommands(shapes.s04[219]);
         var instance192 = new Graphics()
-            .drawCommands(shapes.s04[236]);
+            .drawCommands(shapes.s04[218]);
         var instance191 = new Graphics()
-            .drawCommands(shapes.s04[235]);
+            .drawCommands(shapes.s04[217]);
         var instance190 = new Graphics()
-            .drawCommands(shapes.s04[234]);
+            .drawCommands(shapes.s04[216]);
         var instance196 = new Graphics()
-            .drawCommands(shapes.s04[461]);
+            .drawCommands(shapes.s04[401]);
         var instance195 = new Graphics()
-            .drawCommands(shapes.s04[458]);
+            .drawCommands(shapes.s04[398]);
         var instance194 = new Graphics()
-            .drawCommands(shapes.s04[243]);
+            .drawCommands(shapes.s04[225]);
         var instance199 = new Graphics()
-            .drawCommands(shapes.s04[460]);
+            .drawCommands(shapes.s04[400]);
         var instance198 = new Graphics()
-            .drawCommands(shapes.s04[245]);
+            .drawCommands(shapes.s04[226]);
         var instance197 = new Graphics()
-            .drawCommands(shapes.s04[241]);
+            .drawCommands(shapes.s04[222]);
         var instance203 = new Graphics()
-            .drawCommands(shapes.s04[237])
+            .drawCommands(shapes.s04[219])
             .setTransform(-478.4, -525.85);
         var instance202 = new Graphics()
-            .drawCommands(shapes.s04[236])
+            .drawCommands(shapes.s04[218])
             .setTransform(0, 2.5);
         var instance201 = new Graphics()
-            .drawCommands(shapes.s04[235])
+            .drawCommands(shapes.s04[217])
             .setTransform(-478.4, -525.85);
         var instance200 = new Graphics()
-            .drawCommands(shapes.s04[234])
+            .drawCommands(shapes.s04[216])
             .setTransform(-478.4, -525.85);
         this.addTimedChild(instance1, 0, 68)
             .addTimedChild(instance2, 68, 2)
@@ -9358,9 +8479,9 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance200, 236, 39);
     });
 
-    var Graphic105 = MovieClip.extend(function (mode) {
+    var Graphic65 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance1 = new Graphic98(MovieClip.SYNCHED);
+        var instance1 = new Graphic58(MovieClip.SYNCHED);
         this.addTimedChild(instance1, 0, 275, {
             "0": {
                 x: -6.45,
@@ -9688,59 +8809,59 @@ import { EventBus } from '../../src/main';
         });
     });
 
-    var Graphic106 = MovieClip.extend(function (mode) {
+    var Graphic66 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[466]);
+            .drawCommands(shapes.s04[406]);
         this.addTimedChild(instance1);
     });
 
-    var Graphic107 = MovieClip.extend(function (mode) {
+    var Graphic67 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[468])
+            .drawCommands(shapes.s04[408])
             .setTransform(-368.7, -483.9, 0.959);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[467])
+            .drawCommands(shapes.s04[407])
             .setTransform(-383.8, -485.3);
         this.addTimedChild(instance2)
             .addTimedChild(instance1);
     });
 
-    var Graphic108 = MovieClip.extend(function (mode) {
+    var Graphic68 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[470]);
+            .drawCommands(shapes.s04[410]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[469])
+            .drawCommands(shapes.s04[409])
             .setTransform(-585.65, -483.25);
         this.addTimedChild(instance2)
             .addTimedChild(instance1);
     });
 
-    var Graphic123 = MovieClip.extend(function (mode) {
+    var Graphic79 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance10 = new Graphic108(MovieClip.SYNCHED)
+        var instance10 = new Graphic68(MovieClip.SYNCHED)
             .setTransform(105.5, -122.2);
-        var instance9 = new Graphic107(MovieClip.SYNCHED)
+        var instance9 = new Graphic67(MovieClip.SYNCHED)
             .setTransform(-96.35, -120.15);
-        var instance8 = new Graphic106(MovieClip.SYNCHED)
+        var instance8 = new Graphic66(MovieClip.SYNCHED)
             .setTransform(4.15, -0.3);
-        var instance7 = new Graphic105(MovieClip.SYNCHED);
-        var instance6 = new Graphic104(MovieClip.SYNCHED);
-        var instance5 = new Graphic103(MovieClip.SYNCHED);
-        var instance4 = new Graphic102(MovieClip.SYNCHED);
-        var instance12 = new Graphic110(MovieClip.SYNCHED);
-        var instance11 = new Graphic109(MovieClip.SYNCHED);
-        var instance14 = new Graphic112(MovieClip.SYNCHED);
-        var instance13 = new Graphic111(MovieClip.SYNCHED);
-        var instance16 = new Graphic114(MovieClip.SYNCHED);
-        var instance15 = new Graphic113(MovieClip.SYNCHED);
-        var instance18 = new Graphic116(MovieClip.SYNCHED);
-        var instance17 = new Graphic115(MovieClip.SYNCHED);
-        var instance3 = new Graphic101(MovieClip.SYNCHED);
-        var instance2 = new Graphic100(MovieClip.SYNCHED);
-        var instance1 = new Graphic99(MovieClip.SYNCHED);
+        var instance7 = new Graphic65(MovieClip.SYNCHED);
+        var instance6 = new Graphic64(MovieClip.SYNCHED);
+        var instance5 = new Graphic63(MovieClip.SYNCHED);
+        var instance4 = new Graphic62(MovieClip.SYNCHED);
+        var instance12 = new Graphic70(MovieClip.SYNCHED);
+        var instance11 = new Graphic69(MovieClip.SYNCHED);
+        var instance14 = new Graphic72(MovieClip.SYNCHED);
+        var instance13 = new Graphic71(MovieClip.SYNCHED);
+        var instance16 = new Graphic74(MovieClip.SYNCHED);
+        var instance15 = new Graphic73(MovieClip.SYNCHED);
+        var instance18 = new Graphic76(MovieClip.SYNCHED);
+        var instance17 = new Graphic75(MovieClip.SYNCHED);
+        var instance3 = new Graphic61(MovieClip.SYNCHED);
+        var instance2 = new Graphic60(MovieClip.SYNCHED);
+        var instance1 = new Graphic59(MovieClip.SYNCHED);
         this.addTimedChild(instance10)
             .addTimedChild(instance9)
             .addTimedChild(instance8)
@@ -10108,445 +9229,445 @@ import { EventBus } from '../../src/main';
             });
     });
 
-    var Graphic124 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_PONYTAIL_END = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[548])
+            .drawCommands(shapes.s04[488])
             .setTransform(-657.3, -487);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic125 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_PONYTAIL_COLOUR_SECTION_02 = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[549])
+            .drawCommands(shapes.s04[489])
             .setTransform(-657.05, -461.95);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic126 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_PONYTAIL_COLOUR_SECTION_01 = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[550])
+            .drawCommands(shapes.s04[490])
             .setTransform(-497.15, -407.2);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic127 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
+    lib.DEDE_NECK = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[551])
+            .drawCommands(shapes.s04[491])
             .setTransform(-461.15, -639, 0.96);
-        this.addTimedChild(instance1);
+        this.addChild(instance1);
     });
 
-    var Graphic133 = MovieClip.extend(function (mode) {
+    var Graphic83 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
         var instance16 = new Graphics()
-            .drawCommands(shapes.s04[553]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[552]);
-        var instance14 = new Graphic127(MovieClip.SYNCHED);
-        var instance13 = new Graphic126(MovieClip.SYNCHED);
-        var instance12 = new Graphic125(MovieClip.SYNCHED);
-        var instance11 = new Graphic124(MovieClip.SYNCHED);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[471]);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[472]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[473]);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s04[474]);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[475]);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s04[476]);
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s04[477]);
-        var instance30 = new Graphics()
-            .drawCommands(shapes.s04[478]);
-        var instance32 = new Graphics()
-            .drawCommands(shapes.s04[479]);
-        var instance35 = new Graphics()
-            .drawCommands(shapes.s04[480]);
-        var instance38 = new Graphics()
-            .drawCommands(shapes.s04[481]);
-        var instance39 = new Graphics()
-            .drawCommands(shapes.s04[482]);
-        var instance41 = new Graphics()
-            .drawCommands(shapes.s04[483]);
-        var instance45 = new Graphics()
-            .drawCommands(shapes.s04[484]);
-        var instance47 = new Graphics()
-            .drawCommands(shapes.s04[485]);
-        var instance48 = new Graphics()
-            .drawCommands(shapes.s04[486]);
-        var instance49 = new Graphics()
-            .drawCommands(shapes.s04[487]);
-        var instance52 = new Graphics()
-            .drawCommands(shapes.s04[488]);
-        var instance55 = new Graphics()
-            .drawCommands(shapes.s04[489]);
-        var instance58 = new Graphics()
-            .drawCommands(shapes.s04[490]);
-        var instance61 = new Graphics()
-            .drawCommands(shapes.s04[491]);
-        var instance62 = new Graphics()
-            .drawCommands(shapes.s04[492]);
-        var instance63 = new Graphics()
             .drawCommands(shapes.s04[493]);
-        var instance66 = new Graphics()
-            .drawCommands(shapes.s04[494]);
-        var instance79 = new Graphics()
-            .drawCommands(shapes.s04[495]);
-        var instance82 = new Graphics()
-            .drawCommands(shapes.s04[496]);
-        var instance85 = new Graphics()
-            .drawCommands(shapes.s04[497]);
-        var instance88 = new Graphics()
-            .drawCommands(shapes.s04[498]);
-        var instance91 = new Graphics()
-            .drawCommands(shapes.s04[499]);
-        var instance94 = new Graphics()
-            .drawCommands(shapes.s04[500]);
-        var instance97 = new Graphics()
-            .drawCommands(shapes.s04[501]);
-        var instance100 = new Graphics()
-            .drawCommands(shapes.s04[502]);
-        var instance103 = new Graphics()
-            .drawCommands(shapes.s04[503]);
-        var instance106 = new Graphics()
-            .drawCommands(shapes.s04[504]);
-        var instance109 = new Graphics()
-            .drawCommands(shapes.s04[505]);
-        var instance112 = new Graphics()
-            .drawCommands(shapes.s04[506]);
-        var instance113 = new Graphics()
-            .drawCommands(shapes.s04[507]);
-        var instance115 = new Graphics()
-            .drawCommands(shapes.s04[508]);
-        var instance117 = new Graphics()
-            .drawCommands(shapes.s04[509]);
-        var instance120 = new Graphics()
-            .drawCommands(shapes.s04[510]);
-        var instance123 = new Graphics()
-            .drawCommands(shapes.s04[511]);
-        var instance126 = new Graphics()
-            .drawCommands(shapes.s04[512]);
-        var instance129 = new Graphics()
-            .drawCommands(shapes.s04[513]);
-        var instance132 = new Graphics()
-            .drawCommands(shapes.s04[514]);
-        var instance135 = new Graphics()
-            .drawCommands(shapes.s04[515]);
-        var instance138 = new Graphics()
-            .drawCommands(shapes.s04[516]);
-        var instance139 = new Graphics()
-            .drawCommands(shapes.s04[517]);
-        var instance140 = new Graphics()
-            .drawCommands(shapes.s04[518]);
-        var instance143 = new Graphics()
-            .drawCommands(shapes.s04[519]);
-        var instance145 = new Graphics()
-            .drawCommands(shapes.s04[520]);
-        var instance148 = new Graphics()
-            .drawCommands(shapes.s04[521]);
-        var instance151 = new Graphics()
-            .drawCommands(shapes.s04[522]);
-        var instance153 = new Graphics()
-            .drawCommands(shapes.s04[523]);
-        var instance155 = new Graphics()
-            .drawCommands(shapes.s04[524]);
-        var instance157 = new Graphics()
-            .drawCommands(shapes.s04[525]);
-        var instance159 = new Graphics()
-            .drawCommands(shapes.s04[526]);
-        var instance162 = new Graphics()
-            .drawCommands(shapes.s04[527]);
-        var instance164 = new Graphics()
-            .drawCommands(shapes.s04[528]);
-        var instance167 = new Graphics()
-            .drawCommands(shapes.s04[529]);
-        var instance169 = new Graphics()
-            .drawCommands(shapes.s04[530]);
-        var instance170 = new Graphics()
-            .drawCommands(shapes.s04[531]);
-        var instance172 = new Graphics()
-            .drawCommands(shapes.s04[532]);
-        var instance174 = new Graphics()
-            .drawCommands(shapes.s04[533]);
-        var instance177 = new Graphics()
-            .drawCommands(shapes.s04[534]);
-        var instance180 = new Graphics()
-            .drawCommands(shapes.s04[535]);
-        var instance182 = new Graphics()
-            .drawCommands(shapes.s04[536]);
-        var instance184 = new Graphics()
-            .drawCommands(shapes.s04[537]);
-        var instance185 = new Graphics()
-            .drawCommands(shapes.s04[538]);
-        var instance187 = new Graphics()
-            .drawCommands(shapes.s04[539]);
-        var instance190 = new Graphics()
-            .drawCommands(shapes.s04[540]);
-        var instance193 = new Graphics()
-            .drawCommands(shapes.s04[541]);
-        var instance194 = new Graphics()
-            .drawCommands(shapes.s04[542]);
-        var instance197 = new Graphics()
-            .drawCommands(shapes.s04[543]);
-        var instance200 = new Graphics()
-            .drawCommands(shapes.s04[544]);
-        var instance203 = new Graphics()
-            .drawCommands(shapes.s04[545]);
-        var instance206 = new Graphics()
-            .drawCommands(shapes.s04[546]);
-        var instance207 = new Graphics()
-            .drawCommands(shapes.s04[547]);
-        var instance9 = new Graphic123(MovieClip.SYNCHED);
-        var instance8 = new Graphic122(MovieClip.SYNCHED)
-            .setTransform(-2.85, -33.2, 1, 1, -0.122);
-        var instance7 = new Graphic121(MovieClip.SYNCHED)
-            .setTransform(95.15, -27.2, 1, 1, -0.122);
-        var instance6 = new Graphic120(MovieClip.SYNCHED);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[376]);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s04[377]);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[378]);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s04[376]);
-        var instance34 = new Graphics()
-            .drawCommands(shapes.s04[379]);
-        var instance37 = new Graphics()
-            .drawCommands(shapes.s04[376]);
-        var instance40 = new Graphics()
-            .drawCommands(shapes.s04[380]);
-        var instance42 = new Graphics()
-            .drawCommands(shapes.s04[381]);
-        var instance43 = new Graphics()
-            .drawCommands(shapes.s04[382]);
-        var instance44 = new Graphics()
-            .drawCommands(shapes.s04[383]);
-        var instance46 = new Graphics()
-            .drawCommands(shapes.s04[384]);
-        var instance51 = new Graphics()
-            .drawCommands(shapes.s04[385]);
-        var instance54 = new Graphics()
-            .drawCommands(shapes.s04[386]);
-        var instance57 = new Graphics()
-            .drawCommands(shapes.s04[387]);
-        var instance60 = new Graphics()
-            .drawCommands(shapes.s04[388]);
-        var instance65 = new Graphics()
-            .drawCommands(shapes.s04[389]);
-        var instance68 = new Graphics()
-            .drawCommands(shapes.s04[390]);
-        var instance70 = new Graphics()
-            .drawCommands(shapes.s04[391]);
-        var instance72 = new Graphics()
-            .drawCommands(shapes.s04[392]);
-        var instance74 = new Graphics()
-            .drawCommands(shapes.s04[393]);
-        var instance76 = new Graphics()
-            .drawCommands(shapes.s04[394]);
-        var instance78 = new Graphics()
-            .drawCommands(shapes.s04[395]);
-        var instance81 = new Graphics()
-            .drawCommands(shapes.s04[396]);
-        var instance84 = new Graphics()
-            .drawCommands(shapes.s04[397]);
-        var instance87 = new Graphics()
-            .drawCommands(shapes.s04[398]);
-        var instance90 = new Graphics()
-            .drawCommands(shapes.s04[399]);
-        var instance93 = new Graphics()
-            .drawCommands(shapes.s04[400]);
-        var instance96 = new Graphics()
-            .drawCommands(shapes.s04[401]);
-        var instance99 = new Graphics()
-            .drawCommands(shapes.s04[402]);
-        var instance102 = new Graphics()
-            .drawCommands(shapes.s04[403]);
-        var instance105 = new Graphics()
-            .drawCommands(shapes.s04[404]);
-        var instance108 = new Graphics()
-            .drawCommands(shapes.s04[405]);
-        var instance111 = new Graphics()
-            .drawCommands(shapes.s04[406]);
-        var instance119 = new Graphics()
-            .drawCommands(shapes.s04[407]);
-        var instance122 = new Graphics()
-            .drawCommands(shapes.s04[408]);
-        var instance125 = new Graphics()
-            .drawCommands(shapes.s04[409]);
-        var instance128 = new Graphics()
-            .drawCommands(shapes.s04[410]);
-        var instance131 = new Graphics()
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s04[492]);
+        var instance14 = new lib.DEDE_NECK();
+        var instance13 = new lib.DEDE_PONYTAIL_COLOUR_SECTION_01();
+        var instance12 = new lib.DEDE_PONYTAIL_COLOUR_SECTION_02();
+        var instance11 = new lib.DEDE_PONYTAIL_END();
+        var instance10 = new Graphics()
             .drawCommands(shapes.s04[411]);
-        var instance134 = new Graphics()
+        var instance17 = new Graphics()
             .drawCommands(shapes.s04[412]);
-        var instance137 = new Graphics()
+        var instance19 = new Graphics()
             .drawCommands(shapes.s04[413]);
-        var instance142 = new Graphics()
-            .drawCommands(shapes.s04[384]);
-        var instance144 = new Graphics()
+        var instance22 = new Graphics()
             .drawCommands(shapes.s04[414]);
-        var instance147 = new Graphics()
+        var instance25 = new Graphics()
             .drawCommands(shapes.s04[415]);
-        var instance150 = new Graphics()
+        var instance28 = new Graphics()
             .drawCommands(shapes.s04[416]);
-        var instance152 = new Graphics()
+        var instance29 = new Graphics()
             .drawCommands(shapes.s04[417]);
-        var instance154 = new Graphics()
+        var instance30 = new Graphics()
             .drawCommands(shapes.s04[418]);
-        var instance156 = new Graphics()
+        var instance32 = new Graphics()
             .drawCommands(shapes.s04[419]);
-        var instance158 = new Graphics()
-            .drawCommands(shapes.s04[417]);
-        var instance161 = new Graphics()
+        var instance35 = new Graphics()
             .drawCommands(shapes.s04[420]);
-        var instance163 = new Graphics()
+        var instance38 = new Graphics()
             .drawCommands(shapes.s04[421]);
-        var instance166 = new Graphics()
+        var instance39 = new Graphics()
             .drawCommands(shapes.s04[422]);
-        var instance168 = new Graphics()
+        var instance41 = new Graphics()
             .drawCommands(shapes.s04[423]);
-        var instance171 = new Graphics()
+        var instance45 = new Graphics()
             .drawCommands(shapes.s04[424]);
-        var instance173 = new Graphics()
+        var instance47 = new Graphics()
             .drawCommands(shapes.s04[425]);
-        var instance176 = new Graphics()
+        var instance48 = new Graphics()
             .drawCommands(shapes.s04[426]);
-        var instance179 = new Graphics()
+        var instance49 = new Graphics()
             .drawCommands(shapes.s04[427]);
-        var instance181 = new Graphics()
+        var instance52 = new Graphics()
             .drawCommands(shapes.s04[428]);
-        var instance183 = new Graphics()
+        var instance55 = new Graphics()
             .drawCommands(shapes.s04[429]);
-        var instance186 = new Graphics()
+        var instance58 = new Graphics()
             .drawCommands(shapes.s04[430]);
-        var instance189 = new Graphics()
+        var instance61 = new Graphics()
             .drawCommands(shapes.s04[431]);
-        var instance192 = new Graphics()
-            .drawCommands(shapes.s04[376]);
-        var instance196 = new Graphics()
+        var instance62 = new Graphics()
             .drawCommands(shapes.s04[432]);
-        var instance199 = new Graphics()
-            .drawCommands(shapes.s04[376]);
-        var instance202 = new Graphics()
-            .drawCommands(shapes.s04[432]);
-        var instance205 = new Graphics()
-            .drawCommands(shapes.s04[376]);
-        var instance4 = new Graphic119(MovieClip.SYNCHED);
-        var instance3 = new Graphic118(MovieClip.SYNCHED);
-        var instance2 = new Graphics()
+        var instance63 = new Graphics()
+            .drawCommands(shapes.s04[433]);
+        var instance66 = new Graphics()
+            .drawCommands(shapes.s04[434]);
+        var instance79 = new Graphics()
+            .drawCommands(shapes.s04[435]);
+        var instance82 = new Graphics()
+            .drawCommands(shapes.s04[436]);
+        var instance85 = new Graphics()
+            .drawCommands(shapes.s04[437]);
+        var instance88 = new Graphics()
+            .drawCommands(shapes.s04[438]);
+        var instance91 = new Graphics()
+            .drawCommands(shapes.s04[439]);
+        var instance94 = new Graphics()
+            .drawCommands(shapes.s04[440]);
+        var instance97 = new Graphics()
+            .drawCommands(shapes.s04[441]);
+        var instance100 = new Graphics()
+            .drawCommands(shapes.s04[442]);
+        var instance103 = new Graphics()
+            .drawCommands(shapes.s04[443]);
+        var instance106 = new Graphics()
+            .drawCommands(shapes.s04[444]);
+        var instance109 = new Graphics()
+            .drawCommands(shapes.s04[445]);
+        var instance112 = new Graphics()
+            .drawCommands(shapes.s04[446]);
+        var instance113 = new Graphics()
+            .drawCommands(shapes.s04[447]);
+        var instance115 = new Graphics()
+            .drawCommands(shapes.s04[448]);
+        var instance117 = new Graphics()
+            .drawCommands(shapes.s04[449]);
+        var instance120 = new Graphics()
+            .drawCommands(shapes.s04[450]);
+        var instance123 = new Graphics()
+            .drawCommands(shapes.s04[451]);
+        var instance126 = new Graphics()
+            .drawCommands(shapes.s04[452]);
+        var instance129 = new Graphics()
+            .drawCommands(shapes.s04[453]);
+        var instance132 = new Graphics()
+            .drawCommands(shapes.s04[454]);
+        var instance135 = new Graphics()
+            .drawCommands(shapes.s04[455]);
+        var instance138 = new Graphics()
+            .drawCommands(shapes.s04[456]);
+        var instance139 = new Graphics()
+            .drawCommands(shapes.s04[457]);
+        var instance140 = new Graphics()
+            .drawCommands(shapes.s04[458]);
+        var instance143 = new Graphics()
+            .drawCommands(shapes.s04[459]);
+        var instance145 = new Graphics()
+            .drawCommands(shapes.s04[460]);
+        var instance148 = new Graphics()
+            .drawCommands(shapes.s04[461]);
+        var instance151 = new Graphics()
+            .drawCommands(shapes.s04[462]);
+        var instance153 = new Graphics()
+            .drawCommands(shapes.s04[463]);
+        var instance155 = new Graphics()
+            .drawCommands(shapes.s04[464]);
+        var instance157 = new Graphics()
+            .drawCommands(shapes.s04[465]);
+        var instance159 = new Graphics()
+            .drawCommands(shapes.s04[466]);
+        var instance162 = new Graphics()
+            .drawCommands(shapes.s04[467]);
+        var instance164 = new Graphics()
+            .drawCommands(shapes.s04[468]);
+        var instance167 = new Graphics()
+            .drawCommands(shapes.s04[469]);
+        var instance169 = new Graphics()
+            .drawCommands(shapes.s04[470]);
+        var instance170 = new Graphics()
+            .drawCommands(shapes.s04[471]);
+        var instance172 = new Graphics()
+            .drawCommands(shapes.s04[472]);
+        var instance174 = new Graphics()
+            .drawCommands(shapes.s04[473]);
+        var instance177 = new Graphics()
+            .drawCommands(shapes.s04[474]);
+        var instance180 = new Graphics()
+            .drawCommands(shapes.s04[475]);
+        var instance182 = new Graphics()
+            .drawCommands(shapes.s04[476]);
+        var instance184 = new Graphics()
+            .drawCommands(shapes.s04[477]);
+        var instance185 = new Graphics()
+            .drawCommands(shapes.s04[478]);
+        var instance187 = new Graphics()
+            .drawCommands(shapes.s04[479]);
+        var instance190 = new Graphics()
+            .drawCommands(shapes.s04[480]);
+        var instance193 = new Graphics()
+            .drawCommands(shapes.s04[481]);
+        var instance194 = new Graphics()
+            .drawCommands(shapes.s04[482]);
+        var instance197 = new Graphics()
+            .drawCommands(shapes.s04[483]);
+        var instance200 = new Graphics()
+            .drawCommands(shapes.s04[484]);
+        var instance203 = new Graphics()
+            .drawCommands(shapes.s04[485]);
+        var instance206 = new Graphics()
+            .drawCommands(shapes.s04[486]);
+        var instance207 = new Graphics()
+            .drawCommands(shapes.s04[487]);
+        var instance9 = new Graphic79(MovieClip.SYNCHED);
+        var instance8 = new lib.DEDE_SHOE()
+            .setTransform(-2.85, -33.2, 1, 1, -0.122);
+        var instance7 = new lib.DEDE_SHOE()
+            .setTransform(95.15, -27.2, 1, 1, -0.122);
+        var instance6 = new Graphic78(MovieClip.SYNCHED);
+        var instance5 = new Graphics()
+            .drawCommands(shapes.s04[316]);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s04[317]);
+        var instance24 = new Graphics()
+            .drawCommands(shapes.s04[318]);
+        var instance27 = new Graphics()
+            .drawCommands(shapes.s04[316]);
+        var instance34 = new Graphics()
+            .drawCommands(shapes.s04[319]);
+        var instance37 = new Graphics()
+            .drawCommands(shapes.s04[316]);
+        var instance40 = new Graphics()
             .drawCommands(shapes.s04[320]);
-        var instance18 = new Graphics()
+        var instance42 = new Graphics()
             .drawCommands(shapes.s04[321]);
-        var instance20 = new Graphics()
+        var instance43 = new Graphics()
             .drawCommands(shapes.s04[322]);
-        var instance23 = new Graphics()
+        var instance44 = new Graphics()
             .drawCommands(shapes.s04[323]);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance31 = new Graphics()
-            .drawCommands(shapes.s04[321]);
-        var instance33 = new Graphics()
+        var instance46 = new Graphics()
             .drawCommands(shapes.s04[324]);
-        var instance36 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance50 = new Graphics()
+        var instance51 = new Graphics()
             .drawCommands(shapes.s04[325]);
-        var instance53 = new Graphics()
+        var instance54 = new Graphics()
             .drawCommands(shapes.s04[326]);
-        var instance56 = new Graphics()
+        var instance57 = new Graphics()
             .drawCommands(shapes.s04[327]);
-        var instance59 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance64 = new Graphics()
+        var instance60 = new Graphics()
             .drawCommands(shapes.s04[328]);
-        var instance67 = new Graphics()
+        var instance65 = new Graphics()
             .drawCommands(shapes.s04[329]);
-        var instance69 = new Graphics()
+        var instance68 = new Graphics()
             .drawCommands(shapes.s04[330]);
-        var instance71 = new Graphics()
+        var instance70 = new Graphics()
             .drawCommands(shapes.s04[331]);
-        var instance73 = new Graphics()
+        var instance72 = new Graphics()
             .drawCommands(shapes.s04[332]);
-        var instance75 = new Graphics()
+        var instance74 = new Graphics()
             .drawCommands(shapes.s04[333]);
-        var instance77 = new Graphics()
+        var instance76 = new Graphics()
             .drawCommands(shapes.s04[334]);
-        var instance80 = new Graphics()
+        var instance78 = new Graphics()
             .drawCommands(shapes.s04[335]);
-        var instance83 = new Graphics()
+        var instance81 = new Graphics()
             .drawCommands(shapes.s04[336]);
-        var instance86 = new Graphics()
+        var instance84 = new Graphics()
             .drawCommands(shapes.s04[337]);
-        var instance89 = new Graphics()
+        var instance87 = new Graphics()
             .drawCommands(shapes.s04[338]);
-        var instance92 = new Graphics()
+        var instance90 = new Graphics()
             .drawCommands(shapes.s04[339]);
-        var instance95 = new Graphics()
+        var instance93 = new Graphics()
             .drawCommands(shapes.s04[340]);
-        var instance98 = new Graphics()
+        var instance96 = new Graphics()
             .drawCommands(shapes.s04[341]);
-        var instance101 = new Graphics()
+        var instance99 = new Graphics()
             .drawCommands(shapes.s04[342]);
-        var instance104 = new Graphics()
+        var instance102 = new Graphics()
             .drawCommands(shapes.s04[343]);
-        var instance107 = new Graphics()
+        var instance105 = new Graphics()
             .drawCommands(shapes.s04[344]);
-        var instance110 = new Graphics()
+        var instance108 = new Graphics()
             .drawCommands(shapes.s04[345]);
-        var instance114 = new Graphics()
+        var instance111 = new Graphics()
             .drawCommands(shapes.s04[346]);
-        var instance116 = new Graphics()
+        var instance119 = new Graphics()
             .drawCommands(shapes.s04[347]);
-        var instance118 = new Graphics()
+        var instance122 = new Graphics()
             .drawCommands(shapes.s04[348]);
-        var instance121 = new Graphics()
+        var instance125 = new Graphics()
             .drawCommands(shapes.s04[349]);
-        var instance124 = new Graphics()
+        var instance128 = new Graphics()
             .drawCommands(shapes.s04[350]);
-        var instance127 = new Graphics()
+        var instance131 = new Graphics()
             .drawCommands(shapes.s04[351]);
-        var instance130 = new Graphics()
+        var instance134 = new Graphics()
             .drawCommands(shapes.s04[352]);
-        var instance133 = new Graphics()
+        var instance137 = new Graphics()
             .drawCommands(shapes.s04[353]);
-        var instance136 = new Graphics()
+        var instance142 = new Graphics()
+            .drawCommands(shapes.s04[324]);
+        var instance144 = new Graphics()
             .drawCommands(shapes.s04[354]);
-        var instance141 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance146 = new Graphics()
-            .drawCommands(shapes.s04[324]);
-        var instance149 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance160 = new Graphics()
+        var instance147 = new Graphics()
             .drawCommands(shapes.s04[355]);
-        var instance165 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance175 = new Graphics()
-            .drawCommands(shapes.s04[321]);
-        var instance178 = new Graphics()
-            .drawCommands(shapes.s04[324]);
-        var instance188 = new Graphics()
+        var instance150 = new Graphics()
             .drawCommands(shapes.s04[356]);
+        var instance152 = new Graphics()
+            .drawCommands(shapes.s04[357]);
+        var instance154 = new Graphics()
+            .drawCommands(shapes.s04[358]);
+        var instance156 = new Graphics()
+            .drawCommands(shapes.s04[359]);
+        var instance158 = new Graphics()
+            .drawCommands(shapes.s04[357]);
+        var instance161 = new Graphics()
+            .drawCommands(shapes.s04[360]);
+        var instance163 = new Graphics()
+            .drawCommands(shapes.s04[361]);
+        var instance166 = new Graphics()
+            .drawCommands(shapes.s04[362]);
+        var instance168 = new Graphics()
+            .drawCommands(shapes.s04[363]);
+        var instance171 = new Graphics()
+            .drawCommands(shapes.s04[364]);
+        var instance173 = new Graphics()
+            .drawCommands(shapes.s04[365]);
+        var instance176 = new Graphics()
+            .drawCommands(shapes.s04[366]);
+        var instance179 = new Graphics()
+            .drawCommands(shapes.s04[367]);
+        var instance181 = new Graphics()
+            .drawCommands(shapes.s04[368]);
+        var instance183 = new Graphics()
+            .drawCommands(shapes.s04[369]);
+        var instance186 = new Graphics()
+            .drawCommands(shapes.s04[370]);
+        var instance189 = new Graphics()
+            .drawCommands(shapes.s04[371]);
+        var instance192 = new Graphics()
+            .drawCommands(shapes.s04[316]);
+        var instance196 = new Graphics()
+            .drawCommands(shapes.s04[372]);
+        var instance199 = new Graphics()
+            .drawCommands(shapes.s04[316]);
+        var instance202 = new Graphics()
+            .drawCommands(shapes.s04[372]);
+        var instance205 = new Graphics()
+            .drawCommands(shapes.s04[316]);
+        var instance4 = new lib.DEDE_SHORTS();
+        var instance3 = new Graphic77(MovieClip.SYNCHED);
+        var instance2 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s04[261]);
+        var instance20 = new Graphics()
+            .drawCommands(shapes.s04[262]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s04[263]);
+        var instance26 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance31 = new Graphics()
+            .drawCommands(shapes.s04[261]);
+        var instance33 = new Graphics()
+            .drawCommands(shapes.s04[264]);
+        var instance36 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance50 = new Graphics()
+            .drawCommands(shapes.s04[265]);
+        var instance53 = new Graphics()
+            .drawCommands(shapes.s04[266]);
+        var instance56 = new Graphics()
+            .drawCommands(shapes.s04[267]);
+        var instance59 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance64 = new Graphics()
+            .drawCommands(shapes.s04[268]);
+        var instance67 = new Graphics()
+            .drawCommands(shapes.s04[269]);
+        var instance69 = new Graphics()
+            .drawCommands(shapes.s04[270]);
+        var instance71 = new Graphics()
+            .drawCommands(shapes.s04[271]);
+        var instance73 = new Graphics()
+            .drawCommands(shapes.s04[272]);
+        var instance75 = new Graphics()
+            .drawCommands(shapes.s04[273]);
+        var instance77 = new Graphics()
+            .drawCommands(shapes.s04[274]);
+        var instance80 = new Graphics()
+            .drawCommands(shapes.s04[275]);
+        var instance83 = new Graphics()
+            .drawCommands(shapes.s04[276]);
+        var instance86 = new Graphics()
+            .drawCommands(shapes.s04[277]);
+        var instance89 = new Graphics()
+            .drawCommands(shapes.s04[278]);
+        var instance92 = new Graphics()
+            .drawCommands(shapes.s04[279]);
+        var instance95 = new Graphics()
+            .drawCommands(shapes.s04[280]);
+        var instance98 = new Graphics()
+            .drawCommands(shapes.s04[281]);
+        var instance101 = new Graphics()
+            .drawCommands(shapes.s04[282]);
+        var instance104 = new Graphics()
+            .drawCommands(shapes.s04[283]);
+        var instance107 = new Graphics()
+            .drawCommands(shapes.s04[284]);
+        var instance110 = new Graphics()
+            .drawCommands(shapes.s04[285]);
+        var instance114 = new Graphics()
+            .drawCommands(shapes.s04[286]);
+        var instance116 = new Graphics()
+            .drawCommands(shapes.s04[287]);
+        var instance118 = new Graphics()
+            .drawCommands(shapes.s04[288]);
+        var instance121 = new Graphics()
+            .drawCommands(shapes.s04[289]);
+        var instance124 = new Graphics()
+            .drawCommands(shapes.s04[290]);
+        var instance127 = new Graphics()
+            .drawCommands(shapes.s04[291]);
+        var instance130 = new Graphics()
+            .drawCommands(shapes.s04[292]);
+        var instance133 = new Graphics()
+            .drawCommands(shapes.s04[293]);
+        var instance136 = new Graphics()
+            .drawCommands(shapes.s04[294]);
+        var instance141 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance146 = new Graphics()
+            .drawCommands(shapes.s04[264]);
+        var instance149 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance160 = new Graphics()
+            .drawCommands(shapes.s04[295]);
+        var instance165 = new Graphics()
+            .drawCommands(shapes.s04[260]);
+        var instance175 = new Graphics()
+            .drawCommands(shapes.s04[261]);
+        var instance178 = new Graphics()
+            .drawCommands(shapes.s04[264]);
+        var instance188 = new Graphics()
+            .drawCommands(shapes.s04[296]);
         var instance191 = new Graphics()
-            .drawCommands(shapes.s04[320]);
+            .drawCommands(shapes.s04[260]);
         var instance195 = new Graphics()
-            .drawCommands(shapes.s04[357]);
+            .drawCommands(shapes.s04[297]);
         var instance198 = new Graphics()
-            .drawCommands(shapes.s04[320]);
+            .drawCommands(shapes.s04[260]);
         var instance201 = new Graphics()
-            .drawCommands(shapes.s04[357]);
+            .drawCommands(shapes.s04[297]);
         var instance204 = new Graphics()
-            .drawCommands(shapes.s04[320]);
-        var instance1 = new Graphic117(MovieClip.SYNCHED);
+            .drawCommands(shapes.s04[260]);
+        var instance1 = new lib.DEDE_SHIRT();
         this.addTimedChild(instance16)
             .addTimedChild(instance15)
             .addTimedChild(instance14, 0, 275, {
@@ -10599,11 +9720,11 @@ import { EventBus } from '../../src/main';
                 },
                 "88": {
                     x: 41.851,
-                    y: -395.311,
+                    y: -395.361,
                     r: 0.194
                 },
                 "89": {
-                    x: 45.142,
+                    x: 45.192,
                     y: -395.139,
                     r: 0.24
                 },
@@ -10614,17 +9735,17 @@ import { EventBus } from '../../src/main';
                 },
                 "104": {
                     x: 33.501,
-                    y: -394.175,
+                    y: -394.181,
                     r: 0.156
                 },
                 "105": {
-                    x: 24.512,
-                    y: -393.532,
+                    x: 24.513,
+                    y: -393.588,
                     r: 0.086
                 },
                 "106": {
-                    x: 19.113,
-                    y: -393.21,
+                    x: 19.164,
+                    y: -393.266,
                     r: 0.044
                 },
                 "107": {
@@ -10634,7 +9755,7 @@ import { EventBus } from '../../src/main';
                 },
                 "114": {
                     x: 12.916,
-                    y: -378.848,
+                    y: -378.842,
                     r: -0.002
                 },
                 "115": {
@@ -10643,7 +9764,7 @@ import { EventBus } from '../../src/main';
                     r: -0.013
                 },
                 "116": {
-                    x: 26.691,
+                    x: 26.591,
                     y: -387.652,
                     r: 0.066
                 },
@@ -10683,8 +9804,8 @@ import { EventBus } from '../../src/main';
                     r: 0.143
                 },
                 "129": {
-                    x: 51.876,
-                    y: -403.102,
+                    x: 51.826,
+                    y: -403.152,
                     r: 0.159
                 },
                 "130": {
@@ -10875,7 +9996,7 @@ import { EventBus } from '../../src/main';
                     y: -615.6
                 },
                 "104": {
-                    x: 73.714,
+                    x: 73.764,
                     y: -619.689,
                     r: 0.125
                 },
@@ -10885,7 +10006,7 @@ import { EventBus } from '../../src/main';
                     r: 0.066
                 },
                 "106": {
-                    x: 30.57,
+                    x: 30.62,
                     y: -624.31,
                     r: 0.03
                 },
@@ -11192,17 +10313,17 @@ import { EventBus } from '../../src/main';
                     y: -528.45
                 },
                 "104": {
-                    x: 232.624,
+                    x: 232.674,
                     y: -546.003,
                     r: 0.125
                 },
                 "105": {
-                    x: 209.934,
+                    x: 209.984,
                     y: -558.43,
                     r: 0.066
                 },
                 "106": {
-                    x: 196.318,
+                    x: 196.368,
                     y: -565.854,
                     r: 0.03
                 },
@@ -11222,8 +10343,8 @@ import { EventBus } from '../../src/main';
                     r: -0.025
                 },
                 "116": {
-                    x: 189.764,
-                    y: -562.335,
+                    x: 189.714,
+                    y: -562.285,
                     r: -0.004
                 },
                 "117": {
@@ -11518,18 +10639,18 @@ import { EventBus } from '../../src/main';
                     y: -503.9
                 },
                 "104": {
-                    x: 229.707,
+                    x: 229.757,
                     y: -521.218,
                     r: 0.207
                 },
                 "105": {
-                    x: 208.442,
+                    x: 208.542,
                     y: -533.427,
                     r: 0.148
                 },
                 "106": {
-                    x: 195.71,
-                    y: -540.807,
+                    x: 195.81,
+                    y: -540.757,
                     r: 0.112
                 },
                 "107": {
@@ -11548,8 +10669,8 @@ import { EventBus } from '../../src/main';
                     r: 0.057
                 },
                 "116": {
-                    x: 185.296,
-                    y: -538.677,
+                    x: 185.246,
+                    y: -538.727,
                     r: 0.403
                 },
                 "117": {
@@ -12205,8 +11326,8 @@ import { EventBus } from '../../src/main';
                     ky: -1.597
                 },
                 "89": {
-                    x: -150.976,
-                    y: -469.195,
+                    x: -150.978,
+                    y: -469.202,
                     kx: -1.504,
                     ky: -1.638
                 },
@@ -12869,12 +11990,12 @@ import { EventBus } from '../../src/main';
                     y: -308.85
                 },
                 "88": {
-                    x: 25.536,
+                    x: 25.486,
                     y: -308.867,
                     r: 0.058
                 },
                 "89": {
-                    x: 27.57,
+                    x: 27.52,
                     y: -308.905,
                     r: 0.072
                 },
@@ -12894,7 +12015,7 @@ import { EventBus } from '../../src/main';
                     r: -0.02
                 },
                 "106": {
-                    x: 11.721,
+                    x: 11.771,
                     y: -305.59,
                     r: -0.044
                 },
@@ -12914,7 +12035,7 @@ import { EventBus } from '../../src/main';
                     r: -0.096
                 },
                 "116": {
-                    x: 16.982,
+                    x: 16.932,
                     y: -300.299,
                     r: -0.017
                 },
@@ -12954,7 +12075,7 @@ import { EventBus } from '../../src/main';
                     r: 0.06
                 },
                 "129": {
-                    x: 34.017,
+                    x: 33.967,
                     y: -316.93,
                     r: 0.076
                 },
@@ -12964,7 +12085,7 @@ import { EventBus } from '../../src/main';
                     r: 0.081
                 },
                 "131": {
-                    x: 28.093,
+                    x: 28.043,
                     y: -312.936,
                     r: 0.055
                 },
@@ -13188,8 +12309,8 @@ import { EventBus } from '../../src/main';
                     r: -0.5
                 },
                 "116": {
-                    x: 255.359,
-                    y: -380.797,
+                    x: 255.312,
+                    y: -380.802,
                     r: -1.978
                 },
                 "117": {
@@ -13654,12 +12775,12 @@ import { EventBus } from '../../src/main';
                     y: -304.15
                 },
                 "88": {
-                    x: 27.222,
-                    y: -304.126,
+                    x: 27.172,
+                    y: -304.176,
                     r: 0.058
                 },
                 "89": {
-                    x: 29.187,
+                    x: 29.137,
                     y: -304.091,
                     r: 0.072
                 },
@@ -13669,7 +12790,7 @@ import { EventBus } from '../../src/main';
                     r: 0.077
                 },
                 "104": {
-                    x: 22.349,
+                    x: 22.399,
                     y: -302.697,
                     r: 0.02
                 },
@@ -13679,7 +12800,7 @@ import { EventBus } from '../../src/main';
                     r: -0.02
                 },
                 "106": {
-                    x: 13.792,
+                    x: 13.842,
                     y: -301.064,
                     r: -0.044
                 },
@@ -13689,7 +12810,7 @@ import { EventBus } from '../../src/main';
                     r: -0.053
                 },
                 "114": {
-                    x: 11.369,
+                    x: 11.319,
                     y: -286.551,
                     r: -0.085
                 },
@@ -13700,7 +12821,7 @@ import { EventBus } from '../../src/main';
                 },
                 "116": {
                     x: 18.979,
-                    y: -295.778,
+                    y: -295.828,
                     r: -0.017
                 },
                 "117": {
@@ -13734,7 +12855,7 @@ import { EventBus } from '../../src/main';
                     r: 0.034
                 },
                 "128": {
-                    x: 31.18,
+                    x: 31.13,
                     y: -309.202,
                     r: 0.06
                 },
@@ -13855,202 +12976,26 @@ import { EventBus } from '../../src/main';
             });
     });
 
-    var Graphic134 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[560]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[15])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[14])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[13])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[12])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[559]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[558]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[557]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[556]);
+    lib.BG_LAMP = Container.extend(function () {
+        Container.call(this);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s04[555]);
+            .drawCommands(shapes.s04[501]);
         var instance6 = new Graphics()
-            .drawCommands(shapes.s04[554]);
+            .drawCommands(shapes.s04[500]);
         var instance5 = new Graphics()
-            .drawCommands(shapes.s04[5])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
+            .drawCommands(shapes.s04[499]);
         var instance4 = new Graphics()
-            .drawCommands(shapes.s04[4])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
+            .drawCommands(shapes.s04[498]);
         var instance3 = new Graphics()
-            .drawCommands(shapes.s04[3])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
+            .drawCommands(shapes.s04[497]);
         var instance2 = new Graphics()
-            .drawCommands(shapes.s04[2])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
+            .drawCommands(shapes.s04[496]);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[1])
-            .setTransform(-3254.85, -1921.75, 1.931, 1.931);
-        this.addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+            .drawCommands(shapes.s04[495]);
+        this.addChild(instance7, instance6, instance5, instance4, instance3, instance2, instance1);
     });
 
-    var Graphic135 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[566]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[565])
-            .setTransform(-3527.35, -1533.3, 1.931, 1.931);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[564]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[564]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[563])
-            .setTransform(-3527.3, -1533.1, 1.931, 1.931);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[562]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[561]);
-        this.addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic136 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s04[594])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s04[593])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s04[592])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s04[591])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[590])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[589])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s04[588])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s04[587])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s04[586])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s04[585])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[584])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[583])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[582])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[581])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[580]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[579]);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[27])
-            .setTransform(-2388.05, -1167.6, 1.931, 1.931);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[578]);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[577]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[576]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[575]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[574]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[573]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[572]);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[571]);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[570]);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[569]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[568]);
-        var instance1 = new Graphics()
-            .drawCommands(shapes.s04[567])
-            .setTransform(-1634.1, -1078.85, 1.931, 1.931);
-        this.addTimedChild(instance29)
-            .addTimedChild(instance28)
-            .addTimedChild(instance27)
-            .addTimedChild(instance26)
-            .addTimedChild(instance25)
-            .addTimedChild(instance24)
-            .addTimedChild(instance23)
-            .addTimedChild(instance22)
-            .addTimedChild(instance21)
-            .addTimedChild(instance20)
-            .addTimedChild(instance19)
-            .addTimedChild(instance18)
-            .addTimedChild(instance17)
-            .addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
-    });
-
-    var Graphic155 = MovieClip.extend(function (mode) {
+    var Graphic99 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 29, loop: false });
         var instance2 = new Sprite(fromFrame("REPLACE_CREATURES_BLINK"));
         var instance1 = new Sprite(fromFrame("REPLACE_CREATURES"));
@@ -14060,161 +13005,55 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance3, 14, 15);
     });
 
-    var Graphic137 = MovieClip.extend(function (mode) {
-        MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance32 = new Graphics()
-            .drawCommands(shapes.s04[626]);
-        var instance31 = new Graphics()
-            .drawCommands(shapes.s04[625]);
-        var instance30 = new Graphics()
-            .drawCommands(shapes.s04[624]);
-        var instance29 = new Graphics()
-            .drawCommands(shapes.s04[623]);
-        var instance28 = new Graphics()
-            .drawCommands(shapes.s04[622])
-            .setTransform(-2343.35, -1167.35, 1.931, 1.931);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s04[621])
-            .setTransform(-2343.35, -1167.4, 1.931, 1.931);
-        var instance26 = new Graphics()
-            .drawCommands(shapes.s04[620]);
-        var instance25 = new Graphics()
-            .drawCommands(shapes.s04[619]);
-        var instance24 = new Graphics()
-            .drawCommands(shapes.s04[618]);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s04[617]);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s04[616]);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s04[615])
-            .setTransform(-2343.35, -1167.4, 1.931, 1.931);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s04[614]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s04[613]);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s04[612])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s04[611])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s04[610])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s04[609])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s04[608])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s04[607])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s04[606])
-            .setTransform(-2343.35, -1167.4, 1.931, 1.931);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s04[605]);
-        var instance10 = new Graphics()
-            .drawCommands(shapes.s04[604]);
-        var instance9 = new Graphics()
-            .drawCommands(shapes.s04[603]);
-        var instance8 = new Graphics()
-            .drawCommands(shapes.s04[602]);
-        var instance7 = new Graphics()
-            .drawCommands(shapes.s04[601]);
-        var instance6 = new Graphics()
-            .drawCommands(shapes.s04[600])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance5 = new Graphics()
-            .drawCommands(shapes.s04[599])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance4 = new Graphics()
-            .drawCommands(shapes.s04[598])
-            .setTransform(-1589.4, -1078.5, 1.931, 1.931);
-        var instance3 = new Graphics()
-            .drawCommands(shapes.s04[597]);
-        var instance2 = new Graphics()
-            .drawCommands(shapes.s04[596]);
+    lib.BG_MAIN = Container.extend(function () {
+        Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s04[595]);
-        this.addTimedChild(instance32)
-            .addTimedChild(instance31)
-            .addTimedChild(instance30)
-            .addTimedChild(instance29)
-            .addTimedChild(instance28)
-            .addTimedChild(instance27)
-            .addTimedChild(instance26)
-            .addTimedChild(instance25)
-            .addTimedChild(instance24)
-            .addTimedChild(instance23)
-            .addTimedChild(instance22)
-            .addTimedChild(instance21)
-            .addTimedChild(instance20)
-            .addTimedChild(instance19)
-            .addTimedChild(instance18)
-            .addTimedChild(instance17)
-            .addTimedChild(instance16)
-            .addTimedChild(instance15)
-            .addTimedChild(instance14)
-            .addTimedChild(instance13)
-            .addTimedChild(instance12)
-            .addTimedChild(instance11)
-            .addTimedChild(instance10)
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
-            .addTimedChild(instance6)
-            .addTimedChild(instance5)
-            .addTimedChild(instance4)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2)
-            .addTimedChild(instance1);
+            .drawCommands(shapes.s04[502]);
+        this.addChild(instance1);
     });
 
-    var Graphic161 = MovieClip.extend(function (mode) {
+    var Graphic105 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 275, loop: false });
-        var instance10 = new Graphic137(MovieClip.SYNCHED);
-        var instance28 = new Graphic155(MovieClip.SYNCHED);
-        var instance9 = new Graphic136(MovieClip.SYNCHED)
-            .setTransform(487.55, -58.7);
-        var instance8 = new Graphic135(MovieClip.SYNCHED)
-            .setTransform(1626.95, 306.75);
-        var instance7 = new Graphic134(MovieClip.SYNCHED)
-            .setTransform(2108.3, 784.2);
-        var instance6 = new Graphic133(MovieClip.SYNCHED)
+        var instance9 = new lib.BG_MAIN();
+        var instance28 = new Graphic99(MovieClip.SYNCHED);
+        var instance8 = new lib.BG_LAMP();
+        var instance7 = new Graphics()
+            .drawCommands(shapes.s04[494]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s04[494]);
+        var instance6 = new Graphic83(MovieClip.SYNCHED)
             .setTransform(152.25, 741.35, 1.4, 1.4);
-        var instance5 = new Graphic132(MovieClip.SYNCHED);
-        var instance4 = new Graphic131(MovieClip.SYNCHED);
-        var instance11 = new Graphic138(MovieClip.SYNCHED);
-        var instance12 = new Graphic139(MovieClip.SYNCHED);
-        var instance13 = new Graphic140(MovieClip.SYNCHED);
-        var instance14 = new Graphic141(MovieClip.SYNCHED);
-        var instance15 = new Graphic142(MovieClip.SYNCHED);
-        var instance17 = new Graphic144(MovieClip.SYNCHED);
-        var instance16 = new Graphic143(MovieClip.SYNCHED);
-        var instance18 = new Graphic145(MovieClip.SYNCHED);
-        var instance19 = new Graphic146(MovieClip.SYNCHED);
-        var instance20 = new Graphic147(MovieClip.SYNCHED);
-        var instance21 = new Graphic148(MovieClip.SYNCHED);
-        var instance23 = new Graphic150(MovieClip.SYNCHED);
-        var instance24 = new Graphic151(MovieClip.SYNCHED);
-        var instance25 = new Graphic152(MovieClip.SYNCHED);
-        var instance26 = new Graphic153(MovieClip.SYNCHED);
-        var instance27 = new Graphic154(MovieClip.SYNCHED);
-        var instance29 = new Graphic156(MovieClip.SYNCHED);
-        var instance30 = new Graphic157(MovieClip.SYNCHED);
-        var instance31 = new Graphic158(MovieClip.SYNCHED);
-        var instance32 = new Graphic159(MovieClip.SYNCHED);
-        var instance33 = new Graphic160(MovieClip.SYNCHED);
-        var instance22 = new Graphic149(MovieClip.SYNCHED)
+        var instance5 = new Graphic82(MovieClip.SYNCHED);
+        var instance4 = new Graphic81(MovieClip.SYNCHED);
+        var instance10 = new Graphic84(MovieClip.SYNCHED);
+        var instance11 = new Graphic85(MovieClip.SYNCHED);
+        var instance12 = new Graphic86(MovieClip.SYNCHED);
+        var instance13 = new Graphic87(MovieClip.SYNCHED);
+        var instance14 = new Graphic88(MovieClip.SYNCHED);
+        var instance16 = new Graphic90(MovieClip.SYNCHED);
+        var instance15 = new Graphic89(MovieClip.SYNCHED);
+        var instance17 = new Graphic91(MovieClip.SYNCHED);
+        var instance3 = new lib.BG_PLANT_CLEAN();
+        var instance2 = new lib.BG_OL_TABLE();
+        var instance1 = new Graphic80(MovieClip.SYNCHED);
+        var instance18 = new Graphic92(MovieClip.SYNCHED);
+        var instance22 = new Graphic94(MovieClip.SYNCHED);
+        var instance24 = new Graphic95(MovieClip.SYNCHED);
+        var instance25 = new Graphic96(MovieClip.SYNCHED);
+        var instance26 = new Graphic97(MovieClip.SYNCHED);
+        var instance27 = new Graphic98(MovieClip.SYNCHED);
+        var instance29 = new Graphic100(MovieClip.SYNCHED);
+        var instance30 = new Graphic101(MovieClip.SYNCHED);
+        var instance31 = new Graphic102(MovieClip.SYNCHED);
+        var instance32 = new Graphic103(MovieClip.SYNCHED);
+        var instance33 = new Graphic104(MovieClip.SYNCHED);
+        var instance21 = new Graphic93(MovieClip.SYNCHED)
             .setTransform(1732.3, 779.1, 1.883, 1.883);
-        var instance3 = new Graphic130(MovieClip.SYNCHED)
-            .setTransform(-1900.5, -1226.4, 1.931, 1.931);
-        var instance2 = new Graphic129(MovieClip.SYNCHED);
-        var instance1 = new Graphic128(MovieClip.SYNCHED);
-        this.addTimedChild(instance10, 0, 275, {
+        var instance20 = new lib.BG_PLANT_CLEAN()
+            .setTransform(-1229.85, 414.65);
+        var instance19 = new lib.BG_OL_TABLE()
+            .setTransform(2108.3, 784.2);
+        this.addTimedChild(instance9, 0, 275, {
                 "0": {
                     x: 442.85,
                     y: -59.05
@@ -14264,9 +13103,14 @@ import { EventBus } from '../../src/main';
                     y: -64.25
                 }
             })
-            .addTimedChild(instance9)
-            .addTimedChild(instance8)
-            .addTimedChild(instance7)
+            .addTimedChild(instance8, 0, 275, {
+                "0": {
+                    x: 487.55,
+                    y: -58.7
+                }
+            })
+            .addTimedChild(instance7, 0, 133)
+            .addTimedChild(instance23, 190, 85)
             .addTimedChild(instance6)
             .addTimedChild(instance5, 0, 275, {
                 "0": {
@@ -14285,7 +13129,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance11, 2, 4, {
+            .addTimedChild(instance10, 2, 4, {
                 "2": {
                     x: 1002.35,
                     y: -232.5,
@@ -14293,7 +13137,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance12, 8, 4, {
+            .addTimedChild(instance11, 8, 4, {
                 "8": {
                     x: 819.9,
                     y: 317.4,
@@ -14301,7 +13145,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance13, 11, 4, {
+            .addTimedChild(instance12, 11, 4, {
                 "11": {
                     x: -1028.9,
                     y: 511.05,
@@ -14309,7 +13153,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance14, 17, 4, {
+            .addTimedChild(instance13, 17, 4, {
                 "17": {
                     x: 1254.45,
                     y: 114.1,
@@ -14317,7 +13161,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance15, 23, 4, {
+            .addTimedChild(instance14, 23, 4, {
                 "23": {
                     x: -1028.9,
                     y: 511.05,
@@ -14325,7 +13169,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance17, 31, 4, {
+            .addTimedChild(instance16, 31, 4, {
                 "31": {
                     x: -542.45,
                     y: -61.05,
@@ -14333,7 +13177,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance16, 28, 4, {
+            .addTimedChild(instance15, 28, 4, {
                 "28": {
                     x: 892.9,
                     y: 640.05,
@@ -14341,7 +13185,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance18, 36, 4, {
+            .addTimedChild(instance17, 36, 4, {
                 "36": {
                     x: -204.95,
                     y: 582.45,
@@ -14349,23 +13193,35 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance19, 46, 4, {
-                "46": {
-                    x: -529.05,
-                    y: 571.45,
-                    sx: 1.927,
-                    sy: 1.927
+            .addTimedChild(instance3, 0, 40, {
+                "0": {
+                    x: -1229.85,
+                    y: 414.65
                 }
             })
-            .addTimedChild(instance20, 64, 4, {
-                "64": {
-                    x: 793.45,
-                    y: -219.65,
-                    sx: 1.927,
-                    sy: 1.927
+            .addTimedChild(instance2, 0, 40, {
+                "0": {
+                    x: 2108.3,
+                    y: 784.2
                 }
             })
-            .addTimedChild(instance21, 80, 4, {
+            .addTimedChild(instance1, 0, 4, {
+                "0": {
+                    x: 197.55,
+                    y: 67.35,
+                    a: 1
+                },
+                "1": {
+                    a: 0.67
+                },
+                "2": {
+                    a: 0.33
+                },
+                "3": {
+                    a: 0
+                }
+            })
+            .addTimedChild(instance18, 80, 4, {
                 "80": {
                     x: 69.7,
                     y: -306.15,
@@ -14373,7 +13229,7 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance23, 190, 4, {
+            .addTimedChild(instance22, 190, 4, {
                 "190": {
                     x: 793.45,
                     y: -219.65,
@@ -14453,32 +13309,9 @@ import { EventBus } from '../../src/main';
                     sy: 1.927
                 }
             })
-            .addTimedChild(instance22, 190, 85)
-            .addTimedChild(instance3)
-            .addTimedChild(instance2, 0, 275, {
-                "0": {
-                    x: -1900.5,
-                    y: -1226.4,
-                    sx: 1.931,
-                    sy: 1.931
-                }
-            })
-            .addTimedChild(instance1, 0, 4, {
-                "0": {
-                    x: 197.55,
-                    y: 67.35,
-                    a: 1
-                },
-                "1": {
-                    a: 0.67
-                },
-                "2": {
-                    a: 0.33
-                },
-                "3": {
-                    a: 0
-                }
-            });
+            .addTimedChild(instance21, 190, 85)
+            .addTimedChild(instance20, 190, 85)
+            .addTimedChild(instance19, 190, 85);
     });
 
     lib.s04 = MovieClip.extend(function () {
@@ -14487,7 +13320,7 @@ import { EventBus } from '../../src/main';
             framerate: 12,
             loop: false
         });
-        var instance1 = new Graphic161(MovieClip.SYNCHED);
+        var instance1 = new Graphic105(MovieClip.SYNCHED);
         this.addTimedChild(instance1, 0, 275, {
                 "0": {
                     x: 474.45,
@@ -14602,7 +13435,7 @@ import { EventBus } from '../../src/main';
                 },
                 "40": {
                     x: 565.55,
-                    y: 739.45,
+                    y: 780.25,
                     sx: 0.934,
                     sy: 0.934
                 },
@@ -14620,50 +13453,47 @@ import { EventBus } from '../../src/main';
                 },
                 "190": {
                     x: 666.65,
-                    y: 255.6,
+                    y: 282.2,
                     sx: 0.362,
                     sy: 0.362
                 },
                 "207": {
-                    x: 657.44,
-                    y: 255.646
+                    x: 659.64,
+                    y: 282.246
                 },
                 "208": {
-                    x: 634.15,
-                    y: 255.6
+                    x: 636.89
                 },
                 "209": {
-                    x: 592.39,
-                    y: 255.596
+                    x: 596.34
                 },
                 "210": {
-                    x: 531.69
+                    x: 536.99
                 },
                 "211": {
-                    x: 453.64
+                    x: 460.69
                 },
                 "212": {
-                    x: 365.89
+                    x: 373.84
                 },
                 "213": {
-                    x: 280.569,
-                    y: 255.608
+                    x: 287.04
                 },
                 "214": {
-                    x: 207.869
+                    x: 210.74
                 },
                 "215": {
-                    x: 152.419
+                    x: 151.39
                 },
                 "216": {
-                    x: 114.169
+                    x: 110.84
                 },
                 "217": {
-                    x: 91.169
+                    x: 88.09
                 },
                 "218": {
                     x: 80.95,
-                    y: 255.6
+                    y: 282.2
                 }
             })
             .addAction(function () {
