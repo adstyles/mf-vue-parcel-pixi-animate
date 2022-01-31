@@ -18062,13 +18062,13 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance6, 0, 250, {
                 "0": {
                     x: 65.8,
-                    y: -0.25,
+                    y: 41.15,
                     sx: 0.711,
                     sy: 0.711
                 },
                 "145": {
                     x: 131.85,
-                    y: 12.15,
+                    y: 43.2,
                     sx: 0.438,
                     sy: 0.438
                 },
@@ -18076,27 +18076,27 @@ import { EventBus } from '../../src/main';
                     y: 75.55
                 },
                 "218": {
-                    y: 12.15
+                    y: 32.85
                 }
             })
             .addTimedChild(instance5, 0, 250, {
                 "0": {
                     x: 65.8,
-                    y: -0.25,
+                    y: 20.45,
                     sx: 0.711,
                     sy: 0.711
                 },
                 "145": {
                     x: 131.85,
-                    y: 12.15,
+                    y: 32.85,
                     sx: 0.438,
                     sy: 0.438
                 },
                 "182": {
-                    y: 75.55
+                    y: 65.2
                 },
                 "218": {
-                    y: 12.15
+                    y: 18.15
                 }
             })
             .addTimedChild(instance4, 0, 19, {
@@ -35880,7 +35880,7 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance6, 0, 289, {
                 "0": {
                     x: 257.8,
-                    y: -48.1,
+                    y: -25.4,
                     sx: 1.004,
                     sy: 1.004
                 },
@@ -35896,23 +35896,23 @@ import { EventBus } from '../../src/main';
                 },
                 "153": {
                     x: 257.8,
-                    y: -48.1,
+                    y: -14.35,
                     sx: 1.004,
                     sy: 1.004
                 },
                 "215": {
                     x: 45.85,
-                    y: 78.85,
+                    y: 101.35,
                     sx: 0.629,
                     sy: 0.629
                 },
                 "248": {
                     x: 309.05,
-                    y: 93.85
+                    y: 116.35
                 },
                 "270": {
                     x: 257.8,
-                    y: -48.1,
+                    y: -14.35,
                     sx: 1.004,
                     sy: 1.004
                 }
@@ -35932,119 +35932,119 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance4, 0, 289, {
                 "0": {
                     x: 1031.9,
-                    y: 340.25,
+                    y: 362.95,
                     sx: 1,
                     sy: 1,
                     r: 0
                 },
                 "41": {
-                    x: 1031.859,
-                    y: 339.779,
+                    x: 1031.841,
+                    y: 362.479,
                     r: -0.004
                 },
                 "42": {
-                    x: 1031.606,
-                    y: 338.253,
+                    x: 1031.584,
+                    y: 360.95,
                     r: -0.014
                 },
                 "43": {
-                    x: 1031.372,
-                    y: 336.751,
+                    x: 1031.346,
+                    y: 359.443,
                     r: -0.025
                 },
                 "44": {
                     x: 1031.1,
-                    y: 336.1,
+                    y: 358.8,
                     r: -0.029
                 },
                 "45": {
-                    x: 1031.052,
-                    y: 335.906,
+                    x: 1031.037,
+                    y: 358.555,
                     r: -0.03
                 },
                 "46": {
-                    x: 1030.935,
-                    y: 335.249,
+                    x: 1030.925,
+                    y: 357.948,
                     r: -0.035
                 },
                 "47": {
-                    x: 1030.808,
-                    y: 334.572,
+                    x: 1030.802,
+                    y: 357.27,
                     r: -0.04
                 },
                 "48": {
                     x: 1030.75,
-                    y: 334.3,
+                    y: 357,
                     r: -0.041
                 },
                 "51": {
-                    x: 1030.883,
-                    y: 334.674,
+                    x: 1030.824,
+                    y: 357.424,
                     r: -0.039
                 },
                 "52": {
-                    x: 1031.089,
-                    y: 335.762,
+                    x: 1031.055,
+                    y: 358.51,
                     r: -0.031
                 },
                 "53": {
-                    x: 1031.413,
-                    y: 337.565,
+                    x: 1031.387,
+                    y: 360.259,
                     r: -0.018
                 },
                 "54": {
                     x: 1031.9,
-                    y: 340.25,
+                    y: 362.95,
                     r: 0
                 },
                 "55": {
-                    x: 1032.025,
-                    y: 340.976,
+                    x: 1032.017,
+                    y: 363.676,
                     r: 0.005
                 },
                 "56": {
-                    x: 1032.375,
-                    y: 342.687,
+                    x: 1032.349,
+                    y: 365.384,
                     r: 0.017
                 },
                 "57": {
                     x: 1032.45,
-                    y: 343.3,
+                    y: 366,
                     r: 0.021
                 },
                 "58": {
-                    x: 1032.379,
-                    y: 342.701,
+                    x: 1032.387,
+                    y: 365.401,
                     r: 0.017
                 },
                 "59": {
-                    x: 1032.047,
-                    y: 340.944,
+                    x: 1032.073,
+                    y: 363.641,
                     r: 0.005
                 },
                 "60": {
                     x: 1031.9,
-                    y: 340.25,
+                    y: 362.95,
                     r: 0
                 },
                 "61": {
-                    x: 1031.948,
-                    y: 340.524,
+                    x: 1031.958,
+                    y: 363.224,
                     r: 0.002
                 },
                 "62": {
-                    x: 1032.073,
-                    y: 341.246,
+                    x: 1032.086,
+                    y: 363.945,
                     r: 0.006
                 },
                 "63": {
                     x: 1032.1,
-                    y: 341.35,
+                    y: 364.05,
                     r: 0.008
                 },
                 "64": {
                     x: 1031.9,
-                    y: 340.25,
+                    y: 362.95,
                     r: 0
                 },
                 "95": {
@@ -36059,23 +36059,23 @@ import { EventBus } from '../../src/main';
                 },
                 "153": {
                     x: 1031.9,
-                    y: 340.25,
+                    y: 374,
                     sx: 1,
                     sy: 1
                 },
                 "215": {
                     x: 530.75,
-                    y: 322,
+                    y: 344.5,
                     sx: 0.626,
                     sy: 0.626
                 },
                 "248": {
                     x: 793.95,
-                    y: 337
+                    y: 359.5
                 },
                 "270": {
                     x: 1031.9,
-                    y: 340.25,
+                    y: 374,
                     sx: 1,
                     sy: 1
                 }
@@ -68011,201 +68011,257 @@ import { EventBus } from '../../src/main';
 
     var Graphic868 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 28, loop: false });
+        var instance6 = new Graphics()
+            .drawCommands(shapes.s03[1173]);
         var instance5 = new Graphics()
             .drawCommands(shapes.s03[1159]);
-        var instance8 = new Graphics()
+        var instance10 = new Graphics()
+            .drawCommands(shapes.s03[1174]);
+        var instance9 = new Graphics()
             .drawCommands(shapes.s03[1160]);
-        var instance21 = new Graphics()
-            .drawCommands(shapes.s03[1171]);
-        var instance20 = new Graphics()
-            .drawCommands(shapes.s03[1170]);
-        var instance19 = new Graphics()
-            .drawCommands(shapes.s03[1169]);
-        var instance18 = new Graphics()
-            .drawCommands(shapes.s03[1168]);
-        var instance17 = new Graphics()
-            .drawCommands(shapes.s03[1167]);
-        var instance16 = new Graphics()
-            .drawCommands(shapes.s03[1166]);
-        var instance15 = new Graphics()
-            .drawCommands(shapes.s03[1165]);
-        var instance14 = new Graphics()
-            .drawCommands(shapes.s03[1164]);
-        var instance13 = new Graphics()
-            .drawCommands(shapes.s03[1163]);
-        var instance12 = new Graphics()
-            .drawCommands(shapes.s03[1162]);
-        var instance11 = new Graphics()
-            .drawCommands(shapes.s03[1161]);
         var instance24 = new Graphics()
-            .drawCommands(shapes.s03[1172]);
+            .drawCommands(shapes.s03[1175]);
+        var instance23 = new Graphics()
+            .drawCommands(shapes.s03[1171]);
+        var instance22 = new Graphics()
+            .drawCommands(shapes.s03[1170]);
+        var instance21 = new Graphics()
+            .drawCommands(shapes.s03[1169]);
+        var instance20 = new Graphics()
+            .drawCommands(shapes.s03[1168]);
+        var instance19 = new Graphics()
+            .drawCommands(shapes.s03[1167]);
+        var instance18 = new Graphics()
+            .drawCommands(shapes.s03[1166]);
+        var instance17 = new Graphics()
+            .drawCommands(shapes.s03[1165]);
+        var instance16 = new Graphics()
+            .drawCommands(shapes.s03[1164]);
+        var instance15 = new Graphics()
+            .drawCommands(shapes.s03[1163]);
+        var instance14 = new Graphics()
+            .drawCommands(shapes.s03[1162]);
+        var instance13 = new Graphics()
+            .drawCommands(shapes.s03[1161]);
         var instance28 = new Graphics()
+            .drawCommands(shapes.s03[1176]);
+        var instance27 = new Graphics()
+            .drawCommands(shapes.s03[1172]);
+        var instance33 = new Graphics()
+            .drawCommands(shapes.s03[1173]);
+        var instance32 = new Graphics()
             .drawCommands(shapes.s03[1159]);
-        var instance31 = new Graphics()
-            .drawCommands(shapes.s03[1160]);
-        var instance44 = new Graphics()
-            .drawCommands(shapes.s03[1171]);
-        var instance43 = new Graphics()
-            .drawCommands(shapes.s03[1170]);
-        var instance42 = new Graphics()
-            .drawCommands(shapes.s03[1169]);
-        var instance41 = new Graphics()
-            .drawCommands(shapes.s03[1168]);
-        var instance40 = new Graphics()
-            .drawCommands(shapes.s03[1167]);
-        var instance39 = new Graphics()
-            .drawCommands(shapes.s03[1166]);
-        var instance38 = new Graphics()
-            .drawCommands(shapes.s03[1165]);
         var instance37 = new Graphics()
-            .drawCommands(shapes.s03[1164]);
+            .drawCommands(shapes.s03[1174]);
         var instance36 = new Graphics()
-            .drawCommands(shapes.s03[1163]);
-        var instance35 = new Graphics()
-            .drawCommands(shapes.s03[1162]);
-        var instance34 = new Graphics()
-            .drawCommands(shapes.s03[1161]);
-        var instance47 = new Graphics()
-            .drawCommands(shapes.s03[1172]);
+            .drawCommands(shapes.s03[1160]);
         var instance51 = new Graphics()
-            .drawCommands(shapes.s03[1159]);
+            .drawCommands(shapes.s03[1175]);
+        var instance50 = new Graphics()
+            .drawCommands(shapes.s03[1171]);
+        var instance49 = new Graphics()
+            .drawCommands(shapes.s03[1170]);
+        var instance48 = new Graphics()
+            .drawCommands(shapes.s03[1169]);
+        var instance47 = new Graphics()
+            .drawCommands(shapes.s03[1168]);
+        var instance46 = new Graphics()
+            .drawCommands(shapes.s03[1167]);
+        var instance45 = new Graphics()
+            .drawCommands(shapes.s03[1166]);
+        var instance44 = new Graphics()
+            .drawCommands(shapes.s03[1165]);
+        var instance43 = new Graphics()
+            .drawCommands(shapes.s03[1164]);
+        var instance42 = new Graphics()
+            .drawCommands(shapes.s03[1163]);
+        var instance41 = new Graphics()
+            .drawCommands(shapes.s03[1162]);
+        var instance40 = new Graphics()
+            .drawCommands(shapes.s03[1161]);
+        var instance55 = new Graphics()
+            .drawCommands(shapes.s03[1176]);
         var instance54 = new Graphics()
-            .drawCommands(shapes.s03[1160]);
-        var instance67 = new Graphics()
-            .drawCommands(shapes.s03[1171]);
-        var instance66 = new Graphics()
-            .drawCommands(shapes.s03[1170]);
-        var instance65 = new Graphics()
-            .drawCommands(shapes.s03[1169]);
-        var instance64 = new Graphics()
-            .drawCommands(shapes.s03[1168]);
-        var instance63 = new Graphics()
-            .drawCommands(shapes.s03[1167]);
-        var instance62 = new Graphics()
-            .drawCommands(shapes.s03[1166]);
-        var instance61 = new Graphics()
-            .drawCommands(shapes.s03[1165]);
+            .drawCommands(shapes.s03[1172]);
         var instance60 = new Graphics()
-            .drawCommands(shapes.s03[1164]);
+            .drawCommands(shapes.s03[1173]);
         var instance59 = new Graphics()
-            .drawCommands(shapes.s03[1163]);
-        var instance58 = new Graphics()
-            .drawCommands(shapes.s03[1162]);
-        var instance57 = new Graphics()
-            .drawCommands(shapes.s03[1161]);
-        var instance70 = new Graphics()
-            .drawCommands(shapes.s03[1172]);
-        var instance74 = new Graphics()
             .drawCommands(shapes.s03[1159]);
+        var instance64 = new Graphics()
+            .drawCommands(shapes.s03[1174]);
+        var instance63 = new Graphics()
+            .drawCommands(shapes.s03[1160]);
+        var instance78 = new Graphics()
+            .drawCommands(shapes.s03[1175]);
         var instance77 = new Graphics()
-            .drawCommands(shapes.s03[1160]);
-        var instance90 = new Graphics()
             .drawCommands(shapes.s03[1171]);
-        var instance89 = new Graphics()
+        var instance76 = new Graphics()
             .drawCommands(shapes.s03[1170]);
-        var instance88 = new Graphics()
+        var instance75 = new Graphics()
             .drawCommands(shapes.s03[1169]);
-        var instance87 = new Graphics()
+        var instance74 = new Graphics()
             .drawCommands(shapes.s03[1168]);
-        var instance86 = new Graphics()
+        var instance73 = new Graphics()
             .drawCommands(shapes.s03[1167]);
-        var instance85 = new Graphics()
+        var instance72 = new Graphics()
             .drawCommands(shapes.s03[1166]);
-        var instance84 = new Graphics()
+        var instance71 = new Graphics()
             .drawCommands(shapes.s03[1165]);
-        var instance83 = new Graphics()
+        var instance70 = new Graphics()
             .drawCommands(shapes.s03[1164]);
+        var instance69 = new Graphics()
+            .drawCommands(shapes.s03[1163]);
+        var instance68 = new Graphics()
+            .drawCommands(shapes.s03[1162]);
+        var instance67 = new Graphics()
+            .drawCommands(shapes.s03[1161]);
         var instance82 = new Graphics()
-            .drawCommands(shapes.s03[1163]);
+            .drawCommands(shapes.s03[1176]);
         var instance81 = new Graphics()
-            .drawCommands(shapes.s03[1162]);
-        var instance80 = new Graphics()
-            .drawCommands(shapes.s03[1161]);
-        var instance93 = new Graphics()
             .drawCommands(shapes.s03[1172]);
-        var instance97 = new Graphics()
+        var instance87 = new Graphics()
+            .drawCommands(shapes.s03[1173]);
+        var instance86 = new Graphics()
             .drawCommands(shapes.s03[1159]);
-        var instance100 = new Graphics()
+        var instance91 = new Graphics()
+            .drawCommands(shapes.s03[1174]);
+        var instance90 = new Graphics()
             .drawCommands(shapes.s03[1160]);
-        var instance113 = new Graphics()
-            .drawCommands(shapes.s03[1171]);
-        var instance112 = new Graphics()
-            .drawCommands(shapes.s03[1170]);
-        var instance111 = new Graphics()
-            .drawCommands(shapes.s03[1169]);
-        var instance110 = new Graphics()
-            .drawCommands(shapes.s03[1168]);
-        var instance109 = new Graphics()
-            .drawCommands(shapes.s03[1167]);
-        var instance108 = new Graphics()
-            .drawCommands(shapes.s03[1166]);
-        var instance107 = new Graphics()
-            .drawCommands(shapes.s03[1165]);
-        var instance106 = new Graphics()
-            .drawCommands(shapes.s03[1164]);
         var instance105 = new Graphics()
-            .drawCommands(shapes.s03[1163]);
+            .drawCommands(shapes.s03[1175]);
         var instance104 = new Graphics()
-            .drawCommands(shapes.s03[1162]);
-        var instance103 = new Graphics()
-            .drawCommands(shapes.s03[1161]);
-        var instance116 = new Graphics()
-            .drawCommands(shapes.s03[1172]);
-        var instance120 = new Graphics()
-            .drawCommands(shapes.s03[1159]);
-        var instance123 = new Graphics()
-            .drawCommands(shapes.s03[1160]);
-        var instance136 = new Graphics()
             .drawCommands(shapes.s03[1171]);
-        var instance135 = new Graphics()
+        var instance103 = new Graphics()
             .drawCommands(shapes.s03[1170]);
-        var instance134 = new Graphics()
+        var instance102 = new Graphics()
             .drawCommands(shapes.s03[1169]);
-        var instance133 = new Graphics()
+        var instance101 = new Graphics()
             .drawCommands(shapes.s03[1168]);
-        var instance132 = new Graphics()
+        var instance100 = new Graphics()
             .drawCommands(shapes.s03[1167]);
-        var instance131 = new Graphics()
+        var instance99 = new Graphics()
             .drawCommands(shapes.s03[1166]);
-        var instance130 = new Graphics()
+        var instance98 = new Graphics()
             .drawCommands(shapes.s03[1165]);
-        var instance129 = new Graphics()
+        var instance97 = new Graphics()
             .drawCommands(shapes.s03[1164]);
-        var instance128 = new Graphics()
+        var instance96 = new Graphics()
             .drawCommands(shapes.s03[1163]);
-        var instance127 = new Graphics()
+        var instance95 = new Graphics()
             .drawCommands(shapes.s03[1162]);
-        var instance126 = new Graphics()
+        var instance94 = new Graphics()
             .drawCommands(shapes.s03[1161]);
-        var instance139 = new Graphics()
+        var instance109 = new Graphics()
+            .drawCommands(shapes.s03[1176]);
+        var instance108 = new Graphics()
             .drawCommands(shapes.s03[1172]);
-        var instance143 = new Graphics()
+        var instance114 = new Graphics()
+            .drawCommands(shapes.s03[1173]);
+        var instance113 = new Graphics()
             .drawCommands(shapes.s03[1159]);
-        var instance146 = new Graphics()
+        var instance118 = new Graphics()
+            .drawCommands(shapes.s03[1174]);
+        var instance117 = new Graphics()
+            .drawCommands(shapes.s03[1160]);
+        var instance132 = new Graphics()
+            .drawCommands(shapes.s03[1175]);
+        var instance131 = new Graphics()
+            .drawCommands(shapes.s03[1171]);
+        var instance130 = new Graphics()
+            .drawCommands(shapes.s03[1170]);
+        var instance129 = new Graphics()
+            .drawCommands(shapes.s03[1169]);
+        var instance128 = new Graphics()
+            .drawCommands(shapes.s03[1168]);
+        var instance127 = new Graphics()
+            .drawCommands(shapes.s03[1167]);
+        var instance126 = new Graphics()
+            .drawCommands(shapes.s03[1166]);
+        var instance125 = new Graphics()
+            .drawCommands(shapes.s03[1165]);
+        var instance124 = new Graphics()
+            .drawCommands(shapes.s03[1164]);
+        var instance123 = new Graphics()
+            .drawCommands(shapes.s03[1163]);
+        var instance122 = new Graphics()
+            .drawCommands(shapes.s03[1162]);
+        var instance121 = new Graphics()
+            .drawCommands(shapes.s03[1161]);
+        var instance136 = new Graphics()
+            .drawCommands(shapes.s03[1176]);
+        var instance135 = new Graphics()
+            .drawCommands(shapes.s03[1172]);
+        var instance141 = new Graphics()
+            .drawCommands(shapes.s03[1173]);
+        var instance140 = new Graphics()
+            .drawCommands(shapes.s03[1159]);
+        var instance145 = new Graphics()
+            .drawCommands(shapes.s03[1174]);
+        var instance144 = new Graphics()
             .drawCommands(shapes.s03[1160]);
         var instance159 = new Graphics()
-            .drawCommands(shapes.s03[1171]);
+            .drawCommands(shapes.s03[1175]);
         var instance158 = new Graphics()
-            .drawCommands(shapes.s03[1170]);
+            .drawCommands(shapes.s03[1171]);
         var instance157 = new Graphics()
-            .drawCommands(shapes.s03[1169]);
+            .drawCommands(shapes.s03[1170]);
         var instance156 = new Graphics()
-            .drawCommands(shapes.s03[1168]);
+            .drawCommands(shapes.s03[1169]);
         var instance155 = new Graphics()
-            .drawCommands(shapes.s03[1167]);
+            .drawCommands(shapes.s03[1168]);
         var instance154 = new Graphics()
-            .drawCommands(shapes.s03[1166]);
+            .drawCommands(shapes.s03[1167]);
         var instance153 = new Graphics()
-            .drawCommands(shapes.s03[1165]);
+            .drawCommands(shapes.s03[1166]);
         var instance152 = new Graphics()
-            .drawCommands(shapes.s03[1164]);
+            .drawCommands(shapes.s03[1165]);
         var instance151 = new Graphics()
-            .drawCommands(shapes.s03[1163]);
+            .drawCommands(shapes.s03[1164]);
         var instance150 = new Graphics()
-            .drawCommands(shapes.s03[1162]);
+            .drawCommands(shapes.s03[1163]);
         var instance149 = new Graphics()
+            .drawCommands(shapes.s03[1162]);
+        var instance148 = new Graphics()
             .drawCommands(shapes.s03[1161]);
+        var instance163 = new Graphics()
+            .drawCommands(shapes.s03[1176]);
         var instance162 = new Graphics()
+            .drawCommands(shapes.s03[1172]);
+        var instance168 = new Graphics()
+            .drawCommands(shapes.s03[1173]);
+        var instance167 = new Graphics()
+            .drawCommands(shapes.s03[1159]);
+        var instance172 = new Graphics()
+            .drawCommands(shapes.s03[1174]);
+        var instance171 = new Graphics()
+            .drawCommands(shapes.s03[1160]);
+        var instance186 = new Graphics()
+            .drawCommands(shapes.s03[1175]);
+        var instance185 = new Graphics()
+            .drawCommands(shapes.s03[1171]);
+        var instance184 = new Graphics()
+            .drawCommands(shapes.s03[1170]);
+        var instance183 = new Graphics()
+            .drawCommands(shapes.s03[1169]);
+        var instance182 = new Graphics()
+            .drawCommands(shapes.s03[1168]);
+        var instance181 = new Graphics()
+            .drawCommands(shapes.s03[1167]);
+        var instance180 = new Graphics()
+            .drawCommands(shapes.s03[1166]);
+        var instance179 = new Graphics()
+            .drawCommands(shapes.s03[1165]);
+        var instance178 = new Graphics()
+            .drawCommands(shapes.s03[1164]);
+        var instance177 = new Graphics()
+            .drawCommands(shapes.s03[1163]);
+        var instance176 = new Graphics()
+            .drawCommands(shapes.s03[1162]);
+        var instance175 = new Graphics()
+            .drawCommands(shapes.s03[1161]);
+        var instance190 = new Graphics()
+            .drawCommands(shapes.s03[1176]);
+        var instance189 = new Graphics()
             .drawCommands(shapes.s03[1172]);
         var instance4 = new Graphic860(MovieClip.SYNCHED);
         var instance3 = new Graphics()
@@ -68214,128 +68270,133 @@ import { EventBus } from '../../src/main';
             .drawCommands(shapes.s03[1145]);
         var instance1 = new Graphics()
             .drawCommands(shapes.s03[1141]);
+        var instance8 = new Graphics()
+            .drawCommands(shapes.s03[1146]);
         var instance7 = new Graphics()
-            .drawCommands(shapes.s03[1146]);
-        var instance6 = new Graphics()
             .drawCommands(shapes.s03[1142]);
-        var instance10 = new Graphics()
+        var instance12 = new Graphics()
             .drawCommands(shapes.s03[1147]);
-        var instance9 = new Graphics()
+        var instance11 = new Graphics()
             .drawCommands(shapes.s03[1143]);
-        var instance23 = new Graphics()
-            .drawCommands(shapes.s03[1148]);
-        var instance22 = new Graphics()
-            .drawCommands(shapes.s03[1144]);
-        var instance27 = new Graphics()
-            .drawCommands(shapes.s03[1149]);
         var instance26 = new Graphics()
-            .drawCommands(shapes.s03[1145]);
+            .drawCommands(shapes.s03[1148]);
         var instance25 = new Graphics()
-            .drawCommands(shapes.s03[1141]);
+            .drawCommands(shapes.s03[1144]);
+        var instance31 = new Graphics()
+            .drawCommands(shapes.s03[1149]);
         var instance30 = new Graphics()
-            .drawCommands(shapes.s03[1146]);
+            .drawCommands(shapes.s03[1145]);
         var instance29 = new Graphics()
-            .drawCommands(shapes.s03[1142]);
-        var instance33 = new Graphics()
-            .drawCommands(shapes.s03[1147]);
-        var instance32 = new Graphics()
-            .drawCommands(shapes.s03[1143]);
-        var instance46 = new Graphics()
-            .drawCommands(shapes.s03[1148]);
-        var instance45 = new Graphics()
-            .drawCommands(shapes.s03[1144]);
-        var instance50 = new Graphics()
-            .drawCommands(shapes.s03[1149]);
-        var instance49 = new Graphics()
-            .drawCommands(shapes.s03[1145]);
-        var instance48 = new Graphics()
             .drawCommands(shapes.s03[1141]);
+        var instance35 = new Graphics()
+            .drawCommands(shapes.s03[1146]);
+        var instance34 = new Graphics()
+            .drawCommands(shapes.s03[1142]);
+        var instance39 = new Graphics()
+            .drawCommands(shapes.s03[1147]);
+        var instance38 = new Graphics()
+            .drawCommands(shapes.s03[1143]);
         var instance53 = new Graphics()
-            .drawCommands(shapes.s03[1146]);
+            .drawCommands(shapes.s03[1148]);
         var instance52 = new Graphics()
-            .drawCommands(shapes.s03[1142]);
+            .drawCommands(shapes.s03[1144]);
+        var instance58 = new Graphics()
+            .drawCommands(shapes.s03[1149]);
+        var instance57 = new Graphics()
+            .drawCommands(shapes.s03[1145]);
         var instance56 = new Graphics()
-            .drawCommands(shapes.s03[1147]);
-        var instance55 = new Graphics()
-            .drawCommands(shapes.s03[1143]);
-        var instance69 = new Graphics()
-            .drawCommands(shapes.s03[1148]);
-        var instance68 = new Graphics()
-            .drawCommands(shapes.s03[1144]);
-        var instance73 = new Graphics()
-            .drawCommands(shapes.s03[1149]);
-        var instance72 = new Graphics()
-            .drawCommands(shapes.s03[1145]);
-        var instance71 = new Graphics()
             .drawCommands(shapes.s03[1141]);
-        var instance76 = new Graphics()
+        var instance62 = new Graphics()
             .drawCommands(shapes.s03[1146]);
-        var instance75 = new Graphics()
+        var instance61 = new Graphics()
             .drawCommands(shapes.s03[1142]);
+        var instance66 = new Graphics()
+            .drawCommands(shapes.s03[1147]);
+        var instance65 = new Graphics()
+            .drawCommands(shapes.s03[1143]);
+        var instance80 = new Graphics()
+            .drawCommands(shapes.s03[1148]);
         var instance79 = new Graphics()
+            .drawCommands(shapes.s03[1144]);
+        var instance85 = new Graphics()
+            .drawCommands(shapes.s03[1149]);
+        var instance84 = new Graphics()
+            .drawCommands(shapes.s03[1145]);
+        var instance83 = new Graphics()
+            .drawCommands(shapes.s03[1141]);
+        var instance89 = new Graphics()
+            .drawCommands(shapes.s03[1146]);
+        var instance88 = new Graphics()
+            .drawCommands(shapes.s03[1142]);
+        var instance93 = new Graphics()
             .drawCommands(shapes.s03[1147]);
-        var instance78 = new Graphics()
-            .drawCommands(shapes.s03[1143]);
         var instance92 = new Graphics()
-            .drawCommands(shapes.s03[1148]);
-        var instance91 = new Graphics()
-            .drawCommands(shapes.s03[1144]);
-        var instance96 = new Graphics()
-            .drawCommands(shapes.s03[1149]);
-        var instance95 = new Graphics()
-            .drawCommands(shapes.s03[1145]);
-        var instance94 = new Graphics()
-            .drawCommands(shapes.s03[1141]);
-        var instance99 = new Graphics()
-            .drawCommands(shapes.s03[1146]);
-        var instance98 = new Graphics()
-            .drawCommands(shapes.s03[1142]);
-        var instance102 = new Graphics()
-            .drawCommands(shapes.s03[1147]);
-        var instance101 = new Graphics()
             .drawCommands(shapes.s03[1143]);
+        var instance107 = new Graphics()
+            .drawCommands(shapes.s03[1148]);
+        var instance106 = new Graphics()
+            .drawCommands(shapes.s03[1144]);
+        var instance112 = new Graphics()
+            .drawCommands(shapes.s03[1149]);
+        var instance111 = new Graphics()
+            .drawCommands(shapes.s03[1145]);
+        var instance110 = new Graphics()
+            .drawCommands(shapes.s03[1141]);
+        var instance116 = new Graphics()
+            .drawCommands(shapes.s03[1146]);
         var instance115 = new Graphics()
-            .drawCommands(shapes.s03[1148]);
-        var instance114 = new Graphics()
-            .drawCommands(shapes.s03[1144]);
+            .drawCommands(shapes.s03[1142]);
+        var instance120 = new Graphics()
+            .drawCommands(shapes.s03[1147]);
         var instance119 = new Graphics()
-            .drawCommands(shapes.s03[1149]);
-        var instance118 = new Graphics()
-            .drawCommands(shapes.s03[1145]);
-        var instance117 = new Graphics()
-            .drawCommands(shapes.s03[1141]);
-        var instance122 = new Graphics()
-            .drawCommands(shapes.s03[1146]);
-        var instance121 = new Graphics()
-            .drawCommands(shapes.s03[1142]);
-        var instance125 = new Graphics()
-            .drawCommands(shapes.s03[1147]);
-        var instance124 = new Graphics()
             .drawCommands(shapes.s03[1143]);
-        var instance138 = new Graphics()
+        var instance134 = new Graphics()
             .drawCommands(shapes.s03[1148]);
-        var instance137 = new Graphics()
+        var instance133 = new Graphics()
             .drawCommands(shapes.s03[1144]);
-        var instance142 = new Graphics()
+        var instance139 = new Graphics()
             .drawCommands(shapes.s03[1149]);
-        var instance141 = new Graphics()
+        var instance138 = new Graphics()
             .drawCommands(shapes.s03[1145]);
-        var instance140 = new Graphics()
+        var instance137 = new Graphics()
             .drawCommands(shapes.s03[1141]);
-        var instance145 = new Graphics()
+        var instance143 = new Graphics()
             .drawCommands(shapes.s03[1146]);
-        var instance144 = new Graphics()
+        var instance142 = new Graphics()
             .drawCommands(shapes.s03[1142]);
-        var instance148 = new Graphics()
-            .drawCommands(shapes.s03[1147]);
         var instance147 = new Graphics()
+            .drawCommands(shapes.s03[1147]);
+        var instance146 = new Graphics()
             .drawCommands(shapes.s03[1143]);
         var instance161 = new Graphics()
             .drawCommands(shapes.s03[1148]);
         var instance160 = new Graphics()
             .drawCommands(shapes.s03[1144]);
-        this.addTimedChild(instance5, 0, 1)
-            .addTimedChild(instance8, 1, 1)
+        var instance166 = new Graphics()
+            .drawCommands(shapes.s03[1149]);
+        var instance165 = new Graphics()
+            .drawCommands(shapes.s03[1145]);
+        var instance164 = new Graphics()
+            .drawCommands(shapes.s03[1141]);
+        var instance170 = new Graphics()
+            .drawCommands(shapes.s03[1146]);
+        var instance169 = new Graphics()
+            .drawCommands(shapes.s03[1142]);
+        var instance174 = new Graphics()
+            .drawCommands(shapes.s03[1147]);
+        var instance173 = new Graphics()
+            .drawCommands(shapes.s03[1143]);
+        var instance188 = new Graphics()
+            .drawCommands(shapes.s03[1148]);
+        var instance187 = new Graphics()
+            .drawCommands(shapes.s03[1144]);
+        this.addTimedChild(instance6, 0, 1)
+            .addTimedChild(instance5, 0, 1)
+            .addTimedChild(instance10, 1, 1)
+            .addTimedChild(instance9, 1, 1)
+            .addTimedChild(instance24, 2, 1)
+            .addTimedChild(instance23, 2, 1)
+            .addTimedChild(instance22, 2, 1)
             .addTimedChild(instance21, 2, 1)
             .addTimedChild(instance20, 2, 1)
             .addTimedChild(instance19, 2, 1)
@@ -68345,93 +68406,116 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance15, 2, 1)
             .addTimedChild(instance14, 2, 1)
             .addTimedChild(instance13, 2, 1)
-            .addTimedChild(instance12, 2, 1)
-            .addTimedChild(instance11, 2, 1)
-            .addTimedChild(instance24, 3, 1)
-            .addTimedChild(instance28, 4, 1)
-            .addTimedChild(instance31, 5, 1)
+            .addTimedChild(instance28, 3, 1)
+            .addTimedChild(instance27, 3, 1)
+            .addTimedChild(instance33, 4, 1)
+            .addTimedChild(instance32, 4, 1)
+            .addTimedChild(instance37, 5, 1)
+            .addTimedChild(instance36, 5, 1)
+            .addTimedChild(instance51, 6, 1)
+            .addTimedChild(instance50, 6, 1)
+            .addTimedChild(instance49, 6, 1)
+            .addTimedChild(instance48, 6, 1)
+            .addTimedChild(instance47, 6, 1)
+            .addTimedChild(instance46, 6, 1)
+            .addTimedChild(instance45, 6, 1)
             .addTimedChild(instance44, 6, 1)
             .addTimedChild(instance43, 6, 1)
             .addTimedChild(instance42, 6, 1)
             .addTimedChild(instance41, 6, 1)
             .addTimedChild(instance40, 6, 1)
-            .addTimedChild(instance39, 6, 1)
-            .addTimedChild(instance38, 6, 1)
-            .addTimedChild(instance37, 6, 1)
-            .addTimedChild(instance36, 6, 1)
-            .addTimedChild(instance35, 6, 1)
-            .addTimedChild(instance34, 6, 1)
-            .addTimedChild(instance47, 7, 1)
-            .addTimedChild(instance51, 8, 1)
-            .addTimedChild(instance54, 9, 1)
+            .addTimedChild(instance55, 7, 1)
+            .addTimedChild(instance54, 7, 1)
+            .addTimedChild(instance60, 8, 1)
+            .addTimedChild(instance59, 8, 1)
+            .addTimedChild(instance64, 9, 1)
+            .addTimedChild(instance63, 9, 1)
+            .addTimedChild(instance78, 10, 1)
+            .addTimedChild(instance77, 10, 1)
+            .addTimedChild(instance76, 10, 1)
+            .addTimedChild(instance75, 10, 1)
+            .addTimedChild(instance74, 10, 1)
+            .addTimedChild(instance73, 10, 1)
+            .addTimedChild(instance72, 10, 1)
+            .addTimedChild(instance71, 10, 1)
+            .addTimedChild(instance70, 10, 1)
+            .addTimedChild(instance69, 10, 1)
+            .addTimedChild(instance68, 10, 1)
             .addTimedChild(instance67, 10, 1)
-            .addTimedChild(instance66, 10, 1)
-            .addTimedChild(instance65, 10, 1)
-            .addTimedChild(instance64, 10, 1)
-            .addTimedChild(instance63, 10, 1)
-            .addTimedChild(instance62, 10, 1)
-            .addTimedChild(instance61, 10, 1)
-            .addTimedChild(instance60, 10, 1)
-            .addTimedChild(instance59, 10, 1)
-            .addTimedChild(instance58, 10, 1)
-            .addTimedChild(instance57, 10, 1)
-            .addTimedChild(instance70, 11, 1)
-            .addTimedChild(instance74, 12, 1)
-            .addTimedChild(instance77, 13, 1)
-            .addTimedChild(instance90, 14, 1)
-            .addTimedChild(instance89, 14, 1)
-            .addTimedChild(instance88, 14, 1)
-            .addTimedChild(instance87, 14, 1)
-            .addTimedChild(instance86, 14, 1)
-            .addTimedChild(instance85, 14, 1)
-            .addTimedChild(instance84, 14, 1)
-            .addTimedChild(instance83, 14, 1)
-            .addTimedChild(instance82, 14, 1)
-            .addTimedChild(instance81, 14, 1)
-            .addTimedChild(instance80, 14, 1)
-            .addTimedChild(instance93, 15, 1)
-            .addTimedChild(instance97, 16, 1)
-            .addTimedChild(instance100, 17, 1)
-            .addTimedChild(instance113, 18, 1)
-            .addTimedChild(instance112, 18, 1)
-            .addTimedChild(instance111, 18, 1)
-            .addTimedChild(instance110, 18, 1)
-            .addTimedChild(instance109, 18, 1)
-            .addTimedChild(instance108, 18, 1)
-            .addTimedChild(instance107, 18, 1)
-            .addTimedChild(instance106, 18, 1)
-            .addTimedChild(instance105, 18, 1)
-            .addTimedChild(instance104, 18, 1)
-            .addTimedChild(instance103, 18, 1)
-            .addTimedChild(instance116, 19, 1)
-            .addTimedChild(instance120, 20, 1)
-            .addTimedChild(instance123, 21, 1)
-            .addTimedChild(instance136, 22, 1)
-            .addTimedChild(instance135, 22, 1)
-            .addTimedChild(instance134, 22, 1)
-            .addTimedChild(instance133, 22, 1)
-            .addTimedChild(instance132, 22, 1)
-            .addTimedChild(instance131, 22, 1)
-            .addTimedChild(instance130, 22, 1)
-            .addTimedChild(instance129, 22, 1)
-            .addTimedChild(instance128, 22, 1)
-            .addTimedChild(instance127, 22, 1)
-            .addTimedChild(instance126, 22, 1)
-            .addTimedChild(instance139, 23, 1)
-            .addTimedChild(instance143, 24, 1)
-            .addTimedChild(instance146, 25, 1)
-            .addTimedChild(instance159, 26, 1)
-            .addTimedChild(instance158, 26, 1)
-            .addTimedChild(instance157, 26, 1)
-            .addTimedChild(instance156, 26, 1)
-            .addTimedChild(instance155, 26, 1)
-            .addTimedChild(instance154, 26, 1)
-            .addTimedChild(instance153, 26, 1)
-            .addTimedChild(instance152, 26, 1)
-            .addTimedChild(instance151, 26, 1)
-            .addTimedChild(instance150, 26, 1)
-            .addTimedChild(instance149, 26, 1)
-            .addTimedChild(instance162, 27, 1)
+            .addTimedChild(instance82, 11, 1)
+            .addTimedChild(instance81, 11, 1)
+            .addTimedChild(instance87, 12, 1)
+            .addTimedChild(instance86, 12, 1)
+            .addTimedChild(instance91, 13, 1)
+            .addTimedChild(instance90, 13, 1)
+            .addTimedChild(instance105, 14, 1)
+            .addTimedChild(instance104, 14, 1)
+            .addTimedChild(instance103, 14, 1)
+            .addTimedChild(instance102, 14, 1)
+            .addTimedChild(instance101, 14, 1)
+            .addTimedChild(instance100, 14, 1)
+            .addTimedChild(instance99, 14, 1)
+            .addTimedChild(instance98, 14, 1)
+            .addTimedChild(instance97, 14, 1)
+            .addTimedChild(instance96, 14, 1)
+            .addTimedChild(instance95, 14, 1)
+            .addTimedChild(instance94, 14, 1)
+            .addTimedChild(instance109, 15, 1)
+            .addTimedChild(instance108, 15, 1)
+            .addTimedChild(instance114, 16, 1)
+            .addTimedChild(instance113, 16, 1)
+            .addTimedChild(instance118, 17, 1)
+            .addTimedChild(instance117, 17, 1)
+            .addTimedChild(instance132, 18, 1)
+            .addTimedChild(instance131, 18, 1)
+            .addTimedChild(instance130, 18, 1)
+            .addTimedChild(instance129, 18, 1)
+            .addTimedChild(instance128, 18, 1)
+            .addTimedChild(instance127, 18, 1)
+            .addTimedChild(instance126, 18, 1)
+            .addTimedChild(instance125, 18, 1)
+            .addTimedChild(instance124, 18, 1)
+            .addTimedChild(instance123, 18, 1)
+            .addTimedChild(instance122, 18, 1)
+            .addTimedChild(instance121, 18, 1)
+            .addTimedChild(instance136, 19, 1)
+            .addTimedChild(instance135, 19, 1)
+            .addTimedChild(instance141, 20, 1)
+            .addTimedChild(instance140, 20, 1)
+            .addTimedChild(instance145, 21, 1)
+            .addTimedChild(instance144, 21, 1)
+            .addTimedChild(instance159, 22, 1)
+            .addTimedChild(instance158, 22, 1)
+            .addTimedChild(instance157, 22, 1)
+            .addTimedChild(instance156, 22, 1)
+            .addTimedChild(instance155, 22, 1)
+            .addTimedChild(instance154, 22, 1)
+            .addTimedChild(instance153, 22, 1)
+            .addTimedChild(instance152, 22, 1)
+            .addTimedChild(instance151, 22, 1)
+            .addTimedChild(instance150, 22, 1)
+            .addTimedChild(instance149, 22, 1)
+            .addTimedChild(instance148, 22, 1)
+            .addTimedChild(instance163, 23, 1)
+            .addTimedChild(instance162, 23, 1)
+            .addTimedChild(instance168, 24, 1)
+            .addTimedChild(instance167, 24, 1)
+            .addTimedChild(instance172, 25, 1)
+            .addTimedChild(instance171, 25, 1)
+            .addTimedChild(instance186, 26, 1)
+            .addTimedChild(instance185, 26, 1)
+            .addTimedChild(instance184, 26, 1)
+            .addTimedChild(instance183, 26, 1)
+            .addTimedChild(instance182, 26, 1)
+            .addTimedChild(instance181, 26, 1)
+            .addTimedChild(instance180, 26, 1)
+            .addTimedChild(instance179, 26, 1)
+            .addTimedChild(instance178, 26, 1)
+            .addTimedChild(instance177, 26, 1)
+            .addTimedChild(instance176, 26, 1)
+            .addTimedChild(instance175, 26, 1)
+            .addTimedChild(instance190, 27, 1)
+            .addTimedChild(instance189, 27, 1)
             .addTimedChild(instance4, 0, 28, {
                 "0": {
                     x: -122,
@@ -68577,66 +68661,66 @@ import { EventBus } from '../../src/main';
             .addTimedChild(instance3, 0, 1)
             .addTimedChild(instance2, 0, 1)
             .addTimedChild(instance1, 0, 1)
+            .addTimedChild(instance8, 1, 1)
             .addTimedChild(instance7, 1, 1)
-            .addTimedChild(instance6, 1, 1)
-            .addTimedChild(instance10, 2, 1)
-            .addTimedChild(instance9, 2, 1)
-            .addTimedChild(instance23, 3, 1)
-            .addTimedChild(instance22, 3, 1)
-            .addTimedChild(instance27, 4, 1)
-            .addTimedChild(instance26, 4, 1)
-            .addTimedChild(instance25, 4, 1)
-            .addTimedChild(instance30, 5, 1)
-            .addTimedChild(instance29, 5, 1)
-            .addTimedChild(instance33, 6, 1)
-            .addTimedChild(instance32, 6, 1)
-            .addTimedChild(instance46, 7, 1)
-            .addTimedChild(instance45, 7, 1)
-            .addTimedChild(instance50, 8, 1)
-            .addTimedChild(instance49, 8, 1)
-            .addTimedChild(instance48, 8, 1)
-            .addTimedChild(instance53, 9, 1)
-            .addTimedChild(instance52, 9, 1)
-            .addTimedChild(instance56, 10, 1)
-            .addTimedChild(instance55, 10, 1)
-            .addTimedChild(instance69, 11, 1)
-            .addTimedChild(instance68, 11, 1)
-            .addTimedChild(instance73, 12, 1)
-            .addTimedChild(instance72, 12, 1)
-            .addTimedChild(instance71, 12, 1)
-            .addTimedChild(instance76, 13, 1)
-            .addTimedChild(instance75, 13, 1)
-            .addTimedChild(instance79, 14, 1)
-            .addTimedChild(instance78, 14, 1)
-            .addTimedChild(instance92, 15, 1)
-            .addTimedChild(instance91, 15, 1)
-            .addTimedChild(instance96, 16, 1)
-            .addTimedChild(instance95, 16, 1)
-            .addTimedChild(instance94, 16, 1)
-            .addTimedChild(instance99, 17, 1)
-            .addTimedChild(instance98, 17, 1)
-            .addTimedChild(instance102, 18, 1)
-            .addTimedChild(instance101, 18, 1)
-            .addTimedChild(instance115, 19, 1)
-            .addTimedChild(instance114, 19, 1)
-            .addTimedChild(instance119, 20, 1)
-            .addTimedChild(instance118, 20, 1)
-            .addTimedChild(instance117, 20, 1)
-            .addTimedChild(instance122, 21, 1)
-            .addTimedChild(instance121, 21, 1)
-            .addTimedChild(instance125, 22, 1)
-            .addTimedChild(instance124, 22, 1)
-            .addTimedChild(instance138, 23, 1)
-            .addTimedChild(instance137, 23, 1)
-            .addTimedChild(instance142, 24, 1)
-            .addTimedChild(instance141, 24, 1)
-            .addTimedChild(instance140, 24, 1)
-            .addTimedChild(instance145, 25, 1)
-            .addTimedChild(instance144, 25, 1)
-            .addTimedChild(instance148, 26, 1)
-            .addTimedChild(instance147, 26, 1)
-            .addTimedChild(instance161, 27, 1)
-            .addTimedChild(instance160, 27, 1);
+            .addTimedChild(instance12, 2, 1)
+            .addTimedChild(instance11, 2, 1)
+            .addTimedChild(instance26, 3, 1)
+            .addTimedChild(instance25, 3, 1)
+            .addTimedChild(instance31, 4, 1)
+            .addTimedChild(instance30, 4, 1)
+            .addTimedChild(instance29, 4, 1)
+            .addTimedChild(instance35, 5, 1)
+            .addTimedChild(instance34, 5, 1)
+            .addTimedChild(instance39, 6, 1)
+            .addTimedChild(instance38, 6, 1)
+            .addTimedChild(instance53, 7, 1)
+            .addTimedChild(instance52, 7, 1)
+            .addTimedChild(instance58, 8, 1)
+            .addTimedChild(instance57, 8, 1)
+            .addTimedChild(instance56, 8, 1)
+            .addTimedChild(instance62, 9, 1)
+            .addTimedChild(instance61, 9, 1)
+            .addTimedChild(instance66, 10, 1)
+            .addTimedChild(instance65, 10, 1)
+            .addTimedChild(instance80, 11, 1)
+            .addTimedChild(instance79, 11, 1)
+            .addTimedChild(instance85, 12, 1)
+            .addTimedChild(instance84, 12, 1)
+            .addTimedChild(instance83, 12, 1)
+            .addTimedChild(instance89, 13, 1)
+            .addTimedChild(instance88, 13, 1)
+            .addTimedChild(instance93, 14, 1)
+            .addTimedChild(instance92, 14, 1)
+            .addTimedChild(instance107, 15, 1)
+            .addTimedChild(instance106, 15, 1)
+            .addTimedChild(instance112, 16, 1)
+            .addTimedChild(instance111, 16, 1)
+            .addTimedChild(instance110, 16, 1)
+            .addTimedChild(instance116, 17, 1)
+            .addTimedChild(instance115, 17, 1)
+            .addTimedChild(instance120, 18, 1)
+            .addTimedChild(instance119, 18, 1)
+            .addTimedChild(instance134, 19, 1)
+            .addTimedChild(instance133, 19, 1)
+            .addTimedChild(instance139, 20, 1)
+            .addTimedChild(instance138, 20, 1)
+            .addTimedChild(instance137, 20, 1)
+            .addTimedChild(instance143, 21, 1)
+            .addTimedChild(instance142, 21, 1)
+            .addTimedChild(instance147, 22, 1)
+            .addTimedChild(instance146, 22, 1)
+            .addTimedChild(instance161, 23, 1)
+            .addTimedChild(instance160, 23, 1)
+            .addTimedChild(instance166, 24, 1)
+            .addTimedChild(instance165, 24, 1)
+            .addTimedChild(instance164, 24, 1)
+            .addTimedChild(instance170, 25, 1)
+            .addTimedChild(instance169, 25, 1)
+            .addTimedChild(instance174, 26, 1)
+            .addTimedChild(instance173, 26, 1)
+            .addTimedChild(instance188, 27, 1)
+            .addTimedChild(instance187, 27, 1);
     });
 
     lib.HENGE_BLOCK_04 = Container.extend(function () {
@@ -69940,7 +70024,7 @@ import { EventBus } from '../../src/main';
     lib.BG_STONEHENGE = Container.extend(function () {
         Container.call(this);
         var instance1 = new Graphics()
-            .drawCommands(shapes.s03[1173]);
+            .drawCommands(shapes.s03[1177]);
         this.addChild(instance1);
     });
 

@@ -9541,7 +9541,7 @@ import { EventBus } from '../../src/main';
     var Graphic114 = MovieClip.extend(function (mode) {
         MovieClip.call(this, { mode: mode, duration: 52, loop: false });
         var instance1 = new Sprite(fromFrame("REPLACE_EMOJI_SAD"))
-            .setTransform(0, 0, 0.5, 0.5);
+            .setTransform(0.25, -0.35, 0.5, 0.5);
         this.addTimedChild(instance1);
     });
 
